@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE6C1B54225F7ECB00D14728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C1B53225F7ECB00D14728 /* AppDelegate.m */; };
+		BE6C1B57225F7ECB00D14728 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C1B56225F7ECB00D14728 /* ViewController.m */; };
+		BE6C1B5A225F7ECB00D14728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B58225F7ECB00D14728 /* Main.storyboard */; };
+		BE6C1B5C225F7ECE00D14728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B5B225F7ECE00D14728 /* Assets.xcassets */; };
+		BE6C1B5F225F7ECE00D14728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B5D225F7ECE00D14728 /* LaunchScreen.storyboard */; };
+		BE6C1B62225F7ECE00D14728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C1B61225F7ECE00D14728 /* main.m */; };
+		BE6C1B6A225F7EDB00D14728 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B69225F7EDB00D14728 /* libc++.tbd */; };
+		BE6C1B6C225F7EE000D14728 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B6B225F7EE000D14728 /* libz.tbd */; };
+		BE6C1B6E225F7EE500D14728 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B6D225F7EE500D14728 /* libiconv.tbd */; };
+		BE6C1B70225F7EEA00D14728 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */; };
+		BE6C1B72225F7EF000D14728 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B71225F7EF000D14728 /* CoreMedia.framework */; };
+		BE6C1B74225F7EF600D14728 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B73225F7EF600D14728 /* AVFoundation.framework */; };
+		BE6C1B77225F7F1600D14728 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B76225F7F1600D14728 /* license.txt */; };
+		BE6C1B7A225F7F1C00D14728 /* Microblink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; };
+		BE6C1B7B225F7F1C00D14728 /* Microblink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B79225F7F1C00D14728 /* Microblink.bundle */; };
+		BE6C1B7C225F7F2400D14728 /* Microblink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; };
+		BE6C1B7D225F7F2400D14728 /* Microblink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE6C1B7E225F7F2500D14728 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE6C1B7D225F7F2400D14728 /* Microblink.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE6C1B4F225F7ECB00D14728 /* BlinkCard-Sample-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkCard-Sample-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6C1B52225F7ECB00D14728 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE6C1B53225F7ECB00D14728 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE6C1B55225F7ECB00D14728 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE6C1B56225F7ECB00D14728 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE6C1B59225F7ECB00D14728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE6C1B5B225F7ECE00D14728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE6C1B5E225F7ECE00D14728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE6C1B60225F7ECE00D14728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6C1B61225F7ECE00D14728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE6C1B69225F7EDB00D14728 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BE6C1B6B225F7EE000D14728 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BE6C1B6D225F7EE500D14728 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BE6C1B71225F7EF000D14728 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BE6C1B73225F7EF600D14728 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE6C1B76225F7F1600D14728 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.txt; path = ../../License/license.txt; sourceTree = "<group>"; };
+		BE6C1B78225F7F1B00D14728 /* Microblink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Microblink.framework; path = ../../Microblink.framework; sourceTree = "<group>"; };
+		BE6C1B79225F7F1C00D14728 /* Microblink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Microblink.bundle; path = ../../Microblink.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE6C1B4C225F7ECB00D14728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C1B7A225F7F1C00D14728 /* Microblink.framework in Frameworks */,
+				BE6C1B74225F7EF600D14728 /* AVFoundation.framework in Frameworks */,
+				BE6C1B7C225F7F2400D14728 /* Microblink.framework in Frameworks */,
+				BE6C1B72225F7EF000D14728 /* CoreMedia.framework in Frameworks */,
+				BE6C1B70225F7EEA00D14728 /* AudioToolbox.framework in Frameworks */,
+				BE6C1B6E225F7EE500D14728 /* libiconv.tbd in Frameworks */,
+				BE6C1B6C225F7EE000D14728 /* libz.tbd in Frameworks */,
+				BE6C1B6A225F7EDB00D14728 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE6C1B46225F7ECB00D14728 = {
+			isa = PBXGroup;
+			children = (
+				BE6C1B51225F7ECB00D14728 /* BlinkCard-Sample-ObjC */,
+				BE6C1B50225F7ECB00D14728 /* Products */,
+				BE6C1B68225F7EDB00D14728 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE6C1B50225F7ECB00D14728 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C1B4F225F7ECB00D14728 /* BlinkCard-Sample-ObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE6C1B51225F7ECB00D14728 /* BlinkCard-Sample-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C1B75225F7F0800D14728 /* License */,
+				BE6C1B52225F7ECB00D14728 /* AppDelegate.h */,
+				BE6C1B53225F7ECB00D14728 /* AppDelegate.m */,
+				BE6C1B55225F7ECB00D14728 /* ViewController.h */,
+				BE6C1B56225F7ECB00D14728 /* ViewController.m */,
+				BE6C1B58225F7ECB00D14728 /* Main.storyboard */,
+				BE6C1B5B225F7ECE00D14728 /* Assets.xcassets */,
+				BE6C1B5D225F7ECE00D14728 /* LaunchScreen.storyboard */,
+				BE6C1B60225F7ECE00D14728 /* Info.plist */,
+				BE6C1B61225F7ECE00D14728 /* main.m */,
+			);
+			path = "BlinkCard-Sample-ObjC";
+			sourceTree = "<group>";
+		};
+		BE6C1B68225F7EDB00D14728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C1B73225F7EF600D14728 /* AVFoundation.framework */,
+				BE6C1B71225F7EF000D14728 /* CoreMedia.framework */,
+				BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */,
+				BE6C1B6D225F7EE500D14728 /* libiconv.tbd */,
+				BE6C1B6B225F7EE000D14728 /* libz.tbd */,
+				BE6C1B69225F7EDB00D14728 /* libc++.tbd */,
+				BE6C1B79225F7F1C00D14728 /* Microblink.bundle */,
+				BE6C1B78225F7F1B00D14728 /* Microblink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE6C1B75225F7F0800D14728 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C1B76225F7F1600D14728 /* license.txt */,
+			);
+			name = License;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE6C1B4E225F7ECB00D14728 /* BlinkCard-Sample-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6C1B65225F7ECE00D14728 /* Build configuration list for PBXNativeTarget "BlinkCard-Sample-ObjC" */;
+			buildPhases = (
+				BE6C1B4B225F7ECB00D14728 /* Sources */,
+				BE6C1B4C225F7ECB00D14728 /* Frameworks */,
+				BE6C1B4D225F7ECB00D14728 /* Resources */,
+				BE6C1B7E225F7F2500D14728 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlinkCard-Sample-ObjC";
+			productName = "BlinkCard-Sample-ObjC";
+			productReference = BE6C1B4F225F7ECB00D14728 /* BlinkCard-Sample-ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE6C1B47225F7ECB00D14728 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Microblink;
+				TargetAttributes = {
+					BE6C1B4E225F7ECB00D14728 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = BE6C1B4A225F7ECB00D14728 /* Build configuration list for PBXProject "BlinkCard-Sample-ObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE6C1B46225F7ECB00D14728;
+			productRefGroup = BE6C1B50225F7ECB00D14728 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE6C1B4E225F7ECB00D14728 /* BlinkCard-Sample-ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE6C1B4D225F7ECB00D14728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C1B77225F7F1600D14728 /* license.txt in Resources */,
+				BE6C1B5F225F7ECE00D14728 /* LaunchScreen.storyboard in Resources */,
+				BE6C1B5C225F7ECE00D14728 /* Assets.xcassets in Resources */,
+				BE6C1B7B225F7F1C00D14728 /* Microblink.bundle in Resources */,
+				BE6C1B5A225F7ECB00D14728 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE6C1B4B225F7ECB00D14728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6C1B57225F7ECB00D14728 /* ViewController.m in Sources */,
+				BE6C1B62225F7ECE00D14728 /* main.m in Sources */,
+				BE6C1B54225F7ECB00D14728 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE6C1B58225F7ECB00D14728 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6C1B59225F7ECB00D14728 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE6C1B5D225F7ECE00D14728 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6C1B5E225F7ECE00D14728 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE6C1B63225F7ECE00D14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE6C1B64225F7ECE00D14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6C1B66225F7ECE00D14728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQTJWP89J7;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
+				INFOPLIST_FILE = "BlinkCard-Sample-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microblink.blinkcard-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE6C1B67225F7ECE00D14728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQTJWP89J7;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
+				INFOPLIST_FILE = "BlinkCard-Sample-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microblink.blinkcard-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE6C1B4A225F7ECB00D14728 /* Build configuration list for PBXProject "BlinkCard-Sample-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C1B63225F7ECE00D14728 /* Debug */,
+				BE6C1B64225F7ECE00D14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6C1B65225F7ECE00D14728 /* Build configuration list for PBXNativeTarget "BlinkCard-Sample-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6C1B66225F7ECE00D14728 /* Debug */,
+				BE6C1B67225F7ECE00D14728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE6C1B47225F7ECB00D14728 /* Project object */;
+}
