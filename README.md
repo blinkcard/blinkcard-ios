@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/wiki/blinkid/blinkid-ios/Images/logo-microblink.png" alt="MicroBlink" title="MicroBlink">
 </p>
 
-[![Build Status](https://travis-ci.org/BlinkCard/blinkcard-ios.png)](https://travis-ci.org/BlinkCard/blinkcard-ios.png)
+[![Build Status](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)
 [![Pod Version](http://img.shields.io/cocoapods/v/MBBlinkCard.svg?style=flat)](http://cocoadocs.org/docsets/MBBlinkCard/)
 
 # BlinkCard SDK for payment card scanning
