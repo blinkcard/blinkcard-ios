@@ -8,7 +8,7 @@ xcodebuild -project Samples/BlinkCard-Sample-ObjC/BlinkCard-Sample-ObjC.xcodepro
     ONLY_ACTIVE_ARCH=NO \
     clean build
 
-xcodebuild -project Samples/BlinkCard-Sample-ObjC/BlinkCard-Sample.xcodeproj \
+xcodebuild -project Samples/BlinkCard-Sample-ObjC/BlinkCard-Sample-ObjC.xcodeproj \
     -scheme BlinkCard-Sample-ObjC \
     -configuration Release \
     -sdk iphonesimulator \
