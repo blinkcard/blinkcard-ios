@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/wiki/blinkid/blinkid-ios/Images/logo-microblink.png" alt="MicroBlink" title="MicroBlink">
 </p>
 
-[![Build Status](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)
+[![Build Status](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)](https://travis-ci.org/blinkcard/blinkcard-ios)
 [![Pod Version](http://img.shields.io/cocoapods/v/MBBlinkCard.svg?style=flat)](http://cocoadocs.org/docsets/MBBlinkCard/)
 
 # BlinkCard SDK for payment card scanning
@@ -81,7 +81,7 @@ pod init
 ```ruby
 platform :ios, '9.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 1.0.0'
+    pod 'MBBlinkCard', '~> 1.0.1'
 end
 ```
 
