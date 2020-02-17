@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import MicroBlink
+import Microblink
 
 class ViewController: UIViewController {
     var blinkCardRecognizer: MBBlinkCardRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Valid until: 2020-07-16
         MBMicroblinkSDK.sharedInstance().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: Bundle.main)
     }
 
