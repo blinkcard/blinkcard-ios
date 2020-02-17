@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/MBBlinkCardRecognizer.h</key>
 		<data>
-		Mh/b5NLaSvXqz7oqBlQq8y32CME=
+		91qb2XJb3s6fq9vKWzDaDRo46CM=
 		</data>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
 		<data>
-		QdH4ZfZXwSdfcEnzwZCjrOhGNaI=
+		rDb+RhsBY251StwDRc8P3tyd5Ro=
 		</data>
 		<key>Headers/MBBlinkCardUIComponents.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/MBCombinedRecognizerResult.h</key>
 		<data>
-		0YjpEa0qMXbvydN6rNq30fZclb0=
+		lql/EOJPq5pVZH+FoxSjaAYfN88=
 		</data>
 		<key>Headers/MBCustomOverlayViewController.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Headers/MBImage.h</key>
 		<data>
-		VlYNyu4ivL5y89TA+5Ful1MwSnQ=
+		raZ2E06cNbzlo6xmM+wCdfHNJSE=
 		</data>
 		<key>Headers/MBImageExtensionFactors.h</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>Headers/MBRecognizerRunnerViewController.h</key>
 		<data>
-		0wMD+YY1DaqbdYaAkw2vu0g/cAQ=
+		S+XfENfcwL0BDYnLAUgWkh8VBYc=
 		</data>
 		<key>Headers/MBRecognizerRunnerViewControllerDelegate.h</key>
 		<data>
@@ -366,11 +366,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jYo+NAIbBu3jr0Qc0bC41p8PjeU=
+		EhM3VYJLViCoH6OHn7nvPFIOrTw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		V9XnUWJ3v7ZTIggf5MD31++YiQ8=
+		Pcr8Y531vHlERWcl1+qmXeh8hAA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -467,22 +467,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Mh/b5NLaSvXqz7oqBlQq8y32CME=
+			91qb2XJb3s6fq9vKWzDaDRo46CM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bSrWR1Wmds2/aALgJuVUe1iRZaUTXBsw2QUhmN8WRcc=
+			gHWofJCsqwjKyQmO5FiFjlYiFMOwUSRkH5HkRGIsYHY=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QdH4ZfZXwSdfcEnzwZCjrOhGNaI=
+			rDb+RhsBY251StwDRc8P3tyd5Ro=
 			</data>
 			<key>hash2</key>
 			<data>
-			AJhw4CqRT8j3+h5Ug3VKGN81yQi2wzx7FOceXVfakRE=
+			kMXNEImHHMVWHb8+FcIwuMNTYcB/fqHjw07vnO7k3j4=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardUIComponents.h</key>
@@ -544,11 +544,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0YjpEa0qMXbvydN6rNq30fZclb0=
+			lql/EOJPq5pVZH+FoxSjaAYfN88=
 			</data>
 			<key>hash2</key>
 			<data>
-			CorcI8Frv3aIrK4J9ZSL5RSSgR0aFjvcvFPVqwXMs1I=
+			FMtNwWD1uo7qqFHUIPYqgh+ah3G4nJKL52Ihf4mZ544=
 			</data>
 		</dict>
 		<key>Headers/MBCustomOverlayViewController.h</key>
@@ -918,11 +918,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VlYNyu4ivL5y89TA+5Ful1MwSnQ=
+			raZ2E06cNbzlo6xmM+wCdfHNJSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6c94/J6y2BM/RrNRykxJ3OKbdJMmnENrSA0FGPg6JCI=
+			s8LajaKbSxSrDopUB2LxIBfrHlcdvuK7h9DgfokVHqs=
 			</data>
 		</dict>
 		<key>Headers/MBImageExtensionFactors.h</key>
@@ -1193,11 +1193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0wMD+YY1DaqbdYaAkw2vu0g/cAQ=
+			S+XfENfcwL0BDYnLAUgWkh8VBYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DP+uWLQldXHEE8Id9cKjSm7vh7bCemPp2merj8vtkDY=
+			tttaRmakbTlIKiunc7IQcGpsYU8TQjzbhYb1kxIDHbo=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerRunnerViewControllerDelegate.h</key>
@@ -1369,11 +1369,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V9XnUWJ3v7ZTIggf5MD31++YiQ8=
+			Pcr8Y531vHlERWcl1+qmXeh8hAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			2hCCzTpMwzdAmcBO7BIC8QY8YXR0Uc832E+CFRDFfEA=
+			99uPh31XDIpAN76cnrWC3kN2lcgYHI9Fj0dQ/4RfZC8=
 			</data>
 		</dict>
 	</dict>

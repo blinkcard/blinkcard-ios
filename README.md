@@ -79,9 +79,9 @@ pod init
 - Copy and paste the following lines into the TextEdit window:  
 
 ```ruby
-platform :ios, '9.0'
+platform :ios, '8.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 1.0.1'
+    pod 'MBBlinkCard', '~> 1.1.0'
 end
 ```
 
@@ -124,7 +124,7 @@ git clone git@github.com:BlinkCard/blinkcard-ios.git
 
 - In your Xcode project, open the Project navigator. Drag the Microblink.framework and Microblink.bundle files to your project, ideally in the Frameworks group, together with other frameworks you're using. When asked, choose "Create groups", instead of the "Create folder references" option.
 
-![Adding Microblink.embedded framework to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/01%20-%20Add%20Framework.jpg)
+![Adding Microblink.embedded framework to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/01%20-%20Add%20Framework.png)
 
 - Since Microblink.framework is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target.
 
@@ -139,7 +139,7 @@ git clone git@github.com:BlinkCard/blinkcard-ios.git
     - libiconv.tbd
     - libz.tbd
     
-![Adding Apple frameworks to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/02%20-%20Add%20Libraries.jpg)
+![Adding Apple frameworks to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/02%20-%20Add%20Libraries.png)
     
 ### 2. Referencing header file
     
@@ -148,13 +148,13 @@ In files in which you want to use scanning functionality place import directive.
 Swift
 
 ```swift
-import MicroBlink
+import Microblink
 ```
 
 Objective-C
 
 ```objective-c
-#import <MicroBlink/MicroBlink.h>
+#import <Microblink/Microblink.h>
 ```
     
 ### 3. Initiating the scanning process
@@ -367,7 +367,7 @@ UIViewController<MBRecognizerRunnerViewController>* recognizerRunnerViewControll
 As you can see, when initializing [`MBDocumentVerificationOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBDocumentVerificationOverlayViewController.html), we are sending delegate property as `self`. To get results, we need to conform to [`MBDocumentVerificationOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBDocumentVerificationOverlayViewControllerDelegate.html) protocol.
 ### <a name="using-custom-overlay-viewcontroller"></a> Custom overlay view controller
 
-Please check our pdf417-sample-Swift for custom implementation of overlay view controller.
+Please check our Samples for custom implementation of overlay view controller.
 
 Overlay View Controller is an abstract class for all overlay views.
 

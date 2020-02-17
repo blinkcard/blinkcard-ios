@@ -247,7 +247,7 @@
     },
     {
       "file": "/opt/jenkins-ios/E0/blinkcard-ios-framework/blinkcard-ios/Microblink.framework/Headers/MBCombinedRecognizerResult.h",
-      "line": 11,
+      "line": 23,
       "symbol": "MBCombinedRecognizerResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
