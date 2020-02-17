@@ -81,6 +81,13 @@ MB_INIT
  */
 @property (nonatomic, assign) BOOL anonymizeCvv;
 
+/**
+ * Should anonymize the IBAN area (redact image pixels) on the document image result
+ *
+ * Default: NO
+ */
+@property (nonatomic, assign) BOOL anonymizeIban;
+
 @end
 
 NS_ASSUME_NONNULL_END

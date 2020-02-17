@@ -52,9 +52,14 @@ MB_INIT_UNAVAILABLE
 @property (nonatomic, readonly) NSString *inventoryNumber;
 
 /**
- * Payment card's issuing networ
+ * Payment card's issuing network
  */
 @property (nonatomic, readonly) MBCardIssuer issuer;
+
+/**
+ * Payment card's IBAN
+ */
+@property (nonatomic, readonly) NSString *iban;
 
 @end
 
