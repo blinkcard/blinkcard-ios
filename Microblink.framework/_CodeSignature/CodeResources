@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/MBBlinkCardRecognizer.h</key>
 		<data>
-		91qb2XJb3s6fq9vKWzDaDRo46CM=
+		6q+cKtQCRVvYqMTQnP42x8mICTg=
 		</data>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
 		<data>
@@ -202,15 +202,19 @@
 		</data>
 		<key>Headers/MBImage.h</key>
 		<data>
-		raZ2E06cNbzlo6xmM+wCdfHNJSE=
+		9UXQwnr/YW/9evZeJC0bIIiNwD8=
 		</data>
 		<key>Headers/MBImageExtensionFactors.h</key>
 		<data>
-		hgn7yp4jHuuT0lbvlW4GElWcShk=
+		qOn/ZOGmPuuqqsYebI6nyT0LFcU=
 		</data>
 		<key>Headers/MBImageProcessingRecognizerRunnerDelegate.h</key>
 		<data>
 		O3NVRv7e6nsyS2p2Jsz1yv2Ngo4=
+		</data>
+		<key>Headers/MBLogger.h</key>
+		<data>
+		g2cLLTBpbMd2s/MSIVTOh24PzJI=
 		</data>
 		<key>Headers/MBMicroblinkApp.h</key>
 		<data>
@@ -282,7 +286,7 @@
 		</data>
 		<key>Headers/MBRecognizer.h</key>
 		<data>
-		b/ZrocozvdVfv0Gba1TNb0kbmek=
+		BVMlfFDIc5k5lUgF68bLVBvAB0o=
 		</data>
 		<key>Headers/MBRecognizerCollection.h</key>
 		<data>
@@ -366,7 +370,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EhM3VYJLViCoH6OHn7nvPFIOrTw=
+		jA17wbLFSuhg8LNvf27OYNrgWKY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -467,11 +471,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			91qb2XJb3s6fq9vKWzDaDRo46CM=
+			6q+cKtQCRVvYqMTQnP42x8mICTg=
 			</data>
 			<key>hash2</key>
 			<data>
-			gHWofJCsqwjKyQmO5FiFjlYiFMOwUSRkH5HkRGIsYHY=
+			g28d6JFNboubquzVtjqQDwX5zC/wF3PxUEHbnldXHUk=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
@@ -918,22 +922,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			raZ2E06cNbzlo6xmM+wCdfHNJSE=
+			9UXQwnr/YW/9evZeJC0bIIiNwD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			s8LajaKbSxSrDopUB2LxIBfrHlcdvuK7h9DgfokVHqs=
+			SzKO2xbgZpMjsRkcTXaZUpJjLjQIUrD86KnD0vUi6P4=
 			</data>
 		</dict>
 		<key>Headers/MBImageExtensionFactors.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hgn7yp4jHuuT0lbvlW4GElWcShk=
+			qOn/ZOGmPuuqqsYebI6nyT0LFcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ggb3609n7oeD9LbiorgUeBg613qtpXKHdhB/iEKaGiw=
+			916zFnOlzr+IFbkiP2mqvbsBPCIoYEpZoysQ346YEq4=
 			</data>
 		</dict>
 		<key>Headers/MBImageProcessingRecognizerRunnerDelegate.h</key>
@@ -945,6 +949,17 @@
 			<key>hash2</key>
 			<data>
 			n2Lc8T0QLmV9D3yNze9MAJgEB5pUqP0iLhrJUNguxt4=
+			</data>
+		</dict>
+		<key>Headers/MBLogger.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g2cLLTBpbMd2s/MSIVTOh24PzJI=
+			</data>
+			<key>hash2</key>
+			<data>
+			4SyIxHgVdEX6Q82k/xlYJ7W3DAS6landsVoGo2hO2bo=
 			</data>
 		</dict>
 		<key>Headers/MBMicroblinkApp.h</key>
@@ -1138,11 +1153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b/ZrocozvdVfv0Gba1TNb0kbmek=
+			BVMlfFDIc5k5lUgF68bLVBvAB0o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pu+RamT1NGa/6at3e3QCSr2izta5aSxdw62BSMNXC2k=
+			hxhqHbrG0N6p7oiy5JSTZuEywP/5AkyrgcKhzNxIY88=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerCollection.h</key>

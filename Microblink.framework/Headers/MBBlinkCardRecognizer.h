@@ -54,6 +54,13 @@ MB_INIT
 @property (nonatomic, assign) BOOL extractCvv;
 
 /**
+ * Should extract the payment card's IBAN
+ *
+ * Default: NO
+ */
+@property (nonatomic, assign) BOOL extractIban;
+
+/**
  * Should extract the card's inventory number
  *
  * Default: YES

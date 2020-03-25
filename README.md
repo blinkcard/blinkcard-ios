@@ -81,7 +81,7 @@ pod init
 ```ruby
 platform :ios, '8.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 1.1.0'
+    pod 'MBBlinkCard', '~> 1.1.1'
 end
 ```
 
@@ -329,8 +329,8 @@ Objective-C
 This section covers more advanced details of BlinkInput integration.
 
 1. [First part](#ui-customizations) will cover the possible customizations when using UI provided by the SDK.
-2. [Second part](#custom-overyal-view-controller) will describe how to embed [`MBRecognizerRunnerViewController's delegates`](http://blinkcard.github.io/blinkcard-ios/Protocols.html) into your `UIViewController` with the goal of creating a custom UI for scanning, while still using camera management capabilites of the SDK.
-3. [Third part](#direct-processing-api) will describe how to use the [`MBRecognizerRunner`](http://blinkcard.github.io/blinkcard-ios/Classes/MBRecognizerRunner.html) (Direct API) for recognition directly from `UIImage` without the need of camera or to recognize camera frames that are obtained by custom camera management.
+2. [Second part](#using-document-overlay-viewcontroller) will describe how to embed [`MBRecognizerRunnerViewController's delegates`](http://blinkcard.github.io/blinkcard-ios/Protocols.html) into your `UIViewController` with the goal of creating a custom UI for scanning, while still using camera management capabilites of the SDK.
+3. [Third part](#direct-api-processing) will describe how to use the [`MBRecognizerRunner`](http://blinkcard.github.io/blinkcard-ios/Classes/MBRecognizerRunner.html) (Direct API) for recognition directly from `UIImage` without the need of camera or to recognize camera frames that are obtained by custom camera management.
 4. [Fourth part](#recognizer) will describe recognizer concept and available recognizers.
 
 
@@ -513,9 +513,9 @@ Objective-C
 - (void)setupRecognizerRunner {
     NSMutableArray<MBRecognizer *> *recognizers = [[NSMutableArray alloc] init];
     
-    self.blinkInputRecognizer = [[MBBlinkInputRecognizer alloc] init];
+    self.pdf417Recognizer = [[MBPdf417Recognizer alloc] init];
     
-    [recognizers addObject:self.blinkInputRecognizer];
+    [recognizers addObject: self.pdf417Recognizer];
     
     MBRecognizerCollection *recognizerCollection = [[MBRecognizerCollection alloc] initWithRecognizers:recognizers];
     
@@ -533,7 +533,6 @@ Objective-C
     });
 }
 
-#pragma mark - MBScanningRecognizerRunnerDelegate
 - (void)recognizerRunner:(nonnull MBRecognizerRunner *)recognizerRunner didFinishScanningWithState:(MBRecognizerResultState)state {
     if (self.blinkInputRecognizer.result.resultState == MBRecognizerResultStateValid) {
         // Handle result
