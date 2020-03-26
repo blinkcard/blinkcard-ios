@@ -1,3 +1,7 @@
+## 1.1.1
+
+- No changes
+
 ## 1.1.0
 
 - Major API changes:

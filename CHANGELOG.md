@@ -1,5 +1,12 @@
 # Release notes
 
+## 1.1.1
+
+- Bugfixes:
+	- added missing `extractIban` property which says it should extract the payment card's IBAN
+	- fixed Torch activation for all iOS versions
+	- fixed OpenGL code which was fragile and sensitive to crashes if used from multiple threads
+
 ## 1.1.0
 
 - Major API changes:
@@ -13,8 +20,6 @@
 	- improved `MBBlinkCardRecognizer`:
 	       - now extracts IBAN from the Payment / Debit card
 	- in `MBBlinkCardRecognizerResult` and `MBBlinkCardEliteRecognizerResult`, `documentDataMatch` value is now returned as `MBDataMatchResult` enum with three possible values: `NotPerformed`,  `Failed` and `Success`
-
-
 
 - Bugfixes:
     - fixed bug in `MBBlinkCardRecognizer`:
