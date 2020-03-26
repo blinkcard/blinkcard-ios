@@ -14,7 +14,8 @@ BlinkCard SDK is a delightful component for quick and easy scanning of payment c
 - lightweight and no internet connection required
 - enteprise-level security standards
 
-BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others. 
+BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others.
+
 # Table of contents
 
 - [Requirements](#requirements)
