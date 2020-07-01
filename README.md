@@ -14,8 +14,7 @@ BlinkCard SDK is a delightful component for quick and easy scanning of payment c
 - lightweight and no internet connection required
 - enteprise-level security standards
 
-BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others.
-
+BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others. 
 # Table of contents
 
 - [Requirements](#requirements)
@@ -82,7 +81,7 @@ pod init
 ```ruby
 platform :ios, '8.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 1.1.1'
+    pod 'MBBlinkCard', '~> 1.2.0'
 end
 ```
 
@@ -125,11 +124,11 @@ git clone git@github.com:BlinkCard/blinkcard-ios.git
 
 - In your Xcode project, open the Project navigator. Drag the Microblink.framework and Microblink.bundle files to your project, ideally in the Frameworks group, together with other frameworks you're using. When asked, choose "Create groups", instead of the "Create folder references" option.
 
-![Adding Microblink.embedded framework to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/01%20-%20Add%20Framework.png)
+![Adding Microblink.embedded framework to your project](https://user-images.githubusercontent.com/26868155/65599668-a35b3080-df9e-11e9-9c08-21cb1d663421.png)
 
-- Since Microblink.framework is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target.
+- Since Microblink.framework is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target and choose option `Embed & Sign`.
 
-![Adding Microblink.framework to embedded binaries](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/03%20-%20Embed%20Binaries.png)
+![Adding Microblink.framework to embedded binaries](https://user-images.githubusercontent.com/26868155/65599818-faf99c00-df9e-11e9-85f5-f425b1609beb.png))
 
 - Include the additional frameworks and libraries into your project in the "Linked frameworks and libraries" section of your target settings. 
 
@@ -140,7 +139,7 @@ git clone git@github.com:BlinkCard/blinkcard-ios.git
     - libiconv.tbd
     - libz.tbd
     
-![Adding Apple frameworks to your project](https://raw.githubusercontent.com/wiki/blinkocr/blinkocr-ios/Images/02%20-%20Add%20Libraries.png)
+![Adding Apple frameworks to your project](https://user-images.githubusercontent.com/26868155/65599813-f7feab80-df9e-11e9-9612-e285641b272c.png)
     
 ### 2. Referencing header file
     
@@ -162,16 +161,12 @@ Objective-C
     
 To initiate the scanning process, first decide where in your app you want to add scanning functionality. Usually, users of the scanning library have a button which, when tapped, starts the scanning process. Initialization code is then placed in touch handler for that button. Here we're listing the initialization code as it looks in a touch handler method.
 
-Also, for initialization purposes, the ViewController which initiates the scan have private properties for [`MBRawParser`](http://blinkcard.github.io/blinkcard-ios/Classes/MBRawParser.html), [`MBParserGroupProcessor`](http://blinkcard.github.io/blinkcard-ios//Classes/MBParserGroupProcessor.html) and [`MBBlinkInputRecognizer`](http://blinkcard.github.io/blinkcard-ios//Classes/MBBlinkInputRecognizer.html), so we know how to obtain result.
-
 Swift
 
 ```swift
-class ViewController: UIViewController, MBDocumentOverlayViewControllerDelegate  {
+class ViewController: UIViewController, MBBlinkCardOverlayViewControllerDelegate  {
     
-    var rawParser: MBRawParser?
-    var parserGroupProcessor: MBParserGroupProcessor?
-    var blinkInputRecognizer: MBBlinkInputRecognizer?
+    var blinkCardRecognizer : MBBlinkCardRecognizer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -179,22 +174,24 @@ class ViewController: UIViewController, MBDocumentOverlayViewControllerDelegate 
 
     @IBAction func didTapScan(_ sender: AnyObject) {
         
-        let settings = MBDocumentOverlaySettings()
-        rawParser = MBRawParser()
-        parserGroupProcessor = MBParserGroupProcessor(parsers: [rawParser!])
-        blinkInputRecognizer = MBBlinkInputRecognizer(processors: [parserGroupProcessor!])
+        /** Create BlinkCard recognizer */
+        blinkCardRecognizer = MBBlinkCardRecognizer()
         
-        let recognizerList = [self.blinkInputRecognizer!]
-        let recognizerCollection = MBRecognizerCollection(recognizers: recognizerList)
+        /** Create BlinkCard settings */
+        let settings : MBBlinkCardOverlaySettings = MBBlinkCardOverlaySettings()
+        
+        /** Crate recognizer collection */
+        let recognizerList = [blinkCardRecognizer!]
+        let recognizerCollection : MBRecognizerCollection = MBRecognizerCollection(recognizers: recognizerList)
         
         /** Create your overlay view controller */
-        let documentOverlayViewController = MBDocumentOverlayViewController(settings: settings, recognizerCollection: recognizerCollection, delegate: self)
+        let blinkCardOverlayViewController = MBBlinkCardOverlayViewController(settings: settings, recognizerCollection: recognizerCollection, delegate: self)
         
         /** Create recognizer view controller with wanted overlay view controller */
-        let recognizerRunnerViewController: UIViewController = MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: documentOverlayViewController)
+        let recognizerRunneViewController : UIViewController = MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardOverlayViewController)
         
         /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
-        present(recognizerRunnerViewController!, animated: true, completion: nil)
+        self.present(recognizerRunneViewController, animated: true, completion: nil)
     }
 }
 ```
@@ -202,11 +199,9 @@ class ViewController: UIViewController, MBDocumentOverlayViewControllerDelegate 
 Objective-C
 
 ```objective-c
-@interface ViewController () <MBDocumentOverlayViewControllerDelegate>
+@interface ViewController () <MBBlinkCardOverlayViewControllerDelegate>
 
-@property (nonatomic, strong) MBRawParser *rawParser;
-@property (nonatomic, strong) MBParserGroupProcessor *parserGroupProcessor;
-@property (nonatomic, strong) MBBlinkInputRecognizer *blinkInputRecognizer;
+@property (nonatomic, strong) MBBlinkCardRecognizer *blinkCardRecognizer;
 
 @end
 
@@ -218,18 +213,21 @@ Objective-C
 
 
 - (IBAction)didTapScan:(id)sender {
-    
-    MBDocumentOverlaySettings* settings = [[MBDocumentOverlaySettings alloc] init];
 
-    self.rawParser = [[MBRawParser alloc] init];
-    self.parserGroupProcessor = [[MBParserGroupProcessor alloc] initWithParsers:@[self.rawParser]];
-    self.blinkInputRecognizer = [[MBBlinkInputRecognizer alloc] initWithProcessors:@[self.parserGroupProcessor]];
+    /** Create BlinkCard recognizer */
+    self.blinkCardRecognizer = [[MBBlinkCardRecognizer alloc] init];
+    
+     /** Create BlinkCard settings */
+    MBBlinkCardOverlaySettings* settings = [[MBBlinkCardOverlaySettings alloc] init];
 
     /** Create recognizer collection */
-    MBRecognizerCollection *recognizerCollection = [[MBRecognizerCollection alloc] initWithRecognizers:@[self.blinkInputRecognizer]];
+    MBRecognizerCollection *recognizerCollection = [[MBRecognizerCollection alloc] initWithRecognizers:@[self.blinkCardRecognizer]];
     
-    MBDocumentOverlayViewController *overlayVC = [[MBDocumentOverlayViewController alloc] initWithSettings:settings recognizerCollection:recognizerCollection delegate:self];
-    UIViewController<MBRecognizerRunnerViewController>* recognizerRunnerViewController = [MBViewControllerFactory recognizerRunnerViewControllerWithOverlayViewController:overlayVC];
+    /** Create your overlay view controller */
+    MBBlinkCardOverlayViewController *blinkCardOverlayViewController = [[MBBlinkCardOverlayViewController alloc] initWithSettings:settings recognizerCollection:recognizerCollection delegate:self];
+
+    /** Create recognizer view controller with wanted overlay view controller */
+    UIViewController<MBRecognizerRunnerViewController>* recognizerRunnerViewController = [MBViewControllerFactory recognizerRunnerViewControllerWithOverlayViewController: blinkCardOverlayViewController];
     
     /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
     [self presentViewController:recognizerRunnerViewController animated:YES completion:nil];
@@ -278,19 +276,19 @@ Objective-C
 
 ### 5. Registering for scanning events
     
-In the previous step, you instantiated [`MBDocumentOverlayViewController`](http://blinkcard.github.io/blinkcard-ios//Classes/MBDocumentOverlayViewController.html) object with a delegate object. This object gets notified on certain events in scanning lifecycle. In this example we set it to `self`. The protocol which the delegate has to implement is [`MBDocumentOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios//Protocols/MBDocumentOverlayViewControllerDelegate.html) protocol. It is necessary to conform to that protocol. We will discuss more about protocols in [Advanced integration section](#advanced-integration). You can use the following default implementation of the protocol to get you started.
+In the previous step, you instantiated [`MBBlinkCardOverlayViewController`](http://blinkcard.github.io/blinkcard-ios//Classes/MBBlinkCardOverlayViewController.html) object with a delegate object. This object gets notified on certain events in scanning lifecycle. In this example we set it to `self`. The protocol which the delegate has to implement is [`MBBlinkCardOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios//Protocols/MBBlinkCardOverlayViewControllerDelegate.html) protocol. It is necessary to conform to that protocol. We will discuss more about protocols in [Advanced integration section](#advanced-integration). You can use the following default implementation of the protocol to get you started.
 
 Swift
 
 ```swift
-func documentOverlayViewControllerDidFinishScanning(_ documentOverlayViewController: MBDocumentOverlayViewController, state: MBRecognizerResultState) {
+func blinkCardOverlayViewControllerDidFinishScanning(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController, state: MBRecognizerResultState) {
 
     // this is done on background thread
     // check for valid state
     if state == .valid {
 
         // first, pause scanning until we process all the results
-        documentOverlayViewController.recognizerRunnerViewController?.pauseScanning()
+        blinkCardOverlayViewController.recognizerRunnerViewController?.pauseScanning()
 
         DispatchQueue.main.async(execute: {() -> Void in
             // All UI interaction needs to be done on main thread
@@ -298,7 +296,7 @@ func documentOverlayViewControllerDidFinishScanning(_ documentOverlayViewControl
     }
 }
 
-func documentOverlayViewControllerDidTapClose(_ documentOverlayViewController: MBDocumentOverlayViewController) {
+func blinkCardOverlayViewControllerDidTapClose(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController) {
     // Your action on cancel 
 }
 ```
@@ -306,14 +304,14 @@ func documentOverlayViewControllerDidTapClose(_ documentOverlayViewController: M
 Objective-C
 
 ```objective-c  
-- (void)documentOverlayViewControllerDidFinishScanning:(MBDocumentOverlayViewController *)documentOverlayViewController state:(MBRecognizerResultState)state {
+- (void)blinkCardOverlayViewControllerDidFinishScanning:(MBBlinkCardOverlayViewController *)blinkCardOverlayViewController state:(MBRecognizerResultState)state {
     
     // this is done on background thread
     // check for valid state
     if (state == MBRecognizerResultStateValid) {
         
         // first, pause scanning until we process all the results
-        [documentOverlayViewController.recognizerRunnerViewController pauseScanning];
+        [blinkCardOverlayViewController.recognizerRunnerViewController pauseScanning];
         
         dispatch_async(dispatch_get_main_queue(), ^{
             // All UI interaction needs to be done on main thread
@@ -321,13 +319,13 @@ Objective-C
     }
 }
 
-- (void)documentOverlayViewControllerDidTapClose:(MBDocumentOverlayViewController *)documentOverlayViewController {
+- (void)blinkCardOverlayViewControllerDidTapClose:(nonnull MBBlinkCardOverlayViewController *)blinkCardOverlayViewController {
     // Your action on cancel 
 }
 ```
 
 # <a name="advanced-integration"></a> Advanced BlinkCard integration instructions
-This section covers more advanced details of BlinkInput integration.
+This section covers more advanced details of BlinkCard integration.
 
 1. [First part](#ui-customizations) will cover the possible customizations when using UI provided by the SDK.
 2. [Second part](#using-document-overlay-viewcontroller) will describe how to embed [`MBRecognizerRunnerViewController's delegates`](http://blinkcard.github.io/blinkcard-ios/Protocols.html) into your `UIViewController` with the goal of creating a custom UI for scanning, while still using camera management capabilites of the SDK.
@@ -482,8 +480,8 @@ Swift
 ```swift
 func setupRecognizerRunner() {
     var recognizers = [MBRecognizer]()
-    pdf417Recognizer = MBPdf417Recognizer()
-    recognizers.append(pdf417Recognizer!)
+    recognizer = MBBlinkCardRecognizer()
+    recognizers.append(recognizer!)
     let recognizerCollection = MBRecognizerCollection(recognizers: recognizers)
     recognizerRunner = MBRecognizerRunner(recognizerCollection: recognizerCollection)
     recognizerRunner?.scanningRecognizerRunnerDelegate = self
@@ -503,7 +501,7 @@ func processImageRunner(_ originalImage: UIImage) {
 }
 
 func recognizerRunner(_ recognizerRunner: MBRecognizerRunner, didFinishScanningWith state: MBRecognizerResultState) {
-    if blinkInputRecognizer.result.resultState == MBRecognizerResultStateValid {
+    if recognizer.result.resultState == MBRecognizerResultStateValid {
         // Handle result
     }
 }
@@ -514,9 +512,9 @@ Objective-C
 - (void)setupRecognizerRunner {
     NSMutableArray<MBRecognizer *> *recognizers = [[NSMutableArray alloc] init];
     
-    self.pdf417Recognizer = [[MBPdf417Recognizer alloc] init];
+    self. recognizer = [[MBBlinkCardRecognizer alloc] init];
     
-    [recognizers addObject: self.pdf417Recognizer];
+    [recognizers addObject: self.recognizer];
     
     MBRecognizerCollection *recognizerCollection = [[MBRecognizerCollection alloc] initWithRecognizers:recognizers];
     
@@ -535,7 +533,7 @@ Objective-C
 }
 
 - (void)recognizerRunner:(nonnull MBRecognizerRunner *)recognizerRunner didFinishScanningWithState:(MBRecognizerResultState)state {
-    if (self.blinkInputRecognizer.result.resultState == MBRecognizerResultStateValid) {
+    if (self.recognizer.result.resultState == MBRecognizerResultStateValid) {
         // Handle result
     }
 }
@@ -605,7 +603,6 @@ The [`MBBlinkCardRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/M
 
 ### <a name="elite-payment-card-recognizers"></a> Elite Payment / Debit card combined recognizer
 The [`MBBlinkCardEliteRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBBlinkCardEliteRecognizer.html) scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.
-
 # <a name="troubleshooting"></a> Troubleshooting
 
 ## <a name="troubleshooting-integration-problems"></a> Integration problems
