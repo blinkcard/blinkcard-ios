@@ -32,6 +32,29 @@ class ViewController: UIViewController {
         
         present(recognizerRunnerViewController, animated: true, completion: nil)
     }
+    
+    @IBAction func didTapCustomUI(_ sender: Any) {
+        blinkCardRecognizer = MBBlinkCardRecognizer()
+        blinkCardRecognizer.extractCvv = false
+        blinkCardRecognizer.returnFullDocumentImage = true
+
+        let recognizerList = [blinkCardRecognizer!]
+        let recognizerCollection: MBRecognizerCollection = MBRecognizerCollection(recognizers: recognizerList)
+
+        let customOverlayViewController: CustomOverlay = CustomOverlay.initFromStoryboard()
+
+        /** This has to be called for custom controller */
+        customOverlayViewController.reconfigureRecognizers(recognizerCollection)
+
+        /** Create recognizer view controller with wanted overlay view controller */
+        let recognizerRunneViewController: UIViewController =
+            MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: customOverlayViewController)
+
+        recognizerRunneViewController.modalPresentationStyle = .fullScreen
+
+        /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
+        self.present(recognizerRunneViewController, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: MBBlinkCardOverlayViewControllerDelegate {
