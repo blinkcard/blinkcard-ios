@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A29765FB24ADE0C20047FF48 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29765FA24ADE0C20047FF48 /* CustomOverlay.swift */; };
 		BE1BD957225F74BA00B7F55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1BD956225F74BA00B7F55B /* AppDelegate.swift */; };
 		BE1BD959225F74BA00B7F55B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1BD958225F74BA00B7F55B /* ViewController.swift */; };
 		BE1BD95C225F74BA00B7F55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1BD95A225F74BA00B7F55B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A29765FA24ADE0C20047FF48 /* CustomOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
 		BE1BD953225F74BA00B7F55B /* BlinkCard-sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkCard-sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1BD956225F74BA00B7F55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1BD958225F74BA00B7F55B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				BE1BD97E225F7CBF00B7F55B /* License */,
 				BE1BD956225F74BA00B7F55B /* AppDelegate.swift */,
+				A29765FA24ADE0C20047FF48 /* CustomOverlay.swift */,
 				BE1BD958225F74BA00B7F55B /* ViewController.swift */,
 				BE1BD95A225F74BA00B7F55B /* Main.storyboard */,
 				BE1BD95D225F74BB00B7F55B /* Assets.xcassets */,
@@ -227,6 +230,7 @@
 			files = (
 				BE1BD959225F74BA00B7F55B /* ViewController.swift in Sources */,
 				BE1BD957225F74BA00B7F55B /* AppDelegate.swift in Sources */,
+				A29765FB24ADE0C20047FF48 /* CustomOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
