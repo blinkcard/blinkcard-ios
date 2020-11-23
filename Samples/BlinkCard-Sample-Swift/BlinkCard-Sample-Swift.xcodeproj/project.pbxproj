@@ -377,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQTJWP89J7;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -398,6 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQTJWP89J7;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
