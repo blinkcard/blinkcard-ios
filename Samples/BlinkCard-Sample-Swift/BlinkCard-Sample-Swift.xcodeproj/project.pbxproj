@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A29765FB24ADE0C20047FF48 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29765FA24ADE0C20047FF48 /* CustomOverlay.swift */; };
+		A2D7FAC6256BF206006DDAA0 /* BlinkCard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D7FAC4256BF200006DDAA0 /* BlinkCard.xcframework */; };
+		A2D7FAC7256BF206006DDAA0 /* BlinkCard.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2D7FAC4256BF200006DDAA0 /* BlinkCard.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE1BD957225F74BA00B7F55B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1BD956225F74BA00B7F55B /* AppDelegate.swift */; };
 		BE1BD959225F74BA00B7F55B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1BD958225F74BA00B7F55B /* ViewController.swift */; };
 		BE1BD95C225F74BA00B7F55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1BD95A225F74BA00B7F55B /* Main.storyboard */; };
@@ -20,9 +22,6 @@
 		BE1BD972225F75E500B7F55B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD971225F75E500B7F55B /* libiconv.tbd */; };
 		BE1BD974225F75F100B7F55B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD973225F75F100B7F55B /* AudioToolbox.framework */; };
 		BE1BD980225F7CC700B7F55B /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE1BD97F225F7CC700B7F55B /* license.txt */; };
-		BE87BACF226F24F600B79070 /* Microblink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE87BACE226F24F600B79070 /* Microblink.bundle */; };
-		BE87BAD0226F250000B79070 /* Microblink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD976225F773000B7F55B /* Microblink.framework */; };
-		BE87BAD1226F250000B79070 /* Microblink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD976225F773000B7F55B /* Microblink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE87BAD1226F250000B79070 /* Microblink.framework in Embed Frameworks */,
+				A2D7FAC7256BF206006DDAA0 /* BlinkCard.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		A29765FA24ADE0C20047FF48 /* CustomOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
+		A2D7FAC4256BF200006DDAA0 /* BlinkCard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BlinkCard.xcframework; path = ../../BlinkCard.xcframework; sourceTree = "<group>"; };
 		BE1BD953225F74BA00B7F55B /* BlinkCard-sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkCard-sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1BD956225F74BA00B7F55B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1BD958225F74BA00B7F55B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +54,7 @@
 		BE1BD96F225F75C400B7F55B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BE1BD971225F75E500B7F55B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		BE1BD973225F75F100B7F55B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		BE1BD976225F773000B7F55B /* Microblink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Microblink.framework; path = ../../Microblink.framework; sourceTree = "<group>"; };
 		BE1BD97F225F7CC700B7F55B /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.txt; path = ../../License/license.txt; sourceTree = "<group>"; };
-		BE87BACE226F24F600B79070 /* Microblink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Microblink.bundle; path = ../../Microblink.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE87BAD0226F250000B79070 /* Microblink.framework in Frameworks */,
+				A2D7FAC6256BF206006DDAA0 /* BlinkCard.xcframework in Frameworks */,
 				BE1BD974225F75F100B7F55B /* AudioToolbox.framework in Frameworks */,
 				BE1BD972225F75E500B7F55B /* libiconv.tbd in Frameworks */,
 				BE1BD970225F75C400B7F55B /* CoreMedia.framework in Frameworks */,
@@ -112,14 +110,13 @@
 		BE1BD968225F74EC00B7F55B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2D7FAC4256BF200006DDAA0 /* BlinkCard.xcframework */,
 				BE1BD973225F75F100B7F55B /* AudioToolbox.framework */,
 				BE1BD971225F75E500B7F55B /* libiconv.tbd */,
 				BE1BD96F225F75C400B7F55B /* CoreMedia.framework */,
 				BE1BD96D225F74F700B7F55B /* AVFoundation.framework */,
 				BE1BD96B225F74F100B7F55B /* libc++.tbd */,
 				BE1BD969225F74EC00B7F55B /* libz.tbd */,
-				BE87BACE226F24F600B79070 /* Microblink.bundle */,
-				BE1BD976225F773000B7F55B /* Microblink.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,7 +158,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Microblink;
 				TargetAttributes = {
 					BE1BD952225F74BA00B7F55B = {
@@ -196,7 +193,6 @@
 				BE1BD961225F74BB00B7F55B /* LaunchScreen.storyboard in Resources */,
 				BE1BD980225F7CC700B7F55B /* license.txt in Resources */,
 				BE1BD95E225F74BB00B7F55B /* Assets.xcassets in Resources */,
-				BE87BACF226F24F600B79070 /* Microblink.bundle in Resources */,
 				BE1BD95C225F74BA00B7F55B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +278,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -343,6 +340,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -381,7 +379,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +400,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

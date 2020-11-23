@@ -6,12 +6,16 @@
 //  Copyright © 2020 Microblink. All rights reserved.
 //
 
-import Microblink
+import BlinkCard
 
-class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerViewControllerDelegate,
-        MBFirstSideFinishedRecognizerRunnerViewControllerDelegate {
+class CustomOverlay: MBCCustomOverlayViewController, MBCScanningRecognizerRunnerViewControllerDelegate,
+        MBCFirstSideFinishedRecognizerRunnerViewControllerDelegate {
 
     @IBOutlet weak var tooltipLabel: UILabel!
+    
+    var blinkCardEditScreen: MBCBlinkCardEditViewController?
+    var blinkcardNavigationViewController: MBCBlinkCardEditNavigationController?
+    var blinkCardRecognizerResult: MBCBlinkCardRecognizerResult?
 
     static func initFromStoryboard() -> CustomOverlay {
 
@@ -31,12 +35,10 @@ class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerVi
 
         self.tooltipLabel.text = "Scan Front Side"
     }
-
-    func recognizerRunnerViewController(_ recognizerRunnerViewController: UIViewController & MBRecognizerRunnerViewController,
-                                        didFinishScanningWith state: MBRecognizerResultState) {
-
+    
+    func recognizerRunnerViewControllerDidFinishScanning(_ recognizerRunnerViewController: UIViewController & MBCRecognizerRunnerViewController, state: MBCRecognizerResultState) {
         // This is done on background thread
-        if state == MBRecognizerResultState.valid {
+        if state == .valid {
             recognizerRunnerViewController.pauseScanning()
 
             DispatchQueue.main.async {
@@ -45,12 +47,13 @@ class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerVi
                 var title: String = ""
 
                 for recognizer in self.recognizerCollection.recognizerList where
-                    recognizer.baseResult?.resultState == MBRecognizerResultState.valid {
+                    recognizer.baseResult?.resultState == .valid {
 
-                    if recognizer is MBBlinkCardRecognizer {
-                        let blinkCardRecognizer = recognizer as? MBBlinkCardRecognizer
+                    if recognizer is MBCBlinkCardRecognizer {
+                        let blinkCardRecognizer = recognizer as? MBCBlinkCardRecognizer
                         title = "BlinkCard"
                         message = (blinkCardRecognizer?.result.description)!
+                        self.blinkCardRecognizerResult = blinkCardRecognizer?.result
                     }
                 }
 
@@ -58,7 +61,7 @@ class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerVi
 
                 let okAction: UIAlertAction = UIAlertAction.init(title: "OK", style: UIAlertAction.Style.default,
                                                                  handler: { (_) -> Void in
-                                                                    self.dismiss(animated: true, completion: nil)
+                                                                    self.showEditScreen(blinkCardRecognizerResult: self.blinkCardRecognizerResult!)
                 })
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
@@ -66,7 +69,7 @@ class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerVi
         }
     }
 
-    func recognizerRunnerViewControllerDidFinishRecognition(ofFirstSide recognizerRunnerViewController: UIViewController & MBRecognizerRunnerViewController) {
+    func recognizerRunnerViewControllerDidFinishRecognition(ofFirstSide recognizerRunnerViewController: UIViewController & MBCRecognizerRunnerViewController) {
 
         DispatchQueue.main.async {
             self.tooltipLabel.text = "Scan Back Side"
@@ -77,6 +80,41 @@ class CustomOverlay: MBCustomOverlayViewController, MBScanningRecognizerRunnerVi
         self.recognizerRunnerViewController?.overlayViewControllerWillCloseCamera(self)
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func showEditScreen(blinkCardRecognizerResult: MBCBlinkCardRecognizerResult) {
+        blinkCardEditScreen = MBCBlinkCardEditViewController(blinkCardRecognizerResult: blinkCardRecognizerResult, fieldConfiguration: MBCBlinkCardEditFieldConfiguration(), delegate: self)
+        blinkcardNavigationViewController = MBCBlinkCardEditNavigationController(rootViewController: blinkCardEditScreen!)
+        self.present(blinkcardNavigationViewController!, animated: true, completion: nil)
+    }
+}
 
+extension CustomOverlay: MBCBlinkCardEditViewControllerDelegate {
+    func blinkCardEditViewControllerDidFinishEditing(_ blinkCardEditViewController: MBCBlinkCardEditViewController, editResult: MBCBlinkCardEditResult) {
+        self.recognizerRunnerViewController?.pauseScanning()
+        
+        /** Needs to be called on main thread beacuse everything prior is on background thread */
+        DispatchQueue.main.async {
+            // present the alert view with scanned results
+            
+            let alertController: UIAlertController = UIAlertController.init(title: "BlinkCard Edit Results", message: editResult.description, preferredStyle: .alert)
+            
+            let okAction: UIAlertAction = UIAlertAction.init(title: "OK", style: .default,
+                                                             handler: { (action) -> Void in
+                                                                self.blinkCardEditScreen?.dismiss(animated: true, completion: nil)
+                                                                self.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(okAction)
+            blinkCardEditViewController.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func blinkCardEditViewControllerDidTapClose(_ blinkCardEditViewController: MBCBlinkCardEditViewController) {
+        
+        DispatchQueue.main.async {
+            blinkCardEditViewController.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    
 }
 

@@ -224,6 +224,23 @@ class ViewController: UIViewController, MBCBlinkCardOverlayViewControllerDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+                MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: .main) { (licenseError) in
+            switch licenseError {
+            case .invalidLicense:
+                licenseErrorMessage = "Invalid license"
+            case .networkRequired:
+                licenseErrorMessage = "Network required"
+            case .unableToDoRemoteLicenceCheck:
+                licenseErrorMessage = "Unable to do remote license check"
+            case .licenseIsLocked:
+                licenseErrorMessage = "License is locked"
+            case .licenseCheckFailed:
+                licenseErrorMessage = "License check failed"
+            @unknown default:
+                licenseErrorMessage = "Unknown error"
+            }
+        }
     }
 
     @IBAction func didTapScan(_ sender: AnyObject) {
@@ -263,7 +280,27 @@ Objective-C
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MBCMicroblinkSDK.sharedInstance setLicenseResource:@"blinkid-license" withExtension:@"txt" inSubdirectory:@"" for:Bundle.main];
+    [[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license" withExtension:@"txt" inSubdirectory:@"" forBundle:NSBundle.mainBundle errorCallback:^(MBCLicenseError licenseError) {
+        switch (licenseError) {
+            case MBCLicenseErrorInvalidLicense:
+                self.licenseErrorMessage = @"Invalid license";
+                break;
+            case MBCLicenseErrorNetworkRequired:
+                self.licenseErrorMessage = @"Network required";
+                break;
+            case MBCLicenseErrorUnableToDoRemoteLicenceCheck:
+                self.licenseErrorMessage = @"Unable to do remote license check";
+                break;
+            case MBCLicenseErrorLicenseIsLocked:
+                self.licenseErrorMessage = @"License is locked";
+                break;
+            case MBCLicenseErrorLicenseCheckFailed:
+                self.licenseErrorMessage = @"License check failed";
+                break;
+            default:
+                break;
+        }
+    }];
 }
 
 
@@ -305,13 +342,13 @@ You can pass the license key as a string, the following way:
 Swift
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY")
+MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY"){ (licenseError) in }
 ```
 
 Objective-C
 
 ```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY"];
+[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY" errorCallback:^(MBCLicenseError licenseError) {}];
 ```
 
 #### License key as file
