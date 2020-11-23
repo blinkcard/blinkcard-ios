@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A260B687256BFAC80063E817 /* BlinkCard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A260B685256BFAC30063E817 /* BlinkCard.xcframework */; };
+		A260B688256BFAC80063E817 /* BlinkCard.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A260B685256BFAC30063E817 /* BlinkCard.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6C1B54225F7ECB00D14728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C1B53225F7ECB00D14728 /* AppDelegate.m */; };
 		BE6C1B57225F7ECB00D14728 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6C1B56225F7ECB00D14728 /* ViewController.m */; };
 		BE6C1B5A225F7ECB00D14728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B58225F7ECB00D14728 /* Main.storyboard */; };
@@ -20,10 +22,6 @@
 		BE6C1B72225F7EF000D14728 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B71225F7EF000D14728 /* CoreMedia.framework */; };
 		BE6C1B74225F7EF600D14728 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B73225F7EF600D14728 /* AVFoundation.framework */; };
 		BE6C1B77225F7F1600D14728 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B76225F7F1600D14728 /* license.txt */; };
-		BE6C1B7A225F7F1C00D14728 /* Microblink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; };
-		BE6C1B7B225F7F1C00D14728 /* Microblink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B79225F7F1C00D14728 /* Microblink.bundle */; };
-		BE6C1B7C225F7F2400D14728 /* Microblink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; };
-		BE6C1B7D225F7F2400D14728 /* Microblink.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B78225F7F1B00D14728 /* Microblink.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE6C1B7D225F7F2400D14728 /* Microblink.framework in Embed Frameworks */,
+				A260B688256BFAC80063E817 /* BlinkCard.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A260B685256BFAC30063E817 /* BlinkCard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BlinkCard.xcframework; path = ../../BlinkCard.xcframework; sourceTree = "<group>"; };
 		BE6C1B4F225F7ECB00D14728 /* BlinkCard-Sample-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkCard-Sample-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6C1B52225F7ECB00D14728 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE6C1B53225F7ECB00D14728 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,8 +57,6 @@
 		BE6C1B71225F7EF000D14728 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BE6C1B73225F7EF600D14728 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BE6C1B76225F7F1600D14728 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.txt; path = ../../License/license.txt; sourceTree = "<group>"; };
-		BE6C1B78225F7F1B00D14728 /* Microblink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Microblink.framework; path = ../../Microblink.framework; sourceTree = "<group>"; };
-		BE6C1B79225F7F1C00D14728 /* Microblink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Microblink.bundle; path = ../../Microblink.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6C1B7A225F7F1C00D14728 /* Microblink.framework in Frameworks */,
+				A260B687256BFAC80063E817 /* BlinkCard.xcframework in Frameworks */,
 				BE6C1B74225F7EF600D14728 /* AVFoundation.framework in Frameworks */,
-				BE6C1B7C225F7F2400D14728 /* Microblink.framework in Frameworks */,
 				BE6C1B72225F7EF000D14728 /* CoreMedia.framework in Frameworks */,
 				BE6C1B70225F7EEA00D14728 /* AudioToolbox.framework in Frameworks */,
 				BE6C1B6E225F7EE500D14728 /* libiconv.tbd in Frameworks */,
@@ -118,14 +114,13 @@
 		BE6C1B68225F7EDB00D14728 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A260B685256BFAC30063E817 /* BlinkCard.xcframework */,
 				BE6C1B73225F7EF600D14728 /* AVFoundation.framework */,
 				BE6C1B71225F7EF000D14728 /* CoreMedia.framework */,
 				BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */,
 				BE6C1B6D225F7EE500D14728 /* libiconv.tbd */,
 				BE6C1B6B225F7EE000D14728 /* libz.tbd */,
 				BE6C1B69225F7EDB00D14728 /* libc++.tbd */,
-				BE6C1B79225F7F1C00D14728 /* Microblink.bundle */,
-				BE6C1B78225F7F1B00D14728 /* Microblink.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,7 +160,7 @@
 		BE6C1B47225F7ECB00D14728 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Microblink;
 				TargetAttributes = {
 					BE6C1B4E225F7ECB00D14728 = {
@@ -199,7 +194,6 @@
 				BE6C1B77225F7F1600D14728 /* license.txt in Resources */,
 				BE6C1B5F225F7ECE00D14728 /* LaunchScreen.storyboard in Resources */,
 				BE6C1B5C225F7ECE00D14728 /* Assets.xcassets in Resources */,
-				BE6C1B7B225F7F1C00D14728 /* Microblink.bundle in Resources */,
 				BE6C1B5A225F7ECB00D14728 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +259,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -324,6 +319,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -357,9 +353,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQTJWP89J7;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,9 +373,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CQTJWP89J7;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../";
 				INFOPLIST_FILE = "BlinkCard-Sample-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

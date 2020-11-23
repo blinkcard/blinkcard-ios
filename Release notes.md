@@ -1,5 +1,116 @@
 # Release notes
 
+## 2.0.0
+
+### **BlinkCard v2 Release Announcement**
+
+- We're proud to announce our AI-driven BlinkCard v2.0! Extract the **card number** (PAN), **expiry date**, **owner** information (name or company title), **IBAN**, and **CVV**, from a large range of different card layouts.
+
+As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs, which means that you can use it with other Microblink SDKs in the same application.
+
+- BlinkCard v2.0 now scans and extracts data from payment cards with all the information on the back side!
+
+- MBCBlinkCardRecognizer is a Combined recognizer, which means it's designed for scanning **both sides of a card**. However, if all required data is found on the first side, BlinkCard doesn’t require scanning of the back side. In that case, you'll receive results after scanning the side that contains all the information. A set of required fields is defined through the recognizer's settings.
+
+- "Front side" and "back side" are terms more suited to ID scanning. We start the scanning process with the **side containing the card number**. This makes the UX easier for users with cards where all data is on the back side.
+
+- We've expanded the set of possible recognizer states with **StageValid**. This state is set when first side scanning completes with valid data, and second side scanning is required.
+
+- Available [`MBCBlinkCardRecognizer`](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizer.html):
+	- You can toggle mandatory **extraction** of all fields except the PAN.
+	- You can enable the **blur filter**. When blur filtering is enabled, blurred frames are discarded. Otherwise, we process the blurred frames but set the blur indicator result member.
+	- You can define required **padding** around the detected document. This ensures some empty space exists between the document and the edge of the frame.
+
+- [MBCBlinkCardRecognizerResult](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizerResult.html) structure:
+    - Contains:
+        - The card issuer
+        - PAN
+        - PAN prefix
+        - Expiry date
+        - Owner information
+        - IBAN
+        - CVV
+        - Cropped document images
+        - Blur indicators for both sides
+        - Processing status
+	- **Processing status** can be one of:
+		- Success - if the process ended successfully and data is valid
+		- DetectionFailed - if detection of the document failed
+		- ImagePreprocessingFailed - if preprocessing of the image failed
+		- StabilityTestFailed - if inconsistent results were detected between different video frames (when video processing, we require at least two frames with consistent data, for image processing this isn't applicable)
+		- ScanningWrongSide - if the first side presented in the scanning process does not contain the PAN, or when the user failed to present the second side
+		- FieldIdentificationFailed - if we detected a field, but we're unable to parse it (possible glare issues, or a finger covering the field)
+		- ImageReturnFailed - failed to return requested images
+		- UnsupportedCard - this card layout is currently unsupported.
+
+### New features:
+
+- We added a new `BlinkCard` screen that allows users to edit `MBCBlinkCardRecognizer` scan results:
+    - This screen allows users to edit scanned data and input data that wasn't scanned.
+    - Enable it by setting `enableEditScreen` to `YES/true` on `MBCBlinkCardOverlaySettings`.
+    - Configure which fields should be displayed on this screen by using `fieldConfiguration` property on `MBCBlinkCardOverlaySettings`.
+    - Set your custom theme with `MBCBlinkCardOverlayTheme` class
+    - Change default strings - follow our Localization guide.
+    - To get user-edited fields, implement `blinkCardOverlayViewControllerDidFinishEditing` method from `MBCBlinkCardOverlayViewControllerDelegate` protocol
+    - This feature is available only for `MBCBlinkCardRecognizer`.
+    - If you are using custom UI, you can launch edit screen by initializing `MBCBlinkCardEditNavigationController` and setting initialized `MBCBlinkCardEditViewController` as root view controller
+
+- We updated the default `MBCBlinkCardOverlayController` scanning screen:
+    - Instructions on how to reduce glare wil be displayed when user enables flashlight, you can disable it with `showFlashlightWarning` property on `MBCBlinkCardOverlaySettings`.
+    - If edit screen is enabled, new button will show up after 5 seconds of unsuccessful scanning to allow user to go directly to edit screen.
+
+- We added disableMicroblinkLogging method to MBLogger for easier implementation
+	- This also enables disabling Microblink logging in Swift.
+
+- We added `Carthage` support
+	- For now, `Carthage` is supported for fat binaries, `.framework`. We will support `.xcframework` as soon `Carthage` is updated.
+	- Please check out our guide for implementation
+- We added `Swift Package Manager` support
+	- Please check out our guide for implementation.
+
+### Note on ARM Macs
+
+- We are supporting `ARM64 Device` slice through our `.xcframework` format.
+- We are still in development supporting `ARM64 Simulator` slice for newly released ARM Macs and we will update our SDK with `ARM64 Simulator` support as soon as development is done.
+
+### iOS Version support change:
+
+- From now on, we are not supporting **iOS 8** version.
+
+### Cocapods support change:
+
+- We are updating our Cocoapods with `.xcframework` format from now on. Please download [Cocoapods 1.10.0](https://github.com/CocoaPods/CocoaPods/releases/tag/1.10.0) or newer to use our SDK.
+
+### Improvements:
+
+- We have translated complete SDK to following languages: **Arabic(UAE)**, **Chinese simplified**, **Chinese traditional**, **Croatian**, **Czech**, **Dutch**, **English**, **Filipino**, **French**, **German**, **Hewrew**, **Hungarian**, **Indonesian**, **Italian**, **Malay**, **Portuguese**, **Romanian**, **Slovak**, **Spanish**, **Slovenian**, **Thai** and **Vietnamese**.
+- We have improved recognition timeout logic when using `MBCBlinkCardRecognizer`.
+    - When credit card has multiple sides to scan, timeout timer for the second side starts after the second side of the card has been detected. Previously, it has been started immediately after the first side has been scanned.
+    - Timeout duration can be configured by using `partialRecognitionTimeout` on `MBCRecognizerCollection`
+
+### Major API changes:
+
+- To ensure compatibilty with other Microblink SDKs, we have reprefixed all classes. All classes have `MBC` prefix instead of `MB`
+- We have renamed framework from `Microblink` to `BlinkCard`
+- We added error callback when setting license keys on `MBCMicroblinkSDK`
+	- You will be getting error callback and reason why you could not unlock SDK - see `MBCLicenseError`
+- We moved all resources inside framework, we are not shipping bundle anymore.
+
+### Minor API changes:
+
+- We have renamed old `MBBlinkCardRecognizer` and `MBBlinkCardEliteRecognizer` recognizers to `MBCLegacyBlinkCardRecognizer` and `MBCLegacyBlinkCardEliteRecognizer`. They are now deprecated.
+- We renamed `MBRecogitionMode` to `MBCRecognitionDebugMode` in `MBCRecognizerCollection`.
+- Swift:
+	- We renamed all `sharedInstance` to `shared`
+	- All enums are now `Int`
+	- All `unsigned integers` are now `Int`
+
+### Bug fixes:
+
+- We fixed race conditions and camera asserts that could sometimes cause crashes.
+- We removed OpenGL entirely which was causing unexpected crashes.
+- We added a nullable attribute to the `recognizerRunnerViewControllerWithOverlayViewController` to fix a force unwrapping issue in Swift that could occur if the camera is broken or not working.
+
 ## 1.2.0
 
 ### New features:

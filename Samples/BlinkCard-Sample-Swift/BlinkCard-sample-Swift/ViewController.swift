@@ -7,39 +7,61 @@
 //
 
 import UIKit
-import Microblink
+import BlinkCard
 
 class ViewController: UIViewController {
-    var blinkCardRecognizer: MBBlinkCardRecognizer!
+    var blinkCardRecognizer: MBCBlinkCardRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Valid until: 2020-07-04
-        MBMicroblinkSDK.sharedInstance().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: Bundle.main)
+        
+        var licenseErrorMessage = ""
+        
+        // Valid until: 2021-04-22
+        MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: .main) { (licenseError) in
+            switch licenseError {
+            case .invalidLicense:
+                licenseErrorMessage = "Invalid license"
+            case .networkRequired:
+                licenseErrorMessage = "Network required"
+            case .unableToDoRemoteLicenceCheck:
+                licenseErrorMessage = "Unable to do remote license check"
+            case .licenseIsLocked:
+                licenseErrorMessage = "License is locked"
+            case .licenseCheckFailed:
+                licenseErrorMessage = "License check failed"
+            @unknown default:
+                licenseErrorMessage = "Unknown error"
+            }
+        }
+        
+        let alert = UIAlertController(title: "License Error", message: licenseErrorMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
     }
 
     @IBAction func didTapScan(_ sender: Any) {
-        blinkCardRecognizer = MBBlinkCardRecognizer()
-        blinkCardRecognizer.extractCvv = false
+        blinkCardRecognizer = MBCBlinkCardRecognizer()
         blinkCardRecognizer.returnFullDocumentImage = true
         
-        let recognizerCollection = MBRecognizerCollection(recognizers: [blinkCardRecognizer])
+        let recognizerCollection = MBCRecognizerCollection(recognizers: [blinkCardRecognizer])
         
-        let blinkCardOverlaySettings = MBBlinkCardOverlaySettings()
-        let blinkCardOverlayViewController = MBBlinkCardOverlayViewController(settings: blinkCardOverlaySettings, recognizerCollection: recognizerCollection, delegate: self)
+        let blinkCardOverlaySettings = MBCBlinkCardOverlaySettings()
+        let blinkCardOverlayViewController = MBCBlinkCardOverlayViewController(settings: blinkCardOverlaySettings, recognizerCollection: recognizerCollection, delegate: self)
         
-        let recognizerRunnerViewController: UIViewController = MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardOverlayViewController)
+        let recognizerRunnerViewController: UIViewController = MBCViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardOverlayViewController)!
         
+        recognizerRunnerViewController.modalPresentationStyle = .fullScreen
         present(recognizerRunnerViewController, animated: true, completion: nil)
     }
     
     @IBAction func didTapCustomUI(_ sender: Any) {
-        blinkCardRecognizer = MBBlinkCardRecognizer()
-        blinkCardRecognizer.extractCvv = false
+        blinkCardRecognizer = MBCBlinkCardRecognizer()
         blinkCardRecognizer.returnFullDocumentImage = true
 
         let recognizerList = [blinkCardRecognizer!]
-        let recognizerCollection: MBRecognizerCollection = MBRecognizerCollection(recognizers: recognizerList)
+        let recognizerCollection = MBCRecognizerCollection(recognizers: recognizerList)
 
         let customOverlayViewController: CustomOverlay = CustomOverlay.initFromStoryboard()
 
@@ -48,7 +70,7 @@ class ViewController: UIViewController {
 
         /** Create recognizer view controller with wanted overlay view controller */
         let recognizerRunneViewController: UIViewController =
-            MBViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: customOverlayViewController)
+            MBCViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: customOverlayViewController)!
 
         recognizerRunneViewController.modalPresentationStyle = .fullScreen
 
@@ -57,18 +79,18 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: MBBlinkCardOverlayViewControllerDelegate {
-    func blinkCardOverlayViewControllerDidFinishScanning(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController, state: MBRecognizerResultState) {
+extension ViewController: MBCBlinkCardOverlayViewControllerDelegate {
+    func blinkCardOverlayViewControllerDidFinishScanning(_ blinkCardOverlayViewController: MBCBlinkCardOverlayViewController, state: MBCRecognizerResultState) {
         /** This is done on background thread */
         blinkCardOverlayViewController.recognizerRunnerViewController?.pauseScanning()
         
         var message: String = ""
         var title: String = ""
         
-        if blinkCardRecognizer.result.resultState == MBRecognizerResultState.valid {
+        if blinkCardRecognizer.result.resultState == .valid {
             title = "Payment card"
             
-            let fullDocumentImage: UIImage! = blinkCardRecognizer.result.fullDocumentFrontImage?.image
+            let fullDocumentImage: UIImage! = blinkCardRecognizer.result.firstSideFullDocumentImage?.image
             print("Got payment card image with width: \(fullDocumentImage.size.width), height: \(fullDocumentImage.size.height)")
             
             // Save the string representation of the code
@@ -90,8 +112,28 @@ extension ViewController: MBBlinkCardOverlayViewControllerDelegate {
         }
     }
     
-    func blinkCardOverlayViewControllerDidTapClose(_ blinkCardOverlayViewController: MBBlinkCardOverlayViewController) {
+    func blinkCardOverlayViewControllerDidTapClose(_ blinkCardOverlayViewController: MBCBlinkCardOverlayViewController) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func blinkCardOverlayViewControllerDidFinishEditing(_ blinkCardOverlayViewController: MBCBlinkCardOverlayViewController, editResult: MBCBlinkCardEditResult) {
+        blinkCardOverlayViewController.recognizerRunnerViewController?.pauseScanning()
+        
+        /** Needs to be called on main thread beacuse everything prior is on background thread */
+        DispatchQueue.main.async {
+            // present the alert view with scanned results
+            
+            let alertController: UIAlertController = UIAlertController.init(title: "BlinkCard Edit Results", message: editResult.description, preferredStyle: .alert)
+            
+            let okAction: UIAlertAction = UIAlertAction.init(title: "OK", style: .default,
+                                                             handler: { (action) -> Void in
+                                                                self.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(okAction)
+            blinkCardOverlayViewController.blinkCardEditViewController?.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
 }
+
 
