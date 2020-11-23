@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name        = "MBBlinkCard"
-  s.version     = "1.2.0"
+  s.version     = "2.0.0"
   s.summary     = "A delightful component for payment card scanning"
   s.homepage    = "http://microblink.com"
   
@@ -28,17 +28,21 @@ Pod::Spec.new do |s|
   }
 
   s.source      = { 
-        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v1.2.0/blinkcard-ios_v1.2.0.tar.gz'
+        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.0.0/blinkcard-ios_v2.0.0.tar.gz'
   }
 
   s.platform     = :ios
 
+  s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
   # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.ios.deployment_target = '8.0.0'
-  s.ios.resources = "Microblink.bundle"
+  s.ios.deployment_target = '9.0.0'
   s.ios.requires_arc = false
-  s.ios.vendored_frameworks = 'Microblink.framework'
+  s.ios.vendored_frameworks = 'BlinkCard.xcframework'
   s.ios.frameworks = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'AssetsLibrary', 'CoreMedia'
   s.ios.libraries = 'c++', 'iconv', 'z'
 
