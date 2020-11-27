@@ -486,6 +486,57 @@ let navigationController = MBCBlinkCardEditNavigationController(rootViewControll
 self.blinkCardEditViewController = [[MBCBlinkCardEditViewController alloc] initWithDelegate:self];
 self.navigationController = [[MBCBlinkCardEditNavigationController alloc] initWithRootViewController:self.blinkCardEditViewController];
 ```
+### Customizing the look
+
+The BlinkCard SDK comes with the ability to customize some aspects of the UI by using the UI theming. The screens can be customized to fit your app’s look and feel by defining themes in your application that override themes from the SDK. Each theme must extend the corresponding base theme from the SDK, as described in the following sections.
+
+#### BlinkCard Overlay Theme
+
+![BlinkCardVCCustomization](https://user-images.githubusercontent.com/26868155/100432556-0d3b0280-309a-11eb-8e04-243cf2c17efa.png)
+
+To customize `MBCBlinkCardOverlayViewController`, use `MBCBlinkCardOverlayTheme` class to customize your look. You can customise elements labeled on the screenshot above by providing wanted properties to `MBCBlinkCardOverlayTheme`:
+
+- **scanningStatusLabel**
+	- scanningStatusLabelFont - set custom UIFont
+	- scanningStatusLabelColor - set custom UIColor
+
+- **editButton**
+	- editButtonFont - set custom UIFont
+	- editButtonColor - set custom UIColor
+
+- **flashlightWarning**
+	- flashlightWarningFont - set custom UIFont
+	- flashlightWarningBackgroundColor - set custom background UIColor
+	- flashlightWarningTextColor - set custom text UIColor
+	- flashlightWarningCornerRadius - set custom corner radius
+
+#### BlinkCard Edit Overlay Theme
+
+![BlinkCardEditVCCustomization](https://user-images.githubusercontent.com/26868155/100433534-825b0780-309b-11eb-8d25-0d5bba4ffb71.png)
+
+To customize `MBCBlinkCardEditViewController`, use `MBCBlinkCardEditOverlayTheme` class to customize your look. You can customise elements labeled on the screenshot above by providing wanted properties to `MBCBlinkCardEditOverlayTheme`:
+
+- **floatingTitle**
+	- floatingTitleIdleModeColor - set custom floating UIColor when in idle mode
+	- floatingTitleFloatingModeColor - set custom floating UIColor when in floating mode
+	- floatingTitleEditedModeColor - set custom floating UIColor when in edited mode (did finish editing)
+	- floatingTitleErrorModeColor - set custom floating UI when in error mode (when validation returns false)
+
+- **placeholderText**
+	- placeholderTextColor - set custom placeholder text UIColor
+
+- **textField**
+	- textFieldFont - set custom UIFont
+
+- **separatorView**
+	- separatorViewColor - set custom separator view UIColor
+
+- **confirmButton**
+	- confirmButtonColor - set custom background UIColor
+	- confirmButtonTitleColor - set custom title UIColor
+	- confirmButtonFont - set custom UIFont
+	- confirmButtonCornerRadius - set custom corner radius
+	
 ### <a name="using-custom-overlay-viewcontroller"></a> Custom overlay view controller
 
 Please check our Samples for custom implementation of overlay view controller.
