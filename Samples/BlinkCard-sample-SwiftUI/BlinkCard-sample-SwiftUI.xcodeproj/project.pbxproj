@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A262F8C025DD6931004940CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262F8BF25DD6931004940CF /* AppDelegate.swift */; };
+		A262F8C225DD6931004940CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262F8C125DD6931004940CF /* SceneDelegate.swift */; };
+		A262F8C425DD6931004940CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262F8C325DD6931004940CF /* ContentView.swift */; };
+		A262F8C625DD6933004940CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A262F8C525DD6933004940CF /* Assets.xcassets */; };
+		A262F8C925DD6933004940CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A262F8C825DD6933004940CF /* Preview Assets.xcassets */; };
+		A262F8CC25DD6933004940CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A262F8CA25DD6933004940CF /* LaunchScreen.storyboard */; };
+		A262F8D625DD6978004940CF /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = A262F8D525DD6978004940CF /* license.txt */; };
+		A262F8DA25DD69BD004940CF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8D925DD69BD004940CF /* Accelerate.framework */; };
+		A262F8DC25DD69C3004940CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8DB25DD69C3004940CF /* AudioToolbox.framework */; };
+		A262F8DE25DD69CB004940CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8DD25DD69CB004940CF /* AVFoundation.framework */; };
+		A262F8E025DD69D1004940CF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8DF25DD69D1004940CF /* CoreMedia.framework */; };
+		A262F8E225DD69D8004940CF /* BlinkCard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8E125DD69D8004940CF /* BlinkCard.xcframework */; };
+		A262F8E325DD69D8004940CF /* BlinkCard.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8E125DD69D8004940CF /* BlinkCard.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A262F8E625DD6AE2004940CF /* BlinkCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262F8E525DD6AE2004940CF /* BlinkCardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A262F8E425DD69D8004940CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A262F8E325DD69D8004940CF /* BlinkCard.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A262F8BC25DD6931004940CF /* BlinkCard-sample-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkCard-sample-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A262F8BF25DD6931004940CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A262F8C125DD6931004940CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A262F8C325DD6931004940CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A262F8C525DD6933004940CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A262F8C825DD6933004940CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A262F8CB25DD6933004940CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A262F8CD25DD6933004940CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A262F8D525DD6978004940CF /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		A262F8D925DD69BD004940CF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A262F8DB25DD69C3004940CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A262F8DD25DD69CB004940CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A262F8DF25DD69D1004940CF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A262F8E125DD69D8004940CF /* BlinkCard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BlinkCard.xcframework; path = ../../BlinkCard.xcframework; sourceTree = "<group>"; };
+		A262F8E525DD6AE2004940CF /* BlinkCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkCardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A262F8B925DD6931004940CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A262F8E025DD69D1004940CF /* CoreMedia.framework in Frameworks */,
+				A262F8DA25DD69BD004940CF /* Accelerate.framework in Frameworks */,
+				A262F8E225DD69D8004940CF /* BlinkCard.xcframework in Frameworks */,
+				A262F8DC25DD69C3004940CF /* AudioToolbox.framework in Frameworks */,
+				A262F8DE25DD69CB004940CF /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A262F8B325DD6931004940CF = {
+			isa = PBXGroup;
+			children = (
+				A262F8BE25DD6931004940CF /* BlinkCard-sample-SwiftUI */,
+				A262F8BD25DD6931004940CF /* Products */,
+				A262F8D825DD69BD004940CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A262F8BD25DD6931004940CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A262F8BC25DD6931004940CF /* BlinkCard-sample-SwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A262F8BE25DD6931004940CF /* BlinkCard-sample-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A262F8D425DD6978004940CF /* License */,
+				A262F8E525DD6AE2004940CF /* BlinkCardViewController.swift */,
+				A262F8BF25DD6931004940CF /* AppDelegate.swift */,
+				A262F8C125DD6931004940CF /* SceneDelegate.swift */,
+				A262F8C325DD6931004940CF /* ContentView.swift */,
+				A262F8C525DD6933004940CF /* Assets.xcassets */,
+				A262F8CA25DD6933004940CF /* LaunchScreen.storyboard */,
+				A262F8CD25DD6933004940CF /* Info.plist */,
+				A262F8C725DD6933004940CF /* Preview Content */,
+			);
+			path = "BlinkCard-sample-SwiftUI";
+			sourceTree = "<group>";
+		};
+		A262F8C725DD6933004940CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A262F8C825DD6933004940CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A262F8D425DD6978004940CF /* License */ = {
+			isa = PBXGroup;
+			children = (
+				A262F8D525DD6978004940CF /* license.txt */,
+			);
+			name = License;
+			path = ../../License;
+			sourceTree = "<group>";
+		};
+		A262F8D825DD69BD004940CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A262F8E125DD69D8004940CF /* BlinkCard.xcframework */,
+				A262F8DF25DD69D1004940CF /* CoreMedia.framework */,
+				A262F8DD25DD69CB004940CF /* AVFoundation.framework */,
+				A262F8DB25DD69C3004940CF /* AudioToolbox.framework */,
+				A262F8D925DD69BD004940CF /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A262F8BB25DD6931004940CF /* BlinkCard-sample-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A262F8D025DD6933004940CF /* Build configuration list for PBXNativeTarget "BlinkCard-sample-SwiftUI" */;
+			buildPhases = (
+				A262F8B825DD6931004940CF /* Sources */,
+				A262F8B925DD6931004940CF /* Frameworks */,
+				A262F8BA25DD6931004940CF /* Resources */,
+				A262F8E425DD69D8004940CF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlinkCard-sample-SwiftUI";
+			productName = "BlinkCard-sample-SwiftUI";
+			productReference = A262F8BC25DD6931004940CF /* BlinkCard-sample-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A262F8B425DD6931004940CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A262F8BB25DD6931004940CF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A262F8B725DD6931004940CF /* Build configuration list for PBXProject "BlinkCard-sample-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A262F8B325DD6931004940CF;
+			productRefGroup = A262F8BD25DD6931004940CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A262F8BB25DD6931004940CF /* BlinkCard-sample-SwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A262F8BA25DD6931004940CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A262F8D625DD6978004940CF /* license.txt in Resources */,
+				A262F8CC25DD6933004940CF /* LaunchScreen.storyboard in Resources */,
+				A262F8C925DD6933004940CF /* Preview Assets.xcassets in Resources */,
+				A262F8C625DD6933004940CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A262F8B825DD6931004940CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A262F8C025DD6931004940CF /* AppDelegate.swift in Sources */,
+				A262F8E625DD6AE2004940CF /* BlinkCardViewController.swift in Sources */,
+				A262F8C225DD6931004940CF /* SceneDelegate.swift in Sources */,
+				A262F8C425DD6931004940CF /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A262F8CA25DD6933004940CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A262F8CB25DD6933004940CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A262F8CE25DD6933004940CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A262F8CF25DD6933004940CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A262F8D125DD6933004940CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlinkCard-sample-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = CQTJWP89J7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BlinkCard-sample-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microblink.blinkcard-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A262F8D225DD6933004940CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlinkCard-sample-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = CQTJWP89J7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BlinkCard-sample-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microblink.blinkcard-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A262F8B725DD6931004940CF /* Build configuration list for PBXProject "BlinkCard-sample-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A262F8CE25DD6933004940CF /* Debug */,
+				A262F8CF25DD6933004940CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A262F8D025DD6933004940CF /* Build configuration list for PBXNativeTarget "BlinkCard-sample-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A262F8D125DD6933004940CF /* Debug */,
+				A262F8D225DD6933004940CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A262F8B425DD6931004940CF /* Project object */;
+}

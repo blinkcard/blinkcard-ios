@@ -15,15 +15,15 @@ xcodebuild -project Samples/BlinkCard-Sample-ObjC/BlinkCard-Sample-ObjC.xcodepro
     ONLY_ACTIVE_ARCH=NO \
     clean build
 
- xcodebuild -project Samples/BlinkCard-Sample-Swift/BlinkCard-Sample-Swift.xcodeproj \
-    -scheme BlinkCard-Sample-Swift \
+ xcodebuild -project Samples/BlinkCard-sample-Swift/BlinkCard-sample-Swift.xcodeproj \
+    -scheme BlinkCard-sample-Swift \
     -configuration Debug \
     -sdk iphonesimulator \
     ONLY_ACTIVE_ARCH=NO \
     clean build
 
-xcodebuild -project Samples/BlinkCard-Sample-Swift/BlinkCard-Sample-Swift.xcodeproj \
-    -scheme BlinkCard-Sample-Swift \
+xcodebuild -project Samples/BlinkCard-sample-Swift/BlinkCard-sample-Swift.xcodeproj \
+    -scheme BlinkCard-sample-Swift \
     -configuration Release \
     -sdk iphonesimulator \
     ONLY_ACTIVE_ARCH=NO \
