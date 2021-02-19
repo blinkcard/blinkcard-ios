@@ -33,8 +33,9 @@ BlinkCard is a part of family of SDKs developed by [Microblink](http://www.micro
 	- [Frame Grabber Recognizer](#frame-grabber-recognizer)
 	- [Success Frame Grabber Recognizer](#success-frame-grabber-recognizer)
 	- [BlinkCard recognizers](#blinkcard-recognizers)
-		- [Payment / Debit card combined recognizer](#payment-card-recognizers)
-		- [Elite Payment / Debit card combined recognizer](#elite-payment-card-recognizers)
+		- [MBCBlinkCardRecognizer](#blink-card-recognizer)
+		- [MBCLegacyBlinkCardRecognizer (deprecated)](#payment-card-recognizers)
+		- [MBCLegacyBlinkCardEliteRecognizer (deprecated)](#elite-payment-card-recognizers)
 - [Localization](#localization)
 - [Troubleshooting](#troubleshooting)
 	- [Integration problems](#troubleshooting-integration-problems)
@@ -86,7 +87,7 @@ pod init
 ```ruby
 platform :ios, '9.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.0.0'
+    pod 'MBBlinkCard', '~> 2.1.0'
 end
 ```
 
@@ -224,23 +225,6 @@ class ViewController: UIViewController, MBCBlinkCardOverlayViewControllerDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-                MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: .main) { (licenseError) in
-            switch licenseError {
-            case .invalidLicense:
-                licenseErrorMessage = "Invalid license"
-            case .networkRequired:
-                licenseErrorMessage = "Network required"
-            case .unableToDoRemoteLicenceCheck:
-                licenseErrorMessage = "Unable to do remote license check"
-            case .licenseIsLocked:
-                licenseErrorMessage = "License is locked"
-            case .licenseCheckFailed:
-                licenseErrorMessage = "License check failed"
-            @unknown default:
-                licenseErrorMessage = "Unknown error"
-            }
-        }
     }
 
     @IBAction func didTapScan(_ sender: AnyObject) {
@@ -280,27 +264,7 @@ Objective-C
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license" withExtension:@"txt" inSubdirectory:@"" forBundle:NSBundle.mainBundle errorCallback:^(MBCLicenseError licenseError) {
-        switch (licenseError) {
-            case MBCLicenseErrorInvalidLicense:
-                self.licenseErrorMessage = @"Invalid license";
-                break;
-            case MBCLicenseErrorNetworkRequired:
-                self.licenseErrorMessage = @"Network required";
-                break;
-            case MBCLicenseErrorUnableToDoRemoteLicenceCheck:
-                self.licenseErrorMessage = @"Unable to do remote license check";
-                break;
-            case MBCLicenseErrorLicenseIsLocked:
-                self.licenseErrorMessage = @"License is locked";
-                break;
-            case MBCLicenseErrorLicenseCheckFailed:
-                self.licenseErrorMessage = @"License check failed";
-                break;
-            default:
-                break;
-        }
-    }];
+    [MBCMicroblinkSDK.sharedInstance setLicenseResource:@"blinkid-license" withExtension:@"txt" inSubdirectory:@"" for:Bundle.main];
 }
 
 
@@ -342,13 +306,13 @@ You can pass the license key as a string, the following way:
 Swift
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY"){ (licenseError) in }
+MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY")
 ```
 
 Objective-C
 
 ```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY" errorCallback:^(MBCLicenseError licenseError) {}];
+[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY"];
 ```
 
 #### License key as file
@@ -486,57 +450,6 @@ let navigationController = MBCBlinkCardEditNavigationController(rootViewControll
 self.blinkCardEditViewController = [[MBCBlinkCardEditViewController alloc] initWithDelegate:self];
 self.navigationController = [[MBCBlinkCardEditNavigationController alloc] initWithRootViewController:self.blinkCardEditViewController];
 ```
-### Customizing the look
-
-The BlinkCard SDK comes with the ability to customize some aspects of the UI by using the UI theming. The screens can be customized to fit your app’s look and feel by defining themes in your application that override themes from the SDK. Each theme must extend the corresponding base theme from the SDK, as described in the following sections.
-
-#### BlinkCard Overlay Theme
-
-![BlinkCardVCCustomization](https://user-images.githubusercontent.com/26868155/100432556-0d3b0280-309a-11eb-8e04-243cf2c17efa.png)
-
-To customize `MBCBlinkCardOverlayViewController`, use `MBCBlinkCardOverlayTheme` class to customize your look. You can customise elements labeled on the screenshot above by providing wanted properties to `MBCBlinkCardOverlayTheme`:
-
-- **scanningStatusLabel**
-	- scanningStatusLabelFont - set custom UIFont
-	- scanningStatusLabelColor - set custom UIColor
-
-- **editButton**
-	- editButtonFont - set custom UIFont
-	- editButtonColor - set custom UIColor
-
-- **flashlightWarning**
-	- flashlightWarningFont - set custom UIFont
-	- flashlightWarningBackgroundColor - set custom background UIColor
-	- flashlightWarningTextColor - set custom text UIColor
-	- flashlightWarningCornerRadius - set custom corner radius
-
-#### BlinkCard Edit Overlay Theme
-
-![BlinkCardEditVCCustomization](https://user-images.githubusercontent.com/26868155/100433534-825b0780-309b-11eb-8d25-0d5bba4ffb71.png)
-
-To customize `MBCBlinkCardEditViewController`, use `MBCBlinkCardEditOverlayTheme` class to customize your look. You can customise elements labeled on the screenshot above by providing wanted properties to `MBCBlinkCardEditOverlayTheme`:
-
-- **floatingTitle**
-	- floatingTitleIdleModeColor - set custom floating UIColor when in idle mode
-	- floatingTitleFloatingModeColor - set custom floating UIColor when in floating mode
-	- floatingTitleEditedModeColor - set custom floating UIColor when in edited mode (did finish editing)
-	- floatingTitleErrorModeColor - set custom floating UI when in error mode (when validation returns false)
-
-- **placeholderText**
-	- placeholderTextColor - set custom placeholder text UIColor
-
-- **textField**
-	- textFieldFont - set custom UIFont
-
-- **separatorView**
-	- separatorViewColor - set custom separator view UIColor
-
-- **confirmButton**
-	- confirmButtonColor - set custom background UIColor
-	- confirmButtonTitleColor - set custom title UIColor
-	- confirmButtonFont - set custom UIFont
-	- confirmButtonCornerRadius - set custom corner radius
-	
 ### <a name="using-custom-overlay-viewcontroller"></a> Custom overlay view controller
 
 Please check our Samples for custom implementation of overlay view controller.
@@ -735,11 +648,18 @@ This recognizer is best for use cases when you need to capture the exact image t
 ## <a name="blinkcard-recognizers"></a> BlinkCard recognizers
 Payment card recognizers are used to scan payment cards.
 
-### <a name="payment-card-recognizers"></a> Payment / Debit card combined recognizer
-The [`MBCBlinkCardRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizer.html)is used for scanning the [front and back side of Payment / Debit card](https://en.wikipedia.org/wiki/Payment_card).
+### <a name="blink-card-recognizer"></a> MBCBlinkCardRecognizer
+The MBCBlinkCardRecognizer extracts the card number (PAN), expiry date, owner information (name or company title), IBAN, and CVV, from a large range of different card layouts.
 
-### <a name="elite-payment-card-recognizers"></a> Elite Payment / Debit card combined recognizer
-The [`MBCBlinkCardEliteRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardEliteRecognizer.html) scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.
+MBCBlinkCardRecognizer is a Combined recognizer, which means it's designed for scanning both sides of a card. However, if all required data is found on the first side, we do not wait for second side scanning. We can return the result early. A set of required fields is defined through the recognizer's settings.
+
+"Front side" and "back side" are terms more suited to ID scanning. We start the scanning process with the side containing the card number. This makes the UX easier for users with cards where all data is on the back side.
+
+### <a name="payment-card-recognizers"></a> MBCLegacyBlinkCardRecognizer (deprecated)
+The [`MBCLegacyBlinkCardRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardRecognizer.html)is used for scanning the [front and back side of Payment / Debit card](https://en.wikipedia.org/wiki/Payment_card).
+
+### <a name="elite-payment-card-recognizers"></a> MBCLegacyBlinkCardEliteRecognizer (deprecated)
+The [`MBCLegacyBlinkCardEliteRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardEliteRecognizer.html) scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.
 # <a name="localization"></a> Localization
 
 The SDK is localized on following languages: Arabic, Chinese simplified, Chinese traditional, Croatian, Czech, Dutch, Filipino, French, German, Hebrew, Hungarian, Indonesian, Italian, Malay, Portuguese, Romanian, Slovak, Slovenian, Spanish, Thai, Vietnamese.

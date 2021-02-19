@@ -14,12 +14,13 @@
 "blinkcard_edit_field_owner" = "Cardholder name";
 "blinkcard_edit_title" = "Your card information";
 "blinkcard_edit_toolbar_done" = "Done";
+"blinkcard_overlay_camera_too_high_message" = "Move closer";
+"blinkcard_overlay_camera_too_near_message" = "Move farther";
 "blinkcard_overlay_edit_button" = "Type it in instead?";
 "blinkcard_overlay_first_side_scan_message" = "Scan the card number";
+"blinkcard_overlay_identification_failed_message" = "Keep the card fully visible";
 "blinkcard_overlay_second_side_scan_message" = "Flip the card over";
 "mb_blink_card_glare" = "Watch out for flashlight glare.\nGently move your card around to avoid it.";
-"mb_blinkid_camera_high" = "Move closer";
-"mb_blinkid_camera_near" = "Move farther";
 "mb_check_internet_connection" = "Check internet connection";
 "mb_close" = "Close";
 "mb_network_error" = "Network error";
@@ -28,3 +29,4 @@
 "photopay_align_message" = "Position the phone over the slip";
 "photopay_camera_permission_denied" = "{font:@Medium}%@{/font} does not have permission to use the camera.\n\nPlease go to:\n• {font:@Medium}Settings{/font}\n• {font:@Medium}%@{/font}\n• Make sure that {font:@Medium}Camera{/font} is enabled";
 "photopay_close" = "Cancel";
+"photopay_grant_camera_permission_button_title" = "Grant camera permission";

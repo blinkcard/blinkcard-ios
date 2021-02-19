@@ -1,5 +1,33 @@
 # Release notes
 
+## 2.1.0
+
+### New features:
+
+- We have full support for Apple Silicon!
+
+### Framework formats and architectures:
+
+- Use `.xcframework` as we now have full Apple Silicon and Intel support.
+- We are still supporting `fat binary .framework` format, but we’ve removed simulator slices from it.
+
+### Carthage:
+
+- Carthage still doesn't support `binary .xcframework`, so there is no support for simulator slices anymore.
+
+### Other improvements:
+
+- We’ve updated our default UI with new error messages that appear when a user doesn’t place the card within a frame.
+- We’re no longer hiding the security code on the edit results screen.
+
+### Minor API changes:
+
+- We've replaced `Using time-limited license!` warning with `Using trial license!` warning. The warning message is displayed when using a trial license key. To disable it, use `showTrialLicenseWarning` on `MBCMicroblinkSDK`.
+
+### Bug fixes:
+
+- We’re now displaying whatever data we manage to extract before a user chooses to enter card details by hand. 
+
 ## 2.0.0
 
 ### **BlinkCard v2 Release Announcement**

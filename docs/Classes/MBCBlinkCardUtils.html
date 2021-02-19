@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.0.0 Docs
+          MBBlinkCard v2.1.0 Docs
         </a>
-         (69% documented)
+         (68% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -300,6 +300,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCRecognizerResultState.html">MBCRecognizerResultState</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -355,6 +358,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFrameGrabberRecognizerDelegate.html">MBCFrameGrabberRecognizerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBCFrameRecognitionRecognizerRunnerViewControllerDelegate.html">MBCFrameRecognitionRecognizerRunnerViewControllerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFullDocumentImage.html">MBCFullDocumentImage</a>
@@ -555,6 +561,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_DEFAULT_STRING">MB_LOCALIZED_DEFAULT_STRING</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_FOR_LANGUAGE">MB_LOCALIZED_FOR_LANGUAGE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -574,6 +583,7 @@
             <h1>MBCBlinkCardUtils</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MBCBlinkCardUtils</span> <span class="p">:</span> <span class="nc">NSObject</span>
 
 <span class="n">MB_INIT_UNAVAILABLE</span>
@@ -581,7 +591,7 @@
 <span class="cm">/**
  * Determine payment card issuer based on first couple of digits of the payment card number.
  */</span>
-<span class="o">+</span> <span class="p">(</span><span class="n"><a href="../Enums/MBCIssuer.html">MBCIssuer</a></span><span class="p">)</span><span class="n">determineIssuerFromCardNumberPrefix</span><span class="o">:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">cardNumberPrefix</span><span class="p">;</span>
+<span class="k">+</span> <span class="p">(</span><span class="n"><a href="../Enums/MBCIssuer.html">MBCIssuer</a></span><span class="p">)</span><span class="nf">determineIssuerFromCardNumberPrefix</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardNumberPrefix</span><span class="p">;</span>
 
 <span class="cm">/**
  * Checks wheater the provided cardNumber is valid.
@@ -598,9 +608,17 @@
 <span class="k">@end</span></code></pre>
 
                 </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MBCBlinkCardUtils</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
               </div>
             <p>Undocumented</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h#L15-L36">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -636,6 +654,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -644,7 +665,7 @@
                     <code>
                     <a name="/c:objc(cs)MBCBlinkCardUtils(cm)determineIssuerFromCardNumberPrefix:"></a>
                     <a name="//apple_ref/objc/Method/+determineIssuerFromCardNumberPrefix:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)determineIssuerFromCardNumberPrefix:">+determineIssuerFromCardNumberPrefix:</a>
+                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)determineIssuerFromCardNumberPrefix:">+determineIssuerFromCardNumberPrefix:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -669,6 +690,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h#L22">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -677,7 +701,7 @@
                     <code>
                     <a name="/c:objc(cs)MBCBlinkCardUtils(cm)isValidCardNumber:"></a>
                     <a name="//apple_ref/objc/Method/+isValidCardNumber:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)isValidCardNumber:">+isValidCardNumber:</a>
+                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)isValidCardNumber:">+isValidCardNumber:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -703,6 +727,9 @@ with the last digit of the provided card number.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h#L29">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -711,7 +738,7 @@ with the last digit of the provided card number.</p>
                     <code>
                     <a name="/c:objc(cs)MBCBlinkCardUtils(cm)issuerToString:"></a>
                     <a name="//apple_ref/objc/Method/+issuerToString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)issuerToString:">+issuerToString:</a>
+                    <a class="token" href="#/c:objc(cs)MBCBlinkCardUtils(cm)issuerToString:">+issuerToString:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -735,6 +762,9 @@ with the last digit of the provided card number.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h#L34">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -746,8 +776,8 @@ with the last digit of the provided card number.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2020-11-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-02-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
