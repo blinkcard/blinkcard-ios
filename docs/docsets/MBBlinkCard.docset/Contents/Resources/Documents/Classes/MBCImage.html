@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.0.0 Docs
+          MBBlinkCard v2.1.0 Docs
         </a>
-         (69% documented)
+         (68% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -300,6 +300,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCRecognizerResultState.html">MBCRecognizerResultState</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -355,6 +358,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFrameGrabberRecognizerDelegate.html">MBCFrameGrabberRecognizerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBCFrameRecognitionRecognizerRunnerViewControllerDelegate.html">MBCFrameRecognitionRecognizerRunnerViewControllerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFullDocumentImage.html">MBCFullDocumentImage</a>
@@ -555,6 +561,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_DEFAULT_STRING">MB_LOCALIZED_DEFAULT_STRING</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_FOR_LANGUAGE">MB_LOCALIZED_FOR_LANGUAGE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -574,13 +583,22 @@
             <h1>MBCImage</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code>
 <span class="k">@interface</span> <span class="nc">MBCImage</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MBCImage</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
             <p>Object which represents an image.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L34-L99">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -618,6 +636,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L40">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -641,7 +662,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">roi</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">roi</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -649,6 +670,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">roi</span><span class="p">:</span> <span class="kt">CGRect</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -675,8 +699,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n"><a href="../Enums/MBCProcessingOrientation.html">MBCProcessingOrientation</a></span> <span class="n">orientation</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MBCProcessingOrientation.html">MBCProcessingOrientation</a></span> <span class="n">orientation</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -684,6 +707,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">orientation</span><span class="p">:</span> <span class="kt"><a href="../Enums/MBCProcessingOrientation.html">MBCProcessingOrientation</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -710,8 +736,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">mirroredHorizontally</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">mirroredHorizontally</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -719,6 +744,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mirroredHorizontally</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L59">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -745,8 +773,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">mirroredVertically</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">mirroredVertically</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -754,6 +781,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mirroredVertically</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -780,8 +810,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
-    <span class="n">BOOL</span> <span class="n">estimateFrameQuality</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">estimateFrameQuality</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -789,6 +818,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">estimateFrameQuality</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -816,7 +848,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">cameraFrame</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">cameraFrame</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -824,6 +856,9 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cameraFrame</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L82">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -833,7 +868,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                     <code>
                     <a name="/c:objc(cs)MBCImage(cm)imageWithUIImage:"></a>
                     <a name="//apple_ref/objc/Method/+imageWithUIImage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithUIImage:">+imageWithUIImage:</a>
+                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithUIImage:">+imageWithUIImage:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -853,9 +888,12 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">uiImage</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">uiImage</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L87">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -865,7 +903,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                     <code>
                     <a name="/c:objc(cs)MBCImage(cm)imageWithCmSampleBuffer:"></a>
                     <a name="//apple_ref/objc/Method/+imageWithCmSampleBuffer:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithCmSampleBuffer:">+imageWithCmSampleBuffer:</a>
+                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithCmSampleBuffer:">+imageWithCmSampleBuffer:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -886,9 +924,12 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">cmSampleBuffer</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">cmSampleBuffer</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L92">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -898,7 +939,7 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                     <code>
                     <a name="/c:objc(cs)MBCImage(cm)imageWithCvPixelBuffer:"></a>
                     <a name="//apple_ref/objc/Method/+imageWithCvPixelBuffer:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithCvPixelBuffer:">+imageWithCvPixelBuffer:</a>
+                    <a class="token" href="#/c:objc(cs)MBCImage(cm)imageWithCvPixelBuffer:">+imageWithCvPixelBuffer:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -918,9 +959,12 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">cvPixelBuffer</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">CVPixelBuffer</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">cvPixelBuffer</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">CVPixelBuffer</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h#L97">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -933,8 +977,8 @@ If this MBCImage wasn&rsquo;t created with UIImage, UIImage will be created with
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2020-11-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-02-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

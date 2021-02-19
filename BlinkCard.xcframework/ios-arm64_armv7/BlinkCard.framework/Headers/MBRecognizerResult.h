@@ -46,6 +46,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
 MB_INIT_UNAVAILABLE
 
 @property (nonatomic, assign, readonly) MBCRecognizerResultState resultState;
+@property (nonatomic, readonly) NSString *resultStateString;
 
 @end
 

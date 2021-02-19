@@ -48,6 +48,14 @@ MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
 */
 @property(nonatomic, assign) BOOL shouldDisplayIban;
 
+
+/**
+ * Disable popup that blocks user when tapping “Add” button if card fields have any validation errors.
+ *
+ * Default: NO
+ */
+@property(nonatomic, assign) BOOL allowCardsWithInvalidFields;
+
 @end
 
 NS_ASSUME_NONNULL_END

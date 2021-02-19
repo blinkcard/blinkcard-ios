@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.0.0 Docs
+          MBBlinkCard v2.1.0 Docs
         </a>
-         (69% documented)
+         (68% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -300,6 +300,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCRecognizerResultState.html">MBCRecognizerResultState</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -355,6 +358,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFrameGrabberRecognizerDelegate.html">MBCFrameGrabberRecognizerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBCFrameRecognitionRecognizerRunnerViewControllerDelegate.html">MBCFrameRecognitionRecognizerRunnerViewControllerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFullDocumentImage.html">MBCFullDocumentImage</a>
@@ -555,6 +561,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_DEFAULT_STRING">MB_LOCALIZED_DEFAULT_STRING</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_FOR_LANGUAGE">MB_LOCALIZED_FOR_LANGUAGE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -574,10 +583,18 @@
             <h1>MBCCombinedRecognizerResult</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MBCCombinedRecognizerResult</span>
 
 <span class="err">@required</span>
 
+<span class="cm">/**
+ * Returns YES if recognizer has finished scanning first side and is now scanning back side,
+ * NO if it's still scanning first side.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">scanningFirstSideDone</span><span class="p">;</span>
+
+<span class="k">@optional</span>
 <span class="cm">/**
  * Returns MBCDataMatchResultSuccess if data from scanned parts/sides of the document match,
  * MBCDataMatchResultFailed otherwise. For example if date of expiry is scanned from the front and back side
@@ -586,18 +603,20 @@
  */</span>
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n"><a href="../Enums/MBCDataMatchResult.html">MBCDataMatchResult</a></span> <span class="n">documentDataMatch</span><span class="p">;</span>
 
-<span class="cm">/**
- * Returns YES if recognizer has finished scanning first side and is now scanning back side,
- * NO if it's still scanning first side.
- */</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">scanningFirstSideDone</span><span class="p">;</span>
-
 <span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MBCCombinedRecognizerResult</span></code></pre>
 
                 </div>
               </div>
             <p>Undocumented</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizerResult.h#L23-L42">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -605,43 +624,6 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)MBCCombinedRecognizerResult(py)documentDataMatch"></a>
-                    <a name="//apple_ref/objc/Property/documentDataMatch" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCCombinedRecognizerResult(py)documentDataMatch">documentDataMatch</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns MBCDataMatchResultSuccess if data from scanned parts/sides of the document match,
-MBCDataMatchResultFailed otherwise. For example if date of expiry is scanned from the front and back side
-of the document and values do not match, this method will return MBCDataMatchResultFailed. Result will
-be MBCDataMatchResultSuccess only if scanned values for all fields that are compared are the same.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="err">@required</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span>
-    <span class="n"><a href="../Enums/MBCDataMatchResult.html">MBCDataMatchResult</a></span> <span class="n">documentDataMatch</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">documentDataMatch</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -674,6 +656,49 @@ NO if it&rsquo;s still scanning first side.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizerResult.h#L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MBCCombinedRecognizerResult(py)documentDataMatch"></a>
+                    <a name="//apple_ref/objc/Property/documentDataMatch" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MBCCombinedRecognizerResult(py)documentDataMatch">documentDataMatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns MBCDataMatchResultSuccess if data from scanned parts/sides of the document match,
+MBCDataMatchResultFailed otherwise. For example if date of expiry is scanned from the front and back side
+of the document and values do not match, this method will return MBCDataMatchResultFailed. Result will
+be MBCDataMatchResultSuccess only if scanned values for all fields that are compared are the same.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@optional</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span>
+    <span class="n"><a href="../Enums/MBCDataMatchResult.html">MBCDataMatchResult</a></span> <span class="n">documentDataMatch</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="k">var</span> <span class="nv">documentDataMatch</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizerResult.h#L40">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -685,8 +710,8 @@ NO if it&rsquo;s still scanning first side.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2020-11-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-02-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

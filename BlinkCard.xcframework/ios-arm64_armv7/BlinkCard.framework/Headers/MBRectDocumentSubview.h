@@ -9,6 +9,19 @@
 
 @protocol MBCRectDocumentSubviewDelegate;
 
+typedef NS_ENUM(NSInteger, MBCRectDocumentSubviewScanMode) {
+    MBCRectDocumentSubviewScanModeInitalized,
+    MBCRectDocumentSubviewScanModeScanning,
+    MBCRectDocumentSubviewScanModeFirstSideScanWillFinish,
+    MBCRectDocumentSubviewScanModeWillErrorCameraTooNear,
+    MBCRectDocumentSubviewScanModeDidCameraTooNear,
+    MBCRectDocumentSubviewScanModeWillErrorCameraTooFar,
+    MBCRectDocumentSubviewScanModeDidErrorCameraTooFar,
+    MBCRectDocumentSubviewScanModeWillErrorFieldIdentificationFailed,
+    MBCRectDocumentSubviewScanModeDidErrorFieldIdentificationFailed,
+    MBCRectDocumentSubviewScanModeScanFinished
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -31,6 +44,8 @@ MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
 
 @property (nonatomic) CGSize viewSize;
 
+@property (nonatomic) CGFloat titleTextDelay;
+
 @property (nonatomic, weak, nullable) id<MBCRectDocumentSubviewDelegate> rectSubviewDelegate;
 
 - (void)startScanLineAnimation;
@@ -39,15 +54,15 @@ MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
 
 - (void)startFlipAnimation;
 
-- (void)startErrorModeUI;
+- (void)updateForMode:(MBCRectDocumentSubviewScanMode)mode;
 
-- (void)startIdleModeUI;
-
-- (void)startAnimation;
-
-- (void)startTransitionFinishedAnimation;
+- (void)startScannedFirstSideFinishAnimation;
 
 - (void)resetTitleLabelConstraint;
+
+- (void)configureCornersBounds;
+
+- (void)updateProgress;
 
 @end
 
@@ -57,7 +72,7 @@ MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
 
 - (void)rectDocumentSubviewDidFinishAnimation:(nonnull MBCRectDocumentSubview *)rectDocumentSubvie;
 
-- (void)rectDocumentSubviewDidFinishTransitionAnimation:(nonnull MBCRectDocumentSubview *)rectDocumentSubvie;
+- (void)rectDocumentSubviewDidStartTransitionAnimation:(nonnull MBCRectDocumentSubview *)rectDocumentSubvie mode:(MBCRectDocumentSubviewScanMode)mode;
 
 @end
 

@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  
+
   s.name        = "MBBlinkCard"
-  s.version     = "2.0.0"
+  s.version     = "2.1.0"
   s.summary     = "A delightful component for payment card scanning"
   s.homepage    = "http://microblink.com"
-  
+
   s.description = <<-DESC
         BlinkCard SDK is a delightful component for quick and easy scanning of payment cards. The SDK is powered with         [Microblink's](http://www.microblink.com) industry-proven and world leading OCR and barcode scanning technology, and offers:
 
@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
         - lightweight and no internet connection required
         - enteprise-level security standards
 
-        BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document scanning, payment card scanning and many others. 
+        BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document scanning, payment card scanning and many others.
         DESC
-  
-  s.license     = { 
+
+  s.license     = {
         :type => 'commercial',
         :text => <<-LICENSE
                 © 2013-2019 Microblink Ltd. All rights reserved.
@@ -27,16 +27,11 @@ Pod::Spec.new do |s|
         "Microblink" => "info@microblink.com",
   }
 
-  s.source      = { 
-        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.0.0/blinkcard-ios_v2.0.0.tar.gz'
+  s.source      = {
+        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.1.0/blinkcard-ios_v2.1.0.tar.gz'
   }
 
   s.platform     = :ios
-
-  s.pod_target_xcconfig = {
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
 

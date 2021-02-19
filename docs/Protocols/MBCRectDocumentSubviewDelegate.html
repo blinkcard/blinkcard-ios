@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.0.0 Docs
+          MBBlinkCard v2.1.0 Docs
         </a>
-         (69% documented)
+         (68% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -300,6 +300,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCRecognizerResultState.html">MBCRecognizerResultState</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -355,6 +358,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFrameGrabberRecognizerDelegate.html">MBCFrameGrabberRecognizerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBCFrameRecognitionRecognizerRunnerViewControllerDelegate.html">MBCFrameRecognitionRecognizerRunnerViewControllerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFullDocumentImage.html">MBCFullDocumentImage</a>
@@ -555,6 +561,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_DEFAULT_STRING">MB_LOCALIZED_DEFAULT_STRING</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_FOR_LANGUAGE">MB_LOCALIZED_FOR_LANGUAGE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -574,20 +583,29 @@
             <h1>MBCRectDocumentSubviewDelegate</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MBCRectDocumentSubviewDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
 
-<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">rectDocumentSubviewDidFinishFlipAnimation</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="n">rectDocumentSubvie</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidFinishFlipAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span><span class="p">;</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidFinishAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span><span class="p">;</span>
 
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidFinishTransitionAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidStartTransitionAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span> <span class="nf">mode</span><span class="p">:(</span><span class="n"><a href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a></span><span class="p">)</span><span class="nv">mode</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MBCRectDocumentSubviewDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
             <p>Undocumented</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h#L69-L77">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -600,7 +618,7 @@
                     <code>
                     <a name="/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishFlipAnimation:"></a>
                     <a name="//apple_ref/objc/Method/-rectDocumentSubviewDidFinishFlipAnimation:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishFlipAnimation:">-rectDocumentSubviewDidFinishFlipAnimation:</a>
+                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishFlipAnimation:">-rectDocumentSubviewDidFinishFlipAnimation:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -624,6 +642,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -632,7 +653,7 @@
                     <code>
                     <a name="/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishAnimation:"></a>
                     <a name="//apple_ref/objc/Method/-rectDocumentSubviewDidFinishAnimation:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishAnimation:">-rectDocumentSubviewDidFinishAnimation:</a>
+                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishAnimation:">-rectDocumentSubviewDidFinishAnimation:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -656,15 +677,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishTransitionAnimation:"></a>
-                    <a name="//apple_ref/objc/Method/-rectDocumentSubviewDidFinishTransitionAnimation:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidFinishTransitionAnimation:">-rectDocumentSubviewDidFinishTransitionAnimation:</a>
+                    <a name="/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidStartTransitionAnimation:mode:"></a>
+                    <a name="//apple_ref/objc/Method/-rectDocumentSubviewDidStartTransitionAnimation:mode:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MBCRectDocumentSubviewDelegate(im)rectDocumentSubviewDidStartTransitionAnimation:mode:">-rectDocumentSubviewDidStartTransitionAnimation:<wbr>mode:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -679,14 +703,17 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidFinishTransitionAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rectDocumentSubviewDidStartTransitionAnimation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">rectDocumentSubvie</span> <span class="nf">mode</span><span class="p">:(</span><span class="n"><a href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a></span><span class="p">)</span><span class="nv">mode</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rectDocumentSubviewDidFinishTransitionAnimation</span><span class="p">(</span><span class="n">_</span> <span class="nv">rectDocumentSubvie</span><span class="p">:</span> <span class="kt"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rectDocumentSubviewDidStartTransitionAnimation</span><span class="p">(</span><span class="n">_</span> <span class="nv">rectDocumentSubvie</span><span class="p">:</span> <span class="kt"><a href="../Classes/MBCRectDocumentSubview.html">MBCRectDocumentSubview</a></span><span class="p">,</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -699,8 +726,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2020-11-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-02-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

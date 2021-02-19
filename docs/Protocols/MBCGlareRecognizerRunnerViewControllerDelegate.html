@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.0.0 Docs
+          MBBlinkCard v2.1.0 Docs
         </a>
-         (69% documented)
+         (68% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -300,6 +300,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCRecognizerResultState.html">MBCRecognizerResultState</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MBCRectDocumentSubviewScanMode.html">MBCRectDocumentSubviewScanMode</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -355,6 +358,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFrameGrabberRecognizerDelegate.html">MBCFrameGrabberRecognizerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MBCFrameRecognitionRecognizerRunnerViewControllerDelegate.html">MBCFrameRecognitionRecognizerRunnerViewControllerDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MBCFullDocumentImage.html">MBCFullDocumentImage</a>
@@ -555,6 +561,9 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_DEFAULT_STRING">MB_LOCALIZED_DEFAULT_STRING</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:MBMicroblinkApp.h@F@MB_LOCALIZED_FOR_LANGUAGE">MB_LOCALIZED_FOR_LANGUAGE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -574,6 +583,7 @@
             <h1>MBCGlareRecognizerRunnerViewControllerDelegate</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MBCGlareRecognizerRunnerViewControllerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
 <span class="err">@required</span>
 
@@ -581,13 +591,21 @@
  * Called when scanning library finishes glare detection.
  * NOTE: This method is called on background processing thread. Make sure that you dispatch all your UI API calls to main thread.
  */</span>
-<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">recognizerRunnerViewController</span><span class="o">:</span><span class="p">(</span><span class="n">nonnull</span> <span class="n">UIViewController</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MBCRecognizerRunnerViewController.html">MBCRecognizerRunnerViewController</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">recognizerRunnerViewController</span> <span class="n">didFinishGlareDetectionWithResult</span><span class="o">:</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">glareFound</span><span class="p">;</span>
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="nf">recognizerRunnerViewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MBCRecognizerRunnerViewController.html">MBCRecognizerRunnerViewController</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">recognizerRunnerViewController</span> <span class="nf">didFinishGlareDetectionWithResult</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">glareFound</span><span class="p">;</span>
 <span class="k">@end</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MBCGlareRecognizerRunnerViewControllerDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
             <p>Undocumented</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerViewControllerDelegate.h#L15-L23">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -600,7 +618,7 @@
                     <code>
                     <a name="/c:objc(pl)MBCGlareRecognizerRunnerViewControllerDelegate(im)recognizerRunnerViewController:didFinishGlareDetectionWithResult:"></a>
                     <a name="//apple_ref/objc/Method/-recognizerRunnerViewController:didFinishGlareDetectionWithResult:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCGlareRecognizerRunnerViewControllerDelegate(im)recognizerRunnerViewController:didFinishGlareDetectionWithResult:">-recognizerRunnerViewController:didFinishGlareDetectionWithResult:</a>
+                    <a class="token" href="#/c:objc(pl)MBCGlareRecognizerRunnerViewControllerDelegate(im)recognizerRunnerViewController:didFinishGlareDetectionWithResult:">-recognizerRunnerViewController:<wbr>didFinishGlareDetectionWithResult:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -628,6 +646,9 @@ NOTE: This method is called on background processing thread. Make sure that you 
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.1.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerViewControllerDelegate.h#L22">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -639,8 +660,8 @@ NOTE: This method is called on background processing thread. Make sure that you 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2020-11-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-02-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
