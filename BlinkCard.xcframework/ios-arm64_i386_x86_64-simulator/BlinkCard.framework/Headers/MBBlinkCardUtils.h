@@ -26,7 +26,12 @@ MB_INIT_UNAVAILABLE
  * Validation is performed by calculating the check digit using Luhn algorithm and comparing it
  * with the last digit of the provided card number.
  */
-+ (BOOL)isValidCardNumber:(NSString *)isValidCardNumber;
++ (BOOL)isValidCardNumber:(NSString *)cardNumber;
+
+/**
+ * Checks whether the provided iban is valid.
+ */
++ (BOOL)isValidIban:(NSString *)iban;
 
 /**
  * Enum MBCIssuer to string helper method

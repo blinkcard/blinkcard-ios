@@ -1,6 +1,20 @@
 {
   "warnings": [
     {
+      "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardAnonymizationSettings.h",
+      "line": 19,
+      "symbol": "MBCBlinkCardAnonymizationSettings",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardAnonymizationSettings.h",
+      "line": 21,
+      "symbol": "MBCBlinkCardAnonymizationSettings.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditFieldConfiguration.h",
       "line": 14,
       "symbol": "MBCBlinkCardEditFieldConfiguration",
@@ -86,7 +100,7 @@
     },
     {
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
-      "line": 27,
+      "line": 28,
       "symbol": "MBCBlinkCardRecognizer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -109,6 +123,13 @@
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h",
       "line": 17,
       "symbol": "MBCBlinkCardUtils.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBCardNumberAnonymizationSettings.h",
+      "line": 22,
+      "symbol": "MBCCardNumberAnonymizationSettings.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
@@ -1241,22 +1262,22 @@
     },
     {
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
-      "line": 90,
-      "symbol": "MB_LOCALIZED_DEFAULT_STRING",
+      "line": 87,
+      "symbol": "MBC_LOCALIZED_DEFAULT_STRING",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
-      "line": 94,
-      "symbol": "MB_LOCALIZED_FOR_LANGUAGE",
+      "line": 91,
+      "symbol": "MBC_LOCALIZED_FOR_LANGUAGE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
       "file": "/opt/jenkins-iphone11/E0/core-ios/SDKs/BlinkCard/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
-      "line": 112,
-      "symbol": "MB_LOCALIZED",
+      "line": 109,
+      "symbol": "MBC_LOCALIZED",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },

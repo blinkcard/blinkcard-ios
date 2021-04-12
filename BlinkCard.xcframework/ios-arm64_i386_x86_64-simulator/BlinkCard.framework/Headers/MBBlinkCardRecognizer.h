@@ -15,6 +15,7 @@
 #import "MBFullDocumentImageDpi.h"
 #import "MBDigitalSignature.h"
 #import "MBFullDocumentImageExtensionFactors.h"
+#import "MBBlinkCardAnonymizationSettings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -74,6 +75,13 @@ MB_INIT
  * Default: 0.0f
  */
 @property (nonatomic, assign) CGFloat paddingEdge;
+
+/**
+ * Defines whether sensitive data should be redacted from the result.
+ *
+ * Default: See MBCBlinkCardAnonymizationSettings for default settings
+ */
+@property (nonatomic, strong) MBCBlinkCardAnonymizationSettings *anonymizationSettings;
 
 @end
 

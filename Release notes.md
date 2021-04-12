@@ -1,5 +1,30 @@
 # Release notes
 
+## 2.2.0
+
+### New features:
+
+- We've added support for even more horizonal card layouts
+- We've added anonymization options for string and image results:
+	- Anonymization is available for these fields:
+		- Card number
+		- Card number prefix
+		- CVV
+		- Owner
+		- IBAN
+	- Choose the `MBCBlinkCardAnonymizationMode` for each field:
+		- `None`
+		- `ImageOnly` - Black boxes will cover chosen data
+		- `ResultFieldsOnly` - String data is redacted from the result, images are not anonymized
+		- `FullResult` - Both images and string data are anonymized
+	- Card number has further anonymization options available through `MBCCardNumberAnonymizationSettings`:
+		- `prefixDigitsVisible` - Defines how many digits at the beginning of the card number remain visible after anonymization
+		- `suffixDigitsVisible` - Defines how many digits at the end of the card number remain visible after anonymization
+
+### Bug fixes:
+
+- We've fixed missing `CFBundleVersion` and `CFBundleShortVersionString` from `Info.plist` bug
+
 ## 2.1.0
 
 ### New features:
@@ -19,10 +44,6 @@
 
 - We’ve updated our default UI with new error messages that appear when a user doesn’t place the card within a frame.
 - We’re no longer hiding the security code on the edit results screen.
-
-### Minor API changes:
-
-- We've replaced `Using time-limited license!` warning with `Using trial license!` warning. The warning message is displayed when using a trial license key. To disable it, use `showTrialLicenseWarning` on `MBCMicroblinkSDK`.
 
 ### Bug fixes:
 

@@ -30,3 +30,7 @@
 
 // Issuer
 #import "MBBlinkCardUtils.h"
+
+// Anonymization
+#import "MBCardNumberAnonymizationSettings.h"
+#import "MBBlinkCardAnonymizationSettings.h"

@@ -48,10 +48,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
 @property (nonatomic) NSString *customLocalizationFileName;
 
 /** Obtain the shared instance */
-@property (class, readonly) MBCMicroblinkApp *instance;
-
-/** Designated initializer */
-- (id)init;
++ (instancetype)sharedInstance NS_SWIFT_NAME(shared());
 
 /** Sets the language used in PhotoPaySDK */
 - (void)setLanguage:(NSString *)language;
@@ -87,15 +84,15 @@ MB_CLASS_AVAILABLE_IOS(8.0)
 
 // MARK: - Localization
 
-static inline NSString * MB_LOCALIZED_DEFAULT_STRING(NSString *key) {
+static inline NSString * MBC_LOCALIZED_DEFAULT_STRING(NSString *key) {
     return ([NSString stringWithFormat:@"[[%@]]", key]);
 }
 
-static inline NSString * MB_LOCALIZED_FOR_LANGUAGE(NSString *key, NSString *language) {
+static inline NSString * MBC_LOCALIZED_FOR_LANGUAGE(NSString *key, NSString *language) {
 
     NSString *overridenStringFromCustomBundle = NSLocalizedStringWithDefaultValue(key,
                                                                                   language,
-                                                                                  MBCMicroblinkApp.instance.customResourcesBundle,
+                                                                                  [MBCMicroblinkApp sharedInstance].customResourcesBundle,
                                                                                   @"",
                                                                                   @"");
     if ( overridenStringFromCustomBundle != nil && ![overridenStringFromCustomBundle isEqualToString:key]) {
@@ -104,13 +101,13 @@ static inline NSString * MB_LOCALIZED_FOR_LANGUAGE(NSString *key, NSString *lang
 
     return NSLocalizedStringWithDefaultValue(key,
                                              language,
-                                             [[MBCMicroblinkApp instance] resourcesBundle],
-                                             MB_LOCALIZED_DEFAULT_STRING(key),
+                                             [MBCMicroblinkApp sharedInstance].resourcesBundle,
+                                             MBC_LOCALIZED_DEFAULT_STRING(key),
                                              nil);
 }
 
-static inline NSString * MB_LOCALIZED(NSString *key) {
-    NSString *localizationFileName = MBCMicroblinkApp.instance.customLocalizationFileName;
+static inline NSString * MBC_LOCALIZED(NSString *key) {
+    NSString *localizationFileName = [MBCMicroblinkApp sharedInstance].customLocalizationFileName;
     if (localizationFileName) {
         NSString *overridenStringFromCustomLocalizationFile = NSLocalizedStringWithDefaultValue(key, localizationFileName, [NSBundle mainBundle], @"", @"");
 
@@ -119,13 +116,13 @@ static inline NSString * MB_LOCALIZED(NSString *key) {
         }
     }
     
-    NSString *localizedString = MB_LOCALIZED_FOR_LANGUAGE(key, MBCMicroblinkApp.instance.language);
+    NSString *localizedString = MBC_LOCALIZED_FOR_LANGUAGE(key, [MBCMicroblinkApp sharedInstance].language);
     
 #ifndef DNDEBUG
     return localizedString;
 #else
-    if ([localizedString isEqualToString:MB_LOCALIZED_DEFAULT_STRING(key)] && ![MBCMicroblinkApp.instance.language isEqualToString:@"en"]) {
-        localizedString = MB_LOCALIZED_FOR_LANGUAGE(key, @"en");
+    if ([localizedString isEqualToString:MBC_LOCALIZED_DEFAULT_STRING(key)] && ![MBCMicroblinkApp.sharedInstance.language isEqualToString:@"en"]) {
+        localizedString = MBC_LOCALIZED_FOR_LANGUAGE(key, @"en");
     }
     return localizedString;
 #endif
