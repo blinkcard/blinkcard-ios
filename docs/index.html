@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          MBBlinkCard v2.2.0 Docs
+          MBBlinkCard v2.3.0 Docs
         </a>
          (68% documented)
       </p>
@@ -609,7 +609,9 @@
 <li>enteprise-level security standards</li>
 </ul>
 
-<p>BlinkCard is a part of family of SDKs developed by <a href="http://www.microblink.com">Microblink</a> for optical text recognition, barcode scanning, ID document, payment card scanning and many others. </p>
+<p>BlinkCard is a part of family of SDKs developed by <a href="http://www.microblink.com">Microblink</a> for optical text recognition, barcode scanning, ID document, payment card scanning and many others.</p>
+
+<p>You can start by watching our <a href="https://vimeo.com/542575362/5f177c26a0">step-by-step tutorial</a>, in which you’ll find out how to make BlinkCard SDK a part of your iOS app.</p>
 <h1 id='table-of-contents' class='heading'>Table of contents</h1>
 
 <ul>
@@ -681,8 +683,8 @@
 </ul><div class="aside aside-since">
     <p class="aside-title">Since</p>
     <p>Since the libraries are stored on <a href="https://git-lfs.github.com">Git Large File Storage</a>, you need to install git-lfs by running these commands:</p>
-<pre class="highlight shell"><code>brew <span class="nb">install </span>git-lfs
-git lfs <span class="nb">install</span>
+<pre class="highlight shell"><code>brew install git-lfs
+git lfs install
 </code></pre>
 
 </div><ul>
@@ -696,14 +698,14 @@ git lfs <span class="nb">install</span>
 </ul>
 <pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'9.0'</span>
 <span class="n">target</span> <span class="s1">'Your-App-Name'</span> <span class="k">do</span>
-    <span class="n">pod</span> <span class="s1">'MBBlinkCard'</span><span class="p">,</span> <span class="s1">'~&gt; 2.2.0'</span>
+    <span class="n">pod</span> <span class="s1">'MBBlinkCard'</span><span class="p">,</span> <span class="s1">'~&gt; 2.3.0'</span>
 <span class="k">end</span>
 </code></pre>
 
 <ul>
 <li>Install the dependencies in your project:</li>
 </ul>
-<pre class="highlight shell"><code><span class="nv">$ </span>pod <span class="nb">install</span>
+<pre class="highlight shell"><code><span class="gp">$ </span>pod install
 </code></pre>
 
 <ul>
@@ -716,7 +718,7 @@ git lfs <span class="nb">install</span>
 <p>BlinkCard SDK is available via <a href="https://github.com/Carthage/Carthage">Carthage</a>. Please check out <a href="https://github.com/Carthage/Carthage/blob/master/README.md">Carthage documentation</a> if you are new to Carthage.</p>
 
 <ul>
-<li>Install Carthage. Check out <a href="https://github.com/Carthage/Carthage#installing-carthage">Installing Carthage guide</a>. Please make sure you have Carthage version &gt;= 0.35.0 installed.</li>
+<li>Install Carthage. Check out <a href="https://github.com/Carthage/Carthage#installing-carthage">Installing Carthage guide</a>. Please make sure you have <a href="https://github.com/Carthage/Carthage/releases/tag/0.38.0">Carthage =&gt; v0.38.0</a> installed.</li>
 <li>Create a Cartfile in the same directory where your .xcodeproj or .xcworkspace is.</li>
 <li>Add BlinkCard as a dependency to this Cartfile:</li>
 </ul>
@@ -724,7 +726,7 @@ git lfs <span class="nb">install</span>
 </code></pre>
 
 <ul>
-<li>Run <code>carthage update</code>.</li>
+<li>Run <code>carthage update --use-xcframeworks</code>.</li>
 <li>If successful, a Cartfile.resolved file and a Carthage directory will appear in the same directory as your Xcode project.</li>
 <li>Drag the binaries from <code>Carthage/Build/&lt;platform&gt;</code> into your application’s Xcode project.</li>
 </ul>
@@ -752,9 +754,9 @@ git lfs <span class="nb">install</span>
 <li>Add a new run script phase script to your app’s target</li>
 <li>Add the following script to force deep sign the frameworks with your own signing identity:</li>
 </ol>
-<pre class="highlight shell"><code>find <span class="s2">"</span><span class="k">${</span><span class="nv">CODESIGNING_FOLDER_PATH</span><span class="k">}</span><span class="s2">"</span> <span class="nt">-name</span> <span class="s1">'*.framework'</span> <span class="nt">-print0</span> | <span class="k">while </span><span class="nb">read</span> <span class="nt">-d</span> <span class="s1">$'</span><span class="se">\0</span><span class="s1">'</span> framework 
+<pre class="highlight shell"><code>find <span class="s2">"</span><span class="k">${</span><span class="nv">CODESIGNING_FOLDER_PATH</span><span class="k">}</span><span class="s2">"</span> -name <span class="s1">'*.framework'</span> -print0 | <span class="k">while </span><span class="nb">read</span> -d <span class="s1">$'</span><span class="se">\0</span><span class="s1">'</span> framework 
 <span class="k">do 
-    </span>codesign <span class="nt">--force</span> <span class="nt">--deep</span> <span class="nt">--sign</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EXPANDED_CODE_SIGN_IDENTITY</span><span class="k">}</span><span class="s2">"</span> <span class="nt">--preserve-metadata</span><span class="o">=</span>identifier,entitlements <span class="nt">--timestamp</span><span class="o">=</span>none <span class="s2">"</span><span class="k">${</span><span class="nv">framework</span><span class="k">}</span><span class="s2">"</span> 
+    </span>codesign --force --deep --sign <span class="s2">"</span><span class="k">${</span><span class="nv">EXPANDED_CODE_SIGN_IDENTITY</span><span class="k">}</span><span class="s2">"</span> --preserve-metadata<span class="o">=</span>identifier,entitlements --timestamp<span class="o">=</span>none <span class="s2">"</span><span class="k">${</span><span class="nv">framework</span><span class="k">}</span><span class="s2">"</span> 
 <span class="k">done</span>
 </code></pre>
 <h4 id='manual-integration' class='heading'>Manual integration</h4>
@@ -767,8 +769,8 @@ git lfs <span class="nb">install</span>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     <p>Since the libraries are stored on <a href="https://git-lfs.github.com">Git Large File Storage</a>, you need to install git-lfs by running these commands:</p>
-<pre class="highlight shell"><code>brew <span class="nb">install </span>git-lfs
-git lfs <span class="nb">install</span>
+<pre class="highlight shell"><code>brew install git-lfs
+git lfs install
 </code></pre>
 
 </div><ul>
@@ -1315,9 +1317,9 @@ If you are using Cocoapods, please be sure that you&rsquo;ve installed <code>git
 
 <span class="c"># This script loops through the frameworks embedded in the application and</span>
 <span class="c"># removes unused architectures.</span>
-find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">"</span> <span class="nt">-name</span> <span class="s1">'*.framework'</span> <span class="nt">-type</span> d | <span class="k">while </span><span class="nb">read</span> <span class="nt">-r</span> FRAMEWORK
+find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">"</span> -name <span class="s1">'*.framework'</span> -type d | <span class="k">while </span><span class="nb">read</span> -r FRAMEWORK
 <span class="k">do
-</span><span class="nv">FRAMEWORK_EXECUTABLE_NAME</span><span class="o">=</span><span class="si">$(</span>defaults <span class="nb">read</span> <span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/Info.plist"</span> CFBundleExecutable<span class="si">)</span>
+</span><span class="nv">FRAMEWORK_EXECUTABLE_NAME</span><span class="o">=</span><span class="k">$(</span>defaults <span class="nb">read</span> <span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/Info.plist"</span> CFBundleExecutable<span class="k">)</span>
 <span class="nv">FRAMEWORK_EXECUTABLE_PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/</span><span class="nv">$FRAMEWORK_EXECUTABLE_NAME</span><span class="s2">"</span>
 <span class="nb">echo</span> <span class="s2">"Executable is </span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
 
@@ -1326,17 +1328,17 @@ find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">
 <span class="k">for </span>ARCH <span class="k">in</span> <span class="nv">$ARCHS</span>
 <span class="k">do
 </span><span class="nb">echo</span> <span class="s2">"Extracting </span><span class="nv">$ARCH</span><span class="s2"> from </span><span class="nv">$FRAMEWORK_EXECUTABLE_NAME</span><span class="s2">"</span>
-lipo <span class="nt">-extract</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span> <span class="nt">-o</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span>
+lipo -extract <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span> -o <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span>
 EXTRACTED_ARCHS+<span class="o">=(</span><span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span><span class="o">)</span>
 <span class="k">done
 
 </span><span class="nb">echo</span> <span class="s2">"Merging extracted architectures: </span><span class="k">${</span><span class="nv">ARCHS</span><span class="k">}</span><span class="s2">"</span>
-lipo <span class="nt">-o</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="nt">-create</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
-<span class="nb">rm</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
+lipo -o <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> -create <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
+rm <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
 
 <span class="nb">echo</span> <span class="s2">"Replacing original executable with thinned version"</span>
-<span class="nb">rm</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
-<span class="nb">mv</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
+rm <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
+mv <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
 
 <span class="k">done</span>
 </code></pre>
@@ -1359,8 +1361,8 @@ lipo <span class="nt">-o</span> <span class="s2">"</span><span class="nv">$FRAME
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-04-12)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-05-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

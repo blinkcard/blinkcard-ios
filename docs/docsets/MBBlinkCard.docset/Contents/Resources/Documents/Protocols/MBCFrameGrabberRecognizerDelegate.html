@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.2.0 Docs
+          MBBlinkCard v2.3.0 Docs
         </a>
          (68% documented)
       </p>
@@ -592,7 +592,6 @@
             <h1>MBCFrameGrabberRecognizerDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MBCFrameGrabberRecognizerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span>
 <span class="err">@required</span>
 <span class="cm">/**
@@ -608,22 +607,14 @@
  *                     non-negative, however it's maximum is not defined - the higher the number
  *                     is, the better the observed quality of frame is.
  */</span>
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onFrameAvailable</span><span class="p">:(</span><span class="n"><a href="../Classes/MBCImage.html">MBCImage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraFrame</span> <span class="nf">isFocused</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">focused</span> <span class="nf">frameQuality</span><span class="p">:(</span><span class="n">CGFloat</span><span class="p">)</span><span class="nv">frameQuality</span><span class="p">;</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">onFrameAvailable</span><span class="o">:</span><span class="p">(</span><span class="n"><a href="../Classes/MBCImage.html">MBCImage</a></span> <span class="o">*</span><span class="p">)</span><span class="n">cameraFrame</span> <span class="n">isFocused</span><span class="o">:</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">focused</span> <span class="n">frameQuality</span><span class="o">:</span><span class="p">(</span><span class="n">CGFloat</span><span class="p">)</span><span class="n">frameQuality</span><span class="p">;</span>
 
 <span class="k">@end</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MBCFrameGrabberRecognizerDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
             <p>Undocumented</p>
 
-              <div class="slightly-smaller">
-                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.2.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h#L43-L60">Show on GitHub</a>
-              </div>
           </div>
         </section>
 
@@ -636,7 +627,7 @@
                     <code>
                     <a name="/c:objc(pl)MBCFrameGrabberRecognizerDelegate(im)onFrameAvailable:isFocused:frameQuality:"></a>
                     <a name="//apple_ref/objc/Method/-onFrameAvailable:isFocused:frameQuality:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCFrameGrabberRecognizerDelegate(im)onFrameAvailable:isFocused:frameQuality:">-onFrameAvailable:<wbr>isFocused:<wbr>frameQuality:<wbr></a>
+                    <a class="token" href="#/c:objc(pl)MBCFrameGrabberRecognizerDelegate(im)onFrameAvailable:isFocused:frameQuality:">-onFrameAvailable:isFocused:frameQuality:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -713,7 +704,7 @@ to store image for later processing, showing or saving, make sure you create a c
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.2.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h#L58">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.3.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_i386_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h#L58">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -726,8 +717,8 @@ to store image for later processing, showing or saving, make sure you create a c
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-04-12)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2021-05-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

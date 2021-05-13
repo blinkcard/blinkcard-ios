@@ -1,5 +1,19 @@
 # Release notes
 
+## 2.3.0
+
+### New features:
+
+- We’ve added support for vertical payment cards.
+- As of this release, BlinkCard supports the Visa Quick Read format (the one where the card number spans through four lines).
+- We've changed the threshold for "Camera too far" and "Camera too near" callbacks. From now on, the card needs to be closer to the camera.
+
+### Carthage:
+
+- To use BlinkCard SDK with Carthage, please update to [Carthage v0.38.0](https://github.com/Carthage/Carthage/releases/tag/0.38.0).
+- We've added XCFramework support
+	- Run `carthage update --use-xcframeworks`
+
 ## 2.2.0
 
 ### New features:

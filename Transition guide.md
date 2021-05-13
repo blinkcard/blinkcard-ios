@@ -1,3 +1,11 @@
+## 2.3.0
+
+### Carthage:
+
+- To use BlinkCard SDK with Carthage, please update to [Carthage v0.38.0](https://github.com/Carthage/Carthage/releases/tag/0.38.0).
+- We've added XCFramework support
+	- Run `carthage update --use-xcframeworks`
+
 ## 2.2.0
 
 - No changes
