@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
         
-    // Valid until: 2021-07-22
+    // Valid until: 2021-08-21
     [[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license" withExtension:@"txt" inSubdirectory:@"" forBundle:NSBundle.mainBundle errorCallback:^(MBCLicenseError licenseError) {
         switch (licenseError) {
             case MBCLicenseErrorInvalidLicense:

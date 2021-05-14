@@ -46,6 +46,8 @@ MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
 
 @property (nonatomic) CGFloat titleTextDelay;
 
+@property (nonatomic) UIView *centerView;
+
 @property (nonatomic, weak, nullable) id<MBCRectDocumentSubviewDelegate> rectSubviewDelegate;
 
 - (void)startScanLineAnimation;

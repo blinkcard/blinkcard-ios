@@ -17,7 +17,9 @@ BlinkCard SDK is a delightful component for quick and easy scanning of payment c
 - lightweight and no internet connection required
 - enteprise-level security standards
 
-BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others. 
+BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others.
+
+You can start by watching our [step-by-step tutorial](https://vimeo.com/542575362/5f177c26a0), in which you’ll find out how to make BlinkCard SDK a part of your iOS app.
 # Table of contents
 
 - [Requirements](#requirements)
@@ -87,7 +89,7 @@ pod init
 ```ruby
 platform :ios, '9.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.2.0'
+    pod 'MBBlinkCard', '~> 2.3.0'
 end
 ```
 
@@ -109,14 +111,14 @@ open <YourProjectName>.xcworkspace
 
 BlinkCard SDK is available via [Carthage](https://github.com/Carthage/Carthage). Please check out [Carthage documentation](https://github.com/Carthage/Carthage/blob/master/README.md) if you are new to Carthage.
 
-- Install Carthage. Check out [Installing Carthage guide](https://github.com/Carthage/Carthage#installing-carthage). Please make sure you have Carthage version >= 0.35.0 installed.
+- Install Carthage. Check out [Installing Carthage guide](https://github.com/Carthage/Carthage#installing-carthage). Please make sure you have [Carthage => v0.38.0](https://github.com/Carthage/Carthage/releases/tag/0.38.0) installed.
 - Create a Cartfile in the same directory where your .xcodeproj or .xcworkspace is.
 - Add BlinkCard as a dependency to this Cartfile:
 
 ```shell
 binary "https://github.com/BlinkCard/blinkcard-ios/blob/master/blinkcard-ios.json"
 ```
-- Run ```carthage update```.
+- Run ```carthage update --use-xcframeworks```.
 - If successful, a Cartfile.resolved file and a Carthage directory will appear in the same directory as your Xcode project.
 - Drag the binaries from ```Carthage/Build/<platform>``` into your application’s Xcode project.
 
