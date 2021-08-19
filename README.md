@@ -4,7 +4,6 @@
 
 [![CocoaPods](https://img.shields.io/cocoapods/p/MBBlinkCard.svg)]()
 [![Build Status](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)](https://travis-ci.org/blinkcard/blinkcard-ios)
-[![Pod Version](http://img.shields.io/cocoapods/v/MBBlinkCard.svg?style=flat)](http://cocoadocs.org/docsets/MBBlinkCard/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
@@ -89,7 +88,7 @@ pod init
 ```ruby
 platform :ios, '9.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.3.0'
+    pod 'MBBlinkCard', '~> 2.4.0'
 end
 ```
 
@@ -266,7 +265,7 @@ Objective-C
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MBCMicroblinkSDK.sharedInstance setLicenseResource:@"blinkid-license" withExtension:@"txt" inSubdirectory:@"" for:Bundle.main];
+    [MBCMicroblinkSDK.sharedInstance setLicenseResource:@"blinkid-license" withExtension:@"txt" inSubdirectory:@"" for:Bundle.main errorCallback:block];
 }
 
 
@@ -308,13 +307,13 @@ You can pass the license key as a string, the following way:
 Swift
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY")
+MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY", errorCallback: block)
 ```
 
 Objective-C
 
 ```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY"];
+[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY" errorCallback:block];
 ```
 
 #### License key as file
@@ -323,13 +322,13 @@ Or you can include the license key, with the code below. Please make sure that t
 Swift
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseResource("license-key-file", withExtension: "txt", inSubdirectory: "directory-to-license-key", for: Bundle.main)
+MBCMicroblinkSDK.shared().setLicenseResource("license-key-file", withExtension: "txt", inSubdirectory: "directory-to-license-key", for: Bundle.main, errorCallback: block)
 ```
 
 Objective-C
 
 ```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license-key-file" withExtension:@"txt" inSubdirectory:@"" forBundle:[NSBundle mainBundle]];
+[[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license-key-file" withExtension:@"txt" inSubdirectory:@"" forBundle:[NSBundle mainBundle] errorCallback:block];
 ```
 
 If the licence is invalid or expired then the methods above will throw an **exception**.
@@ -458,7 +457,7 @@ Please check our Samples for custom implementation of overlay view controller.
 
 Overlay View Controller is an abstract class for all overlay views.
 
-It's responsibility is to provide meaningful and useful interface for the user to interact with.
+Its responsibility is to provide meaningful and useful interface for the user to interact with.
 
 Typical actions which need to be allowed to the user are:
 
@@ -476,9 +475,9 @@ To use your custom overlay with Microblink's camera view, you must first subclas
 
 ### 2. Protocols
 
-There are five [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) protocols and one overlay protocol [`MBCOverlayViewControllerInterface`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCOverlayViewControllerInterface.html).
+There are five [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) protocols and one overlay protocol [`MBCBlinkCardOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCBlinkCardOverlayViewControllerDelegate.html).
 
-Five `RecognizerRunnerView` protocols are:
+Five `RecognizerRunnerViewController` protocols are:
 - [`MBCScanningRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCScanningRecognizerRunnerViewControllerDelegate.html)
 - [`MBCDetectionRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDetectionRecognizerRunnerViewControllerDelegate.html)
 - [`MBCOcrRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCOcrRecognizerRunnerViewControllerDelegate.html)
@@ -718,13 +717,13 @@ Here is a list of frequently asked questions and solutions for them and also a l
 We are supporting `ARM64 Device` slice through our `.xcframework` format.
 We are still in development supporting `ARM64 Simulator` slice for newly released ARM Macs and we will update our SDK with `ARM64 Simulator` support as soon as development is done.
 
-#### In demo everything worked, but after switching to production license I get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code as soon as I construct specific [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/docs/Classes/MBCRecognizer.html) object
+#### In demo everything worked, but after switching to production license I get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code as soon as I construct specific [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object
 
 Each license key contains information about which features are allowed to use and which are not. This `NSError` indicates that your production license does not allow using of specific `MBCRecognizer` object. You should contact [support](http://help.microblink.com) to check if provided licence is OK and that it really contains all features that you have purchased.
 
 #### I get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code with trial license key
 
-Whenever you construct any [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/docs/Classes/MBCRecognizer.html) object or, a check whether license allows using that object will be performed. If license is not set prior constructing that object, you will get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code. We recommend setting license as early as possible in your app.
+Whenever you construct any [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object or, a check whether license allows using that object will be performed. If license is not set prior constructing that object, you will get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code. We recommend setting license as early as possible in your app.
 
 #### Undefined Symbols on Architecture armv7
 
@@ -737,7 +736,7 @@ SDK crashes on armv7 devices if bitcode is enabled. We are working on it.
 
 #### In my `didFinish` callback I have the result inside my `MBCRecognizer`, but when scanning activity finishes, the result is gone
 
-This usually happens when using [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/docs/Classes/MBCRecognizerRunnerViewController.html) and forgetting to pause the [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/docs/Classes/MBCRecognizerRunnerViewController.html) in your `didFinish` callback. Then, as soon as `didFinish` happens, the result is mutated or reset by additional processing that `MBCRecognizer` performs in the time between end of your `didFinish` callback and actual finishing of the scanning activity. For more information about statefulness of the `MBCRecognizer` objects, check [this section](#recognizer-concept).
+This usually happens when using [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) and forgetting to pause the [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) in your `didFinish` callback. Then, as soon as `didFinish` happens, the result is mutated or reset by additional processing that `MBCRecognizer` performs in the time between end of your `didFinish` callback and actual finishing of the scanning activity. For more information about statefulness of the `MBCRecognizer` objects, check [this section](#recognizer-concept).
 
 #### Unsupported architectures when submitting app to App Store
 
@@ -780,7 +779,7 @@ done
 
 ### Disable logging
 
-Logging can be disabled by calling `disableMicroblinkLogging` method on [`MBCLogger`](http://blinkcard.github.io/blinkcard-ios/docs/Classes/MBCLogger.html) instance.
+Logging can be disabled by calling `disableMicroblinkLogging` method on [`MBCLogger`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLogger.html) instance.
 # <a name="size-report"></a> Size Report
 
 We are delivering complete size report of our BlinkCard SDK based on our BlinkCard-sample-Swift sample project. You can check that [here](https://github.com/BlinkCard/blinkcard-ios/tree/master/size-report).

@@ -1,3 +1,7 @@
+## 2.4.0
+
+- No changes
+
 ## 2.3.0
 
 ### Carthage:
