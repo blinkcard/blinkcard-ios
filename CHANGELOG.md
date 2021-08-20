@@ -1,5 +1,10 @@
 # Release notes
 
+## 2.4.0
+### Improvements and fixes:
+- We now support landscape orientation on [BlinkCardEditViewController](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardEditViewController.html) screen
+- From now on, BlinkCard reads and extracts the expiry date in MM/YYYY format
+
 ## 2.3.0
 
 ### New features:
