@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         var licenseErrorMessage = ""
         
-        // Valid until: 2021-12-17
+        // Valid until: 2022-03-15
         MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: .main) { (licenseError) in
             switch licenseError {
             case .invalidLicense:
@@ -30,6 +30,14 @@ class ViewController: UIViewController {
                 licenseErrorMessage = "License is locked"
             case .licenseCheckFailed:
                 licenseErrorMessage = "License check failed"
+            case .permissionExpired:
+                licenseErrorMessage = "Permission expired"
+            case .payloadCorrupted:
+                licenseErrorMessage = "Payload corrupted"
+            case .payloadSignatureVerificationFailed:
+                licenseErrorMessage = "Payload signature verification failed"
+            case .incorrectTokenState:
+                licenseErrorMessage = "Incorrect token state"
             @unknown default:
                 licenseErrorMessage = "Unknown error"
             }
