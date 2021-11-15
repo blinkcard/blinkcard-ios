@@ -1,5 +1,10 @@
 # Release notes
 
+## 2.5.0
+### Improvements and fixes:
+- Improved date extraction from partial dates.
+- Fixed broken anonymization in result screen when the PAN number was anonymized but the image was not. We now correctly anonymize the image too.
+
 ## 2.4.0
 ### Improvements and fixes:
 - We now support landscape orientation on [BlinkCardEditViewController](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardEditViewController.html) screen
