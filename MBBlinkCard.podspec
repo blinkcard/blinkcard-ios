@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "MBBlinkCard"
-  s.version     = "2.4.0"
+  s.version     = "2.5.0"
   s.summary     = "A delightful component for payment card scanning"
   s.homepage    = "http://microblink.com"
 
