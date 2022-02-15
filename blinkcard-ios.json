@@ -4,5 +4,6 @@
 	"2.2.0": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.2.0/BlinkCard.framework.zip",
 	"2.3.0": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.3.0/BlinkCard.framework.zip?alt=https://github.com/blinkcard/blinkcard-ios/releases/download/v2.3.0/BlinkCard.xcframework.zip",
 	"2.4.0": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.4.0/BlinkCard.framework.zip?alt=https://github.com/blinkcard/blinkcard-ios/releases/download/v2.4.0/BlinkCard.xcframework.zip",
-	"2.5.0": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.0/BlinkCard.framework.zip?alt=https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.0/BlinkCard.xcframework.zip"
+	"2.5.0": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.0/BlinkCard.framework.zip?alt=https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.0/BlinkCard.xcframework.zip",
+	"2.5.1": "https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.1/BlinkCard.framework.zip?alt=https://github.com/blinkcard/blinkcard-ios/releases/download/v2.5.1/BlinkCard.xcframework.zip"
 }

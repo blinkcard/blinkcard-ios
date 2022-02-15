@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.source      = {
-        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.5.0/blinkcard-ios_v2.5.0.tar.gz'
+        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.4.0/blinkcard-ios_v2.4.0.tar.gz'
   }
 
   s.platform     = :ios
