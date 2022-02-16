@@ -1,5 +1,10 @@
 # Release notes
 
+## 2.5.1
+
+### Visual identity update
+- We’ve updated Microblink logo and colors
+
 ## 2.5.0
 ### Improvements and fixes:
 - Improved date extraction from partial dates.

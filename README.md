@@ -88,7 +88,7 @@ pod init
 ```ruby
 platform :ios, '9.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.5.0'
+    pod 'MBBlinkCard', '~> 2.5.1'
 end
 ```
 
