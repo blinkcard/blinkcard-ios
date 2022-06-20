@@ -1,5 +1,12 @@
 # Release notes
 
+## 2.6.0
+​
+### Improvements
+- We’ve added support for 1000+ new credit card types.
+- Decrease of wrongly PAN field processing by 30% for horizontal credit cards, and by 60% for vertical credit cards.
+- Improvements in the Anonymization functionality for Quick Read formats on VISA credit cards, as well as general improvements for all other credit card types.
+
 ## 2.5.1
 
 ### Visual identity update

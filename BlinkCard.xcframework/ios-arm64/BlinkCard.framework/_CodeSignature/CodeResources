@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BlinkCard-Swift.h</key>
 		<data>
-		Ei0CcTcNhSalERiKz/XmY9HBLRQ=
+		GzLv+lSYYMG466OqqmRnzryG36Q=
 		</data>
 		<key>Headers/BlinkCard.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/MBCameraSettings.h</key>
 		<data>
-		Lgx6NfIgPGENfX0NEaqBt/GlXGk=
+		Nr/oIs99tyv2N2yTSuILj8QBTR4=
 		</data>
 		<key>Headers/MBCardNumberAnonymizationSettings.h</key>
 		<data>
@@ -230,7 +230,7 @@
 		</data>
 		<key>Headers/MBGeometry.h</key>
 		<data>
-		FZAktLkK1Xu6Vns6bRo/Uo2+V2A=
+		ow5jPARbikBF6rFCzC6M/XYkx64=
 		</data>
 		<key>Headers/MBGlareDetection.h</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Headers/MBImage.h</key>
 		<data>
-		UPKlAKt3fnZr/Spe6kimQe5qMpQ=
+		hJ2MWhaawaDB8M2vTKOyevtX084=
 		</data>
 		<key>Headers/MBImageExtensionFactors.h</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>Headers/MBPointDetectorSubview.h</key>
 		<data>
-		GBQbBKvG3pNdT3ld4gmJwxFpSlg=
+		tGaCWV3jLV6NBb6zy71IbPRngKE=
 		</data>
 		<key>Headers/MBProductIntegrationInfo.h</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>Headers/MBQuadDetectorSubview.h</key>
 		<data>
-		WWHSanEz2mS8gRA4gMwNqf06wAE=
+		eMIfe294Ems8jjV2eTwp25GUd8Q=
 		</data>
 		<key>Headers/MBQuadrangle.h</key>
 		<data>
@@ -366,7 +366,7 @@
 		</data>
 		<key>Headers/MBRecognizer.h</key>
 		<data>
-		0VlW+sfEBllWo+h4t3pEVUT2mfE=
+		upEpmD7SIc+oGrjI2lNs8XTU38Y=
 		</data>
 		<key>Headers/MBRecognizerCollection.h</key>
 		<data>
@@ -414,7 +414,7 @@
 		</data>
 		<key>Headers/MBSignedPayload.h</key>
 		<data>
-		jjqX/HklUwBmKGa4pQWsP6HBQZc=
+		Fnz6MAbO6eiQYsxZEIz+GNlEVWw=
 		</data>
 		<key>Headers/MBStringProcessingRecognizerRunnerDelegate.h</key>
 		<data>
@@ -446,75 +446,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KP+pXOdUdZ/iQXTf+hzde7s6FqU=
+		N4Blx5dN8Q52hH0qjj2v/AnGwbA=
+		</data>
+		<key>Model_1118d9d674e23996f70c6416b2bf5a6ce6ef24a6ad2c92f0ddd1e198e5f05305.strop</key>
+		<data>
+		BeSkS2UilWCkNZaNuCfZisJf5zM=
 		</data>
 		<key>Model_349432d66ef2b216155673b634f7d5c47795bed35719b954f726b5f0856740f3.strop</key>
 		<data>
-		cqi/e13JNKg3AuXVJgZRb51/8m0=
+		7XaFd1OC5aYvzbqR4FT+x5r0Qvg=
 		</data>
 		<key>Model_406f8d5d972cf76a9241b35abbe5758890353b9b7daa922f732c4151ff6a0d9c.strop</key>
 		<data>
-		AnTpn3VZPjH20Yinkxq/PzFHJ2M=
+		4bL2BSasZDDGTHBhM9FUD09mvK4=
 		</data>
 		<key>Model_76731e0beb8c4be154467d2248a49530571c5b73a2eaef987361f75d578f576f.strop</key>
 		<data>
-		xeWL56eVll7s4rVuBShj5TD7dDY=
+		PZTwlOjIKlLLRgt6DPHYP9t/IgE=
 		</data>
-		<key>Model_9dc0335b6b55322b592e8be0b7e57216af00e3badcf78a69aea2543e5ff2c0e3.strop</key>
+		<key>Model_830c13896f96c1cb6d5cad725f44e6aae470f8672d640d20b3272ed4bb839699.strop</key>
 		<data>
-		G3sVhMdPrQDa3opSyXpAEq5tW/0=
+		IbyonW3+iF/hPFd6KBtK5xNactI=
 		</data>
-		<key>Model_9ddda5959c7694e413899b6723956d42f8c89f80c1f673879440684bbb3b8dad.strop</key>
+		<key>Model_b9263312a9b623d1a3b75b643ccdcbc36aae52c278d721443468147c50e44583.strop</key>
 		<data>
-		6u2OO5hoPExHslRdwpQ1ganlw+w=
+		DOgRkMDsMEW0N7LSqJ1V7JKDqf8=
 		</data>
 		<key>Model_cc1fab8df49d9a21de6c7b76ccf0dac40b17fcfb7073cc520eca073cbf8e33e9.strop</key>
 		<data>
-		G8G3CXfaoSxBqjWzBxKuB/nr3K0=
+		HfZM3rtbR0PX4i/J5pb96jdVvmc=
 		</data>
-		<key>Model_d41e83baa5b06261e15e7baefad0bc6a145491b58130921d410d658e6d9c70bf.strop</key>
+		<key>Model_f132d1bd7614b1274fafb8a41ec6c047b84b2a43654ae2da5ddd78a2765601c6.strop</key>
 		<data>
-		wajkVRvXPIIf+lO2XZAlWAKCQY8=
-		</data>
-		<key>Model_e10bce9a414a7da1191868196799db37f21a56d11e9619e8db91127cd1881238.strop</key>
-		<data>
-		mLpVCEK/GdTgkXDcoOTGMyt2iqw=
-		</data>
-		<key>Model_f1bfb0da115c7d247dd44b6082e53cddf830058e3cf1ef88161e77a42584fb31.strop</key>
-		<data>
-		OBOH2w5fcICjwJYDgp95OAlWD9U=
+		myN13aGGUP9VE5/0vwDWcHJF5uc=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		1ybUNBRv0/GTa0aD58gF7hwt6pQ=
-		</data>
-		<key>Modules/BlinkCard.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		1ybUNBRv0/GTa0aD58gF7hwt6pQ=
+		anpcaQtzE8tmlKJdySayxlEdzjk=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NWFyYt+DAnMLT697yTPggA6B39A=
+		AMsDfLQiLl1oST2GBBNFIA+8j/o=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AKVBfNAwVHkIuZ6RyPM+1BXaWc8=
+		24/idEIMQo4g+k6EZOK98nACFlg=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Z7nPEUBEahoaacAAZv3gDR3mf0g=
-		</data>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		NWFyYt+DAnMLT697yTPggA6B39A=
-		</data>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		AKVBfNAwVHkIuZ6RyPM+1BXaWc8=
-		</data>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		Z7nPEUBEahoaacAAZv3gDR3mf0g=
+		45Ma71HVSFGelUbua77HCZufYJM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -555,6 +535,10 @@
 		<key>blinkcard_logo@3x.png</key>
 		<data>
 		lkHHu5G9sNHZQE8whYCQ6JxeLLg=
+		</data>
+		<key>card_templates.zzip</key>
+		<data>
+		LZvjBUwqntmyvMyjo5bVQfODqdQ=
 		</data>
 		<key>cbl-error.png</key>
 		<data>
@@ -940,10 +924,6 @@
 		<data>
 		8qpeyxqw+n3PyBUHdx/b6xAo9Hg=
 		</data>
-		<key>templates.zzip</key>
-		<data>
-		P7VtstEg7QwH3F4w2pBWAiO2970=
-		</data>
 		<key>th.strings</key>
 		<data>
 		tPMlb6nPRsGRxO7QGh3cVR6AaqQ=
@@ -1044,7 +1024,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SlkwjrEKM8RoOMSRvJkRQ4SPXNhkcV8WbLsOjgK+mvw=
+			TZlWmMEP4dkxMD2YuL+unwWyzxUD5LnBRZSaU+7uM7g=
 			</data>
 		</dict>
 		<key>Headers/BlinkCard.h</key>
@@ -1191,7 +1171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4EPUeuUu1Z+ipIXQVngvoxUph0i4Og1KIsoRzdoqrh4=
+			jLcdQYVVhv4XS+CftFrxOqN+UMYsSe46Y+iLo3P9I5A=
 			</data>
 		</dict>
 		<key>Headers/MBCardNumberAnonymizationSettings.h</key>
@@ -1415,7 +1395,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E+i+JKUUgE0dJSrmSnohaEz29h5sSFlMM3RF3PYqQKM=
+			DKjZEYchC90jkL1Mh+w1ACQXJe4eULyETg/WSWWm2G8=
 			</data>
 		</dict>
 		<key>Headers/MBGlareDetection.h</key>
@@ -1450,7 +1430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sEPIhYDzrcPqRRvroNVs9V9nkM6qw26fmHQvQ+7aKc0=
+			gnwPezf4YjBUJATSCXq3dJw9cHrnTJX7BBOw/9/PNXw=
 			</data>
 		</dict>
 		<key>Headers/MBImageExtensionFactors.h</key>
@@ -1625,7 +1605,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FuaWKFufcPrk5MgZXxoOEEmQ+mu0CQErTIgLWRImJR0=
+			zw3rISbroTGBTdiJlJmMiLlYIuUyATmHWxY16w+qL+U=
 			</data>
 		</dict>
 		<key>Headers/MBProductIntegrationInfo.h</key>
@@ -1639,7 +1619,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GTohllC0RwP3Dyh2OEIuS0tCqPHfL5rOYsCSi0ixjCI=
+			MqMTIHHKXW8xqmhsrp4CrHQx2tfgxGVENLh+54cWJoM=
 			</data>
 		</dict>
 		<key>Headers/MBQuadrangle.h</key>
@@ -1653,7 +1633,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G12ZFyqvUHCw4RNxs2RuGBFJF1fiMLivN04NluZpODw=
+			jw+5yAnpqnq0k5Oddm5Fo2cqqwKGK08n5dz1TxG0vsU=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerCollection.h</key>
@@ -1737,7 +1717,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ulkVKaM9+ZlUl8xTspRgZYS9KEW1Pss9LO40uyLsCQ=
+			UKB4XPe6nys/2ikGt1lP756+O768iN/VLMJ6FNC/HV4=
 			</data>
 		</dict>
 		<key>Headers/MBStringProcessingRecognizerRunnerDelegate.h</key>
@@ -1789,123 +1769,88 @@
 			7eUplzMzM/0R3X9vq3btyeUeiRgKOHwGQWWiIYwbEPs=
 			</data>
 		</dict>
+		<key>Model_1118d9d674e23996f70c6416b2bf5a6ce6ef24a6ad2c92f0ddd1e198e5f05305.strop</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HarrSTf/AZofq1nYJ5ackqBJdGW7ew83Lc7REer07tM=
+			</data>
+		</dict>
 		<key>Model_349432d66ef2b216155673b634f7d5c47795bed35719b954f726b5f0856740f3.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rWpdTy93leoetdCg3kczRK47drauit3mxUvkth441oY=
+			pCR2z0EmVjBQ4nqQHP9uRQWGC57c3Osu55ehNODqqDQ=
 			</data>
 		</dict>
 		<key>Model_406f8d5d972cf76a9241b35abbe5758890353b9b7daa922f732c4151ff6a0d9c.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TG0UvO3Ba4lhzIVAYI05LbtEuR0ZihzqJYRAGTlxvb0=
+			qrCaVI8+7iXtZtYNC/Vfw9+9e716HlHmeInp4PgB+Sg=
 			</data>
 		</dict>
 		<key>Model_76731e0beb8c4be154467d2248a49530571c5b73a2eaef987361f75d578f576f.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hB95wMZVMYTtfKtfxSg0+kmvd4JNBWO1U2sCIAXBZRE=
+			bVVHbe8ThNs2g1Yw5BxH6pcxgYY3HCPTQuYVtsjemKU=
 			</data>
 		</dict>
-		<key>Model_9dc0335b6b55322b592e8be0b7e57216af00e3badcf78a69aea2543e5ff2c0e3.strop</key>
+		<key>Model_830c13896f96c1cb6d5cad725f44e6aae470f8672d640d20b3272ed4bb839699.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXouq1l2q7br3YisIAK32x8FkZO5gtfjy7V1nMqEPS8=
+			wYxufmqaLphBI2Iz4MFmjwR81/1SxDxgl5zMm+yOScY=
 			</data>
 		</dict>
-		<key>Model_9ddda5959c7694e413899b6723956d42f8c89f80c1f673879440684bbb3b8dad.strop</key>
+		<key>Model_b9263312a9b623d1a3b75b643ccdcbc36aae52c278d721443468147c50e44583.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YL+Tr0IYVyzvzz90OOcqAhBzKqQLBBjbro3cQv19GYY=
+			nXSjfkk+CG8xHsxjHU0/pmePDSuTqAERiwQJA0JJOCg=
 			</data>
 		</dict>
 		<key>Model_cc1fab8df49d9a21de6c7b76ccf0dac40b17fcfb7073cc520eca073cbf8e33e9.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1YtdQsFn/Vr4dkiQ4PU4uRAIW/4vrcln0W5LL9CN//U=
+			wLSLF74hFWIQW2OLX3e2EUV5JT7+rClZHd9rmL6BUcE=
 			</data>
 		</dict>
-		<key>Model_d41e83baa5b06261e15e7baefad0bc6a145491b58130921d410d658e6d9c70bf.strop</key>
+		<key>Model_f132d1bd7614b1274fafb8a41ec6c047b84b2a43654ae2da5ddd78a2765601c6.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8NQ1IAfo42J+PfMthJMjTbVKQhUVLVSfPcnTAGzMr5U=
-			</data>
-		</dict>
-		<key>Model_e10bce9a414a7da1191868196799db37f21a56d11e9619e8db91127cd1881238.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AFSh4+ql5U1i1aQ2y1erKIEWQRjksRdO4zyPzln0itA=
-			</data>
-		</dict>
-		<key>Model_f1bfb0da115c7d247dd44b6082e53cddf830058e3cf1ef88161e77a42584fb31.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2mEWUrmbWmxAdHe7yBv/grKn0jOEYzOLeaGoAFg37kI=
+			ASdAV54c5RvIgZ2gDSMIw3PUAMo/nkim8VDFtu0Pg6w=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mR/5JDFv0nd69ZhVz4Z53QpAGjJSLHfSW2D9xkE5hWE=
-			</data>
-		</dict>
-		<key>Modules/BlinkCard.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mR/5JDFv0nd69ZhVz4Z53QpAGjJSLHfSW2D9xkE5hWE=
+			plaMdpGtiSdjrvwT56utKOc/bPEV0z354XFWdXxIo+k=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1mpjZqaahYhxYSUuB0z2I1WG2jsCS14smJbgzsyNEa4=
+			2NQLzCEfMsqNmX5am6zU/9aIvpMAx0hp+jx0MQVHzMA=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x2u7HH9n07e+/uO+KkQtjfErkLDt4CZlG/yDQPECCNs=
+			cW8lghGhGxd5p9GyMxmoBJlAnIG6zTnRtjbZ3QqBnLo=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1GHpHgqiTJU+fsYwfcVN4YcbtPNISGqtlUr03q3zyMs=
-			</data>
-		</dict>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1mpjZqaahYhxYSUuB0z2I1WG2jsCS14smJbgzsyNEa4=
-			</data>
-		</dict>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x2u7HH9n07e+/uO+KkQtjfErkLDt4CZlG/yDQPECCNs=
-			</data>
-		</dict>
-		<key>Modules/BlinkCard.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1GHpHgqiTJU+fsYwfcVN4YcbtPNISGqtlUr03q3zyMs=
+			/On4oU4/H1jZv3z8iDwfSPvXQL9U3DK/hclJs4yxJsY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1976,6 +1921,13 @@
 			<key>hash2</key>
 			<data>
 			3d1PuLhdqTciqY7J/tBJuJcnLmaTSddjA8dXD40TGpQ=
+			</data>
+		</dict>
+		<key>card_templates.zzip</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XiZFfCxlJeszD2zql9BtJzWl4L8kfjvW9lE4Ks3g2Ec=
 			</data>
 		</dict>
 		<key>cbl-error.png</key>
@@ -2648,13 +2600,6 @@
 			<key>hash2</key>
 			<data>
 			cZZH4WaGs9KDYy9D4mRA3M4i2cWucO/GxlwmBKzlBMk=
-			</data>
-		</dict>
-		<key>templates.zzip</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WoD6la24wSHsayG2QIH+n+uqFXm8hQhw2xE+vxqaSd8=
 			</data>
 		</dict>
 		<key>th.strings</key>
