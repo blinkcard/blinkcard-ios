@@ -21,20 +21,20 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.5.1 Docs
+          MBBlinkCard v2.6.0 Docs
         </a>
          (73% documented)
       </p>
     
-      <p class="header-col--secondary">
+      <div class="header-col--secondary">
         <form role="search" action="../search.json">
           <input type="text" placeholder="Search documentation" data-typeahead>
         </form>
-      </p>
+      </div>
     
         <p class="header-col header-col--secondary">
           <a class="header-link" href="https://github.com/blinkcard/blinkcard-ios">
-            <img class="header-icon" src="../img/gh.png"/>
+            <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
             View on GitHub
           </a>
         </p>
@@ -43,7 +43,7 @@
 
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">MBBlinkCard Reference</a>
-      <img class="carat" src="../img/carat.png" />
+      <img class="carat" src="../img/carat.png" alt=""/>
       MBCOverlayContainerViewController Protocol Reference
     </p>
 
@@ -338,13 +338,22 @@
             <h1>MBCOverlayContainerViewController</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MBCOverlayContainerViewController</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/MBCRecognizerRunnerViewController.html">MBCRecognizerRunnerViewController</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MBCOverlayContainerViewController</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/MBCRecognizerRunnerViewController.html">MBCRecognizerRunnerViewController</a></span></code></pre>
 
                 </div>
               </div>
             <p>Overlay View Controller also needs to notify CameraViewController on certain events.
 Those are events specified by MBCOverlayViewControllerDelegate protocol.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L17-L63">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -357,7 +366,7 @@ Those are events specified by MBCOverlayViewControllerDelegate protocol.</p>
                     <code>
                     <a name="/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerWillCloseCamera:"></a>
                     <a name="//apple_ref/objc/Method/-overlayViewControllerWillCloseCamera:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerWillCloseCamera:">-overlayViewControllerWillCloseCamera:</a>
+                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerWillCloseCamera:">-overlayViewControllerWillCloseCamera:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -384,7 +393,7 @@ by pressing Cancel button.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L25">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L25">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -394,7 +403,7 @@ by pressing Cancel button.</p>
                     <code>
                     <a name="/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerShouldDisplayTorch:"></a>
                     <a name="//apple_ref/objc/Method/-overlayViewControllerShouldDisplayTorch:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerShouldDisplayTorch:">-overlayViewControllerShouldDisplayTorch:</a>
+                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewControllerShouldDisplayTorch:">-overlayViewControllerShouldDisplayTorch:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -421,7 +430,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L31">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L31">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -431,7 +440,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                     <code>
                     <a name="/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewController:willSetTorch:"></a>
                     <a name="//apple_ref/objc/Method/-overlayViewController:willSetTorch:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewController:willSetTorch:">-overlayViewController:willSetTorch:</a>
+                    <a class="token" href="#/c:objc(pl)MBCOverlayContainerViewController(im)overlayViewController:willSetTorch:">-overlayViewController:<wbr>willSetTorch:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -459,7 +468,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L38">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L38">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -499,7 +508,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         <p>YES if help button should be displayed.</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L46">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L46">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -534,7 +543,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L51">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -569,7 +578,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L56">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -604,7 +613,7 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.5.1/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L61">Show on GitHub</a>
+                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayContainerViewController.h#L61">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -617,9 +626,8 @@ Torch button is not necessary if the device doesn&rsquo;t support torch mode (e.
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="http://microblink.com" target="_blank" rel="external">Microblink</a>. All rights reserved. (Last updated: 2022-02-15)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2022 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2022-06-20)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
-</div>
 </html>

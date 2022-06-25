@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "MBBlinkCard"
-  s.version     = "2.5.1"
+  s.version     = "2.6.0"
   s.summary     = "A delightful component for payment card scanning"
   s.homepage    = "http://microblink.com"
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license     = {
         :type => 'commercial',
         :text => <<-LICENSE
-                © 2013-2022 Microblink Ltd. All rights reserved.
+                © 2013-2019 Microblink Ltd. All rights reserved.
                 LICENSE
         }
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.source      = {
-        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.5.1/blinkcard-ios_v2.5.1.tar.gz'
+        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.6.0/blinkcard-ios_v2.6.0.tar.gz'
   }
 
   s.platform     = :ios

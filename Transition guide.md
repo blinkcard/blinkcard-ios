@@ -1,3 +1,7 @@
+## 2.6.0
+
+- No changes
+
 ## 2.5.0
 
 - No changes

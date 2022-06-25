@@ -17,4 +17,9 @@
  */
 - (void)detectionFinishedWithDisplayableQuad:(MBCDisplayableQuadDetection *)displayableQuadDetection;
 
+/**
+ * This method should be called when MBCDisplayableQuadDetection is obtained and quad need to be drawn/redrawn with camera preview zoom enabled by setting previewZoomScale property on cameraSettings.
+ */
+- (void)detectionFinishedWithDisplayableQuad:(MBCDisplayableQuadDetection *)displayableQuadDetection originalRectangle:(CGRect)originalRect relativeRectangle:(CGRect)relativeRectangle;
+
 @end

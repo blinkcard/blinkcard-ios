@@ -17,4 +17,9 @@
  */
 - (void)detectionFinishedWithDisplayablePoints:(MBCDisplayablePointsDetection *)displayablePointsDetection;
 
+/**
+ * This method should be called when MBCDisplayablePointsDetection is obtained and points need to be drawn/redrawn with camera preview zoom enabled by setting previewZoomScale property on cameraSettings.
+ */
+- (void)detectionFinishedWithDisplayablePoints:(MBCDisplayablePointsDetection *)displayablePointsDetection originalRectangle:(CGRect)originalRect relativeRectangle:(CGRect)relativeRectangle;
+
 @end

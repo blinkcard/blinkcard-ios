@@ -3,7 +3,7 @@
 if [ "$#" -ne 2 ]
 then
   echo "Usage: $0 PATH_TO_SAMPLES PROJECT_NAME"
-  echo "Example: $0 blinkid-ios/Samples BlinkID-sample-Swift"
+  echo "Example: $0 ../Samples BlinkCard"
   exit 1
 fi
 
@@ -18,7 +18,7 @@ if [ -d "$PATH_TO_SAMPLES" ]; then
     PROJECT_NAME = "pdf417"
   fi
 
-  xcodebuild -project $PATH_TO_SAMPLES/$PROJECT_NAME-sample-Swift/$PROJECT_NAME-sample-Swift.xcodeproj -sdk iphoneos archive -archivePath $PATH_TO_SIZE_REPORT/app.xcarchive -scheme $PROJECT_NAME-sample-Swift
+  xcodebuild -project $PATH_TO_SAMPLES/$PROJECT_NAME-Sample-Swift/$PROJECT_NAME-Sample-Swift.xcodeproj -sdk iphoneos archive -archivePath $PATH_TO_SIZE_REPORT/app.xcarchive -scheme $PROJECT_NAME-Sample-Swift
 
   xcodebuild -exportArchive -archivePath $PATH_TO_SIZE_REPORT/app.xcarchive -exportPath $PATH_TO_SIZE_REPORT/app.ipa -exportOptionsPlist $PATH_TO_SIZE_REPORT/exportOptions.plist -allowProvisioningUpdates
 
