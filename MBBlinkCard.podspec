@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   # ――― MULTI-PLATFORM VALUES ――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.ios.deployment_target = '9.0.0'
+  s.ios.deployment_target = '11.0.0'
   s.ios.requires_arc = false
   s.ios.vendored_frameworks = 'BlinkCard.xcframework'
   s.ios.frameworks = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'AssetsLibrary', 'CoreMedia', 'ImageIO'
