@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Overlay subview presenting the status of glare detection.
  * The subview is presented as translucent view with detection status label in the center of ID Card View Finder View
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCGlareStatusSubview : MBCSubview
 
 @property (nonatomic) UILabel *label;

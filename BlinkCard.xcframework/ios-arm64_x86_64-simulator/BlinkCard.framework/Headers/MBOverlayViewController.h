@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
  - a way to cancel the scanining, typically with a "cancel" or "back" button
  - a way to power on and off the light (i.e. "torch") button
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCOverlayViewController : UIViewController
 
 MB_INIT_UNAVAILABLE

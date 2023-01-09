@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Overlay subview presenting status of OCR detection. Dots are displayed over locations of detected characters.
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCDotsResultSubview : MBCSubview <MBCPointDetectorSubview>
 
 /**

@@ -1,6 +1,6 @@
 language: objective-c
-osx_image: xcode13.3
-xcode_sdk: iphonesimulator15.0
+osx_image: xcode14.2
+xcode_sdk: iphonesimulator16.0
 
 install: true
 before_install: ./travis/before_script.sh

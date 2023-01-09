@@ -24,13 +24,13 @@ typedef NS_ENUM(NSInteger, MBCProcessingOrientation) {
     /** Text is upside down */
     MBCProcessingOrientationDown,
     /** Text is rotated 90 degrees counterclockwise */
-    MBCProcessingOrientationLeft,
+    MBCProcessingOrientationLeft
 };
 
 /**
  * Object which represents an image.
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCImage : NSObject
 
 /**

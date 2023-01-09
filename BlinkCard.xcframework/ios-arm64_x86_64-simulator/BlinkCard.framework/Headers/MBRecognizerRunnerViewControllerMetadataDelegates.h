@@ -16,7 +16,7 @@
 /**
  * Class containing all metadata delegates
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCRecognizerRunnerViewControllerMetadataDelegates : NSObject
  
 @property (nonatomic, weak, nullable) id<MBCDebugRecognizerRunnerViewControllerDelegate> debugRecognizerRunnerViewControllerDelegate;

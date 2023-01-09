@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-MB_CLASS_AVAILABLE_IOS(9.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCBlinkCardAnonymizationSettings : NSObject<NSCopying>
 
 MB_INIT
@@ -52,6 +52,13 @@ MB_INIT
  * Default: MBCBlinkCardAnonymizationModeNone
  */
 @property(nonatomic, assign) MBCBlinkCardAnonymizationMode ownerAnonymizationMode;
+
+/**
+ * If true, anonymization is applied on all fields of the image if extraction is uncertain.
+ *
+ * Default: NO
+ */
+@property(nonatomic, assign)  BOOL fallbackAnonymization;
 
 @end
 

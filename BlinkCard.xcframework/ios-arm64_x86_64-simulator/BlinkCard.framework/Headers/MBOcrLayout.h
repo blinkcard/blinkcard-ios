@@ -34,7 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @see MBCOcrLine
  * @see MBCOcrChar
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCOcrLayout : NSObject
 
 /**
@@ -109,7 +109,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
  *
  * @see MBCOcrLine
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCOcrBlock : NSObject
 
 /**
@@ -151,7 +151,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
  *
  * @see MBCOcrChar
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCOcrLine : NSObject
 
 /**
@@ -188,7 +188,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
 
 @end
 
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCCharWithVariants : NSObject
 
 /**
@@ -224,7 +224,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
 /**
  * Class representing an individual OCR character obtained in the OCR process.
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCOcrChar : NSObject
 
 /**
@@ -276,7 +276,7 @@ MB_CLASS_AVAILABLE_IOS(8.0)
  * Class representing a position on the image. It's given as a box, with
  * sides aligned to the sides of the image.
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCPosition : NSObject
 
 /**

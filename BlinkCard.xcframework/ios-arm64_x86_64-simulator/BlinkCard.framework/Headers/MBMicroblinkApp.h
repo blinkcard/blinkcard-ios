@@ -15,25 +15,13 @@
 
 #define PP_IS_IPAD (([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad))
 
-/*
- *  System Versioning Preprocessor Macros
- */
-
-#define SYSTEM_VERSION_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
-#define SYSTEM_VERSION_GREATER_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) \
-    ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
-#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) \
-    ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
-
 #define PP_NOTIFY(notificationKey, valueKey)                                                                  \
     {                                                                                                         \
         NSDictionary *dict = [NSDictionary dictionaryWithObject:@(YES) forKey:valueKey];                      \
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationKey object:nil userInfo:dict]; \
     }
 
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCMicroblinkApp : NSObject
 
 @property (nonatomic) NSString *language;
@@ -119,7 +107,7 @@ static inline NSString * MBC_LOCALIZED(NSString *key) {
     NSString *language = [MBCMicroblinkApp sharedInstance].language;
     NSString *localizedString = MBC_LOCALIZED_FOR_LANGUAGE(key, language);
     
-#ifndef DNDEBUG
+#if DEBUG
     return localizedString;
 #else
     if ([localizedString isEqualToString:MBC_LOCALIZED_DEFAULT_STRING(key)]) {

@@ -18,23 +18,27 @@
 		</data>
 		<key>Headers/BlinkCard-Swift.h</key>
 		<data>
-		GzLv+lSYYMG466OqqmRnzryG36Q=
+		w0100Yo7TsRswc2ofWwPvEWFhZ8=
 		</data>
 		<key>Headers/BlinkCard.h</key>
 		<data>
-		229wfB4x2jaSuWVpiClSX15amVQ=
+		LS6RxmE5gWl4SxT7WlinvAxHgNA=
 		</data>
 		<key>Headers/MBBaseOcrOverlaySettings.h</key>
 		<data>
-		Cffq2lVZ96teXzBL70K4CxEeYOs=
+		YilV4OaBfAE8gFNp94jMj4nXBJ4=
 		</data>
 		<key>Headers/MBBaseOverlaySettings.h</key>
 		<data>
-		pel3dNM+ZktsjvkhD6boULewcFA=
+		tuFZWQDUs+Lt/ncLMhNA1xkfIak=
 		</data>
 		<key>Headers/MBBaseOverlayViewController.h</key>
 		<data>
-		nMyH8PnY2OIsfNeDJITbG5zP/pM=
+		hTb6KRs0e2+772D63MAtJsneSZs=
+		</data>
+		<key>Headers/MBBgraImage.h</key>
+		<data>
+		+vjKKXmuRDaYIYqcSkTOY8b9kO0=
 		</data>
 		<key>Headers/MBBlinkCardAnonymizationMode.h</key>
 		<data>
@@ -42,27 +46,27 @@
 		</data>
 		<key>Headers/MBBlinkCardAnonymizationSettings.h</key>
 		<data>
-		ZkpV3lKEItGZgdi3c557P7u/WWU=
+		AZMc5G0v7trBWnZOFsSvEZe9iNY=
 		</data>
 		<key>Headers/MBBlinkCardEditFieldConfiguration.h</key>
 		<data>
-		jPXFFhL2+I3UvyQgvGnJXrV01Cg=
+		5iVrvGjS1A5o3Z+nqOXIOd7p60g=
 		</data>
 		<key>Headers/MBBlinkCardEditNavigationController.h</key>
 		<data>
-		Bv4YhDzV5508ledbkb9hnSLcix8=
+		5pqYw8bg9fKPflGvSMR/qGLf8cU=
 		</data>
 		<key>Headers/MBBlinkCardEditOverlayTheme.h</key>
 		<data>
-		urbsaBfPsx/s2l4G02SDo/FbXvE=
+		1/BjLyl/L+lLk+YdU0XLckeNYuA=
 		</data>
 		<key>Headers/MBBlinkCardEditResult.h</key>
 		<data>
-		8sd7RaCcMtp+FQgaBNKd30NdhI4=
+		z2koVuYuv8iA2eGJ4tj2EKi8r70=
 		</data>
 		<key>Headers/MBBlinkCardEditViewController.h</key>
 		<data>
-		JGeMh7O1NWjeQd6sz2QZ/evH//A=
+		W2p2IZ4oJ1ynOeYDYCcPBTQFCSo=
 		</data>
 		<key>Headers/MBBlinkCardEntities.h</key>
 		<data>
@@ -70,15 +74,15 @@
 		</data>
 		<key>Headers/MBBlinkCardOverlaySettings.h</key>
 		<data>
-		Q5ztZ43bZIz4DKwpg5couYf7qZY=
+		Ruwq7aWrahDMwdx5pK9f2IVITnc=
 		</data>
 		<key>Headers/MBBlinkCardOverlayTheme.h</key>
 		<data>
-		z91ReqWw6dkaXxmfrjCMRuLK/xw=
+		dVl9C2g7xPb129p3rOXr/ORbDUg=
 		</data>
 		<key>Headers/MBBlinkCardOverlayViewController.h</key>
 		<data>
-		mCUmczRiaJjgpex0I3g+5PcZ8OM=
+		uVhMsNjGINv7QI45lpiPdup74Gc=
 		</data>
 		<key>Headers/MBBlinkCardProcessingStatus.h</key>
 		<data>
@@ -86,11 +90,11 @@
 		</data>
 		<key>Headers/MBBlinkCardRecognizer.h</key>
 		<data>
-		UagCuvtZFuj3gEEBGBlmtilXR7o=
+		eCUi8/J0gl11mb0NSoIG94mp7x8=
 		</data>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
 		<data>
-		KF9UtWwn5/k/TLo3CxMtUc9SVsA=
+		ekBCQo0uVv4M+ArjaxeQKQH+pYk=
 		</data>
 		<key>Headers/MBBlinkCardUIComponents.h</key>
 		<data>
@@ -98,15 +102,19 @@
 		</data>
 		<key>Headers/MBBlinkCardUtils.h</key>
 		<data>
-		81pqE+z4ijihNg7WNcZETZ1Bghc=
+		molW6z2inu8yEjJ63ocDuU0XNSE=
+		</data>
+		<key>Headers/MBCameraReticle.h</key>
+		<data>
+		CRssI3THRmSHYdT/5en5teM6oZ4=
 		</data>
 		<key>Headers/MBCameraSettings.h</key>
 		<data>
-		Nr/oIs99tyv2N2yTSuILj8QBTR4=
+		u5jbfkYxdECoftADTxxz/S3jlsk=
 		</data>
 		<key>Headers/MBCardNumberAnonymizationSettings.h</key>
 		<data>
-		spRHut30MPbtnrFdM7I5SO/VIVk=
+		bJeMqqGTC1MJHiL3RJucFygNDO8=
 		</data>
 		<key>Headers/MBCombinedFullDocumentImageResult.h</key>
 		<data>
@@ -118,15 +126,19 @@
 		</data>
 		<key>Headers/MBCombinedRecognizerResult.h</key>
 		<data>
-		+dUXCq6JKW/9aeYUfWcCBllmxEk=
+		nSEcfXKLOpKXC58VQuHwjYbXUFU=
 		</data>
 		<key>Headers/MBCustomOverlayViewController.h</key>
 		<data>
-		UmzvctnvQnuO33fKUydixgvaZzU=
+		01NVzSxe7Rf3YGQGE1Qkcw2BuAs=
 		</data>
-		<key>Headers/MBDateResult.h</key>
+		<key>Headers/MBDataMatchState.h</key>
 		<data>
-		bJgwZ3aKkyoa2IbhKLSE0ygDGr0=
+		OU68oRRFHkWUVwyqJcexkMONJQ4=
+		</data>
+		<key>Headers/MBDate.h</key>
+		<data>
+		Na8aJmROvOrUhcpsfRJRGeiXRiM=
 		</data>
 		<key>Headers/MBDebugRecognizerRunnerDelegate.h</key>
 		<data>
@@ -146,31 +158,31 @@
 		</data>
 		<key>Headers/MBDetectionStatus.h</key>
 		<data>
-		Mt+fVTO804R1wt9xzlTP+/MoIgQ=
+		0JIZYOiJjX3i/RLIKoSt+61AilA=
 		</data>
 		<key>Headers/MBDisplayableDetection.h</key>
 		<data>
-		4xzkl0vuMw2Ve9vZEf4W/wEHcTc=
+		90GfWx/Jdm72qSaaqUwh6AGq2zs=
 		</data>
 		<key>Headers/MBDisplayableObject.h</key>
 		<data>
-		1fJI7UxZnjje2EsQRbH47QtRwH8=
+		Myk5xFYD+XtfTOyM3D73OvcDE24=
 		</data>
 		<key>Headers/MBDisplayablePointsDetection.h</key>
 		<data>
-		0r2plxPFpVycwm0akGc8VuVUCr8=
+		JeEiI29NozS4Rv/Rnj5g1Fwdryw=
 		</data>
 		<key>Headers/MBDisplayableQuadDetection.h</key>
 		<data>
-		2upb6p1dnkMaYien+wkYT8Y62U8=
+		deFToYAXyyvRASPXGvBu8iPVp4A=
 		</data>
 		<key>Headers/MBDotsResultSubview.h</key>
 		<data>
-		Hwn8qTGTpl83l/4w07jxYO3gNxk=
+		6gM97M7bNe3glAukzfPUKEAZvvI=
 		</data>
 		<key>Headers/MBDotsSubview.h</key>
 		<data>
-		0POrcgFzdEMaV+2Lmm0AwPGTPNE=
+		yOhe7ES0KqrB0chpbXbZLyYMZbg=
 		</data>
 		<key>Headers/MBEncodeFullDocumentImage.h</key>
 		<data>
@@ -190,7 +202,11 @@
 		</data>
 		<key>Headers/MBEntity.h</key>
 		<data>
-		4ybbg8Toh0oeRDTO9vgtkjLYsus=
+		ICOhPzh43ZCwHSPZJlKwILtojG0=
+		</data>
+		<key>Headers/MBErrorReticle.h</key>
+		<data>
+		b9hHysczSyKf4R6EY/GVzYLPBKw=
 		</data>
 		<key>Headers/MBException.h</key>
 		<data>
@@ -206,7 +222,7 @@
 		</data>
 		<key>Headers/MBFrameGrabberRecognizer.h</key>
 		<data>
-		Rw1Cl9VTAAFUVVpsFj22wNK2+TM=
+		eyiHrM5qlBlGuLK0L4rYd+jWaG8=
 		</data>
 		<key>Headers/MBFrameRecognitionRecognizerRunnerViewControllerDelegate.h</key>
 		<data>
@@ -246,11 +262,11 @@
 		</data>
 		<key>Headers/MBGlareStatusSubview.h</key>
 		<data>
-		48Kxj4JFDgJ0GZBCts4xLebPXiY=
+		gYvQ620RckrNtM6NPryNtZW1g5w=
 		</data>
 		<key>Headers/MBImage.h</key>
 		<data>
-		hJ2MWhaawaDB8M2vTKOyevtX084=
+		9agVeMDP8JEr5zCoHjE2EGovKsE=
 		</data>
 		<key>Headers/MBImageExtensionFactors.h</key>
 		<data>
@@ -266,19 +282,19 @@
 		</data>
 		<key>Headers/MBLegacyBlinkCardEliteRecognizer.h</key>
 		<data>
-		EOMuph4WeueWMJivIiWa2wWBWAE=
+		pOSSkBAgYnu7RzLP+ARQ9vKHqZU=
 		</data>
 		<key>Headers/MBLegacyBlinkCardEliteRecognizerResult.h</key>
 		<data>
-		NROYkWmMZDlNuCFP2Qg/ba+PiXM=
+		yiCMH4Nx1NznBZkD0d8ukiE7Sp0=
 		</data>
 		<key>Headers/MBLegacyBlinkCardRecognizer.h</key>
 		<data>
-		pp7VcXorDMUhwM9IUuwTHqkDBoE=
+		iJsKbSjwJqw+AZ3EePrnMlUhACU=
 		</data>
 		<key>Headers/MBLegacyBlinkCardRecognizerResult.h</key>
 		<data>
-		0IXY2t5VLuxOBlXthWeHDg7b2Us=
+		v1k0upfK7DqQ93+2zT7k8afqkKs=
 		</data>
 		<key>Headers/MBLegacyCardIssuer.h</key>
 		<data>
@@ -290,11 +306,11 @@
 		</data>
 		<key>Headers/MBLogger.h</key>
 		<data>
-		j9RuX6BRaIbAcSZeK+17QOCC/uk=
+		LpdERp9aYp4F6LDMw5rvTlPIYG0=
 		</data>
 		<key>Headers/MBMicroblinkApp.h</key>
 		<data>
-		3bz/bOlZlh/OffckCJcjlInOsBo=
+		ksWh13DyjTEBvHewrM4WzGc0LUY=
 		</data>
 		<key>Headers/MBMicroblinkDefines.h</key>
 		<data>
@@ -306,7 +322,7 @@
 		</data>
 		<key>Headers/MBMicroblinkSDK.h</key>
 		<data>
-		piBDx2LtORnZ7d7xE4w10ZLtTl4=
+		lRFlIwKNE45T6mtSwsGa8EMxrEA=
 		</data>
 		<key>Headers/MBNativeResult.h</key>
 		<data>
@@ -318,7 +334,7 @@
 		</data>
 		<key>Headers/MBOcrLayout.h</key>
 		<data>
-		5QdEmHj15DsmVWeMXYji7Ks7uKc=
+		UVo+okWn2S3G7koLPEQDiX9bZ9g=
 		</data>
 		<key>Headers/MBOcrLayoutSubview.h</key>
 		<data>
@@ -334,7 +350,7 @@
 		</data>
 		<key>Headers/MBOcrResultSubview.h</key>
 		<data>
-		vR1jxm5hobJcZOt+Z/9tv+N8ZuY=
+		n+FKcbUHTd7dr8Fk6aUggsKYJYU=
 		</data>
 		<key>Headers/MBOverlayContainerViewController.h</key>
 		<data>
@@ -342,11 +358,11 @@
 		</data>
 		<key>Headers/MBOverlaySettings.h</key>
 		<data>
-		u93RRSMIDZ5KvXw7yr8lj70l+XU=
+		f4aUaotAV+7iU87SnMXz3e5baos=
 		</data>
 		<key>Headers/MBOverlayViewController.h</key>
 		<data>
-		0Quv4qdy69kKp1ZPS5oGK8ouIiw=
+		FefSx0FvDKNpDF63P6Z7Sdb8T2c=
 		</data>
 		<key>Headers/MBPointDetectorSubview.h</key>
 		<data>
@@ -354,7 +370,7 @@
 		</data>
 		<key>Headers/MBProductIntegrationInfo.h</key>
 		<data>
-		P4ODaaaV5iG7PSadKX88JpcUeZI=
+		KZqm/9tRvmf6EcHJ+jKG5l1dDNY=
 		</data>
 		<key>Headers/MBQuadDetectorSubview.h</key>
 		<data>
@@ -362,31 +378,31 @@
 		</data>
 		<key>Headers/MBQuadrangle.h</key>
 		<data>
-		xAUwgiNIG3Xj57jBudPFRihKwys=
+		Zq34m/BWvUJSjj0e57N2AJu4hoY=
 		</data>
 		<key>Headers/MBRecognizer.h</key>
 		<data>
-		upEpmD7SIc+oGrjI2lNs8XTU38Y=
+		IMYSQPYECljn19GfBD+3qy694lE=
 		</data>
 		<key>Headers/MBRecognizerCollection.h</key>
 		<data>
-		kzOl+NrWknfc7EwZTMXPr8cKNhQ=
+		QsNKDrarHwnXfZPeb1JREKmYFJA=
 		</data>
 		<key>Headers/MBRecognizerResult.h</key>
 		<data>
-		EH5fr2bHYcqP1mkD0zCZbinNEks=
+		0XxSZkFtKfgOxQyc0t0Ccpbc/Fs=
 		</data>
 		<key>Headers/MBRecognizerRunner.h</key>
 		<data>
-		VOYUbpPaizyLKG1b3VWVoMjlfhg=
+		K9N/RNrp9TBFXYaWDJEt+PmwrQA=
 		</data>
 		<key>Headers/MBRecognizerRunnerMetadataDelegates.h</key>
 		<data>
-		0G1z38KjRIhWD7Fln5+qiZ+AFX4=
+		FlhjlZ4byMcegAnVX43v45yDCt8=
 		</data>
 		<key>Headers/MBRecognizerRunnerViewController.h</key>
 		<data>
-		njhJvHaLOugQqAXHKwBvOwGbiQI=
+		Nq0dT56NZUl667HTklq42/Zpgvo=
 		</data>
 		<key>Headers/MBRecognizerRunnerViewControllerDelegate.h</key>
 		<data>
@@ -394,11 +410,11 @@
 		</data>
 		<key>Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h</key>
 		<data>
-		3hgQYVBa2raHWbZwRif3Hgdu9EU=
+		LkKtQkZS1CyCA5HaWZpErFl+dcs=
 		</data>
 		<key>Headers/MBRectDocumentSubview.h</key>
 		<data>
-		sAGLwn+4sPANOhSjBOcoCyi9U0c=
+		7F3K8n6ExBFHsMbCRufcB9PYZB4=
 		</data>
 		<key>Headers/MBResultSubview.h</key>
 		<data>
@@ -414,7 +430,7 @@
 		</data>
 		<key>Headers/MBSignedPayload.h</key>
 		<data>
-		Fnz6MAbO6eiQYsxZEIz+GNlEVWw=
+		OtwGj4IsrYY4ihp5JXCyiSZblpY=
 		</data>
 		<key>Headers/MBStringProcessingRecognizerRunnerDelegate.h</key>
 		<data>
@@ -422,19 +438,19 @@
 		</data>
 		<key>Headers/MBSubview.h</key>
 		<data>
-		uYMgK+vEl8sh+h1jNGW5aCgS5LQ=
+		YRBLoX+y5uKHYl6VhRa7EnoKVSw=
 		</data>
 		<key>Headers/MBSuccessFrameGrabberRecognizer.h</key>
 		<data>
-		7rS3zJcQeq6ACZB7gcafjM4gIfM=
+		cqLqJMoM3CqqFtQY830kvSVu1Lo=
 		</data>
 		<key>Headers/MBSuccessFrameGrabberRecognizerResult.h</key>
 		<data>
-		rTp0pfu//rSUqwyiSKc/8fdWJNQ=
+		yRxSReCa7pYUJiiEBxIqrnyJ30o=
 		</data>
 		<key>Headers/MBTapToFocusSubview.h</key>
 		<data>
-		nzwadHnIMbM2pmAJDfJuYjhaavQ=
+		NSojEwJvP/xoB/J5JLsk6TKxGxM=
 		</data>
 		<key>Headers/MBUIComponents.h</key>
 		<data>
@@ -442,63 +458,71 @@
 		</data>
 		<key>Headers/MBViewControllerFactory.h</key>
 		<data>
-		0bq0cbTmw4XzChW7UcMVZOZr0+4=
+		74zW9JR1jRpAc2sQp0pPk+ZYio4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N4Blx5dN8Q52hH0qjj2v/AnGwbA=
+		ZmGW/77OlEtb2+kMgZ+aFRNAX94=
 		</data>
 		<key>Model_1118d9d674e23996f70c6416b2bf5a6ce6ef24a6ad2c92f0ddd1e198e5f05305.strop</key>
 		<data>
-		BeSkS2UilWCkNZaNuCfZisJf5zM=
+		zPxEDNireXXaPVdNLtZuNDKkLGU=
 		</data>
 		<key>Model_349432d66ef2b216155673b634f7d5c47795bed35719b954f726b5f0856740f3.strop</key>
 		<data>
-		7XaFd1OC5aYvzbqR4FT+x5r0Qvg=
+		xrR2eyY5wkyfmyIL3bxmj29h6zc=
 		</data>
 		<key>Model_406f8d5d972cf76a9241b35abbe5758890353b9b7daa922f732c4151ff6a0d9c.strop</key>
 		<data>
-		4bL2BSasZDDGTHBhM9FUD09mvK4=
+		xHNOMn1wkqWnG37AP63R3VY+7gY=
 		</data>
 		<key>Model_76731e0beb8c4be154467d2248a49530571c5b73a2eaef987361f75d578f576f.strop</key>
 		<data>
-		PZTwlOjIKlLLRgt6DPHYP9t/IgE=
+		uf+WTThxPbxPdvYzAzM2V6DMQbM=
 		</data>
 		<key>Model_830c13896f96c1cb6d5cad725f44e6aae470f8672d640d20b3272ed4bb839699.strop</key>
 		<data>
-		IbyonW3+iF/hPFd6KBtK5xNactI=
+		19PiLePaZbwfvPc+0OtAznH1AX0=
 		</data>
 		<key>Model_b9263312a9b623d1a3b75b643ccdcbc36aae52c278d721443468147c50e44583.strop</key>
 		<data>
-		DOgRkMDsMEW0N7LSqJ1V7JKDqf8=
+		EaW5+NDTQXHmLAMJ/3QUtF2abMs=
 		</data>
 		<key>Model_cc1fab8df49d9a21de6c7b76ccf0dac40b17fcfb7073cc520eca073cbf8e33e9.strop</key>
 		<data>
-		HfZM3rtbR0PX4i/J5pb96jdVvmc=
+		dCuiOqf+hdAmmJnZoZHsozsLQXI=
 		</data>
 		<key>Model_f132d1bd7614b1274fafb8a41ec6c047b84b2a43654ae2da5ddd78a2765601c6.strop</key>
 		<data>
-		myN13aGGUP9VE5/0vwDWcHJF5uc=
+		EU4MLTp9kONqv74JULSBjDGgtDY=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		anpcaQtzE8tmlKJdySayxlEdzjk=
+		DUWi/0+piPndtaYOH+pD/KvvRek=
+		</data>
+		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		NlMWuFASxGiiaIxFEGYdLeOfqzQ=
+		</data>
+		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		sCqboWaS2lBW6q6MqIzLNCVPqGw=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		AMsDfLQiLl1oST2GBBNFIA+8j/o=
+		m4bJtRtJcXF1dgBjfD8H3HcXf5Y=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		24/idEIMQo4g+k6EZOK98nACFlg=
+		sCqboWaS2lBW6q6MqIzLNCVPqGw=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		45Ma71HVSFGelUbua77HCZufYJM=
+		h7lfROTszfyMeKZ3A0SkqtmATf8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		k5rRc6rm4JOvC2KeHZnX+01hjLE=
+		CA57YFNB+jaWGp6XCCRIvPVDrMk=
 		</data>
 		<key>No Camera-100.png</key>
 		<data>
@@ -522,7 +546,103 @@
 		</data>
 		<key>ar-AE.strings</key>
 		<data>
-		Sw0DMIQj4Cmkaeo9mbMq7WELz7U=
+		MqecoJqZ/GCYifwQiGSKVVCO4u4=
+		</data>
+		<key>blinkcard-all-details-visible-dark.png</key>
+		<data>
+		l8pLE7U/S9ExDRIkSNcX6AwLlbU=
+		</data>
+		<key>blinkcard-all-details-visible-dark@2x.png</key>
+		<data>
+		LM+Zfs3YyYHWHE8GrRTkRTcpg/M=
+		</data>
+		<key>blinkcard-all-details-visible-dark@3x.png</key>
+		<data>
+		jFHMiiILjFa9NQV+PRmLo4Uh6Qc=
+		</data>
+		<key>blinkcard-all-details-visible.png</key>
+		<data>
+		F/1n9PA4o5NcMBFOszQFB+/mb8A=
+		</data>
+		<key>blinkcard-all-details-visible@2x.png</key>
+		<data>
+		fd0NnzmCIbi1ktGlC/YaACbl6IU=
+		</data>
+		<key>blinkcard-all-details-visible@3x.png</key>
+		<data>
+		cUWoT8VwmtbuDsWoYDRvH0O16a0=
+		</data>
+		<key>blinkcard-flip-card-back.png</key>
+		<data>
+		8sNx1TIpIh0MXkspo3SciwA2V/k=
+		</data>
+		<key>blinkcard-flip-card-back@2x.png</key>
+		<data>
+		/cbN8grnmd4sxGCNhZWWInWZZoQ=
+		</data>
+		<key>blinkcard-flip-card-back@3x.png</key>
+		<data>
+		Ik1OnmFttwjDB0TKnjV+4Y/nHVA=
+		</data>
+		<key>blinkcard-flip-card-front.png</key>
+		<data>
+		At7S6TYdvsQFRfU83sB+iW01B4E=
+		</data>
+		<key>blinkcard-flip-card-front@2x.png</key>
+		<data>
+		aQVkVIoLt4YWmKTXqqxKRD87pZA=
+		</data>
+		<key>blinkcard-flip-card-front@3x.png</key>
+		<data>
+		VTy6u97S42r1XqlESLt4j8U3Zkk=
+		</data>
+		<key>blinkcard-harsh-light-dark.png</key>
+		<data>
+		L9JcQECv0KdW8KRX87aq9Dbt6k8=
+		</data>
+		<key>blinkcard-harsh-light-dark@2x.png</key>
+		<data>
+		V/11nSGhTnob56bSm53Cg1p1NuE=
+		</data>
+		<key>blinkcard-harsh-light-dark@3x.png</key>
+		<data>
+		wkWMvx3uIMAOSCNqCETCf5RP270=
+		</data>
+		<key>blinkcard-harsh-light.png</key>
+		<data>
+		qCP9ZK2NQyHA2EXpfXCfEci+/xA=
+		</data>
+		<key>blinkcard-harsh-light@2x.png</key>
+		<data>
+		4vO5leNDxuN70V4u40m9+3cvIE4=
+		</data>
+		<key>blinkcard-harsh-light@3x.png</key>
+		<data>
+		/mKPyu3+/LfCdHrStFnTW6NWEpA=
+		</data>
+		<key>blinkcard-keep-still-dark.png</key>
+		<data>
+		wcQEHDSK9smdtFMMdpA63w+tHlo=
+		</data>
+		<key>blinkcard-keep-still-dark@2x.png</key>
+		<data>
+		yDM+RdERJMFoHVdqikWyUzoQpek=
+		</data>
+		<key>blinkcard-keep-still-dark@3x.png</key>
+		<data>
+		LeuNmSz/lm7V9FEY1sX2Xz+CtH8=
+		</data>
+		<key>blinkcard-keep-still.png</key>
+		<data>
+		Zcxj9n2HryF98Au3V0XXSUfjo3U=
+		</data>
+		<key>blinkcard-keep-still@2x.png</key>
+		<data>
+		Ut7p15g7WQIJ298YK9VtaWZySNE=
+		</data>
+		<key>blinkcard-keep-still@3x.png</key>
+		<data>
+		cg9TVZJoa0xvKEQhaeSxBaegYCQ=
 		</data>
 		<key>blinkcard_logo.png</key>
 		<data>
@@ -536,9 +656,33 @@
 		<data>
 		lkHHu5G9sNHZQE8whYCQ6JxeLLg=
 		</data>
+		<key>card-number-first-dark.png</key>
+		<data>
+		cTun/xYsEe9BmRVgUkMqCm7iya4=
+		</data>
+		<key>card-number-first-dark@2x.png</key>
+		<data>
+		x1uHEttQGubKyCq84xQ0k446Suk=
+		</data>
+		<key>card-number-first-dark@3x.png</key>
+		<data>
+		6Vos9NS9dDSB/ftkUS6NdpCP0aw=
+		</data>
+		<key>card-number-first.png</key>
+		<data>
+		oBmS3XqS6SDni6gBoYTtqwcufIw=
+		</data>
+		<key>card-number-first@2x.png</key>
+		<data>
+		AZ87U6jcOWPbTgAeWAjHSZEn3S8=
+		</data>
+		<key>card-number-first@3x.png</key>
+		<data>
+		Bq1YppkltXwLILO5k+w4MRkfo9c=
+		</data>
 		<key>card_templates.zzip</key>
 		<data>
-		LZvjBUwqntmyvMyjo5bVQfODqdQ=
+		EGFN4fG1g3JnY+Z0OCb/5nZHlNA=
 		</data>
 		<key>cbl-error.png</key>
 		<data>
@@ -624,9 +768,21 @@
 		<data>
 		mZ5KOSvhTBRTF1cQjI+m8OthNio=
 		</data>
+		<key>confirmationBlinkId.png</key>
+		<data>
+		n7GnFv1kdSYb3Ckh+hYbzIy3O2E=
+		</data>
+		<key>confirmationBlinkId@2x.png</key>
+		<data>
+		oBcYsThCNyHFOT9RJodR6BqPuK0=
+		</data>
+		<key>confirmationBlinkId@3x.png</key>
+		<data>
+		JO9OrvbTFSiRNKJq65PdP5PKfUs=
+		</data>
 		<key>cs.strings</key>
 		<data>
-		2cEtrLbin+oMiIxqAZvl0i/pLw0=
+		L/J0WEidjEklStbeEw7hSD2/tlY=
 		</data>
 		<key>ctl-error.png</key>
 		<data>
@@ -678,7 +834,7 @@
 		</data>
 		<key>de.strings</key>
 		<data>
-		qNMROdQ679N/VLqqeEWRM6Xq3N0=
+		re0RrDQNq0gjU2K6QKW7F6ruqNQ=
 		</data>
 		<key>diners.png</key>
 		<data>
@@ -718,31 +874,31 @@
 		</data>
 		<key>en.strings</key>
 		<data>
-		tCoYxSCUx3w7WinLBcwj3tBSk28=
+		xZhHAgXC5wsmH0RvgJ9I+0pBbsk=
 		</data>
 		<key>es.strings</key>
 		<data>
-		dhsfZMRZoZL6wtUkR4DQXRu3Et8=
+		eBV0vLN14MGXTBLMOlmOcyVz3Qw=
 		</data>
 		<key>fil.strings</key>
 		<data>
-		vUspFCUQLt8C+5R7mP2gVK5CWuA=
+		5SWnLNQqZF8JER5iobdORzIDv9g=
 		</data>
 		<key>fr.strings</key>
 		<data>
-		kN6SLM4ZSUveYFkqJ7lYIsGoYkE=
+		dcm5Hs+l0Cck0RZ1rthvIqffLdA=
 		</data>
 		<key>he.strings</key>
 		<data>
-		tACcBbbZ7d3B0Q4C2bbyWdFrXm0=
+		0Bs7MW+13Q8ZYbjzQpBJ0lHSHk4=
 		</data>
 		<key>hr.strings</key>
 		<data>
-		uwucbGEXB7KFBrWn0XKVm4F4hGw=
+		eP+SazIaVvdtSccKZJeJo4EYMG0=
 		</data>
 		<key>hu.strings</key>
 		<data>
-		ZBDSq0z1QzR9ODNCcGK5MnM2mLI=
+		pokFTK7P0y1XN9fYz1oi/t2vytA=
 		</data>
 		<key>ic_arrow_down.png</key>
 		<data>
@@ -806,11 +962,11 @@
 		</data>
 		<key>id.strings</key>
 		<data>
-		VdXTx9pA8Cw8zEivxeKLyByD3BM=
+		9ruQH0EAW0BFShQxCx1JeBT1pRI=
 		</data>
 		<key>it.strings</key>
 		<data>
-		KGzKj7Yr3q/W3vO1GvMkaCQfghE=
+		NSomMw4K1WA/dWyH5ZbfTFqA9KI=
 		</data>
 		<key>jcb.png</key>
 		<data>
@@ -850,11 +1006,35 @@
 		</data>
 		<key>ms.strings</key>
 		<data>
-		vBj4Z8I2EpxdIfvAYuDbkwG/XPI=
+		qGccZLLs7MJLNpWeKumulMXCKpU=
+		</data>
+		<key>need-help-tooltip-dark.png</key>
+		<data>
+		n2kQFtiY3m+nMQRK1uUaOHfruyA=
+		</data>
+		<key>need-help-tooltip-dark@2x.png</key>
+		<data>
+		drH8upoRYhDqqO0dA2vaBJEx8Go=
+		</data>
+		<key>need-help-tooltip-dark@3x.png</key>
+		<data>
+		9GBx0cihldP8zucv4Chy/z9lSGI=
+		</data>
+		<key>need-help-tooltip.png</key>
+		<data>
+		6h6s0NuYX89DNU3zdIr8TTpGX5Y=
+		</data>
+		<key>need-help-tooltip@2x.png</key>
+		<data>
+		eWx7FI1nTmZRc3t3HHlj8Ekk7f8=
+		</data>
+		<key>need-help-tooltip@3x.png</key>
+		<data>
+		HQCSD1uYh7KQD1kXQZEHHDVuIa4=
 		</data>
 		<key>nl.strings</key>
 		<data>
-		a7p+Owt6tmw/VZsdHNHkBgYrqew=
+		HYaBMhc8Fo7J6B9VzHURlDsqMLk=
 		</data>
 		<key>payment_card_confusions.zzip</key>
 		<data>
@@ -866,11 +1046,11 @@
 		</data>
 		<key>pt.strings</key>
 		<data>
-		Cx90Nq1imv/nYiq5XMImmYtdp2A=
+		oOw3V2w7JB3yOWYjcBla/o43evY=
 		</data>
 		<key>ro.strings</key>
 		<data>
-		rnUJK/k8brj3Dd5L8K4EYkWQke4=
+		4+U4PzR52jThQ5RHZyXq6ybSh5o=
 		</data>
 		<key>scan-corner-ll.png</key>
 		<data>
@@ -918,15 +1098,15 @@
 		</data>
 		<key>sk.strings</key>
 		<data>
-		mRPoo5Wr1zrTqGNsXUXWWxTC3JQ=
+		qCtadpW5QoWuf3EzVsywoLqUDTg=
 		</data>
 		<key>sl.strings</key>
 		<data>
-		8qpeyxqw+n3PyBUHdx/b6xAo9Hg=
+		dOxcAv9du9qn0Zlff3QoyZXTZ+o=
 		</data>
 		<key>th.strings</key>
 		<data>
-		tPMlb6nPRsGRxO7QGh3cVR6AaqQ=
+		rtLmJJBOsb8rCpy2XaX+haVpb74=
 		</data>
 		<key>torchoff.png</key>
 		<data>
@@ -974,7 +1154,7 @@
 		</data>
 		<key>vi.strings</key>
 		<data>
-		PVCMYzMzo/tnqk8j2ZhqoV5TnJ0=
+		eV689yYcg5hWNcj+YO+q2Y156FE=
 		</data>
 		<key>visa.png</key>
 		<data>
@@ -988,13 +1168,37 @@
 		<data>
 		SIL2m8aUzw9+P1EiriZGb14sfbQ=
 		</data>
+		<key>where-is-card-number-dark.png</key>
+		<data>
+		LrRJzKX91KW6GQZUGFUMjt0gCZQ=
+		</data>
+		<key>where-is-card-number-dark@2x.png</key>
+		<data>
+		5aqzHHbiWGUrQ8kgRVzYp4I6sqE=
+		</data>
+		<key>where-is-card-number-dark@3x.png</key>
+		<data>
+		S6V26p1p96K9wWEG0udzuSs2R24=
+		</data>
+		<key>where-is-card-number.png</key>
+		<data>
+		oggr90KKNw9+/VdNpzXN8eJzNco=
+		</data>
+		<key>where-is-card-number@2x.png</key>
+		<data>
+		q4NJvGdZ0jWGxD5WWCL3dFU+HMA=
+		</data>
+		<key>where-is-card-number@3x.png</key>
+		<data>
+		LHe2AA9GxJXxC91NPZH1CUvzS0E=
+		</data>
 		<key>zh-Hans.strings</key>
 		<data>
-		gO4H8GH61rGVaWxmwcJYlW5SXfw=
+		IK2Sx+8EHSz5apkq4qgAiMhw8mA=
 		</data>
 		<key>zh-Hant.strings</key>
 		<data>
-		M9HGyXNHbPh5JCe/v4F+91+0NVw=
+		iPxKxsogu7Ou28qIt7OvjwGFJGo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1024,35 +1228,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TZlWmMEP4dkxMD2YuL+unwWyzxUD5LnBRZSaU+7uM7g=
+			dzM+lB5xHNoQ+9eW3etNBX++oakb0GXg38ZNV0dVuTc=
 			</data>
 		</dict>
 		<key>Headers/BlinkCard.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aThqU5L5KCHVxu0Pz+aYUHCcBjzfVAumgFRSKDQiWwI=
+			3PBtrpJ7dif7b3wTAawBIYRr81OmwpxxYHpCzQJkOtw=
 			</data>
 		</dict>
 		<key>Headers/MBBaseOcrOverlaySettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEHVT2yA17pwvkbp5jaXw7+3IVXTCisw/Z5sBeIXcps=
+			FJ7rQRgnyiQhGRzn4eBIMbU+YL4oX3upJ36CoKee/r4=
 			</data>
 		</dict>
 		<key>Headers/MBBaseOverlaySettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EQrD1wIIV5ReozYFJ4iR2n9i0G1HJyaN1A+gPvbeFYo=
+			XhR9XHYaU+B4alO8EdCcnGM2s7kx9bFN9O9GBco6+Ls=
 			</data>
 		</dict>
 		<key>Headers/MBBaseOverlayViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D6liErREPuWA/kp8jiBtMTvwciwgQzUS3Eo1g0Jn58M=
+			WevDP+wP3dXRi+OF6KFLso1PBnywafw0ZXcywAr3xAo=
+			</data>
+		</dict>
+		<key>Headers/MBBgraImage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7cXVWXBC8TGqK978jfkBL1sfQUgyHAEHfYqmzuW/+M8=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardAnonymizationMode.h</key>
@@ -1066,42 +1277,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4lAIRoc065aakrIfq1m4bVw3oe0D5sZifRZmOjj/yz4=
+			gxlvwbEj+jw0tBthUB97E3pznccNMELXbkL6RMhobeE=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEditFieldConfiguration.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VFK3OSAHvBbaXAiGx+TxvtHyp3n1ENcQxAoBfTzRifI=
+			XnoI/OQS2A6M+BxOpPrIPl5HG7rc/Vy7PGdDv92dptA=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEditNavigationController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gYqdp8O5g2pgrN6jlZ7oPVT+Y48+nxU+znK490DwuNE=
+			Vd66xlJid8KAnMR4EmYGjsM6TvkRqHXnlMGfxdYJJsY=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEditOverlayTheme.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sIzOieFIRqSi2ob06v3Ba9ymw5ywK6XV9q9XhY0pf0U=
+			vw5TbG0oo2LHvRFs1dkHlCRfnOSCT8JuEp0lNb4eZvs=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEditResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A/ru3Ry3OcLU++6GXrn1HyBWRLTI3brd/TJc3q3YLGQ=
+			5I0sjCDABSfiW+B8XgpiLfQttsoPsydGoA2UCVCDoyA=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEditViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lhJCIUX37BVr3w5hXhjB8U78VAnIeoGMp1x+l1YF660=
+			WT6/wvnzPp7RrTHvkCldjaWaka7NSYqXLt+Lf2epn6Y=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardEntities.h</key>
@@ -1115,21 +1326,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVrIbAge4Su47i3nT5CHr5GC8ciW069XDN2NrqH2K6c=
+			1Ykpeeti2ylCiPjPHwu94IROHFpeuRAhd8x3SIlQXVA=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardOverlayTheme.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			68jt036x88Joc4dxLtw96uds6XXYbn21kYNKjR9qVpE=
+			/IgN7oa+k57bI4OOQz7j0ndKeB6cOUwRpgB1Xql3zsA=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardOverlayViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FnDb0Nj9DGp1sQD7KMH6dlz73rp6NyxMgmb8SAjMT9Y=
+			J5XEda+kX64wh+z1PQWLQcwNX56vAABcD6fR3MMVs+k=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardProcessingStatus.h</key>
@@ -1143,14 +1354,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xqhDrGumlZCZKsJoEU0Ni9GQJyGu1o7JMEXruSXOci4=
+			N4wHBbH+fT/8SUGRbpK5htqaqENyn//1DHl3bOt7Ri8=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardRecognizerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pRIb5wBXy6tlYvMcGxxox7xSxLT3hDIb7cG3JuswQRE=
+			OU0opIu3V3Q/eETLlhPQ9Io+BzpxHVraYDNQyShlA1s=
 			</data>
 		</dict>
 		<key>Headers/MBBlinkCardUIComponents.h</key>
@@ -1164,21 +1375,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aV+Svpa4FZtzXj1tMEf3Fe5BXl7psmXfyG13hN/4BPU=
+			3yC+EpIWuxRnyBvwghnt+QtdI/QN5k7i1LHftcAjV2Y=
+			</data>
+		</dict>
+		<key>Headers/MBCameraReticle.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/OgUSR/P/I3T/z/IFIMN5A6GeWoumVpZzg3C/7Io1i8=
 			</data>
 		</dict>
 		<key>Headers/MBCameraSettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jLcdQYVVhv4XS+CftFrxOqN+UMYsSe46Y+iLo3P9I5A=
+			l2m+Xgp4JnnFaPj6uaQ++Wj1g/tLNC1/YNVu3BgaASE=
 			</data>
 		</dict>
 		<key>Headers/MBCardNumberAnonymizationSettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zx3LAmTgkKEsi9gjAeXElmpDBe3Kv3yR5pgMtvdpWMQ=
+			GH3rj/CMj/8u5AWLHj048NDkh+8r4917avw0zvcHhXw=
 			</data>
 		</dict>
 		<key>Headers/MBCombinedFullDocumentImageResult.h</key>
@@ -1199,21 +1417,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fnoDrbiMNSgd8uP1UCTRL+90C1NWLQRMhFagHvnEUM4=
+			PyvGs6jhRS9zVgasFAlDjQ2xSIGtV7YYespwYJ4U3fM=
 			</data>
 		</dict>
 		<key>Headers/MBCustomOverlayViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/y/Cq/mjeHWPQZbF5k3h3iTha0qyDC3kmEKffPl7pu0=
+			d1IgIshd/0elAVEOUoHHY6kL158g1ou94lZYBpoo5Tw=
 			</data>
 		</dict>
-		<key>Headers/MBDateResult.h</key>
+		<key>Headers/MBDataMatchState.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d7pR8A8woKljvyb8YDbJ3N1a4xdBEujjhm2AuSbiaz0=
+			qtta+MmUqhDIefS4aSaRLKCdUOS5JofLDpveNBr/Jig=
+			</data>
+		</dict>
+		<key>Headers/MBDate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tQx+bepsil0G7P9lFSBI0gpHR9TuPGDzN/Ltm4oTxv4=
 			</data>
 		</dict>
 		<key>Headers/MBDebugRecognizerRunnerDelegate.h</key>
@@ -1248,49 +1473,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HbkkY8hFJ2vg+yLQ3qpdVJHYpRIjjn1v7PhsrSWnbgc=
+			oVHlrqmS5PdKabsbwhInggQ/1Sj3Kjl1McAN3k1gxhw=
 			</data>
 		</dict>
 		<key>Headers/MBDisplayableDetection.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+5I0byKt9vojdTAkIsF7cFvgXKjsMCL0xtVoPeHrCvw=
+			4CRTQl9PccPez7jeDk5begDC7mPGGjICSWD2bKeRl5Y=
 			</data>
 		</dict>
 		<key>Headers/MBDisplayableObject.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gLP6+3CiDI9oZjGrPeQq8Qnqedvxw3abXNIWVjO7OW0=
+			DRuj5ZAoPU02h4oGhUVfGfscibkAfgy39pDUuWno3PM=
 			</data>
 		</dict>
 		<key>Headers/MBDisplayablePointsDetection.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8vHCS9I9pNyubA095SOZPNWMgGm6WcveimQwv2gr4k=
+			h0COuJkmtpH9Yf54/qDQyyVHe7+RPdU4BzF+6RZuk+w=
 			</data>
 		</dict>
 		<key>Headers/MBDisplayableQuadDetection.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YeUcIb2sSRDBgoQhZONUYhNFvbamkxzPhrV4CYqDIEs=
+			nPJdL3tMeG5l8DwgvMjDGEE8gY7Aa/Xm2+ybaGwrXrw=
 			</data>
 		</dict>
 		<key>Headers/MBDotsResultSubview.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			241Sr5CT77ToKPBs2OTkzegXnGPYtOAwWYKfHg+NA0o=
+			VUWuK2vh/RRVGibDhMr57twAyf/yXiGTnWAKDQz4Lz8=
 			</data>
 		</dict>
 		<key>Headers/MBDotsSubview.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0qYO0lK5VnMccXrSpW6RMZTIw74cn3Lik2Oqimi/RM=
+			JJlyn36AlvJ7ODvzJqnVpS7yFdk+0W2tc5OrPIHEFhA=
 			</data>
 		</dict>
 		<key>Headers/MBEncodeFullDocumentImage.h</key>
@@ -1325,7 +1550,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			om+jvjq881tOfcKH87T58yW/mgrATfB6aOK5UOw8p2s=
+			UnPY+5Ltr24v+HqOw263SVnnednu2MFxbg5V4ApYRYg=
+			</data>
+		</dict>
+		<key>Headers/MBErrorReticle.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hn6HVMhk+hHxVxRrOMqzeeI0hzwFHYf6TWzOiUtsOvI=
 			</data>
 		</dict>
 		<key>Headers/MBException.h</key>
@@ -1353,7 +1585,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvSRegMV7VnTZvm9S9f2bmJ40cWTHtiFr22YaR7u+Fc=
+			oMoB0ZkYkZgYBVf3PhH4BmBba57tp4szQtv2mDiRYp4=
 			</data>
 		</dict>
 		<key>Headers/MBFrameRecognitionRecognizerRunnerViewControllerDelegate.h</key>
@@ -1423,14 +1655,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+B8CrpVP0IL2QxsBF7GZxn9uo2fjdcQ5paOem/6JA7Q=
+			WY/eGqpIZwnddzU6THWPbkHPuE9ZcRqT2AmxEkAnek0=
 			</data>
 		</dict>
 		<key>Headers/MBImage.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gnwPezf4YjBUJATSCXq3dJw9cHrnTJX7BBOw/9/PNXw=
+			R3Y4x+BHbTD1fZ7XAsJafj3ElOOH9HzIe+59pbnJHK4=
 			</data>
 		</dict>
 		<key>Headers/MBImageExtensionFactors.h</key>
@@ -1458,28 +1690,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TdGhNcptKoKz8bGeKaMJ5xFoKmWB7vfV6WWQVLEDaRw=
+			SI6AV7yp+EmQOLvAPLJgQkXnU1/k9ZKe7rpJi1rsFVw=
 			</data>
 		</dict>
 		<key>Headers/MBLegacyBlinkCardEliteRecognizerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			on4usK59UQSuByorW9oW2O6g/hBVoXO+eKGeJkXTtZA=
+			kVyAcI0yg/xlCRK1Ug/jQe1gu08zYUTUxUNgYV+ot8w=
 			</data>
 		</dict>
 		<key>Headers/MBLegacyBlinkCardRecognizer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qvcialihMkTiLGj+QjjrbpFu9xepIB2XjjNtygYIZuA=
+			+ruNeSzgAfXfoq54Sfyfm5yoms1YWVbp9Wfvdu1OPHc=
 			</data>
 		</dict>
 		<key>Headers/MBLegacyBlinkCardRecognizerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVA5SaNLye3LuNnSpoZLUJ83FeGHMY1NpiD/ubZ5UIo=
+			3rQUBAEhZLYYnHOU21mAO64uIcH0R3F8IQpJAWgdQuY=
 			</data>
 		</dict>
 		<key>Headers/MBLegacyCardIssuer.h</key>
@@ -1500,14 +1732,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NDDFZ19PhZBNU3aZ0vA6LfZJDJYij02qaZ0KYkWk29A=
+			q/M7mdtPZ0vDxzAEpME5ZnucUsldP0z7BrblUoYhG9c=
 			</data>
 		</dict>
 		<key>Headers/MBMicroblinkApp.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FbnEYfX/grkFgpQUvJLyZw8uh1NhJW8jd6iilJa5Q/Y=
+			9cT7KrBetup/zyLoe+PkXCd+7+G8Ej3+4h3F7R19kZc=
 			</data>
 		</dict>
 		<key>Headers/MBMicroblinkDefines.h</key>
@@ -1528,7 +1760,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9/Tl376iACY+WAkfv2305j5dz7cGn7xS6q2B2do1dc=
+			1c4kXXH/21pjZe3pnRX9S4zT3gZVfrIN6vtNbKKkcKE=
 			</data>
 		</dict>
 		<key>Headers/MBNativeResult.h</key>
@@ -1549,7 +1781,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7IZJ2HFhlmBkkzneo5EDkc3a2gtKQdLIeXJvSPBFbHU=
+			PrEPHKYyAwKFCCsal8Xkfzaq4237AW5jmKe8JZ3I1ZA=
 			</data>
 		</dict>
 		<key>Headers/MBOcrLayoutSubview.h</key>
@@ -1577,7 +1809,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GO5yAQqaphvla8iZJ09RhK4e6EuwaYWk8IwZBsjoqPU=
+			1Izwj7f8KSurl672JPzxTEIwycd06DviwGCfzcUL9gU=
 			</data>
 		</dict>
 		<key>Headers/MBOverlayContainerViewController.h</key>
@@ -1591,14 +1823,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rd7KOueEYpfaBUpLN0J9at8LO4R8euFnli0FMGjz8hA=
+			5mV1YcEqkN3cVFKXw7YZY19h27beCOueSMRc9X7XXIE=
 			</data>
 		</dict>
 		<key>Headers/MBOverlayViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r3EVcj1tpZVShDyWtqlBUOJ+lYM43ehDo3+vsaDzoNY=
+			1nciczZEoTH0e59lV8/pxJZN8Z6ths/SDZBSFZeZjsA=
 			</data>
 		</dict>
 		<key>Headers/MBPointDetectorSubview.h</key>
@@ -1612,7 +1844,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J6xEbvo8n/CLUu8xa3CBRjsHVt5LaYWxUqwz+u1doqQ=
+			kN+R5K8aOlwQ9/2qCzP43R6r+JZcWILzTAyTMM34I2U=
 			</data>
 		</dict>
 		<key>Headers/MBQuadDetectorSubview.h</key>
@@ -1626,49 +1858,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6qUPpQxz10cWkx2Srp+hf5IZKnjLnWpOlK7OWNm9Oug=
+			12xn70vcDc5xEAqJDg/6j4GEUAWOFbOzmqdRA8DqjYU=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jw+5yAnpqnq0k5Oddm5Fo2cqqwKGK08n5dz1TxG0vsU=
+			7iQf0AzdtssxIAFr+ip9PHa2lPQwUCWDXSWIBkBr6ak=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerCollection.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OvgH/otDC2RaW/9xSuhk+VAPbFOBa+qZF/T4RgnDPd0=
+			bNyVItS9+SdCSLYdsIeonNxILiVZKH1fuatwrBVOtcA=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LwsY8PKPAu3KGsaqF/TXoyrtD2jChVVDukNZag/mxF8=
+			cMnLqfOCOmVm8cgmLyHXuWAZy1CCaeMO3f9DlI9aBKg=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerRunner.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jahhF4uHAhgg8Jyj1SlQlCZcMD6PvDom+eCXscQ8BgU=
+			FeWn0PTH9cvi4k3byGjrpRP4VY/Zw/BwV0J9QdGq3wg=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerRunnerMetadataDelegates.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cyQmdRbLlMCYNdmK4P6JyzlcnMX8D83ghWjaCrLNJ+M=
+			U+ej6BQcU3qdnMhtbXc9Xe4Z6l7zNwAxg3TuaQZlSuM=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerRunnerViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oitVvKWBnsQ7cRHir5yOIc39KYMROHB2Bu8sulPUSzQ=
+			S5uE0suVc3lnj77lpmxHR1vZ0fCjldN3ou02dze8Tds=
 			</data>
 		</dict>
 		<key>Headers/MBRecognizerRunnerViewControllerDelegate.h</key>
@@ -1682,14 +1914,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJ8SnjTu2UYvegmnlD2SpvLWQKjViwdW/Gv/fZAQEko=
+			SGjdDTko0AkTTOnsmBjPEXtPXdFrgEza54KohNHJOW8=
 			</data>
 		</dict>
 		<key>Headers/MBRectDocumentSubview.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eAtqzY7TUsvo8tu8qD4jGKb5zxlr9Vg+B4+pGItpR/Q=
+			EqmY4H0Mj7k4O4B6eAeZ5f2ShgSxkjfXLeA/0sjmp0E=
 			</data>
 		</dict>
 		<key>Headers/MBResultSubview.h</key>
@@ -1717,7 +1949,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UKB4XPe6nys/2ikGt1lP756+O768iN/VLMJ6FNC/HV4=
+			+Dp9irsFcf1pbiBQ5oARyl8mjnEyIXJzG1/RocT+htc=
 			</data>
 		</dict>
 		<key>Headers/MBStringProcessingRecognizerRunnerDelegate.h</key>
@@ -1731,28 +1963,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AjJq3Sz6wrHVfxJFYIrU5uhabNNOuEuljoiOTi0ycro=
+			IGccpIdQ4mWwsmFmI2cy7vbtOkSYB9cPljuQ2rHmV9c=
 			</data>
 		</dict>
 		<key>Headers/MBSuccessFrameGrabberRecognizer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ECC2RyKTDpZnftTpd9+NJOKoh+qjAQ4FiTRfRZKuQ7o=
+			I4gflx7zlaC3/GYNLg76VbcwiIo849cRJNPN2LT75Bk=
 			</data>
 		</dict>
 		<key>Headers/MBSuccessFrameGrabberRecognizerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W0jmyOwBfL5V/icqFU5XuRaT9d2tFRVyH+W3v0FhLDw=
+			xFFCvErTWsHhr+BAwiASfdh5F9DxltyLCch4SK1tZpQ=
 			</data>
 		</dict>
 		<key>Headers/MBTapToFocusSubview.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VekQiQGUKwkDeIvW058Z68l6nEGfWwOJmrew3J67Ysw=
+			VJFMlXAmq4tqLz/W2XBSyiaLN86bVaIHGFFoa1o+as8=
 			</data>
 		</dict>
 		<key>Headers/MBUIComponents.h</key>
@@ -1766,98 +1998,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7eUplzMzM/0R3X9vq3btyeUeiRgKOHwGQWWiIYwbEPs=
+			OUweLaMnA9Tug/nEJVphIOdRP3r6myoW8z30R2Fex6I=
 			</data>
 		</dict>
 		<key>Model_1118d9d674e23996f70c6416b2bf5a6ce6ef24a6ad2c92f0ddd1e198e5f05305.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HarrSTf/AZofq1nYJ5ackqBJdGW7ew83Lc7REer07tM=
+			o9HZ7/PWDFK8e3CNz78QvOhfw6U/IQWrRRdTXCxQfoE=
 			</data>
 		</dict>
 		<key>Model_349432d66ef2b216155673b634f7d5c47795bed35719b954f726b5f0856740f3.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pCR2z0EmVjBQ4nqQHP9uRQWGC57c3Osu55ehNODqqDQ=
+			dBZ5LVAv5ekTNShfQ202Em+WPaHHwJsGmkcZYCQWXk4=
 			</data>
 		</dict>
 		<key>Model_406f8d5d972cf76a9241b35abbe5758890353b9b7daa922f732c4151ff6a0d9c.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qrCaVI8+7iXtZtYNC/Vfw9+9e716HlHmeInp4PgB+Sg=
+			6VHjdxBtfTLH3pHrcEkD/KfnaLxE/W3EX9SgI3JIl3A=
 			</data>
 		</dict>
 		<key>Model_76731e0beb8c4be154467d2248a49530571c5b73a2eaef987361f75d578f576f.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bVVHbe8ThNs2g1Yw5BxH6pcxgYY3HCPTQuYVtsjemKU=
+			NE/51M1JBldWo1y6e5qcLusknmmfQ+A1teN9DlVsXK4=
 			</data>
 		</dict>
 		<key>Model_830c13896f96c1cb6d5cad725f44e6aae470f8672d640d20b3272ed4bb839699.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wYxufmqaLphBI2Iz4MFmjwR81/1SxDxgl5zMm+yOScY=
+			ki5uzRvq4G5Gwn+yj7/AlqA3Zk8M3igpk1SlZf9o1zY=
 			</data>
 		</dict>
 		<key>Model_b9263312a9b623d1a3b75b643ccdcbc36aae52c278d721443468147c50e44583.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nXSjfkk+CG8xHsxjHU0/pmePDSuTqAERiwQJA0JJOCg=
+			GwmSrt7VlwWeYsYhvOoCQsD6CX84WwI706hhBsDWUA4=
 			</data>
 		</dict>
 		<key>Model_cc1fab8df49d9a21de6c7b76ccf0dac40b17fcfb7073cc520eca073cbf8e33e9.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wLSLF74hFWIQW2OLX3e2EUV5JT7+rClZHd9rmL6BUcE=
+			3CajMsC4vv3lCwCVrJoFtUg8gkWa4G9vdMhLFDR0iPs=
 			</data>
 		</dict>
 		<key>Model_f132d1bd7614b1274fafb8a41ec6c047b84b2a43654ae2da5ddd78a2765601c6.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ASdAV54c5RvIgZ2gDSMIw3PUAMo/nkim8VDFtu0Pg6w=
+			iikBE+T8H/MtzPej58pXM8IfKX2o5HYcKH30433I+ZM=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			plaMdpGtiSdjrvwT56utKOc/bPEV0z354XFWdXxIo+k=
+			cRinDGc479VgqCUxONQ50SyJuh/hh5a2edB3rHM818s=
+			</data>
+		</dict>
+		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7waje0U2ElSMu1BZmageC0z09bm8wBfHvygTdabvkUc=
+			</data>
+		</dict>
+		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6iTWPiK65r/4XLWpiujpA1IDp+dgplG/sgUfPBF/03g=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2NQLzCEfMsqNmX5am6zU/9aIvpMAx0hp+jx0MQVHzMA=
+			j3vCInfABEtYzMBVcPhYIHlT9cX8kZJebXJLWj7I3IU=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cW8lghGhGxd5p9GyMxmoBJlAnIG6zTnRtjbZ3QqBnLo=
+			6iTWPiK65r/4XLWpiujpA1IDp+dgplG/sgUfPBF/03g=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/On4oU4/H1jZv3z8iDwfSPvXQL9U3DK/hclJs4yxJsY=
+			AGcARr1/dc2vFYipNpQzbhe/xbSh167YjbZqqnzb7SI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nv1Sppv94nWblNuSeQa36hZi8ZibxGOgaik6l/XmBW4=
+			S60d21UTW7E4cVjx6S6BvPVxCh/ce2d87cro8INvkng=
 			</data>
 		</dict>
 		<key>No Camera-100.png</key>
@@ -1899,7 +2145,175 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bmNqW2DdwoL7maHfknDbk+VNyyl4AmEY5L5LLbjfPjs=
+			k11zvkoJyLLztQzx9f/EIB5LpA1AkIzOOOnUpp465UI=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			maIxgarytPwUsTQ5S6XI/Bo8t6qIAwXdbM4uZDiJzUM=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YxbKeM3mOa+B9JwHqT7AllrmK84gsHJ7ENcRRFkmCtE=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z/CcdnmF+iiyuuGYx5akEpoVZRgggbvP64I2Q5Qke8k=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BF3Z/lA2YiZNcsbn4lnTlCtGrg3I8JF9DkKj38tzVlU=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gYo2T8rFloQJRWRPlVrow3LceZs7XHwJ6TBaTOULRQs=
+			</data>
+		</dict>
+		<key>blinkcard-all-details-visible@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VZX3FLX0lhlkGas3TTq5onoqeQByh2fX78m+CseMSME=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-back.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kv7VjVxo9kxCI5Hp4YWzGYmssD0iZDMnra2mRU9d3k4=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-back@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8FuYytuUZRRze3By7dd5b7yuUOTqq27tD+VhGntjTrs=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-back@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GwwjWx/yvuavScFTlyu4gJ2REfgzixYBM/9OsUdJD10=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-front.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6mmVmL2mTa/f8L1rUzSAXzAIgu6OnuiIokuJraqqS/o=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-front@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			52ja/Ph24hVHI9Ae3ylwCKz6TOY6ysyumpB9xA2Ez0k=
+			</data>
+		</dict>
+		<key>blinkcard-flip-card-front@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ki/i4phtDgmQ3P5r+D3iTturFjHNbAv8HQRUG08XUMk=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FjcUywXgJQAx26sfMURCy4LlUUY2VgJemubbdzKbQE4=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P8NDtcr+apwKS6VVvQg3ULcf4MSPRZMXJku0j8zse4g=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yCLW+/NmRyj2yRyiBdRXP7TC5DfpMjT6O8UMVKsOuHM=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oWQenaxMxnNPC0G/cujrMmXfbJ5Dr7F8/IoVcDJKdts=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BmmsM1vAjxRAPpm09bqqanEM7b6pYntc6jWLwdgzUyk=
+			</data>
+		</dict>
+		<key>blinkcard-harsh-light@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0q8FTat+ti6h3UpZt7q/0XDRLi5InmdhHOSGvP33Dzg=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ckngx2hCvDhiEfo6L+TU2VXrl03SLV6OJHxyPdhhT2g=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o3qGpRNobJ9YeUU/KJ1R8Bmf5JgD2sct1nt56ZSD0Do=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hx2ygJmi7QbSsY1KwkLxgGiohKP/kgrC1Z6TSALl4Lc=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cC3fEsJW6H17XIj5W8Hjb9JbPp6Q4IJfOGnIXxL4gYc=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			suDiuOkbxc3AwdFaE2npi7VHHoSZ1fnLjoUbDfoyeLE=
+			</data>
+		</dict>
+		<key>blinkcard-keep-still@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HZ2Mmi3d+sPkuWhU4jvkTGImYhEoxOiE206gqfodar0=
 			</data>
 		</dict>
 		<key>blinkcard_logo.png</key>
@@ -1923,11 +2337,53 @@
 			3d1PuLhdqTciqY7J/tBJuJcnLmaTSddjA8dXD40TGpQ=
 			</data>
 		</dict>
+		<key>card-number-first-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ntv/B03zsdLSQKIimuFwYsaT6NRK4VqwV3SNbA3SJbg=
+			</data>
+		</dict>
+		<key>card-number-first-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zQVTb6Dv3/UWol+JIsXBydWbJbhpainZEgg2frg1kbk=
+			</data>
+		</dict>
+		<key>card-number-first-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xL1Ss+/y1c/kZ/4l5Qsp7zDFJctNCTZ2L0rHb5sI/fM=
+			</data>
+		</dict>
+		<key>card-number-first.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zRZDaBCdVlsfQ0k3gUIYgfK+yDea4x1ghMLymrIsAI0=
+			</data>
+		</dict>
+		<key>card-number-first@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pCCxKj5kV+ayThlTD9LBpwwewY6jgYxM7wtATfUVpvQ=
+			</data>
+		</dict>
+		<key>card-number-first@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yIH2ClxY7Odn5z2H4fOOzwVZa/KFRMIjEx6Z87JjBOQ=
+			</data>
+		</dict>
 		<key>card_templates.zzip</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XiZFfCxlJeszD2zql9BtJzWl4L8kfjvW9lE4Ks3g2Ec=
+			DPO3iiQTFMn4a8Pn/GqKYhSe3nKG2T3kZNwWwpUVFUA=
 			</data>
 		</dict>
 		<key>cbl-error.png</key>
@@ -2077,11 +2533,32 @@
 			JjcKl3PkJiqF1JMsdPG/BtGkmZcTlleMsxykSh6EJ8I=
 			</data>
 		</dict>
+		<key>confirmationBlinkId.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gk9dfM2MZACq6eKa7cPO09TUwG2uBteF9jsv4A+nf3g=
+			</data>
+		</dict>
+		<key>confirmationBlinkId@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Ns0YDnYJTH5h2T3l4EJsWZorNsnhxgJV/7jZGHMbyM=
+			</data>
+		</dict>
+		<key>confirmationBlinkId@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yFyueb+S9l3zc4y0sB726ei4ShVGqnSg8WKSJ50h9VA=
+			</data>
+		</dict>
 		<key>cs.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bIf3f+iqC/m9ldDtxsbLkujIgljac5dK2dOVYBvLX4s=
+			q56zgXwhAa5dwQTWOOrTQs26ZvNs/bvuzx/JPSP/4kI=
 			</data>
 		</dict>
 		<key>ctl-error.png</key>
@@ -2172,7 +2649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R8+3cxlWMfxv4Qije91wwtI4fwfpjlreJReVWqO8ZnQ=
+			uJAkZBjYG/55lM1JV3+AifW6F19szGKZyeTKq/i1zD0=
 			</data>
 		</dict>
 		<key>diners.png</key>
@@ -2242,49 +2719,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5pVeAtwLTMJwUnd8ciQkbp8aaqKnoNC9D3gF4CUmYg=
+			YIeyNSmSLvae1fHs8pORhNzOJtxwYtgQHOlJi7biJQA=
 			</data>
 		</dict>
 		<key>es.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BLtC8Tjtw++YTKo5WANgrYI8UYnqMMhjLvpdaQTp2g=
+			Ltvvic0pfFEwnAvd3nzXm+6OlbRKmv+2D0qS1Fl9kao=
 			</data>
 		</dict>
 		<key>fil.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X1zJzMcaqMSIt7RFlX4hqHJsTJcvtp2txUW7lP6uGBg=
+			sxvsmO8ew+BN9xolZEFfQ817LYrGOa8uGakEvjnxzrU=
 			</data>
 		</dict>
 		<key>fr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dQiJDjK0RWeAJqA9xct1UqteEfTIULp1/awQfVUJaeM=
+			L++vLeY2CXC62Xct+AQhcN3cm3yUKCQkUrK6ap/XnQY=
 			</data>
 		</dict>
 		<key>he.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OaAgYVj/Ri6M7zOpkupugFIdV4G+4ERnbe8lwytXrxk=
+			o5U3Nz7/f8Q+r2hi4krdvXUX/DBL2a/fiewuvEpY3AU=
 			</data>
 		</dict>
 		<key>hr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkje8cUdbp6y+IsQfJAk1+x5hMV0dBL2i+/x+g9kzfk=
+			QVkPqm2Rw+s5C6T2nf72kCgi7s7AsOaTJJiLzS8Vlss=
 			</data>
 		</dict>
 		<key>hu.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0hcA64U8juX+j4tkNgoXYgKYS9bkivUrzCz0nt5XH+c=
+			R5F3BOzf3OZZRTOPbMT8oMQIbE+hgR8pyT+XL8t4d3M=
 			</data>
 		</dict>
 		<key>ic_arrow_down.png</key>
@@ -2396,14 +2873,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9DmIIDwdCD5YhFBu3rCtnJmDQ5zqRCQL4JfimWlf7Gc=
+			+T0ocpTzZIYF2KvJztCEMNRtCjXaGdIWC5HSiKMopx8=
 			</data>
 		</dict>
 		<key>it.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZvGIey+qs/NfPZxbsJbUkVgBIuhLaq6S+QaibNXYDWY=
+			xM6YKaEBZ/dIov0q5PYAVhV1GVipL6rizT6AIJZZdt4=
 			</data>
 		</dict>
 		<key>jcb.png</key>
@@ -2473,14 +2950,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DXPmSuIjeX48ftwFESBhUC6ubts9TI0+9HPa80/pfy8=
+			fap1B2O8jShxhU7q5N7dhoOEM0IieEWG/f64+Y+CbF8=
+			</data>
+		</dict>
+		<key>need-help-tooltip-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VKCtmPREiFrYSx/EKiCOy0Eryk7ejD8VgxeKUzlmpIY=
+			</data>
+		</dict>
+		<key>need-help-tooltip-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kHGFyaoKuZtQkpEFvmVmXMqCNSjCKbaRJwhV3wpxw70=
+			</data>
+		</dict>
+		<key>need-help-tooltip-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Soh7bjKkiJKsLdsEQxghyLbSO4RHXmdg1dR5uOOi83M=
+			</data>
+		</dict>
+		<key>need-help-tooltip.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nj7IlmffLM82aiPgMlXcSMhlWLCd8lMtfL3yHm17GrU=
+			</data>
+		</dict>
+		<key>need-help-tooltip@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oc4cGBXbDukXjswn3KgjJXhoeebIRD8r8YxNC2AebsA=
+			</data>
+		</dict>
+		<key>need-help-tooltip@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rwD9LYi+ygOM7nqdsjxT/1nz2OdmLu7gcdZ+WKjW4L4=
 			</data>
 		</dict>
 		<key>nl.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/7I1l5cvLsPHgOoMPCohpPcb70JhjLycOgaRqSIlTA=
+			AoQ1BkhbIbcT/zPi4hHXXu9JJGvhTKNV/+oJRTZ80LI=
 			</data>
 		</dict>
 		<key>payment_card_confusions.zzip</key>
@@ -2501,14 +3020,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OQ/6H1w+kv33KvQzaPlj7I4EIdv2pJFgmA01aS8YDu8=
+			+P9F4hdI6XVjxpNxiACUukyAGFJdSoaiDnoQK6DnIf4=
 			</data>
 		</dict>
 		<key>ro.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OxBRPRyWHAnbvjx06A3ba2Y9ft+EBDGvcMFblgfxVEY=
+			XX4SPX57kSuSXv0xrza/GUyA408Bmc5Yqw+Qu6m6TN0=
 			</data>
 		</dict>
 		<key>scan-corner-ll.png</key>
@@ -2592,21 +3111,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZFP/6HitKaUNjgoY2CjCGOFxqLZO9boKk6ksr87P+wQ=
+			zM61SUVTr/eZ2fpCyfctvi5KbiRvQvl6QHmaLoq4WB0=
 			</data>
 		</dict>
 		<key>sl.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZZH4WaGs9KDYy9D4mRA3M4i2cWucO/GxlwmBKzlBMk=
+			wzaHNH4CjbELoUTUzTQaYyScYkWWdG86Hj6tzobLuLE=
 			</data>
 		</dict>
 		<key>th.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qJaW2iIsG4ovxyYVRSn0AHCaIyMeLGbqmyVd6N4LyEM=
+			WDTvO2WDh6AR4FQw0gAQIPvzWEFRAEz2BISRmUSXTyQ=
 			</data>
 		</dict>
 		<key>torchoff.png</key>
@@ -2690,7 +3209,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dsUW6wc4LxGg5RME6wNUuwM20WJM9S2MoWjFKrK0ydw=
+			e67Oumw7MXZwk4KtgcxBwbcDYKAmqCJZD018olw4X+E=
 			</data>
 		</dict>
 		<key>visa.png</key>
@@ -2714,18 +3233,60 @@
 			NKLhLU+W/6RtBPx7EzCtIUUh1cdLVwYHI+tJauKuTpA=
 			</data>
 		</dict>
+		<key>where-is-card-number-dark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			swiakFc5Pu2gp9GvRYJMqvx0F1W1XLAxmQ8svGz1a4o=
+			</data>
+		</dict>
+		<key>where-is-card-number-dark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GdrddBJINBLXU0+0tWvPmSMjIIbH3PoOIwaal21zh+c=
+			</data>
+		</dict>
+		<key>where-is-card-number-dark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/g+g1Eiq8HeWs81Fdo161cFvSuQvwer2tabwZdASKFc=
+			</data>
+		</dict>
+		<key>where-is-card-number.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hrCdYB1lBPEaNZDluiJHoFn+GhAamfP6Eh30lvSoFuY=
+			</data>
+		</dict>
+		<key>where-is-card-number@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SKkh3UBi6jxQt8iBl42nnYz8gHGC+2+fK4BAdg4/KCA=
+			</data>
+		</dict>
+		<key>where-is-card-number@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xF4YAfVGK0cH2x4qNnLsVwM+d1WT1RVfSbpa+5H66Zc=
+			</data>
+		</dict>
 		<key>zh-Hans.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jzrc2daFTooAvIBbMH66uK3wBrnAdaGDH7kgdcOEo90=
+			vO2AEFdR2uPUJGahohLs+QGiWV6ZpL9gI+dpgaAdnVQ=
 			</data>
 		</dict>
 		<key>zh-Hant.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BPP4SVsS/n+B8EbqIebbRO7k9ZvQoPG7zSo8kk7vfC8=
+			3M1pVhWXTk2CrnIC5MkwRF4bOSjJraVOiTjqCkxCKuU=
 			</data>
 		</dict>
 	</dict>

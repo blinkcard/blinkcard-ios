@@ -13,7 +13,8 @@
 #import "MBProductIntegrationInfo.h"
 #import "MBException.h"
 #import "MBImage.h"
-#import "MBDateResult.h"
+#import "MBBgraImage.h"
+#import "MBDate.h"
 #import "MBSignedPayload.h"
 
 // Settings
