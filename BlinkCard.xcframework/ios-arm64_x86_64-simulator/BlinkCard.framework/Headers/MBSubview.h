@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Base class for all overlay subviews
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCSubview : UIView
 
 /** Delegate which is notified on Overlay events */

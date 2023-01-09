@@ -6,7 +6,7 @@
 //
 
 #import "MBRecognizerResult.h"
-#import "MBDateResult.h"
+#import "MBDate.h"
 
 #import "MBCombinedRecognizerResult.h"
 #import "MBCombinedFullDocumentImageResult.h"
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Class representing values obtained when scanning front side of the Elite Payment Card
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_CLASS_DEPRECATED("Use MBCBlinkCardRecognizerResult")
+MB_CLASS_AVAILABLE_IOS(13.0) MB_CLASS_DEPRECATED("Use MBCBlinkCardRecognizerResult")
 @interface MBCLegacyBlinkCardEliteRecognizerResult : MBCRecognizerResult<NSCopying, MBCCombinedRecognizerResult, MBCCombinedFullDocumentImageResult, MBCEncodedCombinedFullDocumentImageResult>
 
 MB_INIT_UNAVAILABLE
@@ -35,7 +35,7 @@ MB_INIT_UNAVAILABLE
 /**
  * The payment card's last month of validity.
  */
-@property (nonatomic, readonly) MBCDateResult *validThru;
+@property (nonatomic, readonly) MBCDate *validThru;
 
 /**
  *  Payment card's security code/value

@@ -6,6 +6,6 @@ framework module BlinkCard {
 }
 
 module BlinkCard.Swift {
-    header "BlinkCard-Swift.h"
-    requires objc
+  header "BlinkCard-Swift.h"
+  requires objc
 }

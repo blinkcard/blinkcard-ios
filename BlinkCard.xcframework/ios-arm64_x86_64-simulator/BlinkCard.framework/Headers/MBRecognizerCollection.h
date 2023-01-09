@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger, MBCFrameQualityEstimationMode) {
 /**
  * Settings class containing settings related to scanner behaviour
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 
 @interface MBCRecognizerCollection : NSObject<NSCopying>
 

@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, MBCCameraAutofocusRestriction) {
 /**
  * Settings class containing parameters for camera capture
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCCameraSettings : NSObject <NSCopying>
 
 /**

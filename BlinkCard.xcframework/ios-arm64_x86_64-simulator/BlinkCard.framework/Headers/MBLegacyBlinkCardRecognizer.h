@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Recognizer used for scanning the front side of credit/debit cards.
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_CLASS_DEPRECATED("Use MBCBlinkCardRecognizer") MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_CLASS_DEPRECATED("Use MBCBlinkCardRecognizer") MB_FINAL
 @interface MBCLegacyBlinkCardRecognizer : MBCRecognizer <NSCopying, MBCCombinedRecognizer, MBCFullDocumentImage, MBCEncodeFullDocumentImage, MBCFullDocumentImageDpi, MBCGlareDetection, MBCFullDocumentImageExtensionFactors>
 
 MB_INIT

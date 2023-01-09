@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Navigation view controller for BlinkCard Edit View Controller with Light Style overriden
  */
-MB_CLASS_AVAILABLE_IOS(9.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCBlinkCardEditNavigationController : UINavigationController
 
 @end

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  Custom Overlay View Controller is an abstract class for all custom overlay views placed on top View Controller.
  It's responsibility is to provide meaningful and useful interface for the user to interact with.
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCCustomOverlayViewController : MBCOverlayViewController
 
 @property (nonatomic, readonly, strong) MBCRecognizerCollection *recognizerCollection;

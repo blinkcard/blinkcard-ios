@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Factory class containing static methods for creating camera view controllers.
  * Camera view controllers created this way will be managed internally by the SDK, and input frames will be processed.
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCRecognizerRunner : NSObject
 
 @property (nonatomic, strong, nonnull, readonly) MBCRecognizerRunnerMetadataDelegates *metadataDelegates;

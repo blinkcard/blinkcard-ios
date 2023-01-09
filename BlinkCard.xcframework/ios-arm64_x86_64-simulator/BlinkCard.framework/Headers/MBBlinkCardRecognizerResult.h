@@ -6,7 +6,7 @@
 //
 
 #import "MBRecognizerResult.h"
-#import "MBDateResult.h"
+#import "MBDate.h"
 
 #import "MBCombinedRecognizerResult.h"
 #import "MBCombinedFullDocumentImageResult.h"
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Class representing values obtained when scanning credit/debit cards
  */
-MB_CLASS_AVAILABLE_IOS(9.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCBlinkCardRecognizerResult : MBCRecognizerResult<NSCopying, MBCCombinedRecognizerResult>
 
 MB_INIT_UNAVAILABLE
@@ -58,7 +58,7 @@ MB_INIT_UNAVAILABLE
 /**
  * The payment card's expiry date.
  */
-@property (nonatomic, readonly) MBCDateResult *expiryDate;
+@property (nonatomic, readonly) MBCDate *expiryDate;
 
 /**
  * Information about the payment card owner (name, company, etc.).

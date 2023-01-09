@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Overlay subview presenting the document for scanning
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCRectDocumentSubview : MBCSubview
 
 - (instancetype)init NS_UNAVAILABLE;

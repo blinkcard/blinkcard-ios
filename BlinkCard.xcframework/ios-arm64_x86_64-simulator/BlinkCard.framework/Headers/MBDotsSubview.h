@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  The layer is used to draw dots representing barcodes
  */
-MB_CLASS_AVAILABLE_IOS(8.0)
+MB_CLASS_AVAILABLE_IOS(13.0)
 @interface MBCDotsSubview : MBCSubview <MBCPointDetectorSubview>
 
 /* Animation layer for barcode tracking */

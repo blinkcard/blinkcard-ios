@@ -8,17 +8,7 @@
 #ifndef MBCombinedRecognizerResult_h
 #define MBCombinedRecognizerResult_h
 
-/**
-* Result of the data matching algorithm for scanned parts/sides of the document.
-**/
-typedef NS_ENUM(NSInteger, MBCDataMatchResult) {
-    /** Data matching has not been performed. */
-    MBCDataMatchResultNotPerformed = 0,
-    /** Data does not match. */
-    MBCDataMatchResultFailed,
-    /** Data match. */
-    MBCDataMatchResultSuccess
-};
+#import "MBDataMatchState.h"
 
 @protocol MBCCombinedRecognizerResult
 
@@ -32,12 +22,12 @@ typedef NS_ENUM(NSInteger, MBCDataMatchResult) {
 
 @optional
 /**
- * Returns MBCDataMatchResultSuccess if data from scanned parts/sides of the document match,
- * MBCDataMatchResultFailed otherwise. For example if date of expiry is scanned from the front and back side
- * of the document and values do not match, this method will return MBCDataMatchResultFailed. Result will
- * be MBCDataMatchResultSuccess only if scanned values for all fields that are compared are the same.
+ * Returns MBCDataMatchStateSuccess if data from scanned parts/sides of the document match,
+ * MBCDataMatchStateFailed otherwise. For example if date of expiry is scanned from the front and back side
+ * of the document and values do not match, this method will return MBCDataMatchStateFailed. Result will
+ * be MBCDataMatchStateSuccess only if scanned values for all fields that are compared are the same.
  */
-@property (nonatomic, readonly, assign) MBCDataMatchResult documentDataMatch;
+@property (nonatomic, readonly, assign) MBCDataMatchState documentDataMatch;
 
 @end
 

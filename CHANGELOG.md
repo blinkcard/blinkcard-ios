@@ -1,5 +1,19 @@
 # Release notes
 
+## 2.7.0
+### New features:
+- Improved support for diverse credit card designs. 
+
+#### New user instructions that lead to successful scans
+- More detailed instructions on how to scan credit cards, via an intro tutorial or tooltip during scanning, leading to improved success rates in credit card scanning and data extraction.
+
+#### New layout for `BlinkCardOverlayViewController`
+- The scanning screen now shows a reticle in the center with scanning instruction.
+
+### What's new in the BlinkCard Recognizer?
+- Added a new property `fallbackAnonymization` in `AnonymizationSettings`. If true, anonymization is applied on all fields of the image if extraction is uncertain.
+- Improved anonymization performance.
+
 ## 2.6.0
 ​
 ### Improvements

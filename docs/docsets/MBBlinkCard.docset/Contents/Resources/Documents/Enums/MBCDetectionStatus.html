@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.6.0 Docs
+          MBBlinkCard v2.7.0 Docs
         </a>
          (73% documented)
       </p>
@@ -33,7 +33,7 @@
       </div>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/blinkcard/blinkcard-ios">
+          <a class="header-link" href="http://blinkcard.github.io/blinkcard-ios">
             <img class="header-icon" src="../img/gh.png" alt="GitHub"/>
             View on GitHub
           </a>
@@ -87,7 +87,7 @@
                 <a class="nav-group-task-link" href="../Classes/MBCCustomOverlayViewController.html">MBCCustomOverlayViewController</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/MBCDateResult.html">MBCDateResult</a>
+                <a class="nav-group-task-link" href="../Classes/MBCDate.html">MBCDate</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MBCDisplayableDetection.html">MBCDisplayableDetection</a>
@@ -218,7 +218,7 @@
                 <a class="nav-group-task-link" href="../Enums/MBCCameraType.html">MBCCameraType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/MBCDataMatchResult.html">MBCDataMatchResult</a>
+                <a class="nav-group-task-link" href="../Enums/MBCDataMatchState.html">MBCDataMatchState</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MBCDetectionStatus.html">MBCDetectionStatus</a>
@@ -346,7 +346,7 @@
             <p>Status of the object detection in Microblink SDK</p>
 
               <div class="slightly-smaller">
-                <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L11-L45">Show on GitHub</a>
+                <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L11-L36">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -355,36 +355,6 @@
           <div class="section-content">
             <div class="task-group">
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusSuccess"></a>
-                    <a name="//apple_ref/objc/Case/MBCDetectionStatusSuccess" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusSuccess">MBCDetectionStatusSuccess</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Object was successfuly detected.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusSuccess</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L14">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -405,12 +375,42 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusFail</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusFail</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L17">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L14">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusSuccess"></a>
+                    <a name="//apple_ref/objc/Case/MBCDetectionStatusSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusSuccess">MBCDetectionStatusSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Object was successfuly detected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusSuccess</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L17">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -435,132 +435,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraTooHigh</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraTooHigh</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L20">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraAtAngle"></a>
-                    <a name="//apple_ref/objc/Case/MBCDetectionStatusCameraAtAngle" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraAtAngle">MBCDetectionStatusCameraAtAngle</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Object was successfully detected, but the perspective angle of camera is too high</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraAtAngle</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">3</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L23">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraRotated"></a>
-                    <a name="//apple_ref/objc/Case/MBCDetectionStatusCameraRotated" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraRotated">MBCDetectionStatusCameraRotated</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Object was successfully detected, but the object is rotated and not aligned to the camera edges</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraRotated</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L26">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusQRSuccess"></a>
-                    <a name="//apple_ref/objc/Case/MBCDetectionStatusQRSuccess" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusQRSuccess">MBCDetectionStatusQRSuccess</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>QR code was successfully detected</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusQRSuccess</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L29">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusPdf417Success"></a>
-                    <a name="//apple_ref/objc/Case/MBCDetectionStatusPdf417Success" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusPdf417Success">MBCDetectionStatusPdf417Success</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>PDF417 barcode was successfully detected</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusPdf417Success</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">7</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L32">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L20">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -585,12 +465,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusFallbackSuccess</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusFallbackSuccess</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L35">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L23">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -615,12 +495,42 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusPartialForm</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">9</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusPartialForm</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L38">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L26">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraAtAngle"></a>
+                    <a name="//apple_ref/objc/Case/MBCDetectionStatusCameraAtAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@MBCDetectionStatus@MBCDetectionStatusCameraAtAngle">MBCDetectionStatusCameraAtAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Object was successfully detected, but the perspective angle of camera is too high</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraAtAngle</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L29">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -645,12 +555,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraTooNear</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">10</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusCameraTooNear</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L41">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L32">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -675,12 +585,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusDocumentTooCloseToEdge</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">11</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">MBCDetectionStatusDocumentTooCloseToEdge</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/blinkcard/blinkcard-ios/releases/tag/v2.6.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L44">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDetectionStatus.h#L35">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -693,7 +603,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2022-06-20)</p>
+      <p>&copy; 2023 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2023-01-09)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>

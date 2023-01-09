@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * A recognizer that can returns success frame.
  */
-MB_CLASS_AVAILABLE_IOS(8.0) MB_FINAL
+MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @interface MBCFrameGrabberRecognizer : MBCRecognizer<NSCopying>
 
 - (instancetype)init NS_UNAVAILABLE;
