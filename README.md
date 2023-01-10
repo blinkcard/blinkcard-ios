@@ -114,7 +114,7 @@ BlinkCard SDK is available via [Carthage](https://github.com/Carthage/Carthage).
 - Add BlinkCard as a dependency to this Cartfile:
 
 ```shell
-binary "https://github.com/BlinkCard/blinkcard-ios/blob/master/blinkcard-ios.json"
+binary  "https://raw.githubusercontent.com/blinkcard/blinkcard-ios/master/blinkcard-ios.json"
 ```
 - Run ```carthage update --use-xcframeworks```.
 - If successful, a Cartfile.resolved file and a Carthage directory will appear in the same directory as your Xcode project.
