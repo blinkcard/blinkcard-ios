@@ -1,5 +1,21 @@
 # Release notes
 
+## 2.8.0
+
+### Improvements
+- Included hand, photocopy, and screen detection models to achieve liveness functionality
+- Added anonymization info on which side was anonymized. String data is anonymized using an asterisk instead of blanking the result. 
+- Expanded the number of supported credit card types by 100%.
+- Improved data extraction, including a 30% reduction in incorrect processing of CVV field.
+
+### What's new in the BlinkCard Recognizer?
+- Added new properties `handScaleThreshold`, `handDocumentOverlapThreshold`, `screenAnalysisMatchLevel`, `photocopyAnalysisMatchLevel`. These settings define behaviour of the new liveness features.
+- Added a new delegate `BlinkCardRecognizerDelegate` with a callback `livenessStatusCallback` that is called when each side of a card is scanned. It is called with one parameter, a `LivenessStatus` enum.
+
+### BlinkCard Recognizer Result
+- Two new booleans: `firstSideAnonymized` and `secondSideAnonymized`.
+- New property `DocumentLivenessCheckResult` which has new liveness model results.
+
 ## 2.7.0
 ### New features:
 - Improved support for diverse credit card designs. 
@@ -107,9 +123,13 @@
 
 As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs, which means that you can use it with other Microblink SDKs in the same application.
 
+- BlinkCard v2.0 now scans and extracts data from payment cards with all the information on the back side!
+
 - MBCBlinkCardRecognizer is a Combined recognizer, which means it's designed for scanning **both sides of a card**. However, if all required data is found on the first side, BlinkCard doesn’t require scanning of the back side. In that case, you'll receive results after scanning the side that contains all the information. A set of required fields is defined through the recognizer's settings.
 
 - "Front side" and "back side" are terms more suited to ID scanning. We start the scanning process with the **side containing the card number**. This makes the UX easier for users with cards where all data is on the back side.
+
+- We've expanded the set of possible recognizer states with **StageValid**. This state is set when first side scanning completes with valid data, and second side scanning is required.
 
 - Available [`MBCBlinkCardRecognizer`](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizer.html):
 	- You can toggle mandatory **extraction** of all fields except the PAN.
@@ -137,7 +157,6 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 		- FieldIdentificationFailed - if we detected a field, but we're unable to parse it (possible glare issues, or a finger covering the field)
 		- ImageReturnFailed - failed to return requested images
 		- UnsupportedCard - this card layout is currently unsupported.
-- We've expanded the set of possible recognizer states with **StageValid**. This state is set when first side scanning completes with valid data, and second side scanning is required.
 
 ### New features:
 

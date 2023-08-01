@@ -42,6 +42,6 @@
 "mb_scanning_not_available" = "ไม่สามารถสแกนได้\n\n\n\n\n\n";
 "mb_tooltip_glare" = "เลื่อนบัตรประชาชนเล็กน้อยเพื่อกำจัดแสงสะท้อน";
 "photopay_align_message" = "จัดตำแหน่ง​โทรศัพท์ให้อยู่เหนือสลิป";
-"photopay_camera_permission_denied" = " %@ ไม่ได้รับอนุญาตให้ใช้กล้อง\n\nโปรดไปที่:\n• การตั้งค่า\n• %@\n• ตรวจสอบให้ใจว่า\nกล้องเปิดใช้งาน\n\n";
+"photopay_camera_permission_denied" = "{font:@Medium} %@ {/font}ไม่ได้รับอนุญาตให้ใช้กล้อง\n\nโปรดไปที่:\n• {font:@Medium}การตั้งค่า{/font}\n• {font:@Medium}%@{/font}\n• ตรวจสอบให้ใจว่า\n{font:@Medium}กล้อง{/font}เปิดใช้งาน\n\n";
 "photopay_close" = "ยกเลิก";
 "photopay_grant_camera_permission_button_title" = "อนุญาตกล้อง";

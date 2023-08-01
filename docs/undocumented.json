@@ -65,14 +65,21 @@
     },
     {
       "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
-      "line": 27,
+      "line": 32,
       "symbol": "MBCBlinkCardRecognizer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
+      "line": 125,
+      "symbol": "MBCBlinkCardRecognizerDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
       "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizerResult.h",
-      "line": 26,
+      "line": 28,
       "symbol": "MBCBlinkCardRecognizerResult.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
@@ -89,6 +96,34 @@
       "line": 22,
       "symbol": "MBCCardNumberAnonymizationSettings.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "line": 14,
+      "symbol": "MBCCheckResult",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "line": 14,
+      "symbol": "MBCCheckResult",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "line": 20,
+      "symbol": "MBCMatchLevel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "line": 20,
+      "symbol": "MBCMatchLevel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
@@ -159,6 +194,20 @@
       "line": 27,
       "symbol": "MBCDate.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
+      "line": 18,
+      "symbol": "MBCDocumentLivenessCheckSingleSideResult",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
+      "line": 31,
+      "symbol": "MBCDocumentLivenessCheckResult",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
@@ -750,6 +799,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
+      "line": 14,
+      "symbol": "MBCLivenessStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
+      "line": 14,
+      "symbol": "MBCLivenessStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
       "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
       "line": 13,
       "symbol": "MBCLogLevel",
@@ -1230,6 +1293,13 @@
       "line": 27,
       "symbol": "MBCTapToFocusSubview.-willFocusAtPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/opt/jenkins-ios-macpro2/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTieredCheck.h",
+      "line": 17,
+      "symbol": "MBCTieredCheck",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     }
   ],

@@ -42,6 +42,6 @@
 "mb_scanning_not_available" = "Scannen niet beschikbaar";
 "mb_tooltip_glare" = "Verplaats het ID een beetje om weerspiegeling te voorkomen.";
 "photopay_align_message" = "Plaats de telefoon over de acceptgiro";
-"photopay_camera_permission_denied" = "%@ heeft geen toestemming op de camera te gebruiken.\n\nGa alstublieft naar:\n• Instellingen\n• %@\n• Zorg ervoor dat Camera is geactiveerd";
+"photopay_camera_permission_denied" = "{font:@Medium}%@{/font} heeft geen toestemming op de camera te gebruiken.\n\nGa alstublieft naar:\n• {font:@Medium}Instellingen{/font}\n• {font:@Medium}%@{/font}\n• Zorg ervoor dat {font:@Medium}Camera{/font} is geactiveerd";
 "photopay_close" = "Annuleren";
 "photopay_grant_camera_permission_button_title" = "Geef cameratoestemming";
