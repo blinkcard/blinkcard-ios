@@ -1,5 +1,21 @@
 # Release notes
 
+## 2.8.0
+
+### Improvements
+- Included hand, photocopy, and screen detection models to achieve liveness functionality
+- Added anonymization info on which side was anonymized. String data is anonymized using an asterisk instead of blanking the result. 
+- Expanded the number of supported credit card types by 100%.
+- Improved data extraction, including a 30% reduction in incorrect processing of CVV field.
+
+### What's new in the BlinkCard Recognizer?
+- Added new properties `handScaleThreshold`, `handDocumentOverlapThreshold`, `screenAnalysisMatchLevel`, `photocopyAnalysisMatchLevel`. These settings define behaviour of the new liveness features.
+- Added a new delegate `BlinkCardRecognizerDelegate` with a callback `livenessStatusCallback` that is called when each side of a card is scanned. It is called with one parameter, a `LivenessStatus` enum.
+
+### BlinkCard Recognizer Result
+- Two new booleans: `firstSideAnonymized` and `secondSideAnonymized`.
+- New property `DocumentLivenessCheckResult` which has new liveness model results.
+
 ## 2.7.0
 ### New features:
 - Improved support for diverse credit card designs. 

@@ -34,10 +34,10 @@
 "mb_blinkid_onboarding_tooltip" = "هل تحتاج مساعدة؟";
 "mb_check_internet_connection" = "تحقق من الاتصال بالإنترنت";
 "mb_close" = "إغلاق";
-"mb_document_verification_onboarding_back_button" = "Back";
-"mb_document_verification_onboarding_cancel_button" = "Cancel";
-"mb_document_verification_onboarding_done_button" = "Done";
-"mb_document_verification_onboarding_next_button" = "Next";
+"mb_document_verification_onboarding_back_button" = "عودة";
+"mb_document_verification_onboarding_cancel_button" = "إلغاء";
+"mb_document_verification_onboarding_done_button" = "انتهى";
+"mb_document_verification_onboarding_next_button" = "التالي";
 "mb_network_error" = "خطأ في الشبكة";
 "mb_scanning_not_available" = "المسح الضوئي غير متاح";
 "mb_tooltip_glare" = "حرّك بطاقة الهوية لإزالة الوهج.";

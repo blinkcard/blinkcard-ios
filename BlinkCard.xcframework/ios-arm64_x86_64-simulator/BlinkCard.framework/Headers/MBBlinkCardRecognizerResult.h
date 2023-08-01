@@ -15,6 +15,8 @@
 #import "MBIssuer.h"
 #import "MBBlinkCardProcessingStatus.h"
 
+#import "MBDocumentLivenessCheckResult.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -66,12 +68,12 @@ MB_INIT_UNAVAILABLE
 @property (nonatomic, readonly) NSString *owner;
 
 /**
- * Wheater the first scanned side is blurred.
+ * Whether the first scanned side is blurred.
  */
 @property (nonatomic, readonly) BOOL firstSideBlurred;
 
 /**
- * Wheater the second scanned side is blurred.
+ * Whether the second scanned side is blurred.
  */
 @property (nonatomic, readonly) BOOL secondSideBlurred;
 
@@ -99,6 +101,21 @@ MB_INIT_UNAVAILABLE
  * Status of the last recognition process.
  */
 @property (nonatomic, readonly) MBCBlinkCardProcessingStatus processingStatus;
+
+/**
+ * Whether the first scanned side is anonymized.
+ */
+@property (nonatomic, readonly) BOOL firstSideAnonymized;
+
+/**
+ * Whether the second scanned side is anonymized.
+ */
+@property (nonatomic, readonly) BOOL secondSideAnonymized;
+
+/**
+ * Document liveness check (screen, photocopy, hand presence) which can pass or fail.
+ */
+@property (nonatomic, readonly) MBCDocumentLivenessCheckResult *documentLivenessCheck;
 
 @end
 

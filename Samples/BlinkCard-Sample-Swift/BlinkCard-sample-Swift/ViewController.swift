@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         var licenseErrorMessage = ""
         
-        // Valid until: 2023-05-09
+        // Valid until: 2023-12-01
         MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "txt", inSubdirectory: "", for: .main) { (licenseError) in
             switch licenseError {
             case .invalidLicense:

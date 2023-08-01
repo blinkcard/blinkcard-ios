@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          MBBlinkCard v2.7.0 Docs
+          MBBlinkCard v2.8.0 Docs
         </a>
-         (73% documented)
+         (72% documented)
       </p>
     
       <div class="header-col--secondary">
@@ -355,7 +355,7 @@
 <p>While converting to NSDate, internally prior knowledge about scanned document is used to use the right format.</p>
 
               <div class="slightly-smaller">
-                <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L24-L86">Show on GitHub</a>
+                <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L24-L96">Show on GitHub</a>
               </div>
           </div>
         </section>
@@ -367,9 +367,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)MBCDate(im)initWithDay:month:year:originalDateString:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithDay:month:year:originalDateString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCDate(im)initWithDay:month:year:originalDateString:">-initWithDay:<wbr>month:<wbr>year:<wbr>originalDateString:<wbr></a>
+                    <a name="/c:objc(cs)MBCDate(im)initWithDay:month:year:originalDateString:isFilledByDomainKnowledge:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDay:month:year:originalDateString:isFilledByDomainKnowledge:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MBCDate(im)initWithDay:month:year:originalDateString:isFilledByDomainKnowledge:">-initWithDay:<wbr>month:<wbr>year:<wbr>originalDateString:<wbr>isFilledByDomainKnowledge:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -387,12 +387,13 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">initWithDay</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">day</span>
                                <span class="nf">month</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">month</span>
                                 <span class="nf">year</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">year</span>
-                  <span class="nf">originalDateString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">originalDateString</span><span class="p">;</span></code></pre>
+                  <span class="nf">originalDateString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">originalDateString</span>
+           <span class="nf">isFilledByDomainKnowledge</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isFilledByDomainKnowledge</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">originalDateString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">originalDateString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">isFilledByDomainKnowledge</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -448,6 +449,18 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFilledByDomainKnowledge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indicates that date is filled by our internal domain knowledge</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -456,7 +469,7 @@
                         <p>initialized value</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L39-L42">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L40-L44">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -491,7 +504,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L48">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -526,7 +539,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L54">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -561,7 +574,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L59">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L61">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -596,7 +609,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L64">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L66">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -631,7 +644,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L69">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L71">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -639,9 +652,48 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)MBCDate(cm)dateWithDay:month:year:originalDateString:"></a>
-                    <a name="//apple_ref/objc/Method/+dateWithDay:month:year:originalDateString:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MBCDate(cm)dateWithDay:month:year:originalDateString:">+dateWithDay:<wbr>month:<wbr>year:<wbr>originalDateString:<wbr></a>
+                    <a name="/c:objc(cs)MBCDate(py)isFilledByDomainKnowledge"></a>
+                    <a name="//apple_ref/objc/Property/isFilledByDomainKnowledge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MBCDate(py)isFilledByDomainKnowledge">isFilledByDomainKnowledge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates that date does not appear on the document but is filled by our internal domain knowledge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isFilledByDomainKnowledge</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFilledByDomainKnowledge</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if the date is filled by our internal domain knowledge</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L78">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MBCDate(cm)dateWithDay:month:year:originalDateString:isFilledByDomainKnowledge:"></a>
+                    <a name="//apple_ref/objc/Method/+dateWithDay:month:year:originalDateString:isFilledByDomainKnowledge:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MBCDate(cm)dateWithDay:month:year:originalDateString:isFilledByDomainKnowledge:">+dateWithDay:<wbr>month:<wbr>year:<wbr>originalDateString:<wbr>isFilledByDomainKnowledge:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -659,7 +711,8 @@
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nf">dateWithDay</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">day</span>
                                <span class="nf">month</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">month</span>
                                 <span class="nf">year</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">year</span>
-                  <span class="nf">originalDateString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">originalDateString</span><span class="p">;</span></code></pre>
+                  <span class="nf">originalDateString</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">originalDateString</span>
+           <span class="nf">isFilledByDomainKnowledge</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isFilledByDomainKnowledge</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -715,6 +768,18 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFilledByDomainKnowledge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indicates that date is filled by our internal domain knowledge</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -723,7 +788,7 @@
                         <p>initialized value</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.7.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L82-L85">Show on GitHub</a>
+                        <a href="http://blinkcard.github.io/blinkcard-ios/releases/tag/v2.8.0/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h#L91-L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -736,7 +801,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2023 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2023-01-09)</p>
+      <p>&copy; 2023 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2023-08-01)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
