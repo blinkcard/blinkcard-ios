@@ -1,5 +1,9 @@
 # Release notes
 
+## 2.8.1
+
+- Internal improvements
+
 ## 2.8.0
 
 ### Improvements
