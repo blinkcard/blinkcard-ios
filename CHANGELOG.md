@@ -1,5 +1,14 @@
 # Release notes
 
+## 2.8.2
+
+### New features:
+- Added reticle customizations in `MBCBlinkCardOverlayTheme`:
+    - UIImage `defaultReticleImage` - 
+    - UIImage `errorReticleImage`
+    - UIImage `reticleColor`
+    - UIColor `reticleDefaultColor`
+
 ## 2.8.1
 
 - Internal improvements
