@@ -242,6 +242,41 @@ MB_CLASS_AVAILABLE_IOS(13.0)
 @property (nonatomic) CGFloat tooltipCornerRadius;
 
 /**
+ * Default Reticle image
+ *
+ * Default: nil
+*/
+@property (nullable, nonatomic, strong) UIImage *defaultReticleImage;
+
+/**
+ * Image that animates when scanning is successful
+ *
+ * Default: check mark image
+*/
+@property (nonatomic, strong) UIImage *successScanningImage;
+
+/**
+ * Reticle error image
+ *
+ * Default: nil
+*/
+@property (nullable, nonatomic, strong) UIImage *errorReticleImage;
+
+/**
+ * Reticle animation color that is active before a card is detected
+ *
+ * Default: white
+*/
+@property (nonatomic, strong) UIColor *reticleColor;
+
+/**
+ * Reticle error color
+ *
+ * Default: red alpha .4f
+*/
+@property (nonatomic, strong) UIColor *reticleDefaultColor;
+
+/**
  * Reticle error color
  *
  * Default: red alpha .4f
@@ -254,13 +289,6 @@ MB_CLASS_AVAILABLE_IOS(13.0)
  * Default: white
 */
 @property (nonatomic, strong) UIColor *successFlashColor;
-
-/**
- * Image that animates when scanning is successful
- *
- * Default: check mark image
-*/
-@property (nonatomic, strong) UIImage *successScanningImage;
 
 @end
 

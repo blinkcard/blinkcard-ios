@@ -1,3 +1,7 @@
+## 2.8.2
+
+- No changes
+
 ## 2.8.1
 
 - No changes
