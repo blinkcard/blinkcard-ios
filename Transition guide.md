@@ -1,3 +1,8 @@
+## 2.9.0
+
+### Breaking API changes:
+- Removed legacy recognizers: `LegacyBlinkCardRecognizer` and `LegacyBlinkCardEliteRecognizer`
+
 ## 2.8.2
 
 - No changes

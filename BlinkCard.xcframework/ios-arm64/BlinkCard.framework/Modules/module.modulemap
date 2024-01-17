@@ -1,7 +1,7 @@
 framework module BlinkCard {
   umbrella header "BlinkCard.h"
-
   export *
+
   module * { export * }
 }
 

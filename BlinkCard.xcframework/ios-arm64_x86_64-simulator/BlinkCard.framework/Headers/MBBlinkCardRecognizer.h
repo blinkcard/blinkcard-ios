@@ -120,6 +120,13 @@ MB_INIT
  */
 @property (nonatomic) MBCMatchLevel photocopyAnalysisMatchLevel;
 
+/**
+ * Whether invalid card number is accepted.
+ *
+ *Default: NO
+ */
+@property (nonatomic) BOOL allowInvalidCardNumber;
+
 @end
 
 @protocol MBCBlinkCardRecognizerDelegate <NSObject>

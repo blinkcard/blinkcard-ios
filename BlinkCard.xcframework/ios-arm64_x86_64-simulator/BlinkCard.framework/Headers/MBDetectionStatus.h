@@ -10,27 +10,27 @@
  */
 typedef NS_OPTIONS(NSInteger, MBCDetectionStatus) {
     
-    /** Object was not detected */
-    MBCDetectionStatusFail,
+    /** Detection has failed. */
+    MBCDetectionStatusFailed,
     
-    /** Object was successfuly detected. */
+    /** Document has been detected. */
     MBCDetectionStatusSuccess,
     
-    /** Object was successfully detected, but the camera was too far above the object for processing */
-    MBCDetectionStatusCameraTooHigh,
+    /** Document has been detected but the camera is too far from the document. */
+    MBCDetectionStatusCameraTooFar,
     
-    /** Object was successfully detected using a fallback algorithm */
-    MBCDetectionStatusFallbackSuccess,
+    /** Document has been detected but the camera is too close to the document. */
+    MBCDetectionStatusCameraTooClose,
     
-    /** Object was detected, but is only partially visible on screen */
-    MBCDetectionStatusPartialForm,
-
-    /** Object was successfully detected, but the perspective angle of camera is too high */
-    MBCDetectionStatusCameraAtAngle,
+    /** Document has been detected but the camera’s angle is too steep. */
+    MBCDetectionStatusCameraAngleTooSteep,
     
-    /** Object was successfully detected, but the camera is too near to the object for processing */
-    MBCDetectionStatusCameraTooNear,
+    /** Document has been detected but the document is too close to the camera edge. */
+    MBCDetectionStatusDocumentTooCloseToCameraEdge,
     
-    /** Document detected, but document is too close to the edge of the frame */
-    MBCDetectionStatusDocumentTooCloseToEdge,
+    /** Only part of the document is visible. */
+    MBCDetectionStatusDocumentPartiallyVisible,
+    
+    /** Fallback detection was successful (PhotoPay specific). */
+    MBCDetectionStatusFallbackSuccess
 };

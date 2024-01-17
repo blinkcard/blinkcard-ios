@@ -1,5 +1,19 @@
 # Release notes
 
+## 2.9.0
+
+### What's new in the BlinkCard Recognizer?
+- Improved scanning performance and added support for virtually any card layout
+- Improved IBAN parser which now supports more IBAN formats
+- Added option `allowInvalidCardNumber` which allows reading invalid card numbers to avoid endless scanning on samples and test cards:
+    - use with care as it might reduce accuracy in certain situations in production
+
+### Improvements
+- Better support for RTL languages in our default UX
+
+### Breaking API changes:
+- Removed legacy recognizers: `LegacyBlinkCardRecognizer` and `LegacyBlinkCardEliteRecognizer`
+
 ## 2.8.2
 
 ### New features:
