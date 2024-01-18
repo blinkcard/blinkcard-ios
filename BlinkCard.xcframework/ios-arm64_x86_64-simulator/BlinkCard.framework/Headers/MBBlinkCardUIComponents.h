@@ -17,16 +17,18 @@
 #import "MBBlinkCardEditNavigationController.h"
 
 // Overlay subviews
-#import "MBRectDocumentSubview.h"
-#import "MBDotsSubview.h"
+#import "MBCameraReticle.h"
 #import "MBDotsResultSubview.h"
-#import "MBTapToFocusSubview.h"
-#import "MBResultSubview.h"
+#import "MBDotsSubview.h"
+#import "MBErrorReticle.h"
 #import "MBGlareStatusSubview.h"
+#import "MBOcrFont.h"
 #import "MBOcrLayout.h"
 #import "MBOcrLayoutSubview.h"
 #import "MBOcrResultSubview.h"
-#import "MBOcrFont.h"
+#import "MBRectDocumentSubview.h"
+#import "MBResultSubview.h"
+#import "MBTapToFocusSubview.h"
 
 // Logger
 #import "MBLogger.h"

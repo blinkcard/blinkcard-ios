@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          MBBlinkCard v2.8.2 Docs
+          MBBlinkCard v2.9.0 Docs
         </a>
          (72% documented)
       </p>
@@ -77,6 +77,9 @@
                 <a class="nav-group-task-link" href="Classes/MBCBlinkCardRecognizerResult.html">MBCBlinkCardRecognizerResult</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBCCameraReticle.html">MBCCameraReticle</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBCCameraSettings.html">MBCCameraSettings</a>
               </li>
               <li class="nav-group-task">
@@ -110,6 +113,9 @@
                 <a class="nav-group-task-link" href="Classes.html#/c:objc(cs)MBCEntity">MBCEntity</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MBCErrorReticle.html">MBCErrorReticle</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBCFrameGrabberRecognizer.html">MBCFrameGrabberRecognizer</a>
               </li>
               <li class="nav-group-task">
@@ -117,18 +123,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBCImage.html">MBCImage</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBCLegacyBlinkCardEliteRecognizer.html">MBCLegacyBlinkCardEliteRecognizer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBCLegacyBlinkCardEliteRecognizerResult.html">MBCLegacyBlinkCardEliteRecognizerResult</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBCLegacyBlinkCardRecognizer.html">MBCLegacyBlinkCardRecognizer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/MBCLegacyBlinkCardRecognizerResult.html">MBCLegacyBlinkCardRecognizerResult</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/MBCMicroblinkSDK.html">MBCMicroblinkSDK</a>
@@ -427,8 +421,8 @@
 </ul><div class="aside aside-since">
     <p class="aside-title">Since</p>
     <p>Since the libraries are stored on <a href="https://git-lfs.github.com">Git Large File Storage</a>, you need to install git-lfs by running these commands:</p>
-<pre class="highlight shell"><code>brew install git-lfs
-git lfs install
+<pre class="highlight shell"><code>brew <span class="nb">install </span>git-lfs
+git lfs <span class="nb">install</span>
 </code></pre>
 
 </div><ul>
@@ -442,14 +436,14 @@ git lfs install
 </ul>
 <pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'13.0'</span>
 <span class="n">target</span> <span class="s1">'Your-App-Name'</span> <span class="k">do</span>
-    <span class="n">pod</span> <span class="s1">'MBBlinkCard'</span><span class="p">,</span> <span class="s1">'~&gt; 2.8.2'</span>
+    <span class="n">pod</span> <span class="s1">'MBBlinkCard'</span><span class="p">,</span> <span class="s1">'~&gt; 2.9.0'</span>
 <span class="k">end</span>
 </code></pre>
 
 <ul>
 <li>Install the dependencies in your project:</li>
 </ul>
-<pre class="highlight shell"><code><span class="gp">$ </span>pod install
+<pre class="highlight shell"><code><span class="nv">$ </span>pod <span class="nb">install</span>
 </code></pre>
 
 <ul>
@@ -499,8 +493,8 @@ git lfs install
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     <p>Since the libraries are stored on <a href="https://git-lfs.github.com">Git Large File Storage</a>, you need to install git-lfs by running these commands:</p>
-<pre class="highlight shell"><code>brew install git-lfs
-git lfs install
+<pre class="highlight shell"><code>brew <span class="nb">install </span>git-lfs
+git lfs <span class="nb">install</span>
 </code></pre>
 
 </div><ul>
@@ -957,10 +951,10 @@ The only difference is that user should call <code>- (void)processString:(NSStri
 <p>&ldquo;Front side&rdquo; and &ldquo;back side&rdquo; are terms more suited to ID scanning. We start the scanning process with the side containing the card number. This makes the UX easier for users with cards where all data is on the back side.</p>
 <h3 id='a-name-payment-card-recognizers-a-mbclegacyblinkcardrecognizer-deprecated' class='heading'><a name="payment-card-recognizers"></a> MBCLegacyBlinkCardRecognizer (deprecated)</h3>
 
-<p>The <a href="http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardRecognizer.html"><code><a href="Classes/MBCLegacyBlinkCardRecognizer.html">MBCLegacyBlinkCardRecognizer</a></code></a>is used for scanning the <a href="https://en.wikipedia.org/wiki/Payment_card">front and back side of Payment / Debit card</a>.</p>
+<p>The <a href="http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardRecognizer.html"><code>MBCLegacyBlinkCardRecognizer</code></a>is used for scanning the <a href="https://en.wikipedia.org/wiki/Payment_card">front and back side of Payment / Debit card</a>.</p>
 <h3 id='a-name-elite-payment-card-recognizers-a-mbclegacyblinkcardeliterecognizer-deprecated' class='heading'><a name="elite-payment-card-recognizers"></a> MBCLegacyBlinkCardEliteRecognizer (deprecated)</h3>
 
-<p>The <a href="http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardEliteRecognizer.html"><code><a href="Classes/MBCLegacyBlinkCardEliteRecognizer.html">MBCLegacyBlinkCardEliteRecognizer</a></code></a> scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.</p>
+<p>The <a href="http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardEliteRecognizer.html"><code>MBCLegacyBlinkCardEliteRecognizer</code></a> scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.</p>
 <h1 id='a-name-localization-a-localization' class='heading'><a name="localization"></a> Localization</h1>
 
 <p>The SDK is localized on following languages: Arabic, Chinese simplified, Chinese traditional, Croatian, Czech, Dutch, Filipino, French, German, Hebrew, Hungarian, Indonesian, Italian, Malay, Portuguese, Romanian, Slovak, Slovenian, Spanish, Thai, Vietnamese.</p>
@@ -1043,9 +1037,9 @@ If you are using Cocoapods, please be sure that you&rsquo;ve installed <code>git
 
 <span class="c"># This script loops through the frameworks embedded in the application and</span>
 <span class="c"># removes unused architectures.</span>
-find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">"</span> -name <span class="s1">'*.framework'</span> -type d | <span class="k">while </span><span class="nb">read</span> -r FRAMEWORK
+find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">"</span> <span class="nt">-name</span> <span class="s1">'*.framework'</span> <span class="nt">-type</span> d | <span class="k">while </span><span class="nb">read</span> <span class="nt">-r</span> FRAMEWORK
 <span class="k">do
-</span><span class="nv">FRAMEWORK_EXECUTABLE_NAME</span><span class="o">=</span><span class="k">$(</span>defaults <span class="nb">read</span> <span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/Info.plist"</span> CFBundleExecutable<span class="k">)</span>
+</span><span class="nv">FRAMEWORK_EXECUTABLE_NAME</span><span class="o">=</span><span class="si">$(</span>defaults <span class="nb">read</span> <span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/Info.plist"</span> CFBundleExecutable<span class="si">)</span>
 <span class="nv">FRAMEWORK_EXECUTABLE_PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$FRAMEWORK</span><span class="s2">/</span><span class="nv">$FRAMEWORK_EXECUTABLE_NAME</span><span class="s2">"</span>
 <span class="nb">echo</span> <span class="s2">"Executable is </span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
 
@@ -1054,17 +1048,17 @@ find <span class="s2">"</span><span class="nv">$APP_PATH</span><span class="s2">
 <span class="k">for </span>ARCH <span class="k">in</span> <span class="nv">$ARCHS</span>
 <span class="k">do
 </span><span class="nb">echo</span> <span class="s2">"Extracting </span><span class="nv">$ARCH</span><span class="s2"> from </span><span class="nv">$FRAMEWORK_EXECUTABLE_NAME</span><span class="s2">"</span>
-lipo -extract <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span> -o <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span>
+lipo <span class="nt">-extract</span> <span class="s2">"</span><span class="nv">$ARCH</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span> <span class="nt">-o</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span>
 EXTRACTED_ARCHS+<span class="o">=(</span><span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-</span><span class="nv">$ARCH</span><span class="s2">"</span><span class="o">)</span>
 <span class="k">done
 
 </span><span class="nb">echo</span> <span class="s2">"Merging extracted architectures: </span><span class="k">${</span><span class="nv">ARCHS</span><span class="k">}</span><span class="s2">"</span>
-lipo -o <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> -create <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
-rm <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
+lipo <span class="nt">-o</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="nt">-create</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
+<span class="nb">rm</span> <span class="s2">"</span><span class="k">${</span><span class="nv">EXTRACTED_ARCHS</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
 
 <span class="nb">echo</span> <span class="s2">"Replacing original executable with thinned version"</span>
-rm <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
-mv <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
+<span class="nb">rm</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
+<span class="nb">mv</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">-merged"</span> <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><span class="s2">"</span>
 
 <span class="k">done</span>
 </code></pre>
@@ -1087,8 +1081,8 @@ mv <span class="s2">"</span><span class="nv">$FRAMEWORK_EXECUTABLE_PATH</span><s
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2023 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2023-09-14)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>&copy; 2024 <a class="link" href="http://microblink.com" target="_blank" rel="external noopener">Microblink</a>. All rights reserved. (Last updated: 2024-01-17)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

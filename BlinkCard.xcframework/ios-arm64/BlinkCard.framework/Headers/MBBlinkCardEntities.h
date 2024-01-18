@@ -10,12 +10,6 @@
 #import "MBBlinkCardRecognizer.h"
 #import "MBBlinkCardRecognizerResult.h"
 
-#import "MBLegacyBlinkCardRecognizer.h"
-#import "MBLegacyBlinkCardRecognizerResult.h"
-
-#import "MBLegacyBlinkCardEliteRecognizer.h"
-#import "MBLegacyBlinkCardEliteRecognizerResult.h"
-
 #import "MBFullDocumentImageResult.h"
 #import "MBEncodedFullDocumentImageResult.h"
 
@@ -34,3 +28,6 @@
 // Anonymization
 #import "MBCardNumberAnonymizationSettings.h"
 #import "MBBlinkCardAnonymizationSettings.h"
+
+// Glare
+#import "MBGlareDetection.h"
