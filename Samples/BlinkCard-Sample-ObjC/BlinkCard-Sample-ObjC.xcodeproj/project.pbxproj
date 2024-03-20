@@ -21,7 +21,7 @@
 		BE6C1B70225F7EEA00D14728 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */; };
 		BE6C1B72225F7EF000D14728 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B71225F7EF000D14728 /* CoreMedia.framework */; };
 		BE6C1B74225F7EF600D14728 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C1B73225F7EF600D14728 /* AVFoundation.framework */; };
-		BE6C1B77225F7F1600D14728 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B76225F7F1600D14728 /* license.txt */; };
+		BE6C1B77225F7F1600D14728 /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = BE6C1B76225F7F1600D14728 /* license.lic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,7 +56,7 @@
 		BE6C1B6F225F7EEA00D14728 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE6C1B71225F7EF000D14728 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BE6C1B73225F7EF600D14728 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		BE6C1B76225F7F1600D14728 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.txt; path = ../../License/license.txt; sourceTree = "<group>"; };
+		BE6C1B76225F7F1600D14728 /* license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.lic; path = ../../License/license.lic; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 		BE6C1B75225F7F0800D14728 /* License */ = {
 			isa = PBXGroup;
 			children = (
-				BE6C1B76225F7F1600D14728 /* license.txt */,
+				BE6C1B76225F7F1600D14728 /* license.lic */,
 			);
 			name = License;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE6C1B77225F7F1600D14728 /* license.txt in Resources */,
+				BE6C1B77225F7F1600D14728 /* license.lic in Resources */,
 				BE6C1B5F225F7ECE00D14728 /* LaunchScreen.storyboard in Resources */,
 				BE6C1B5C225F7ECE00D14728 /* Assets.xcassets in Resources */,
 				BE6C1B5A225F7ECB00D14728 /* Main.storyboard in Resources */,
