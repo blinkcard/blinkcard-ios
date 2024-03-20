@@ -13,7 +13,7 @@
 		A262F8C625DD6933004940CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A262F8C525DD6933004940CF /* Assets.xcassets */; };
 		A262F8C925DD6933004940CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A262F8C825DD6933004940CF /* Preview Assets.xcassets */; };
 		A262F8CC25DD6933004940CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A262F8CA25DD6933004940CF /* LaunchScreen.storyboard */; };
-		A262F8D625DD6978004940CF /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = A262F8D525DD6978004940CF /* license.txt */; };
+		A262F8D625DD6978004940CF /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = A262F8D525DD6978004940CF /* license.lic */; };
 		A262F8DA25DD69BD004940CF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8D925DD69BD004940CF /* Accelerate.framework */; };
 		A262F8DC25DD69C3004940CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8DB25DD69C3004940CF /* AudioToolbox.framework */; };
 		A262F8DE25DD69CB004940CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A262F8DD25DD69CB004940CF /* AVFoundation.framework */; };
@@ -46,7 +46,7 @@
 		A262F8C825DD6933004940CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A262F8CB25DD6933004940CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A262F8CD25DD6933004940CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A262F8D525DD6978004940CF /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		A262F8D525DD6978004940CF /* license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.lic; sourceTree = "<group>"; };
 		A262F8D925DD69BD004940CF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		A262F8DB25DD69C3004940CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A262F8DD25DD69CB004940CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -115,7 +115,7 @@
 		A262F8D425DD6978004940CF /* License */ = {
 			isa = PBXGroup;
 			children = (
-				A262F8D525DD6978004940CF /* license.txt */,
+				A262F8D525DD6978004940CF /* license.lic */,
 			);
 			name = License;
 			path = ../../License;
@@ -191,7 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A262F8D625DD6978004940CF /* license.txt in Resources */,
+				A262F8D625DD6978004940CF /* license.lic in Resources */,
 				A262F8CC25DD6933004940CF /* LaunchScreen.storyboard in Resources */,
 				A262F8C925DD6933004940CF /* Preview Assets.xcassets in Resources */,
 				A262F8C625DD6933004940CF /* Assets.xcassets in Resources */,
