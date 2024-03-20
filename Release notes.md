@@ -1,5 +1,10 @@
 # Release notes
 
+## 2.9.1
+
+- added privacy manifest
+- added support for license keys that support multiple application IDs
+
 ## 2.9.0
 
 ### What's new in the BlinkCard Recognizer?
@@ -8,7 +13,6 @@
 - Added option `allowInvalidCardNumber` which allows reading invalid card numbers to avoid endless scanning on samples and test cards:
     - use with care as it might reduce accuracy in certain situations in production
     - for invalid card number the flag `cardNumberValid` in `BlinkCardRecognizerResult` will be set to `false`
-
 
 ### Improvements
 - Better support for RTL languages in our default UX
