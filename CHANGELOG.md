@@ -1,5 +1,11 @@
 # Release notes
 
+## 2.10.0
+
+- Improved performance of photocopy detection model
+- Adjusted thresholds for screen detection model in order to decrease FAR and FRR of existing model
+
+
 ## 2.9.1
 
 - added privacy manifest

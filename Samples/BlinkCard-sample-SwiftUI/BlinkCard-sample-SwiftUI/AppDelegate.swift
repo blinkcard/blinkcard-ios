@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Valid until: 2024-05-16
+        // Valid until: 2025-10-16
         MBCMicroblinkSDK.shared().setLicenseResource("license", withExtension: "lic", inSubdirectory: nil, for: .main) { (_) in
         }
         

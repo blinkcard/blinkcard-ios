@@ -1,5 +1,11 @@
 # Release notes
 
+## 2.10.0
+
+- Adjusted thresholds for screen detection model in order to decrease FAR and FRR of existing model
+- Significant improvements in photocopy detection. Both the False Rejection Rate and False Acceptance Rate are reduced by ~50% as measured on the default match level.
+
+
 ## 2.9.1
 
 - added privacy manifest
