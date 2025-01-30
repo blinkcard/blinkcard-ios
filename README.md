@@ -87,7 +87,7 @@ pod init
 ```ruby
 platform :ios, '13.0'
 target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.10.0'
+    pod 'MBBlinkCard', '~> 2.10.1'
 end
 ```
 
@@ -707,6 +707,12 @@ Whenever you construct any [`MBCRecognizer`](http://blinkcard.github.io/blinkcar
 
 Make sure you link your app with iconv and Accelerate frameworks as shown in [Quick start](#quick-start).
 If you are using Cocoapods, please be sure that you've installed `git-lfs` prior to installing pods. If you are still getting this error, go to project folder and execute command `git-lfs pull`.
+
+#### `Upload Symbols Failed` - The archive did not include a dSYM for the BlinkCard.framework
+
+When distributing your application, you might encounter a warning related to the missing dSYM files for the BlinkCard framework.
+The dSYM (Debug Symbol) files contain symbol information that helps debug crash reports by providing readable stack traces. However, for security reasons, we **do not include dSYMs** with our framework to prevent reverse engineering and protect proprietary code.
+This warning **does not affect your application's functionality** and can be safely ignored.
 
 ### Crash on armv7 devices
 

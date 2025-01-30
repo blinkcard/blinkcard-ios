@@ -1,10 +1,14 @@
 # Release notes
 
+## 2.10.1
+
+### Bug-fixes:
+- Fixed the incorrectly displayed strings and button action in the 'permission-denied' screen, which is displayed when the end-user denies the camera access.
+
 ## 2.10.0
 
+- Improved performance of photocopy detection model
 - Adjusted thresholds for screen detection model in order to decrease FAR and FRR of existing model
-- Significant improvements in photocopy detection. Both the False Rejection Rate and False Acceptance Rate are reduced by ~50% as measured on the default match level.
-
 
 ## 2.9.1
 
