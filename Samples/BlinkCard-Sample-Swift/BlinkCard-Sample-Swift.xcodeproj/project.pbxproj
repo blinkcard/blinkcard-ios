@@ -21,7 +21,7 @@
 		BE1BD970225F75C400B7F55B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD96F225F75C400B7F55B /* CoreMedia.framework */; };
 		BE1BD972225F75E500B7F55B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD971225F75E500B7F55B /* libiconv.tbd */; };
 		BE1BD974225F75F100B7F55B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BD973225F75F100B7F55B /* AudioToolbox.framework */; };
-		BE1BD980225F7CC700B7F55B /* license.lic in Resources */ = {isa = PBXBuildFile; fileRef = BE1BD97F225F7CC700B7F55B /* license.lic */; };
+		FF7FF0642DE0B55B00BEC917 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF7FF0632DE0B55B00BEC917 /* license.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,7 +54,7 @@
 		BE1BD96F225F75C400B7F55B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		BE1BD971225F75E500B7F55B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		BE1BD973225F75F100B7F55B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		BE1BD97F225F7CC700B7F55B /* license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.lic; path = ../../License/license.lic; sourceTree = "<group>"; };
+		FF7FF0632DE0B55B00BEC917 /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = license.txt; path = ../License/license.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 		BE1BD97E225F7CBF00B7F55B /* License */ = {
 			isa = PBXGroup;
 			children = (
-				BE1BD97F225F7CC700B7F55B /* license.lic */,
+				FF7FF0632DE0B55B00BEC917 /* license.txt */,
 			);
 			name = License;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7FF0642DE0B55B00BEC917 /* license.txt in Resources */,
 				BE1BD961225F74BB00B7F55B /* LaunchScreen.storyboard in Resources */,
-				BE1BD980225F7CC700B7F55B /* license.lic in Resources */,
 				BE1BD95E225F74BB00B7F55B /* Assets.xcassets in Resources */,
 				BE1BD95C225F74BA00B7F55B /* Main.storyboard in Resources */,
 			);

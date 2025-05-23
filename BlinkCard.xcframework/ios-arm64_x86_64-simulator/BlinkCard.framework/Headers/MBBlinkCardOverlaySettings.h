@@ -81,6 +81,12 @@ MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @property(nonatomic, strong) NSString *errorDocumentTooCloseToEdge;
 
 /**
+* Instructions for the user when wrong side is being scanned.
+* Default: Flip the card over
+*/
+@property(nonatomic, strong) NSString *scanningWrongSideMessage;
+
+/**
 * Option to configure when the onboarding help tooltip will appear.
 * Default: 8.0
 */
