@@ -17,8 +17,6 @@
 
 #import "MBMicroblinkDefines.h"
 
-#define NULL_NUMBER INFINITY
-#define NULL_POINT CGPointMake(NULL_NUMBER, NULL_NUMBER)
 #define NULL_LINE CGLineMake(NULL_POINT, NULL_POINT)
 #define RADIANS(degrees) ((degrees * M_PI) / 180.0)
 
@@ -66,9 +64,6 @@ CGFloat CGLineDirection(CGLine line);
 // Returns the angle between two given lines, in radians
 CGFloat CGLinesAngle(CGLine line1, CGLine line2);
 
-// Get the point at which two lines intersect. Returns NULL_POINT if they don't intersect.
-CGPoint CGLinesIntersectAtPoint(CGLine line1, CGLine line2);
-
 // Get the length of a line
 CGFloat CGLineLength(CGLine line);
 
@@ -114,10 +109,6 @@ CGPoint CGRectCenterPoint(CGRect rect);
 
 // Assigns the closest two corner points to point1 and point2 of the rect to the passed in point.
 void CGRectClosestTwoCornerPoints(CGRect rect, CGPoint point, CGPoint *point1, CGPoint *point2);
-
-// The point at which a line, extended infinitely past its second point, intersects
-// the rectangle. Returns NULL_POINT if no interseciton is found.
-CGPoint CGLineIntersectsRectAtPoint(CGRect rect, CGLine line);
 
 // Transforms point from one rect to another.
 CGPoint CGTransformedPointToDestination(CGPoint point, CGRect originalRect, CGRect destinationRect);
