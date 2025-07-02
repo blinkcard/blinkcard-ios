@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "MBBlinkCard"
-  s.version     = "2.11.0"
+  s.version     = "2.11.1"
   s.summary     = "A delightful component for payment card scanning"
   s.homepage    = "http://microblink.com"
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.source      = {
-        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.11.0/blinkcard-ios_v2.11.0.tar.gz'
+        :http => 'https://github.com/BlinkCard/blinkcard-ios/releases/download/v2.11.1/blinkcard-ios_v2.11.1.tar.gz'
   }
 
   s.platform     = :ios
