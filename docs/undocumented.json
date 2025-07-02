@@ -1,1279 +1,1279 @@
 {
   "warnings": [
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBgraImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBgraImage.h",
       "line": 18,
       "symbol": "MBCBgraImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardAnonymizationSettings.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardAnonymizationSettings.h",
       "line": 19,
       "symbol": "MBCBlinkCardAnonymizationSettings",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditFieldConfiguration.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditFieldConfiguration.h",
       "line": 14,
       "symbol": "MBCBlinkCardEditFieldConfiguration",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditOverlayTheme.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditOverlayTheme.h",
       "line": 14,
       "symbol": "MBCBlinkCardEditOverlayTheme",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditResult.h",
       "line": 14,
       "symbol": "MBCBlinkCardEditResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditViewController.h",
       "line": 19,
       "symbol": "MBCBlinkCardEditViewController",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardEditViewController.h",
       "line": 42,
       "symbol": "MBCBlinkCardEditViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardOverlayTheme.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardOverlayTheme.h",
       "line": 13,
       "symbol": "MBCBlinkCardOverlayTheme",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardOverlayViewController.h",
       "line": 36,
       "symbol": "MBCBlinkCardOverlayViewController.blinkCardEditViewController",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
       "line": 32,
       "symbol": "MBCBlinkCardRecognizer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizer.h",
       "line": 132,
       "symbol": "MBCBlinkCardRecognizerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardRecognizerResult.h",
       "line": 28,
       "symbol": "MBCBlinkCardRecognizerResult.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBBlinkCardUtils.h",
       "line": 15,
       "symbol": "MBCBlinkCardUtils",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCardNumberAnonymizationSettings.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCardNumberAnonymizationSettings.h",
       "line": 22,
       "symbol": "MBCCardNumberAnonymizationSettings.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
       "line": 14,
       "symbol": "MBCCheckResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
       "line": 14,
       "symbol": "MBCCheckResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
       "line": 20,
       "symbol": "MBCMatchLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCheckResult.h",
       "line": 20,
       "symbol": "MBCMatchLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedFullDocumentImageResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedFullDocumentImageResult.h",
       "line": 13,
       "symbol": "MBCCombinedFullDocumentImageResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizer.h",
       "line": 14,
       "symbol": "MBCCombinedRecognizer",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCombinedRecognizerResult.h",
       "line": 13,
       "symbol": "MBCCombinedRecognizerResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 28,
       "symbol": "MBCCustomOverlayViewController.recognizerCollection",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 29,
       "symbol": "MBCCustomOverlayViewController.cameraSettings",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 30,
       "symbol": "MBCCustomOverlayViewController.metadataDelegates",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 31,
       "symbol": "MBCCustomOverlayViewController.scanningRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 32,
       "symbol": "MBCCustomOverlayViewController.recognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBCustomOverlayViewController.h",
       "line": 41,
       "symbol": "MBCCustomOverlayViewController.-initWithRecognizerCollection:cameraSettings:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDate.h",
       "line": 27,
       "symbol": "MBCDate.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
       "line": 18,
       "symbol": "MBCDocumentLivenessCheckSingleSideResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDocumentLivenessCheckResult.h",
       "line": 31,
       "symbol": "MBCDocumentLivenessCheckResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
       "line": 23,
       "symbol": "MBCDotsSubview.dotsLayer",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
       "line": 42,
       "symbol": "MBCDotsSubview.-initWithCoder:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBDotsSubview.h",
       "line": 44,
       "symbol": "MBCDotsSubview.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodeFullDocumentImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodeFullDocumentImage.h",
       "line": 11,
       "symbol": "MBCEncodeFullDocumentImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodedCombinedFullDocumentImageResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodedCombinedFullDocumentImageResult.h",
       "line": 11,
       "symbol": "MBCEncodedCombinedFullDocumentImageResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodedFullDocumentImageResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBEncodedFullDocumentImageResult.h",
       "line": 11,
       "symbol": "MBCEncodedFullDocumentImageResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 11,
       "symbol": "MBCExceptionName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 13,
       "symbol": "MBCIllegalModificationException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 14,
       "symbol": "MBCInvalidLicenseKeyException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 15,
       "symbol": "MBCInvalidLicenseeKeyException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 16,
       "symbol": "MBCInvalidLicenseResourceException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 17,
       "symbol": "MBCInvalidBundleException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 18,
       "symbol": "MBCMissingSettingsException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBException.h",
       "line": 19,
       "symbol": "MBCInvalidArgumentException",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFirstSideFinishedRecognizerRunnerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFirstSideFinishedRecognizerRunnerDelegate.h",
       "line": 13,
       "symbol": "MBCFirstSideFinishedRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFirstSideFinishedRecognizerRunnerViewControllerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFirstSideFinishedRecognizerRunnerViewControllerDelegate.h",
       "line": 15,
       "symbol": "MBCFirstSideFinishedRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
       "line": 24,
       "symbol": "MBCFrameGrabberRecognizer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
       "line": 25,
       "symbol": "MBCFrameGrabberRecognizer.-initWithFrameGrabberDelegate:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFrameGrabberRecognizer.h",
       "line": 43,
       "symbol": "MBCFrameGrabberRecognizerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImage.h",
       "line": 11,
       "symbol": "MBCFullDocumentImage",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageDpi.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageDpi.h",
       "line": 8,
       "symbol": "MBCFullDocumentImageDpi",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageExtensionFactors.h",
       "line": 10,
       "symbol": "MBCFullDocumentImageExtensionFactors",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBFullDocumentImageResult.h",
       "line": 13,
       "symbol": "MBCFullDocumentImageResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 25,
       "symbol": "CGDelta",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 28,
       "symbol": "CGLine",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 28,
       "symbol": "CGLine",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 36,
       "symbol": "CGDeltaMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 39,
       "symbol": "CGPointWithDelta",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 42,
       "symbol": "CGPointDistance",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 45,
       "symbol": "CGPointAlongLine",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 48,
       "symbol": "CGPointRotatedAroundPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 53,
       "symbol": "CGLineMake",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 56,
       "symbol": "CGLineEqualToLine",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 59,
       "symbol": "CGLineMidPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 62,
       "symbol": "CGLineDirection",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 65,
       "symbol": "CGLinesAngle",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 68,
       "symbol": "CGLineLength",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 71,
       "symbol": "CGLineScale",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 74,
       "symbol": "CGLineTranslate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 77,
       "symbol": "CGLineScaleOnMidPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 80,
       "symbol": "CGLineDelta",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 83,
       "symbol": "CGLinesAreParallel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 88,
       "symbol": "CGRectTopLeftPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 89,
       "symbol": "CGRectTopRightPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 90,
       "symbol": "CGRectBottomLeftPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 91,
       "symbol": "CGRectBottomRightPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 94,
       "symbol": "CGRectResize",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 97,
       "symbol": "CGRectInsetEdge",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 108,
       "symbol": "CGRectCenterPoint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 111,
       "symbol": "CGRectClosestTwoCornerPoints",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 114,
       "symbol": "CGTransformedPointToDestination",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 122,
       "symbol": "CGControlPointsForArcBetweenPointsWithRadius",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGeometry.h",
       "line": 128,
       "symbol": "MBCscanningRegionForFrameInBounds",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareDetection.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareDetection.h",
       "line": 11,
       "symbol": "MBCGlareDetection",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerDelegate.h",
       "line": 13,
       "symbol": "MBCGlareRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerViewControllerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareRecognizerRunnerViewControllerDelegate.h",
       "line": 15,
       "symbol": "MBCGlareRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
       "line": 20,
       "symbol": "MBCGlareStatusSubview.label",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
       "line": 22,
       "symbol": "MBCGlareStatusSubview.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
       "line": 24,
       "symbol": "MBCGlareStatusSubview.-initWithCoder:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
       "line": 26,
       "symbol": "MBCGlareStatusSubview.-initWithFrame:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBGlareStatusSubview.h",
       "line": 28,
       "symbol": "MBCGlareStatusSubview.-glareDetectionFinishedWithResult:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
       "line": 19,
       "symbol": "MBCVideoRotationAngle.MBCVideoRotationAngleLandscapeLeft",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
       "line": 21,
       "symbol": "MBCVideoRotationAngle.MBCVideoRotationAnglePortrait",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
       "line": 23,
       "symbol": "MBCVideoRotationAngle.MBCVideoRotationAngleLandscapeRight",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImage.h",
       "line": 25,
       "symbol": "MBCVideoRotationAngle.MBCVideoRotationAnglePortraitUpsideDown",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 16,
       "symbol": "MBCImageExtensionFactors.MBCImageExtensionFactors.top",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 16,
       "symbol": "MBCImageExtensionFactors.top",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 17,
       "symbol": "MBCImageExtensionFactors.MBCImageExtensionFactors.right",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 17,
       "symbol": "MBCImageExtensionFactors.right",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 18,
       "symbol": "MBCImageExtensionFactors.MBCImageExtensionFactors.bottom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 18,
       "symbol": "MBCImageExtensionFactors.bottom",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 19,
       "symbol": "MBCImageExtensionFactors.MBCImageExtensionFactors.left",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageExtensionFactors.h",
       "line": 19,
       "symbol": "MBCImageExtensionFactors.left",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageProcessingRecognizerRunnerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBImageProcessingRecognizerRunnerDelegate.h",
       "line": 11,
       "symbol": "MBCImageProcessingRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBIssuer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBIssuer.h",
       "line": 11,
       "symbol": "MBCIssuer",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBIssuer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBIssuer.h",
       "line": 11,
       "symbol": "MBCIssuer",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
       "line": 13,
       "symbol": "MBCLicenseErrorNotification",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
       "line": 15,
       "symbol": "MBCLicenseError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
       "line": 15,
       "symbol": "MBCLicenseError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLicenseError.h",
       "line": 27,
       "symbol": "MBCLicenseErrorBlock",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
       "line": 14,
       "symbol": "MBCLivenessStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLivenessStatus.h",
       "line": 14,
       "symbol": "MBCLivenessStatus",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
       "line": 13,
       "symbol": "MBCLogLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
       "line": 13,
       "symbol": "MBCLogLevel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
       "line": 21,
       "symbol": "MBCLoggerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBLogger.h",
       "line": 30,
       "symbol": "MBCLogger",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
       "line": 25,
       "symbol": "MBCMicroblinkApp",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
       "line": 75,
       "symbol": "MBC_LOCALIZED_DEFAULT_STRING",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
       "line": 79,
       "symbol": "MBC_LOCALIZED_FOR_LANGUAGE",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkApp.h",
       "line": 97,
       "symbol": "MBC_LOCALIZED",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkDefines.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkDefines.h",
       "line": 34,
       "symbol": "MBBlock",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkSDK.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBMicroblinkSDK.h",
       "line": 21,
       "symbol": "MBCMicroblinkSDK.+sharedInstance",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBNativeResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBNativeResult.h",
       "line": 14,
       "symbol": "MBCNativeResult",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
       "line": 74,
       "symbol": "MBCOcrLayout.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
       "line": 192,
       "symbol": "MBCCharWithVariants",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
       "line": 260,
       "symbol": "MBCOcrChar.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOcrLayout.h",
       "line": 302,
       "symbol": "MBCPosition.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayViewController.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBOverlayViewController.h",
       "line": 33,
       "symbol": "MBCOverlayViewController.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBProductIntegrationInfo.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBProductIntegrationInfo.h",
       "line": 17,
       "symbol": "MBCProductIntegrationInfo",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizer.h",
       "line": 29,
       "symbol": "MBCRecognizer.-getOptimalHudOrientation",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerCollection.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerCollection.h",
       "line": 51,
       "symbol": "MBCRecognizerCollection.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerCollection.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerCollection.h",
       "line": 53,
       "symbol": "MBCRecognizerCollection.-initWithRecognizers:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
       "line": 46,
       "symbol": "MBCRecognizerResult.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
       "line": 48,
       "symbol": "MBCRecognizerResult.resultState",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerResult.h",
       "line": 49,
       "symbol": "MBCRecognizerResult.resultStateString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 29,
       "symbol": "MBCRecognizerRunner.metadataDelegates",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 30,
       "symbol": "MBCRecognizerRunner.scanningRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 31,
       "symbol": "MBCRecognizerRunner.imageProcessingRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 32,
       "symbol": "MBCRecognizerRunner.stringProcessingRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 34,
       "symbol": "MBCRecognizerRunner.coordinator",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 36,
       "symbol": "MBCRecognizerRunner.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 41,
       "symbol": "MBCRecognizerRunner.-resetState",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunner.h",
       "line": 43,
       "symbol": "MBCRecognizerRunner.-resetState:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
       "line": 22,
       "symbol": "MBCRecognizerRunnerMetadataDelegates.debugRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
       "line": 23,
       "symbol": "MBCRecognizerRunnerMetadataDelegates.detectionRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
       "line": 24,
       "symbol": "MBCRecognizerRunnerMetadataDelegates.ocrRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
       "line": 25,
       "symbol": "MBCRecognizerRunnerMetadataDelegates.glareRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerMetadataDelegates.h",
       "line": 26,
       "symbol": "MBCRecognizerRunnerMetadataDelegates.firstSideFinishedRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
       "line": 22,
       "symbol": "MBCRecognizerRunnerViewControllerMetadataDelegates.debugRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
       "line": 23,
       "symbol": "MBCRecognizerRunnerViewControllerMetadataDelegates.detectionRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
       "line": 24,
       "symbol": "MBCRecognizerRunnerViewControllerMetadataDelegates.ocrRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
       "line": 25,
       "symbol": "MBCRecognizerRunnerViewControllerMetadataDelegates.glareRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRecognizerRunnerViewControllerMetadataDelegates.h",
       "line": 26,
       "symbol": "MBCRecognizerRunnerViewControllerMetadataDelegates.firstSideFinishedRecognizerRunnerViewControllerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 12,
       "symbol": "MBCRectDocumentSubviewScanMode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 12,
       "symbol": "MBCRectDocumentSubviewScanMode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 33,
       "symbol": "MBCRectDocumentSubview.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 35,
       "symbol": "MBCRectDocumentSubview.-initWithCoder:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 37,
       "symbol": "MBCRectDocumentSubview.-initWithFrame:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 39,
       "symbol": "MBCRectDocumentSubview.widthToHightAspectRatio",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 41,
       "symbol": "MBCRectDocumentSubview.titleText",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 43,
       "symbol": "MBCRectDocumentSubview.titleView",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 45,
       "symbol": "MBCRectDocumentSubview.viewSize",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 47,
       "symbol": "MBCRectDocumentSubview.titleTextDelay",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 49,
       "symbol": "MBCRectDocumentSubview.centerView",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 51,
       "symbol": "MBCRectDocumentSubview.rectSubviewDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 53,
       "symbol": "MBCRectDocumentSubview.-startScanLineAnimation",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 55,
       "symbol": "MBCRectDocumentSubview.-stopScanLineAnimation",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 57,
       "symbol": "MBCRectDocumentSubview.-startFlipAnimation",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 59,
       "symbol": "MBCRectDocumentSubview.-updateForMode:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 61,
       "symbol": "MBCRectDocumentSubview.-startScannedFirstSideFinishAnimation",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 63,
       "symbol": "MBCRectDocumentSubview.-resetTitleLabelConstraint",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 65,
       "symbol": "MBCRectDocumentSubview.-configureCornersBounds",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 67,
       "symbol": "MBCRectDocumentSubview.-updateProgress",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBRectDocumentSubview.h",
       "line": 71,
       "symbol": "MBCRectDocumentSubviewDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSignedPayload.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSignedPayload.h",
       "line": 16,
       "symbol": "MBCSignedPayload",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBStringProcessingRecognizerRunnerDelegate.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBStringProcessingRecognizerRunnerDelegate.h",
       "line": 10,
       "symbol": "MBCStringProcessingRecognizerRunnerDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizer.h",
       "line": 21,
       "symbol": "MBCSuccessFrameGrabberRecognizer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizer.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizer.h",
       "line": 22,
       "symbol": "MBCSuccessFrameGrabberRecognizer.-initWithRecognizer:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizerResult.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBSuccessFrameGrabberRecognizerResult.h",
       "line": 23,
       "symbol": "MBCSuccessFrameGrabberRecognizerResult.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTapToFocusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTapToFocusSubview.h",
       "line": 25,
       "symbol": "MBCTapToFocusSubview.-initWithCoder:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTapToFocusSubview.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTapToFocusSubview.h",
       "line": 27,
       "symbol": "MBCTapToFocusSubview.-willFocusAtPoint:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTieredCheck.h",
+      "file": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios/blinkcard-ios/BlinkCard.xcframework/ios-arm64_x86_64-simulator/BlinkCard.framework/Headers/MBTieredCheck.h",
       "line": 17,
       "symbol": "MBCTieredCheck",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/opt/jenkins-iphone-12-mini/E0/sdk-blinkcard-ios"
+  "source_directory": "/opt/jenkins-iphone-se3/E0/sdk-blinkcard-ios"
 }
