@@ -18,6 +18,7 @@
 #import "MBCheckResult.h"
 
 #import "MBLivenessStatus.h"
+#import "MBDetectionLevel.h"
 
 @protocol MBCBlinkCardRecognizerDelegate;
 
@@ -123,9 +124,16 @@ MB_INIT
 /**
  * Whether invalid card number is accepted.
  *
- *Default: NO
+ * Default: NO
  */
 @property (nonatomic) BOOL allowInvalidCardNumber;
+
+/**
+ * The level of allowed detected tilt of the document in the image.
+ *
+ * Default: Mid
+ */
+@property (nonatomic) MBCDetectionLevel tiltDetectionLevel;
 
 @end
 
