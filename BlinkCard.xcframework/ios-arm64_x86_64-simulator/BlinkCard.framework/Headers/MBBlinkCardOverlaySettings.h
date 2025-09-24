@@ -87,6 +87,12 @@ MB_CLASS_AVAILABLE_IOS(13.0) MB_FINAL
 @property(nonatomic, strong) NSString *scanningWrongSideMessage;
 
 /**
+* Instructions for the user when too much tilt is detected.
+* Default: Keep card parallel to phone
+*/
+@property(nonatomic, strong) NSString *keepCardParallelMessage;
+
+/**
 * Option to configure when the onboarding help tooltip will appear.
 * Default: 8.0
 */
