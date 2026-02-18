@@ -1,0 +1,180 @@
+//  Created by Toni Krešo on 22.11.2024.. 
+//  Copyright (c) Microblink. All rights reserved.
+//  Modifications are allowed under the terms of the license for files located in the UX/UI lib folder.
+//
+
+import SwiftUI
+
+#if canImport(BlinkIDVerify)
+import BlinkIDVerify
+#elseif canImport(BlinkID)
+import BlinkID
+#elseif canImport(BlinkCard)
+import BlinkCard
+#endif
+
+struct OnboardingSheetView<E: OnboardingStepProtocol>: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State var selected: Int = 0
+    private let theme: any UXThemeProtocol
+    private let sessionNumber: Int
+    private let cases: [E] = Array(E.allCases)
+    
+    init(theme: any UXThemeProtocol, sessionNumber: Int) {
+        self.theme = theme
+        self.sessionNumber = sessionNumber
+    }
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Button {
+                    decreaseStep()
+                } label: {
+                    Text(selected == 0 ? "mb_close".localizedString : "mb_dialog_back_button".localizedString)
+                        .font(theme.onboardingSheetButtonFont)
+                        .foregroundStyle(theme.onboardingSheetButtonColor)
+                }
+                .accessibilitySortPriority(3)
+                Spacer()
+                Button {
+                    increaseStep()
+                } label: {
+                    Text(selected == E.allCases.count - 1 ? "mb_dialog_done_button".localizedString : "mb_dialog_next_button".localizedString)
+                        .bold()
+                        .font(theme.onboardingSheetButtonFont)
+                        .foregroundStyle(theme.onboardingSheetButtonColor)
+                }
+                .accessibilitySortPriority(2)
+            }
+            Divider()
+                .padding(.horizontal, -20)
+            TabView(selection: $selected) {
+                ForEach(Array(cases.enumerated()), id: \.1) { index, step in
+                    TabItemView(theme: self.theme, onboardingStep: step)
+                        .tag(index)
+                }
+            }
+            .accessibilitySortPriority(4)
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            
+            Spacer()
+            
+            PageControlView(currentPage: $selected, numberOfPages: E.allCases.count, currentPageIndicatorColor: UIColor(theme.onboardingSheetPageIndicatorColor), pageIndicatorColor: UIColor(theme.onboardingSheetPageIndicatorColor).withAlphaComponent(0.5))
+                .accessibilitySortPriority(1)
+        }
+        .padding(20)
+        .background {
+            theme.onboardingSheetBackgroundColor.ignoresSafeArea()
+        }
+    }
+    
+    private func increaseStep() {
+        guard selected < E.allCases.count - 1
+        else {
+            Task {
+                if sessionNumber > 0 {
+                    let uxEventPinglet = UxEventPinglet(eventType: .helpclosed, helpCloseType: .contentfullyviewed)
+                    await PingManager.shared.addPinglet(pinglet: uxEventPinglet, sessionNumber: sessionNumber)
+                }
+
+            }
+
+            presentationMode.wrappedValue.dismiss()
+            return
+        }
+        
+        withAnimation {
+            selected += 1
+        }
+    }
+    
+    private func decreaseStep() {
+        guard selected > 0
+        else {
+            Task {
+                if sessionNumber > 0 {
+                    let uxEventPinglet = UxEventPinglet(eventType: .helpclosed, helpCloseType: .contentskipped)
+                    await PingManager.shared.addPinglet(pinglet: uxEventPinglet, sessionNumber: sessionNumber)
+                }
+
+            }
+
+            presentationMode.wrappedValue.dismiss()
+            return
+        }
+        withAnimation {
+            selected -= 1
+        }
+    }
+}
+
+struct TabItemView: View {
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @State private var contentHeight: CGFloat = 40
+    
+    private let onboardingStep: any OnboardingStepProtocol
+    private let theme: any UXThemeProtocol
+    
+    init(theme: any UXThemeProtocol, onboardingStep: any OnboardingStepProtocol) {
+        self.theme = theme
+        self.onboardingStep = onboardingStep
+    }
+    
+    var body: some View {
+        Group {
+            if isPortrait {
+                VStack(spacing: 30) { bodyContent }
+            } else {
+                HStack(alignment: .center, spacing: 30) { bodyContent }
+            }
+        }
+        .padding()
+    }
+    
+    var bodyContent: Group< some View > {
+        Group {
+            onboardingStep.image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 220)
+                .accessibilityHidden(true)
+            ScrollView {
+                VStack(alignment:.leading, spacing: 16) {
+                    Text(onboardingStep.title.localizedString)
+                        .bold()
+                        .font(theme.onboardingSheetTitleFont)
+                        .foregroundStyle(theme.onboardingSheetTitleColor)
+                        .accessibilityHeading(.h1)
+                        .accessibilitySortPriority(2)
+                    Text(onboardingStep.description.localizedString)
+                        .font(theme.onboardingSheetDescriptionFont)
+                        .foregroundStyle(theme.onboardingSheetDescriptionColor)
+                        .accessibilitySortPriority(1)
+                }
+                .overlay(
+                    GeometryReader { geo in
+                        Color.clear.preference(key: HeightPreferenceKey.self, value: geo.size.height)
+                    })
+            }
+            .frame(maxHeight: contentHeight, alignment: .center)
+            .onPreferenceChange(HeightPreferenceKey.self) {
+                contentHeight = $0
+            }
+            Spacer()
+        }
+    }
+    
+    var isPortrait: Bool {
+        horizontalSizeClass == .compact && verticalSizeClass == .regular
+    }
+}
+
+struct HeightPreferenceKey: PreferenceKey {
+    typealias Value = CGFloat
+    static var defaultValue: CGFloat = 40
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
