@@ -1,24 +1,7 @@
 #!/bin/sh
 
-if [ "$#" -ne 2 ]
-then
-  echo "Usage: $0 PATH_TO_SAMPLES PROJECT_NAME"
-  echo "Example: $0 ../Samples BlinkCard"
-  exit 1
-fi
+xcodebuild -project Samples/DownloadResources/BlinkCardSample/BlinkCardSample.xcodeproj -sdk iphoneos archive -archivePath size-report/app.xcarchive -scheme BlinkCardSample
 
-PATH_TO_SAMPLES=$1
-PROJECT_NAME=$2
+xcodebuild -exportArchive -archivePath size-report/app.xcarchive -exportPath size-report/app.ipa -exportOptionsPlist size-report/exportOptions.plist -allowProvisioningUpdates
 
-PATH_TO_SIZE_REPORT=$PATH_TO_SAMPLES/../size-report
-
-if [ -d "$PATH_TO_SAMPLES" ]; then
-
-  xcodebuild -project "$PATH_TO_SAMPLES/$PROJECT_NAME-Sample-Swift/$PROJECT_NAME-Sample-Swift.xcodeproj" -sdk iphoneos archive -archivePath "$PATH_TO_SIZE_REPORT/app.xcarchive" -scheme "$PROJECT_NAME-sample-Swift"
-
-  xcodebuild -exportArchive -archivePath "$PATH_TO_SIZE_REPORT/app.xcarchive" -exportPath "$PATH_TO_SIZE_REPORT/app.ipa" -exportOptionsPlist "$PATH_TO_SIZE_REPORT/exportOptions.plist" -allowProvisioningUpdates
-
-  cp "$PATH_TO_SIZE_REPORT/app.ipa/App Thinning Size Report.txt" "$PATH_TO_SIZE_REPORT"
-
-   rm -r "$PATH_TO_SIZE_REPORT/app.xcarchive" "$PATH_TO_SIZE_REPORT/app.ipa"
-fi
+cp "size-report/app.ipa/App Thinning Size Report.txt" "size-report"

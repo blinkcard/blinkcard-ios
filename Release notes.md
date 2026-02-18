@@ -1,5 +1,71 @@
 # Release notes
 
+## 3000.0.0
+
+### New fraud detection: BIN intelligence
+BIN intelligence enhances payment risk assessment at the moment of card capture. 
+Real-time BIN lookup validates the PAN and returns detailed card information, including type, brand, category, issuing bank, and issuer country. 
+This additional fraud signal helps customers identify high-risk transactions early, before the transaction begins.
+
+### Architectural shift: session-based API
+The legacy `Recognizer` architecture is deprecated. BlinkCard v3000 moves to a session-based model, decoupling scanning logic from the UI lifecycle and enabling a headless integration for custom implementations.
+
+### Epoch versioning scheme
+We are moving to an Epoch-based versioning system: `(EPOCH * 1000 + MAJOR).MINOR.PATCH`. This new versioning makes it easier for customers to immediately identify the impact of an update and plan upgrades with confidence. 
+- **EPOCH**: Fundamental architectural rewrites.
+- **MAJOR**: Breaking API changes.
+- **MINOR**: New features, backward-compatible.
+- **PATCH**: Bug fixes.
+
+### Other improvements
+- **i18n**: Expanded localization support to better serve a global user base: we added 33 new languages, bringing the total supported languages to 56, enabling a more convenient user experience across diverse regions.
+- **a11y**: Enhanced accessibility capabilities, including support for screen readers.
+- We introduced more granular event tracking throughout the SDK lifecycle, enabling customers to gain deeper insights into success rates and drop-off points during scanning sessions. These enhanced analytics help identify optimization opportunities and ensure an improved, more reliable user experience.
+- Improved photocopy detection model, reducing FAR@FRR of 1% from 27.53% to 13.69%, significantly enhancing reliability.
+
+### Highlights & integration improvements
+
+- **Lighter SDK**: By incorporating dynamic model loading, BlinkCard v3000 drastically reduces download size from ~10MB to ~1.8MB, and lowers memory usage.
+- **Backward compatibility**: Existing production keys will continue to work with v3000.0.0. No new license key is required for the upgrade.
+- **More maintainable codebase**: This new architecture sets the stage for easier and faster updates.
+- Updated minimum OS requirement:
+  - BlinkCard framework now requires iOS 15.0 or newer, while the BlinkCardUX package requires iOS 16.0 or newer. This update allows us to leverage modern development practices, improve stability, and streamline future updates.
+  - Both frameworks are built for XCode 26.2.0
+
+## Architecture changes
+- **Modern Swift features**: Written fully in Swift, the code is simple and easy to work with.
+- **SwiftUI**: SwiftUI is the main driver for the UI through BlinkCardUX package.
+- **Simplified flow**: More straightforward API with clearer separation of concerns.
+
+## Major API changes 
+- SwiftUI & modular SDK  
+  - UI is now built with SwiftUI, simplifying integration via `BlinkCardUX`.  
+  - The SDK is modular:  
+    - `BlinkCard` for scanning logic.  
+    - `BlinkCardUX` for prebuilt UI components.  
+- Simplified initialization & result handling  
+  - New SDK initialization method:  
+    ```swift
+    let settings = BlinkCardSdkSettings(licenseKey: "<key>", helloLogEnabled: true)
+    let sdk = try await BlinkCardSdk.createBlinkCardSdk(withSettings: settings)
+    ```  
+  - Results are now retrieved through structured session-based async-await callbacks instead of recognizer bundles.  
+- Enhanced UI customization & source-available UX  
+  - `UXThemeProtocol` enables direct customization of typography, colors, and strings.  
+  - The source-available UI layer allows advanced modifications for branding and accessibility.  
+  
+## Plan your upgrade
+
+We have prepared transition guides to help you get started with BlinkCard v3000.0.0:
+
+- [General transition guide](https://blinkcard.docs.microblink.com/migration-v3000)
+- [iOS-specific transition guide](https://github.com/BlinkCard/blinkcard-ios/blob/master/Transition%20guide%20v3000.0.0.md)
+
+These guides outline all major API changes and best practices for migrating existing code. 
+
+For any questions or feedback, reach out to support@microblink.com. We value your input and look forward to hearing how BlinkCard v3000 improves your app’s experience!
+
+
 ## 2.12.0
 
 ### Improvements
@@ -137,7 +203,7 @@
 
 - To use BlinkCard SDK with Carthage, please update to [Carthage v0.38.0](https://github.com/Carthage/Carthage/releases/tag/0.38.0).
 - We've added XCFramework support
-	- Run `carthage update --use-xcframeworks`
+    - Run `carthage update --use-xcframeworks`
 
 ## 2.2.0
 
@@ -145,20 +211,20 @@
 
 - We've added support for even more horizonal card layouts
 - We've added anonymization options for string and image results:
-	- Anonymization is available for these fields:
-		- Card number
-		- Card number prefix
-		- CVV
-		- Owner
-		- IBAN
-	- Choose the `MBCBlinkCardAnonymizationMode` for each field:
-		- `None`
-		- `ImageOnly` - Black boxes will cover chosen data
-		- `ResultFieldsOnly` - String data is redacted from the result, images are not anonymized
-		- `FullResult` - Both images and string data are anonymized
-	- Card number has further anonymization options available through `MBCCardNumberAnonymizationSettings`:
-		- `prefixDigitsVisible` - Defines how many digits at the beginning of the card number remain visible after anonymization
-		- `suffixDigitsVisible` - Defines how many digits at the end of the card number remain visible after anonymization
+    - Anonymization is available for these fields:
+        - Card number
+        - Card number prefix
+        - CVV
+        - Owner
+        - IBAN
+    - Choose the `MBCBlinkCardAnonymizationMode` for each field:
+        - `None`
+        - `ImageOnly` - Black boxes will cover chosen data
+        - `ResultFieldsOnly` - String data is redacted from the result, images are not anonymized
+        - `FullResult` - Both images and string data are anonymized
+    - Card number has further anonymization options available through `MBCCardNumberAnonymizationSettings`:
+        - `prefixDigitsVisible` - Defines how many digits at the beginning of the card number remain visible after anonymization
+        - `suffixDigitsVisible` - Defines how many digits at the end of the card number remain visible after anonymization
 
 ### Bug fixes:
 
@@ -205,9 +271,9 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 - We've expanded the set of possible recognizer states with **StageValid**. This state is set when first side scanning completes with valid data, and second side scanning is required.
 
 - Available [`MBCBlinkCardRecognizer`](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizer.html):
-	- You can toggle mandatory **extraction** of all fields except the PAN.
-	- You can enable the **blur filter**. When blur filtering is enabled, blurred frames are discarded. Otherwise, we process the blurred frames but set the blur indicator result member.
-	- You can define required **padding** around the detected document. This ensures some empty space exists between the document and the edge of the frame.
+    - You can toggle mandatory **extraction** of all fields except the PAN.
+    - You can enable the **blur filter**. When blur filtering is enabled, blurred frames are discarded. Otherwise, we process the blurred frames but set the blur indicator result member.
+    - You can define required **padding** around the detected document. This ensures some empty space exists between the document and the edge of the frame.
 
 - [MBCBlinkCardRecognizerResult](https://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardRecognizerResult.html) structure:
     - Contains:
@@ -221,15 +287,15 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
         - Cropped document images
         - Blur indicators for both sides
         - Processing status
-	- **Processing status** can be one of:
-		- Success - if the process ended successfully and data is valid
-		- DetectionFailed - if detection of the document failed
-		- ImagePreprocessingFailed - if preprocessing of the image failed
-		- StabilityTestFailed - if inconsistent results were detected between different video frames (when video processing, we require at least two frames with consistent data, for image processing this isn't applicable)
-		- ScanningWrongSide - if the first side presented in the scanning process does not contain the PAN, or when the user failed to present the second side
-		- FieldIdentificationFailed - if we detected a field, but we're unable to parse it (possible glare issues, or a finger covering the field)
-		- ImageReturnFailed - failed to return requested images
-		- UnsupportedCard - this card layout is currently unsupported.
+    - **Processing status** can be one of:
+        - Success - if the process ended successfully and data is valid
+        - DetectionFailed - if detection of the document failed
+        - ImagePreprocessingFailed - if preprocessing of the image failed
+        - StabilityTestFailed - if inconsistent results were detected between different video frames (when video processing, we require at least two frames with consistent data, for image processing this isn't applicable)
+        - ScanningWrongSide - if the first side presented in the scanning process does not contain the PAN, or when the user failed to present the second side
+        - FieldIdentificationFailed - if we detected a field, but we're unable to parse it (possible glare issues, or a finger covering the field)
+        - ImageReturnFailed - failed to return requested images
+        - UnsupportedCard - this card layout is currently unsupported.
 
 ### New features:
 
@@ -248,13 +314,13 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
     - If edit screen is enabled, new button will show up after 5 seconds of unsuccessful scanning to allow user to go directly to edit screen.
 
 - We added disableMicroblinkLogging method to MBLogger for easier implementation
-	- This also enables disabling Microblink logging in Swift.
+    - This also enables disabling Microblink logging in Swift.
 
 - We added `Carthage` support
-	- For now, `Carthage` is supported for fat binaries, `.framework`. We will support `.xcframework` as soon `Carthage` is updated.
-	- Please check out our guide for implementation
+    - For now, `Carthage` is supported for fat binaries, `.framework`. We will support `.xcframework` as soon `Carthage` is updated.
+    - Please check out our guide for implementation
 - We added `Swift Package Manager` support
-	- Please check out our guide for implementation.
+    - Please check out our guide for implementation.
 
 ### Note on ARM Macs
 
@@ -281,7 +347,7 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 - To ensure compatibilty with other Microblink SDKs, we have reprefixed all classes. All classes have `MBC` prefix instead of `MB`
 - We have renamed framework from `Microblink` to `BlinkCard`
 - We added error callback when setting license keys on `MBCMicroblinkSDK`
-	- You will be getting error callback and reason why you could not unlock SDK - see `MBCLicenseError`
+    - You will be getting error callback and reason why you could not unlock SDK - see `MBCLicenseError`
 - We moved all resources inside framework, we are not shipping bundle anymore.
 
 ### Minor API changes:
@@ -289,9 +355,9 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 - We have renamed old `MBBlinkCardRecognizer` and `MBBlinkCardEliteRecognizer` recognizers to `MBCLegacyBlinkCardRecognizer` and `MBCLegacyBlinkCardEliteRecognizer`. They are now deprecated.
 - We renamed `MBRecogitionMode` to `MBCRecognitionDebugMode` in `MBCRecognizerCollection`.
 - Swift:
-	- We renamed all `sharedInstance` to `shared`
-	- All enums are now `Int`
-	- All `unsigned integers` are now `Int`
+    - We renamed all `sharedInstance` to `shared`
+    - All enums are now `Int`
+    - All `unsigned integers` are now `Int`
 
 ### Bug fixes:
 
@@ -304,9 +370,9 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 ### New features:
 
 - Introducing support for new framework format - XCFramework:
-	- it contains all the necessary device and simulator architecture slices
-	- no neeed to remove simulator slices before distributing your app to the App Store as described [here](https://github.com/blinkcard/blinkcard-ios#unsupported-architectures-when-submitting-app-to-app-store)
-	- for now, only available from this repo, **not available on Cocoapods**
+    - it contains all the necessary device and simulator architecture slices
+    - no neeed to remove simulator slices before distributing your app to the App Store as described [here](https://github.com/blinkcard/blinkcard-ios#unsupported-architectures-when-submitting-app-to-app-store)
+    - for now, only available from this repo, **not available on Cocoapods**
 - Added presets for camera - Preset1080p, and 4K; Optimal always chooses the highest quality
 - We added the option to disable Microblink logs in the console output. Use `MBLogger` class and conform to `MBLoggerDelegate` in `AppDelegate`. To disable logs, implement delegate method `- (void)log:(MBLogLevel)level format:(const char *)format arguments:(va_list)arguments`. Be careful with this option. We need full log outputs from the application for support purposes. In case of having problems with scanning certain items, undesired behavior on the specific device(s), crashes inside SDK or anything unmentioned, we will need a full log from your side. If you disable Microblink logging, you won't be able to provide us this information. Hence support might be limited
 - We are now delivering the complete list of open source dependencies used in the SDK. Please check the `open-source-software-used` directory
@@ -324,9 +390,9 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 ## 1.1.1
 
 - Bugfixes:
-	- added missing `extractIban` property which says it should extract the payment card's IBAN
-	- fixed Torch activation for all iOS versions
-	- fixed OpenGL code which was fragile and sensitive to crashes if used from multiple threads
+    - added missing `extractIban` property which says it should extract the payment card's IBAN
+    - fixed Torch activation for all iOS versions
+    - fixed OpenGL code which was fragile and sensitive to crashes if used from multiple threads
 
 ## 1.1.0
 
@@ -338,9 +404,9 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
         - use `isScanningPaused` to check if scanning is paused
 
 - Improvements in ID scanning performance:
-	- improved `MBBlinkCardRecognizer`:
-	       - now extracts IBAN from the Payment / Debit card
-	- in `MBBlinkCardRecognizerResult` and `MBBlinkCardEliteRecognizerResult`, `documentDataMatch` value is now returned as `MBDataMatchResult` enum with three possible values: `NotPerformed`,  `Failed` and `Success`
+    - improved `MBBlinkCardRecognizer`:
+           - now extracts IBAN from the Payment / Debit card
+    - in `MBBlinkCardRecognizerResult` and `MBBlinkCardEliteRecognizerResult`, `documentDataMatch` value is now returned as `MBDataMatchResult` enum with three possible values: `NotPerformed`,  `Failed` and `Success`
 
 - Bugfixes:
     - fixed bug in `MBBlinkCardRecognizer`:
