@@ -1,6 +1,7 @@
 //  Created by Jura Skrlec on 13.02.2025.
 //  Copyright (c) Microblink. All rights reserved.
-//  Modifications are allowed under the terms of the license for files located in the UX/UI lib folder.
+//  This code is provided for use as-is and may not be copied, modified, or redistributed.
+//
 
 import Foundation
 

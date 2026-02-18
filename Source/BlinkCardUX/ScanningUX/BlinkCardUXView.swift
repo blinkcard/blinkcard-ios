@@ -1,8 +1,6 @@
-//
 //  BlinkCardUXView.swift
 //  BlinkCardUX
-//
-//  Created by Toni Kreso on 17.12.2025..
+//  This code is provided for use as-is and may not be copied, modified, or redistributed.
 //
 
 import SwiftUI
