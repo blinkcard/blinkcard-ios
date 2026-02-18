@@ -1,677 +1,1194 @@
 <p align="center" >
-  <img src="https://raw.githubusercontent.com/wiki/blinkid/blinkid-ios/Images/logo-microblink.png" alt="Microblink" title="Microblink">
+  <img src="https://raw.githubusercontent.com/wiki/blinkcard/blinkcard-android/images/logo-microblink.png" alt="Microblink" title="Microblink">
 </p>
 
-[![CocoaPods](https://img.shields.io/cocoapods/p/MBBlinkCard.svg)]()
-[![Build Status](https://travis-ci.org/blinkcard/blinkcard-ios.svg?branch=master)](https://travis-ci.org/blinkcard/blinkcard-ios)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
-# BlinkCard SDK for payment card scanning
+# BlinkCard SDK
 
-BlinkCard SDK is a delightful component for quick and easy scanning of payment cards. The SDK is powered with [Microblink's](http://www.microblink.com) industry-proven and world leading OCR, and offers:
+The BlinkCard SDK is a comprehensive solution for implementing secure card scanning on iOS. It offers powerful capabilities for capturing and analyzing a wide range of payment cards. The package consists of BlinkCard, which serves as the core module, and an optional BlinkCardUX package that provides a complete, ready-to-use solution with a user-friendly interface.
 
-- integrated camera management
-- layered API, allowing everything from simple integration to complex UX customizations.
-- lightweight and no internet connection required
-- enteprise-level security standards
-
-BlinkCard is a part of family of SDKs developed by [Microblink](http://www.microblink.com) for optical text recognition, barcode scanning, ID document, payment card scanning and many others.
-
-You can start by watching our [step-by-step tutorial](https://vimeo.com/542575362/5f177c26a0), in which you’ll find out how to make BlinkCard SDK a part of your iOS app.
-# Table of contents
+# Table of Contents
 
 - [Requirements](#requirements)
 - [Quick Start](#quick-start)
-- [Advanced BlinkCard integration instructions](#advanced-integration)
-	- [Built-in overlay view controllers and overlay subviews](#ui-customizations)
-		- [Using `MBCBlinkCardOverlayViewController`](#using-blinkcard-overlay-viewcontroller)
-		- [Custom overlay view controller](#using-custom-overlay-viewcontroller)
-	- [Direct processing API](#direct-api-processing)
-		- [Using Direct API for `NSString` recognition (parsing)](#direct-api-string-processing)
-- [`MBCRecognizer` and available recognizers](#recognizer)
-- [List of available recognizers](#available-recognizers)
-	- [Frame Grabber Recognizer](#frame-grabber-recognizer)
-	- [Success Frame Grabber Recognizer](#success-frame-grabber-recognizer)
-	- [BlinkCard recognizers](#blinkcard-recognizers)
-		- [MBCBlinkCardRecognizer](#blink-card-recognizer)
-		- [MBCLegacyBlinkCardRecognizer (deprecated)](#payment-card-recognizers)
-		- [MBCLegacyBlinkCardEliteRecognizer (deprecated)](#elite-payment-card-recognizers)
+  - [Getting started with the BlinkCard SDK](#getting-started-with-the-blinkcard-sdk)
+    - [Integration](#integration)
+    - [Manual integration](#manual-integration)
+    - [Initiating the card scanning process](#initiating-the-blinkcard-process)
+    - [Initiating BlinkCard UX](#initiating-blinkcard-ux)
+    - [Initiating BlinkCard](#blinkcard)
+- [BlinkCard Components](#BlinkCard-components)
+  - [BlinkCardSdk](#BlinkCardSdk)
+  - [BlinkCardSession](#blinkcardsession)
+  - [ProcessResult](#processresult)
+  - [InputImage](#inputimage)
+  - [Resource Management](#resource-management)
+- [BlinkCardUX Components](#BlinkCard-ux-components)
+  - [BlinkCardAnalyzer](#BlinkCardAnalyzer)
+  - [BlinkCardUXModel](#BlinkCardUXModel)
+  - [BlinkCardUXView](#BlinkCardUXModel)
+- [Creating custom UX component](#creating-custom-ux-component)
 - [Localization](#localization)
-- [Troubleshooting](#troubleshooting)
-	- [Integration problems](#troubleshooting-integration-problems)
-	- [SDK problems](#troubleshooting-sdk-problems)
-		- [Licencing problems](#troubleshooting-licensing-problems)
-		- [Other problems](#troubleshooting-other-problems)
-	- [Frequently asked questions and known problems](#troubleshooting-faq)
-- [Size Report](#size-report)
-- [Additional info](#info)
+- [SDK Integration Troubleshooting](#sdk-integration-troubleshooting)
+- [SDK size](#blinkcard-sdk-size)
+- [Additional info](#additional-info)
+
+# Requirements
+
+SDK package contains `BlinkCard` framework, `BlinkCardUX` package and one or more sample apps that demonstrate their integration. The `BlinkCard` framework can be deployed on iOS 15.0 or later and `BlinkCardUX` package can be deployed on iOS 16.0 or later. The framework and package support Swift projects.
+
+> Both `BlinkCard` and `BlinkCardUX` are **dynamic packages**
+
+> This project is designed with Swift 6, leveraging the latest concurrency features to ensure efficient, and modern application performance.
+
+> `BlinkCardUX` is built with full support for SwiftUI, enabling seamless integration of declarative user interfaces with modern, responsive design principles.
+
+## Requirements
+
+| SDK        | Platform       | Installation                                    | Minimum Swift Version | Type    |
+| ---------- | -------------- | ----------------------------------------------- | --------------------- | ------- |
+| BlinkCard    | iOS 15.0+      | [Swift Package Manager](#swift-package-manager) | 5.10 / Xcode 26.2     | Dynamic |
+| BlinkCardUX  | iOS 16.0+      | [Swift Package Manager](#swift-package-manager) | 5.10 / Xcode 26.2     | Dynamic |
 
 
-# <a name="requirements"></a> Requirements
-
-SDK package contains BlinkCard framework and one or more sample apps which demonstrate framework integration. The framework can be deployed in **iOS 13.0 or later**.
-**NOTE:** The SDK doesn't contain bitcode anymore. 
 # <a name="quick-start"></a> Quick Start
 
-## Getting started with BlinkCard SDK
+In this section, you will initialize the SDK, create a capture session, and submit the images for either server-side or client-side verification, resulting in a fraud verdict and a detailed analysis of the card images.
 
-This Quick Start guide will get you up and performing OCR scanning as quickly as possible. All steps described in this guide are required for the integration.
+## <a name="getting-started-with-the-blinkcard-sdk"></a> Getting started with the BlinkCard SDK
 
-This guide closely follows the BlinkCard-Sample app in the Samples folder of this repository. We highly recommend you try to run the sample app. The sample app should compile and run on your device, and in the iOS Simulator.
+This Quick Start guide will get you up and performing card scanning as quickly as possible. All steps described in this guide are required for the integration.
 
-The source code of the sample app can be used as the reference during the integration.
+This guide closely follows the BlinkCard app in the Samples folder of this repository. We highly recommend you try to run the sample app. The sample app should compile and run on your device.
 
-### 1. Initial integration steps
+The source code of the sample app can be used as a reference during the integration.
 
-#### Using CocoaPods
+### <a name="integration"></a> Integration
 
-- Download and install/update [Cocopods version 1.10.0](https://github.com/CocoaPods/CocoaPods/releases/tag/1.10.0) or newer
-- Since the libraries are stored on [Git Large File Storage](https://git-lfs.github.com), you need to install git-lfs by running these commands:
-```shell
-brew install git-lfs
-git lfs install
-```
+To integrate the BlinkCard SDK into your iOS project, you'll need to:
 
-- **Be sure to restart your console after installing Git LFS**
-- **Note:** if you already did try adding SDK using cocoapods and it's not working, first install the git-lfs and then clear you cocoapods cache. This should be sufficient to force cocoapods to clone BlinkCard SDK, if it still doesn't work, try deinitializing your pods and installing them again.
-- Project dependencies to be managed by CocoaPods are specified in a file called `Podfile`. Create this file in the same directory as your Xcode project (`.xcodeproj`) file.
+1. Obtain a valid license key from the [Microblink dashboard](https://developer.microblink.com)
+2. Add the SDK framework to your project
 
-- If you don't have podfile initialized run the following in your project directory.
-```
-pod init
-```
+#### Swift Package Manager
 
-- Copy and paste the following lines into the TextEdit window:
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
 
-```ruby
-platform :ios, '13.0'
-target 'Your-App-Name' do
-    pod 'MBBlinkCard', '~> 2.12.0'
-end
-```
+Once you have your Swift package set up, adding BlinkCard and BlinkCardUX as a dependency are as easy as adding it to the `dependencies` value of your `Package.swift` or the Package list in Xcode.
 
-- Install the dependencies in your project:
-
-```shell
-$ pod install
-```
-
-- From now on, be sure to always open the generated Xcode workspace (`.xcworkspace`) instead of the project file when building your project:
-
-```shell
-open <YourProjectName>.xcworkspace
-```
-
-
-
-#### Using Carthage
-
-BlinkCard SDK is available via [Carthage](https://github.com/Carthage/Carthage). Please check out [Carthage documentation](https://github.com/Carthage/Carthage/blob/master/README.md) if you are new to Carthage.
-
-- Install Carthage. Check out [Installing Carthage guide](https://github.com/Carthage/Carthage#installing-carthage). Please make sure you have [Carthage => v0.38.0](https://github.com/Carthage/Carthage/releases/tag/0.38.0) installed.
-- Create a Cartfile in the same directory where your .xcodeproj or .xcworkspace is.
-- Add BlinkCard as a dependency to this Cartfile:
-
-```shell
-binary "https://github.com/BlinkCard/blinkcard-ios/blob/master/blinkcard-ios.json"
-```
-- Run ```carthage update --use-xcframeworks```.
-- If successful, a Cartfile.resolved file and a Carthage directory will appear in the same directory as your Xcode project.
-- Drag the binaries from ```Carthage/Build/<platform>``` into your application’s Xcode project.
-
-
-
-#### Using Swift Package Manager
-
-BlinkCard SDK is available as [Swift Package](https://swift.org/package-manager/). Please check out [Swift Package Manager documentation](https://github.com/apple/swift-package-manager) if you are new to Swift Package Manager.
+##### **BlinkCard**
 
 We provide a URL to the public package repository that you can add in Xcode:
 
 ```shell
-https://github.com/blinkcard/blinkcard-swift-package
+https://github.com/BlinkCard/blinkcard-swift-package
 ```
 
-1. Select your project’s Swift Packages tab:
-![Swift Package Project](https://user-images.githubusercontent.com/26868155/99409747-fe15c100-28f1-11eb-879e-57fed8bff5e6.png)
+##### **BlinkCardUX**
 
-2. Add the BlinkCard Swift package repository URL:
-![Swift Package Repo](https://user-images.githubusercontent.com/26868155/99410171-754b5500-28f2-11eb-84a3-fb1ab2c7df59.png)
+```swift
+dependencies: [
+    .package(url: "https://github.com/BlinkCard/blinkcard-ios.git", .upToNextMajor(from: "3000.0.0"))
+]
+```
 
-3. Choose Swift package version
+Normally you'll want to depend on the `BlinkCardUX` target:
 
-#### Manual integration
+```swift
+.product(name: "BlinkCardUX", package: "BlinkCardUX")
+```
 
-[Download](https://github.com/BlinkCard/blinkcard-ios/releases) latest release (Download .zip or .tar.gz file starting with BlinkCard. DO NOT download Source Code as GitHub does not fully support Git LFS)
+> `BlinkCardUX` has a binary target dependency on `BlinkCard`, so **use this package only if you are also using our UX.**
 
-OR
+You can see dependency in our `Package.swift`:
 
-Clone this git repository:
+```swift
+.binaryTarget(
+    name: "BlinkCard",
+    path: "Frameworks/BlinkCard.xcframework"
+)
+```
 
-- Since the libraries are stored on [Git Large File Storage](https://git-lfs.github.com), you need to install git-lfs by running these commands:
+#### <a name="manual-integration"></a> Manual integration
+
+If you prefer not to use Swift Package Manager, you can integrate BlinkCard and BlinkCardUX into your project manually.
+
+##### **BlinkCard**
+
+[Download](https://github.com/BlinkCard/blinkcard-ios/releases) latest release (Download `BlinkCard.xcframework.zip` file or clone this repository).
+
+- Copy `BlinkCard.xcframework` to your project folder.
+
+- In your Xcode project, open the Project navigator. Drag the `BlinkCard.xcframework` file to your project, ideally in the Frameworks group.
+
+- Since `BlinkCard.xcframework` is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target and choose option `Embed & Sign`.
+
+##### **BlinkCardUX**
+
+- Open up Terminal, cd into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
+
 ```shell
-brew install git-lfs
-git lfs install
+$ git init
 ```
 
-- **Be sure to restart your console after installing Git LFS**
-
-- To clone, run the following shell command:
+- Add BlinkCardUX as a git submodule by running the following command:
 
 ```shell
-git clone git@github.com:BlinkCard/blinkcard-ios.git
+$ git submodule add https://github.com/BlinkCard/blinkcard-ios.git
 ```
 
-- Copy BlinkCard.xcframework to your project folder.
+To add a local Swift package as a dependency in Xcode:
+	1.	Go to your Xcode project.
+	2.	Select your project in the Project Navigator.
+	3.	Go to the Package Dependencies tab under your project settings.
+	4.	Click the ”+” button to add a new dependency.
+	5.	In the dialog that appears, select the “Add Local…” option at the bottom left.
+	6.	Navigate to the folder containing your local Swift package and select it.
 
-- In your Xcode project, open the Project navigator. Drag the BlinkCard.xcframework file to your project, ideally in the Frameworks group, together with other frameworks you're using. When asked, choose "Create groups", instead of the "Create folder references" option.
+This will add the local Swift package as a dependency to your Xcode project.
 
-![Adding BlinkCard.embedded framework to your project](https://user-images.githubusercontent.com/1635933/89505694-535a1680-d7ca-11ea-8c65-678f158acae9.png)
+> `BlinkCardUX` has a binary target dependency on `BlinkCard`, so **use this package only if you are also using our UX.**
 
-- Since BlinkCard.xcframework is a dynamic framework, you also need to add it to embedded binaries section in General settings of your target and choose option `Embed & Sign`.
+### <a name="initiating-the-blinkcard-process"></a> Initiating the card scanning process
 
-![Adding BlinkCard.xcframework to embedded binaries](https://user-images.githubusercontent.com/1635933/89793425-238e7400-db26-11ea-9556-6eedeb6dcc95.png)
-
-- Include the additional frameworks and libraries into your project in the "Linked frameworks and libraries" section of your target settings.
-
-    - libc++.tbd
-    - libiconv.tbd
-    - libz.tbd
-
-![Adding Apple frameworks to your project](https://user-images.githubusercontent.com/26868155/65599813-f7feab80-df9e-11e9-9612-e285641b272c.png)
-
-### 2. Referencing header file
-
-In files in which you want to use scanning functionality place import directive.
-
-Swift
+In files in which you want to use the functionality of the SDK place the import directive.
 
 ```swift
 import BlinkCard
 ```
 
-Objective-C
-
-```objective-c
-#import <BlinkCard/BlinkCard.h>
-```
-
-### 3. Initiating the scanning process
-
-To initiate the scanning process, first decide where in your app you want to add scanning functionality. Usually, users of the scanning library have a button which, when tapped, starts the scanning process. Initialization code is then placed in touch handler for that button. Here we're listing the initialization code as it looks in a touch handler method.
-
-Swift
+1. Initialize the SDK with your license key:
 
 ```swift
-class ViewController: UIViewController, MBCBlinkCardOverlayViewControllerDelegate  {
+let settings = BlinkCardSdkSettings(
+    licenseKey: "your-license-key",
+    downloadResources: true
+)
 
-    var blinkCardRecognizer : MBCBlinkCardRecognizer?
+let sdk = try await BlinkCardSdk.createBlinkCardSdk(withSettings: settings)
+```
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+2. Create a capture session:
 
-    @IBAction func didTapScan(_ sender: AnyObject) {
+```swift
+let session = await sdk.createScanningSession()
+```
 
-        /** Create BlinkCard recognizer */
-        blinkCardRecognizer = MBCBlinkCardRecognizer()
+3. Process images and handle results:
 
-        /** Create BlinkCard settings */
-        let settings : MBCBlinkCardOverlaySettings = MBCBlinkCardOverlaySettings()
-
-        /** Crate recognizer collection */
-        let recognizerList = [blinkCardRecognizer!]
-        let recognizerCollection : MBCRecognizerCollection = MBCRecognizerCollection(recognizers: recognizerList)
-
-        /** Create your overlay view controller */
-        let blinkCardOverlayViewController = MBCBlinkCardOverlayViewController(settings: settings, recognizerCollection: recognizerCollection, delegate: self)
-
-        /** Create recognizer view controller with wanted overlay view controller */
-        let recognizerRunneViewController : UIViewController = MBCViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardOverlayViewController)
-
-        /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
-        self.present(recognizerRunneViewController, animated: true, completion: nil)
+```swift
+let result = await session.process(inputImage: capturedImage)
+if result.processResult?.resultCompleteness.scanningStatus == .cardScanned {
+    let finalResult = await session.getResult()
+    Task { @ProcessingActor in
+        let sessionResult = BlinkCardSession.getResult()
     }
 }
 ```
 
-Objective-C
+### <a name="initiating-blinkcard-ux"></a> Initiating BlinkCard UX
 
-```objective-c
-@interface ViewController () <MBCBlinkCardOverlayViewControllerDelegate>
+We provide the BlinkCardUX package, which encapsulates all the necessary logic for the card scanning process, streamlining integration into your app.
 
-@property (nonatomic, strong) MBCBlinkCardRecognizer *blinkCardRecognizer;
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [MBCMicroblinkSDK.sharedInstance setLicenseResource:@"blinkid-license" withExtension:@"key" inSubdirectory:@"" for:Bundle.main errorCallback:block];
-}
-
-
-- (IBAction)didTapScan:(id)sender {
-
-    /** Create BlinkCard recognizer */
-    self.blinkCardRecognizer = [[MBCBlinkCardRecognizer alloc] init];
-
-     /** Create BlinkCard settings */
-    MBCBlinkCardOverlaySettings* settings = [[MBCBlinkCardOverlaySettings alloc] init];
-
-    /** Create recognizer collection */
-    MBCRecognizerCollection *recognizerCollection = [[MBCRecognizerCollection alloc] initWithRecognizers:@[self.blinkCardRecognizer]];
-
-    /** Create your overlay view controller */
-    MBCBlinkCardOverlayViewController *blinkCardOverlayViewController = [[MBCBlinkCardOverlayViewController alloc] initWithSettings:settings recognizerCollection:recognizerCollection delegate:self];
-
-    /** Create recognizer view controller with wanted overlay view controller */
-    UIViewController<MBCRecognizerRunnerViewController>* recognizerRunnerViewController = [MBCViewControllerFactory recognizerRunnerViewControllerWithOverlayViewController: blinkCardOverlayViewController];
-
-    /** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
-    [self presentViewController:recognizerRunnerViewController animated:YES completion:nil];
-
-}
-
-@end
-```
-
-### 4. License key
-
-A valid license key is required to initialize scanning. You can request a **free trial license key**, after you register, at [Microblink Developer Hub](https://account.microblink.com/signin).
-
-You can include the license key in your app by passing a string or a file with license key.
-**Note** that you need to set the license key before intializing scanning. Ideally in `AppDelegate` or `viewDidLoad` before initializing any recognizers.
-
-#### License key as string
-You can pass the license key as a string, the following way:
-
-Swift
+In files in which you want to use the functionality of the SDK place the import directive.
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseKey("LICENSE-KEY", errorCallback: block)
+import BlinkCardUX
 ```
 
-Objective-C
+1. Initialize the BlinkCardAnalyzer:
 
-```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseKey:@"LICENSE-KEY" errorCallback:block];
-```
-
-#### License key as file
-Or you can include the license key, with the code below. Please make sure that the file that contains the license key is included in your project and is copied during **Copy Bundle Resources** build phase.
-
-Swift
+- Begin by creating an instance of the BlinkCardAnalyzer after initializing the capture session:
 
 ```swift
-MBCMicroblinkSDK.shared().setLicenseResource("license-key-file", withExtension: "key", inSubdirectory: "directory-to-license-key", for: Bundle.main, errorCallback: block)
+let analyzer = await BlinkCardAnalyzer(
+    sdk: sdk,
+    eventStream: BlinkCardEventStream()
+)
 ```
 
-Objective-C
+2. Create a BlinkCardUXModel:
 
-```objective-c
-[[MBCMicroblinkSDK sharedInstance] setLicenseResource:@"license-key-file" withExtension:@"key" inSubdirectory:@"" forBundle:[NSBundle mainBundle] errorCallback:block];
-```
-
-If the licence is invalid or expired then the methods above will throw an **exception**.
-
-### 5. Registering for scanning events
-
-In the previous step, you instantiated [`MBCBlinkCardOverlayViewController`](http://blinkcard.github.io/blinkcard-ios//Classes/MBCBlinkCardOverlayViewController.html) object with a delegate object. This object gets notified on certain events in scanning lifecycle. In this example we set it to `self`. The protocol which the delegate has to implement is [`MBCBlinkCardOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios//Protocols/MBCBlinkCardOverlayViewControllerDelegate.html) protocol. It is necessary to conform to that protocol. We will discuss more about protocols in [Advanced integration section](#advanced-integration). You can use the following default implementation of the protocol to get you started.
-
-Swift
+- Next, use the BlinkCardAnalyzer to initialize the BlinkCardUXModel:
 
 ```swift
-func blinkCardOverlayViewControllerDidFinishScanning(_ blinkCardOverlayViewController: MBCBlinkCardOverlayViewController, state: MBCRecognizerResultState) {
-
-    // this is done on background thread
-    // check for valid state
-    if state == .valid {
-
-        // first, pause scanning until we process all the results
-        blinkCardOverlayViewController.recognizerRunnerViewController?.pauseScanning()
-
-        DispatchQueue.main.async(execute: {() -> Void in
-            // All UI interaction needs to be done on main thread
-        })
-    }
-}
-
-func blinkCardOverlayViewControllerDidTapClose(_ blinkCardOverlayViewController: MBCBlinkCardOverlayViewController) {
-    // Your action on cancel
-}
+let viewModel = BlinkCardUXModel(analyzer: analyzer)
 ```
 
-Objective-C
+3. Display the BlinkCardUXView in SwiftUI:
 
-```objective-c
-- (void)blinkCardOverlayViewControllerDidFinishScanning:(MBCBlinkCardOverlayViewController *)blinkCardOverlayViewController state:(MBCRecognizerResultState)state {
-
-    // this is done on background thread
-    // check for valid state
-    if (state == MBCRecognizerResultStateValid) {
-
-        // first, pause scanning until we process all the results
-        [blinkCardOverlayViewController.recognizerRunnerViewController pauseScanning];
-
-        dispatch_async(dispatch_get_main_queue(), ^{
-            // All UI interaction needs to be done on main thread
-        });
-    }
-}
-
-- (void)blinkCardOverlayViewControllerDidTapClose:(nonnull MBCBlinkCardOverlayViewController *)blinkCardOverlayViewController {
-    // Your action on cancel
-}
-```
-
-# <a name="advanced-integration"></a> Advanced BlinkCard integration instructions
-This section covers more advanced details of BlinkCard integration.
-
-1. [First part](#ui-customizations) will cover the possible customizations when using UI provided by the SDK.
-2. [Second part](#using-document-overlay-viewcontroller) will describe how to embed [`MBCRecognizerRunnerViewController's delegates`](http://blinkcard.github.io/blinkcard-ios/Protocols.html) into your `UIViewController` with the goal of creating a custom UI for scanning, while still using camera management capabilites of the SDK.
-3. [Third part](#direct-api-processing) will describe how to use the [`MBCRecognizerRunner`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerRunner.html) (Direct API) for recognition directly from `UIImage` without the need of camera or to recognize camera frames that are obtained by custom camera management.
-4. [Fourth part](#recognizer) will describe recognizer concept and available recognizers.
-
-
-## <a name="ui-customizations"></a> Built-in overlay view controllers and overlay subviews
-
-Within BlinkCard SDK there are several built-in overlay view controllers and scanning subview overlays that you can use to perform scanning. 
-### <a name="using-blinkcard-overlay-viewcontroller"></a> Using `MBCBlinkCardOverlayViewController`
-
-[`MBCBlinkCardOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardOverlayViewController.html) is overlay view controller best suited for performing scanning of payment cards for both front and back side. It has [`MBCBlinkCardOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCBlinkCardOverlayViewControllerDelegate.html) delegate which can be used out-of-the-box to perform scanning using the default UI. Here is an example how to use and initialize [`MBCBlinkCardOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardOverlayViewController.html):
-
-Swift
+- Add the BlinkCardUXView to your SwiftUI view hierarchy using the BlinkCardUXModel::
 
 ```swift
-/** Create your overlay view controller */
-let blinkCardViewController : MBCBlinkCardOverlayViewController = MBCBlinkCardOverlayViewController(settings: blinkCardSettings, recognizerCollection: recognizerCollection, delegate: self)
-
-/** Create recognizer view controller with wanted overlay view controller */
-let recognizerRunneViewController : UIViewController = MBCViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: blinkCardViewController)
-
-/** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
-self.present(recognizerRunneViewController, animated: true, completion: nil)
-```
-
-Objective-C
-
-```objective-c
-MBCDocumentVerificationOverlayViewController *overlayVC = [[MBCBlinkCardOverlayViewController alloc] initWithSettings:settings recognizerCollection: recognizerCollection delegate:self];
-UIViewController<MBCRecognizerRunnerViewController>* recognizerRunnerViewController = [MBCViewControllerFactory recognizerRunnerViewControllerWithOverlayViewController:overlayVC];
-
-/** Present the recognizer runner view controller. You can use other presentation methods as well (instead of presentViewController) */
-[self presentViewController:recognizerRunnerViewController animated:YES completion:nil];
-```
-
-As you can see, when initializing [`MBCDocumentVerificationOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCDocumentVerificationOverlayViewController.html), we are sending delegate property as `self`. To get results, we need to conform to [`MBCDocumentVerificationOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDocumentVerificationOverlayViewControllerDelegate.html) protocol.
-
-### Edit results screen
-
-SDK also provides an overlay view controller that allows users to edit scanned results and input data that wasn't scanned. Note that this view controller works only with `MBCBlinkCardRecognizer`.
-
-Enable edit screen by setting property `enableEditScreen = YES/true` on `MBCBlinkCardOverlaySettings`. It is enabled by default.
-
-If edit screen is enabled, you must implement `blinkCardOverlayViewControllerDidFinishEditing` delegate method from `MBCBlinkCardOverlayViewControllerDelegate` protocol to get edited results. It returns `MBCBlinkCardOverlayViewController` and `MBCBlinkCardEditResult` object. You can still get original results and images from `MBCBlinkCardRecognizerResult`.
-
-Edit results view controller can be customised in several ways:
-
-- to configure which fields should be displayed use `fieldConfiguration` property of type [`MBCBlinkCardEditFieldConfiguration`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardEditFieldConfiguration.html)
-- set your custom theme with [`MBCBlinkCardEditOverlayTheme`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCBlinkCardEditOverlayTheme.html)
-- for setting custom strings, please check out our [Localization guide](#localization)
-
-#### Edit results screen in Custom UI
-
-SDK also provides options to use `MBCBlinkCardEditViewController` with Custom UI. Initalize it and, add it to `{ class_prefix }}BlinkCardEditNavigationController` and present it.
-
-```swift
-let blinkCardEditViewController = MBCBlinkCardEditViewController(delegate: self)
-let navigationController = MBCBlinkCardEditNavigationController(rootViewController: blinkCardEditViewController)
-```
-
-```objective-c
-self.blinkCardEditViewController = [[MBCBlinkCardEditViewController alloc] initWithDelegate:self];
-self.navigationController = [[MBCBlinkCardEditNavigationController alloc] initWithRootViewController:self.blinkCardEditViewController];
-```
-### <a name="using-custom-overlay-viewcontroller"></a> Custom overlay view controller
-
-Please check our Samples for custom implementation of overlay view controller.
-
-Overlay View Controller is an abstract class for all overlay views.
-
-Its responsibility is to provide meaningful and useful interface for the user to interact with.
-
-Typical actions which need to be allowed to the user are:
-
-- intuitive and meaniningful way to guide the user through scanning process. This is usually done by presenting a "viewfinder" in which the user need to place the scanned object
-- a way to cancel the scanning, typically with a "cancel" or "back" button
-- a way to power on and off the light (i.e. "torch") button
-
-BlinkCard SDK always provides it's own default implementation of the Overlay View Controller for every specific use. Your implementation should closely mimic the default implementation as it's the result of thorough testing with end users. Also, it closely matches the underlying scanning technology.
-
-For example, the scanning technology usually gives results very fast after the user places the device's camera in the expected way above the scanned object. This means a progress bar for the scan is not particularly useful to the user. The majority of time the user spends on positioning the device's camera correctly. That's just an example which demonstrates careful decision making behind default camera overlay view.
-
-### 1. Subclassing
-
-To use your custom overlay with Microblink's camera view, you must first subclass [`MBCCustomOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCCustomOverlayViewController.html) and implement the overlay behaviour conforming wanted protocols.
-
-### 2. Protocols
-
-There are five [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) protocols and one overlay protocol [`MBCBlinkCardOverlayViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCBlinkCardOverlayViewControllerDelegate.html).
-
-Five `RecognizerRunnerViewController` protocols are:
-- [`MBCScanningRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCScanningRecognizerRunnerViewControllerDelegate.html)
-- [`MBCDetectionRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDetectionRecognizerRunnerViewControllerDelegate.html)
-- [`MBCOcrRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCOcrRecognizerRunnerViewControllerDelegate.html)
-- [`MBCDebugRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDebugRecognizerRunnerViewControllerDelegate.html)
-- [`MBCRecognizerRunnerViewControllerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewControllerDelegate.html)
-
-In `viewDidLoad`, other protocol conformation can be done and it's done on `recognizerRunnerViewController` property of [`MBCOverlayViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCOverlayViewController.html), for example:
-
-Swift and Objective-C
-```swift
-self.scanningRecognizerRunnerViewControllerDelegate = self;
-```
-
-### 3. Initialization
-In [Quick Start](#quick-start) guide it is shown how to use a default overlay view controller. You can now swap default view controller with your implementation of `CustomOverlayViewController`
-
-Swift
-```swift
-let recognizerRunnerViewController : UIViewController = MBCViewControllerFactory.recognizerRunnerViewController(withOverlayViewController: CustomOverlayViewController)
-```
-
-Objective-C
-```objective-c
-UIViewController<MBCRecognizerRunnerViewController>* recognizerRunnerViewController = [MBCViewControllerFactory recognizerRunnerViewControllerWithOverlayViewController:CustomOverlayViewController];
-```
-
-## <a name="direct-api-processing"></a> Direct processing API
-
-This guide will in short present you how to process UIImage objects with BlinkCard SDK, without starting the camera video capture.
-
-With this feature you can solve various use cases like:
-	- recognizing text on images in Camera roll
-	- taking full resolution photo and sending it to processing
-	- scanning barcodes on images in e-mail etc.
-
-DirectAPI-sample demo app here will present UIImagePickerController for taking full resolution photos, and then process it with BlinkCard SDK to get scanning results using Direct processing API.
-
-Direct processing API is handled with [`MBCRecognizerRunner`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerRunner.html). That is a class that handles processing of images. It also has protocols as [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerRunnerViewController.html).
-Developer can choose which protocol to conform:
-
-- [`MBCScanningRecognizerRunnerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCScanningRecognizerRunnerDelegate.html)
-- [`MBCDetectionRecognizerRunnerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDetectionRecognizerRunnerDelegate.html)
-- [`MBCDebugRecognizerRunnerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCDebugRecognizerRunnerDelegate.html)
-- [`MBCOcrRecognizerRunnerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCOcrRecognizerRunnerDelegate.html)
-
-In example, we are conforming to [`MBCScanningRecognizerRunnerDelegate`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCScanningRecognizerRunnerDelegate.html) protocol.
-
-To initiate the scanning process, first decide where in your app you want to add scanning functionality. Usually, users of the scanning library have a button which, when tapped, starts the scanning process. Initialization code is then placed in touch handler for that button. Here we're listing the initialization code as it looks in a touch handler method.
-
-Swift
-```swift
-func setupRecognizerRunner() {
-    var recognizers = [MBCRecognizer]()
-    recognizer = MBCBlinkCardRecognizer()
-    recognizers.append(recognizer!)
-    let recognizerCollection = MBCRecognizerCollection(recognizers: recognizers)
-    recognizerRunner = MBCRecognizerRunner(recognizerCollection: recognizerCollection)
-    recognizerRunner?.scanningRecognizerRunnerDelegate = self
-}
-
-func processImageRunner(_ originalImage: UIImage) {
-    var image: MBCImage? = nil
-    if let anImage = originalImage {
-        image = MBCImage(uiImage: anImage)
-    }
-    image?.cameraFrame = true
-    image?.orientation = MBCProcessingOrientation.left
-    let _serialQueue = DispatchQueue(label: "com.microblink.DirectAPI-sample-swift")
-    _serialQueue.async(execute: {() -> Void in
-        self.recognizerRunner?.processImage(image!)
-    })
-}
-
-func recognizerRunner(_ recognizerRunner: MBCRecognizerRunner, didFinishScanningWith state: MBCRecognizerResultState) {
-    if recognizer.result.resultState == MBCRecognizerResultStateValid {
-        // Handle result
+struct ContentView: View {
+    var body: some View {
+        BlinkCardUXView(viewModel: viewModel)
     }
 }
 ```
 
-Objective-C
-```objective-c
-- (void)setupRecognizerRunner {
-    NSMutableArray<MBCRecognizer *> *recognizers = [[NSMutableArray alloc] init];
+4. Access the Capture Result:
 
-    self. recognizer = [[MBCBlinkCardRecognizer alloc] init];
+- The BlinkCardUXModel exposes the scanning result through the result property, which is a @Published variable. You can observe it to handle the result of the card capture and verification process inside your ViewModel:
 
-    [recognizers addObject: self.recognizer];
+```swift
+viewModel.$result
+    .sink { [weak self] scanningResultState in
+        if let scanningResultState {
+                if let scanningResult = scanningResultState.scanningResult {
+                    // Handle the scanning result
+                    print("Scanning completed with result: \(scanningResult)")
+                }
+        }
+    }
+    .store(in: &cancellables)
+```
 
-    MBCRecognizerCollection *recognizerCollection = [[MBCRecognizerCollection alloc] initWithRecognizers:recognizers];
+- or you can also directly observe it within your SwiftUI views using SwiftUI’s @ObservedObject or @StateObject property wrappers. This allows you to automatically update your UI based on the capture result without manually handling Combine subscriptions.
 
-    self.recognizerRunner = [[MBCRecognizerRunner alloc] initWithRecognizerCollection:recognizerCollection];
-    self.recognizerRunner.scanningRecognizerRunnerDelegate = self;
-}
+```swift
+struct ContentView: View {
+    @StateObject var viewModel: BlinkCardUXModel
 
-- (void)processImageRunner:(UIImage *)originalImage {
-    MBCImage *image = [MBCImage imageWithUIImage:originalImage];
-    image.cameraFrame = YES;
-    image.orientation = MBCProcessingOrientationLeft;
-    dispatch_queue_t _serialQueue = dispatch_queue_create("com.microblink.DirectAPI-sample", DISPATCH_QUEUE_SERIAL);
-    dispatch_async(_serialQueue, ^{
-        [self.recognizerRunner processImage:image];
-    });
-}
+    var body: some View {
+        VStack {
+            BlinkCardUXView(viewModel: viewModel)
 
-- (void)recognizerRunner:(nonnull MBCRecognizerRunner *)recognizerRunner didFinishScanningWithState:(MBCRecognizerResultState)state {
-    if (self.recognizer.result.resultState == MBCRecognizerResultStateValid) {
-        // Handle result
+            if let result = viewModel.scanningResult {
+                Text("Scanning Result: \(result.scanningResult.description)")
+            } else {
+                Text("Awaiting scanning...")
+            }
+        }
     }
 }
 ```
 
-Now you've seen how to implement the Direct processing API.
+### <a name="blinkcard"></a> Initiating BlinkCard
 
-In essence, this API consists of two steps:
+BlinkCard is a powerful card scanning solution designed to enhance the security and accuracy of card scanning processes.
 
-- Initialization of the scanner.
-- Call of `- (void)processImage:(MBCImage *)image;` method for each UIImage or CMSampleBufferRef you have.
+## <a name="BlinkCard-components"></a> BlinkCard Components
+
+### BlinkCardSdk
+
+The `BlinkCardSdk` class serves as the main entry point for card scanning functionality. It manages SDK initialization, resource downloading, and session creation.
+
+```swift
+let settings = BlinkCardSdkSettings(
+    licenseKey: "your-license-key",
+    downloadResources: true
+)
+
+do {
+    let sdk = try await BlinkCardSdk.createBlinkCardSdk(withSettings: settings)
+    let session = await sdk.createScanningSession()
+    // Use the session for card scanning
+} catch {
+    // Handle initialization errors
+}
+```
+
+### BlinkCardSession
+
+`BlinkCardSession` is a Swift class that manages card scanning operations, providing a robust interface for capturing, processing, and validating cards through image analysis and scanning.
+
+The `BlinkCardSession` class serves as the primary controller for card scanning workflows, handling various aspects such as:
+- Image processing and analysis
+- Session lifecycle management
+- Result generation and processing
+
+#### Initialization
+
+```swift
+let sdk = try await BlinkCardSdk.createBlinkCardSdk(withSettings: settings)
+let BlinkCardSession = await sdk.createScanningSession()
+```
+
+Creates a new capture session with specified settings and resource path configurations.
+
+#### Key Features
+
+##### Cancel Processing
+
+```swift
+public func cancelActiveProcessing()
+```
+
+Immediately terminates any ongoing processing operations. This method can be called from any context and is useful for handling user cancellations or session aborts.
+
+##### Image Processing
+
+```swift
+@ProcessingActor
+public func process(inputImage: InputImage) -> FrameProcessResult
+```
+
+Processes an input image and provides detailed analysis results. This method:
+- Analyzes the provided image according to session settings
+- Returns a `FrameProcessResult` containing analysis results and completion status
+- Must be executed within the ProcessingActor context
+
+##### Result Retrieval
+
+```swift
+@ProcessingActor
+public func getResult() -> BlinkCardScanningResult
+```
+
+Retrieves the final results of the capture session, including:
+- All captured images
+- Session metadata
+- Must be called within the ProcessingActor context
+
+#### Usage Example
+
+```swift
+/// Processes a camera frame for card analysis.
+/// - Parameter image: The camera frame to analyze
+public func analyze(image: CameraFrame) async {
+    guard !paused else { return }
+    let inputImage = InputImage(cameraFrame: image)
+    
+    let result = await blinkCardSession.process(inputImage: inputImage)
+
+    if result.processResult?.resultCompleteness.scanningStatus == .cardScanned {
+        guard !scanningDone else { return }
+        scanningDone = true
+        Task { @ProcessingActor in
+            let sessionResult = BlinkCardSession.getResult()
+            // Finish scanning
+        }
+    }
+}
+```
+
+Please refer to our `BlinkCardAnalyzer` in the BlinkCardUX module for implementation details and guidance on its usage.
+
+#### Integration Considerations
+
+1. Actor Isolation: Many methods must be called within the `ProcessingActor` context to ensure thread safety
+2. Session Management: Each session maintains its own unique identifier and state
+3. Resource Management: Proper initialization with valid resource paths is crucial for operation
+4. Cancellation Support: Operations can be cancelled at any time using `cancelActiveProcessing()`
+
+The class implements the `Sendable` protocol and uses actor isolation (`@ProcessingActor`) to ensure thread-safe operations in concurrent environments.
+
+- Ensure proper error handling for processing operations
+- Consider implementing timeout mechanisms for long-running operations
+- Maintain proper lifecycle management of the session
+- Handle results appropriately according to your application's needs
+
+### ProcessResult
+
+`ProcessResult` is a Swift structure that encapsulates the complete results of a card scanning process, combining frame analysis with completion status information.
+
+- Image analysis status
+- Completion status
+
+#### Key Features
+
+##### InputImageAnalysisResult
+
+Contains detailed analysis results for a single frame in the scanning process.
+
+##### DetectionStatus
+
+An enumeration representing the status of card detection during scanning.
+
+- `failed`: Card recognition failed
+- `success`: Card recognition completed successfully
+- `cameraTooFar`: Card has been detected but the camera is too far from the card
+- `cameraTooClose`: Card has been detected but the camera is too close to the card
+- `cameraAngleTooSteep`: Card has been detected but the camera’s angle is too steep
+- `documentTooCloseToCameraEdge`: Card has been detected but the card is too close to the camera edge
+- `documentPartiallyVisible`: Only part of the card is visible
+
+##### ScanningStatus
+
+An enumeration that defines the possible statuses that can occur during the scanning operation, specifically for managing the progress of scanning sides and the entire card.
+
+- `scanningSideInProgress`: Scanning of a side is in progress
+- `sideScanned`: First side of the card is scanned
+- `documentScanned`: The card is scanned
+- `cancelled`: Scanning process is cancelled
+
+##### ResultCompleteness
+
+A structure tracking the progress of different verification phases.
+
+- `scanningStatus`: `ScanningStatus` - Indicates the status of the scanning process
+- `cardNumberExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the card number extraction
+- `cardNumberPrefixExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the card number prefix extraction
+- `expiryDateExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the expiry date extraction
+- `cardholderNameExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the cardholder name extraction
+- `cvvExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the CVV extraction
+- `ibanExtractionStatus`: `FieldExtractionStatus` - Indicates the status of the IBAN extraction
+- `cardImageExtractionStatus`: `ImageExtractionStatus` - Indicates the status of the card image extraction
+
+##### Point
+
+Represents a 2D point in the coordinate system.
+
+- `x`: `Int32` - X-coordinate
+- `y`: `Int32` - Y-coordinate
+
+##### Quadrilateral
+
+Represents a four-sided polygon defined by its corner points.
+
+- `upperLeft`: `Point`
+- `upperRight`: `Point`
+- `lowerRight`: `Point`
+- `lowerLeft`: `Point`
+
+#### CardLocation
+
+Combines physical position and orientation information of a detected card.
+
+- `location`: `Quadrilateral` - Boundary coordinates of the detected card
+- `orientation`: `CardOrientation` - Orientation of the detected card
+
+#### Usage Example
+
+```swift
+if result.processResult?.resultCompleteness.scanningStatus == .cardScanned {
+    guard !scanningDone else { return }
+    scanningDone = true
+    Task { @ProcessingActor in
+        let sessionResult = session.getResult()
+        // Finish scanning
+    }
+}
+```
+
+#### Integration Considerations
+
+1. Error Handling
+   - Monitor `detectionStatus` for potential capture issues
+   - Check `processingStatus` for overall processing success
+
+2. Quality Control
+   - Use `blur` detection to ensure optimal image quality
+
+3. Progress Tracking
+   - Use `ResultCompleteness` to track verification progress
+   - Monitor `scanningStatus` for overall process state
+   - Handle partial completions appropriately
+
+All types conform to the `Sendable` protocol, ensuring thread-safe operations in concurrent environments.
+
+##### Best practices
+
+1. Always check `resultCompleteness.scanningStatus == .cardScanned` before concluding the scanning process
+2. Implement proper error handling for all possible `DetectionStatus` cases
+4. Monitor quality indicators (blur, glare, moire) for optimal capture conditions
+5. Implement appropriate user feedback based on `processingStatus` and `detectionStatus`
+
+### InputImage
+
+`InputImage` is a Swift class that wraps either a UIImage or camera frame for processing in the card scanning system.
+
+#### Initialization
+
+```swift
+// Create from UIImage
+public init(uiImage: UIImage, regionOfInterest: RegionOfInterest = RegionOfInterest())
+
+// Create from camera frame
+public init(cameraFrame: CameraFrame)
+```
+
+#### Key Features
+
+##### RegionOfInterest
+
+A structure that defines the area of interest within an image for processing.
+
+- `x`: `Float` - X-coordinate (normalized between 0 and 1)
+- `y`: `Float` - Y-coordinate (normalized between 0 and 1)
+- `width`: `Float` - Width (normalized between 0 and 1)
+- `height`: `Float` - Height (normalized between 0 and 1)
+
+##### CameraFrameVideoOrientation
+
+An enumeration representing the device orientation during frame capture.
+
+- `portrait`: Device in normal upright position
+- `portraitUpsideDown`: Device held upside down
+- `landscapeRight`: Device rotated 90 degrees clockwise
+- `landscapeLeft`: Device rotated 90 degrees counterclockwise
+
+##### CameraFrame
+
+A structure representing a complete camera frame with its metadata.
+
+- `buffer`: `MBSampleBufferWrapper` - Raw camera buffer containing image data
+- `roi`: `RegionOfInterest` - Region of interest within the frame
+- `orientation`: `CameraFrameVideoOrientation` - Camera orientation
+- `width`: `Int` - Frame width in pixels (computed property)
+- `height`: `Int` - Frame height in pixels (computed property)
+
+```swift
+public init(
+    buffer: MBSampleBufferWrapper, 
+    roi: RegionOfInterest = RegionOfInterest(), 
+    orientation: CameraFrameVideoOrientation = .portrait
+)
+```
+
+```swift
+func processCameraOutput(_ sampleBuffer: CMSampleBuffer) {
+    let frame = CameraFrame(
+        buffer: MBSampleBufferWrapper(buffer: sampleBuffer),
+        roi: RegionOfInterest(x: 0, y: 0, width: 1.0, height: 1.0),
+        orientation: .portrait
+    )
+
+    let inputImage = InputImage(cameraFrame: frame)
+}
+```
+
+#### Usage Example
+
+```swift
+// Creating from UIImage
+let inputImage1 = InputImage(
+    uiImage: cardImage,
+    regionOfInterest: RegionOfInterest(x: 0, y: 0, width: 1.0, height: 1.0)
+)
+
+// Creating from camera frame
+let inputImage2 = InputImage(cameraFrame: cameraFrame)
+```
+
+#### Integration Considerations
+
+1. Image Source Handling
+   - Choose appropriate initialization method based on image source (UIImage or camera frame)
+   - Consider memory management implications when working with camera frames
+   - Handle orientation conversions properly
+
+2. Region of Interest
+   - Use normalized coordinates (0-1) for region of interest
+   - Validate region boundaries to prevent out-of-bounds issues
+   - Consider UI implications when setting custom regions
+
+3. Performance Optimization
+   - Minimize frame buffer copies
+   - Consider frame rate and processing overhead
+   - Handle memory efficiently when processing multiple frames
+
+- `InputImage` and related types conform to the `Sendable` protocol
+- `CameraFrame` is marked as `@unchecked Sendable` due to buffer handling
+- Care should be taken when sharing frames across threads
+
+###### Best Practices
+
+1. Memory Management
+   - Release camera frames promptly after processing
+   - Avoid unnecessary copies of large image buffers
+   - Use appropriate autorelease pool when processing multiple frames
+
+2. Error Handling
+   - Check frame dimensions before processing
+   - Handle invalid region of interest parameters
+   - Validate image orientation data
+
+3. Performance
+   - Process frames in appropriate queue/thread
+   - Consider frame rate requirements
+   - Optimize region of interest for specific use cases
+
+### <a name="resource-management"></a> Resource Management
+
+The SDK supports both downloaded and bundled resources:
+
+- Automatic resource downloading and caching
+- Bundle-based resource loading
+- Resource validation and verification
+
+#### Downloading models
+
+The SDK supports downloading machine learning models from our CDN. Models are automatically retrieved from https://models.cdn.microblink.com/resources when enabled.
+
+To enable model downloads, set the downloadResources property to true in your `BlinkCardSdkSettings`:
+
+```swift
+let settings = BlinkCardSdkSettings(
+    licenseKey: yourLicenseKey,
+    downloadResources: true  // Enable model downloads
+)
+```
+
+By default, downloaded models are stored in the `MLModels` folder. You can specify a custom storage location using the `resourceLocalFolder` property in the settings.
+
+Model downloads occur during SDK initialization in the `createBlinkCardSdk` method:
+
+```swift
+do {
+    let instance = try await BlinkCardSdk.createBlinkCardSdk(withSettings: settings)
+} catch let error as ResourceDownloaderError {
+    // Handle specific download errors
+    if case .noInternetConnection = error {
+        // Handle no internet connection
+    }
+    // Handle other download errors as needed
+}
+```
+
+The operation may throw a `ResourceDownloaderError` with the following possible cases:
+
+| Error Case | Description |
+|------------|-------------|
+| `invalidURL(String)` | The provided URL for model download is invalid |
+| `downloadFailed(Int)` | Download failed with specific HTTP status code |
+| `fileNotFound(URL)` | Resource file not found at specified location |
+| `hashMismatch(String)` | File hash verification failed |
+| `fileAccessError(Error)` | Error accessing file system |
+| `cacheDirNotFound` | Cache directory not found |
+| `fileCreationError(Error)` | Error creating file |
+| `noInternetConnection` | No internet connection available |
+| `invalidResponse` | Invalid or unexpected server response |
+| `resourceUnavailable` | Requested resource is not available |
+
+The SDK provides built-in components for handling network connectivity states.
+`NetworkMonitor` is ready-to-use network connectivity monitor that uses `NWPathMonitor`:
+
+```swift
+@MainActor
+public class NetworkMonitor: ObservableObject {
+    @Published public var isConnected = true
+    public var isOffline: Bool { !isConnected }
+    
+    public init() {
+        setupMonitor()
+    }
+}
+```
+
+`NoInternetView` is a pre-built SwiftUI view for handling offline states:
+
+```swift
+public struct NoInternetView: View {
+    public init(retryAction: @escaping () -> Void)
+}
+```
+
+#### Bundling models
+
+To use bundled models with our SDK, ensure the required model files are included in your app package and set the `downloadResources` property of `BlinkCardSdkSettings` to `false`. Specify the location of the bundled models using the `bundleURL` property of `BlinkCardSdkSettings`. If you are using the main bundle, you can retrieve its URL as follows:
+
+```swift
+let bundle = Bundle.main.bundleURL
+```
+
+## <a name="BlinkCard-ux-components"></a> BlinkCard UX Components
+
+The BlinkCardUX package is source-available, allowing you to customize and adapt its functionality to suit the specific needs of your project. This flexibility ensures that you can tailor the user experience and scanning workflow to align with your app’s design and requirements.
+
+In the next section, we will explain the main components of the BlinkCardUX package and how they work together to simplify card scanning integration.
+
+### BlinkCardAnalyzer
+
+The BlinkCardAnalyzer component provides a robust set of features to streamline and enhance the card scanning process. It includes real-time camera frame analysis for immediate feedback during scanning and asynchronous event streaming to ensure smooth, non-blocking operations. The component supports pause and resume functionality, allowing users to temporarily halt the process and continue seamlessly. With session result handling, developers can easily access and process the final scanning outcomes. Additionally, it offers cancellation support, enabling users to terminate the scanning process at any time. Designed with comprehensive UI event feedback, it delivers clear and actionable guidance to users throughout the scanning workflow.
+
+#### Key Features
+
+##### ScanningSide
+
+An enumeration that represents different sides of a card during the scanning process:
+
+```swift
+public enum ScanningSide: Sendable {
+    case first    // First side of the card
+    case second     // Second side of the card
+}
+```
+
+##### BlinkCardEventStream
+
+An actor that manages the stream of UI events during the card scanning process:
+
+```swift
+public actor BlinkCardEventStream: EventStream {
+    public func send(_ events: [BlinkCardUIEvent])
+    public var stream: AsyncStream<[BlinkCardUIEvent]>
+}
+```
+
+##### BlinkCardAnalyzer
+
+The main analyzer component that processes camera frames and manages the card scanning workflow:
+
+```swift
+public actor BlinkCardAnalyzer: CameraFrameAnalyzer {
+    public init(
+        sdk: BlinkCardSdk,
+        blinkCardSessionSettings: BlinkCardSessionSettings = BlinkCardSessionSettings(inputImageSource: .video),
+        eventStream: BlinkCardEventStream
+    )
+}
+```
+
+#### Usage Example
+
+##### Initialization
+
+```swift
+// Create an event stream
+let eventStream = BlinkCardEventStream()
+
+// Initialize the analyzer
+let analyzer = await BlinkCardAnalyzer(
+    sdk: blinkCardVerifySdk,
+    blinkCardSessionSettings: BlinkCardSessionSettings(inputImageSource: .video),
+    eventStream: eventStream
+)
+```
+
+##### Processing Frames
+
+```swift
+// Analyze a camera frame
+for await frame in await camera.sampleBuffer {
+    await analyzer.analyze(image: CameraFrame(buffer: MBSampleBufferWrapper(cmSampleBuffer: frame.buffer), roi: roi, orientation: camera.orientation.toCameraFrameVideoOrientation()))
+}
+```
+
+##### Event Handling
+
+The component provides real-time feedback through an event stream. Events can be observed to update the UI or trigger specific actions based on the scanning progress.
+
+```swift
+eventHandlingTask = Task {
+    for await events in await analyzer.events.stream {
+        if events.contains(.requestSecondSide) {
+            firstSideScanned(frontFlipImage: Image.frontCardImage, backFlipImage: Image.backCardImage, flipState: .flip, nextState: .second)
+        } else if events.contains(.fieldIdentificationFailed) {
+            self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+        } else if events.contains(.wrongSide) {
+            self.setReticleState(.error("mb_blinkcard_scanning_wrong_side"))
+        } else if events.contains(.imageReturnFailed) {
+            self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+        } else if events.contains(.tooClose) {
+            self.setReticleState(.error("mb_move_farther"))
+        } else if events.contains(.tooFar) {
+            self.setReticleState(.error("mb_move_closer"))
+        } else if events.contains(.tilt) {
+            self.setReticleState(.error("mb_blinkcard_keep_card_parallel"))
+        } else if events.contains(.tooCloseToEdge) {
+            self.setReticleState(.error("mb_move_farther"))
+        } else if events.contains(.notFullyVisible) {
+            self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+        } else if events.contains(.blur) {
+            self.setReticleState(.error("mb_blinkcard_blur_detected"))
+        } else {
+            self.setReticleState(reticleStateMachine.fallbackState)
+        }
+    }
+}
+```
+
+##### Best Practices
+
+When integrating the BlinkCardAnalyzer component, it is essential to follow best practices to ensure a seamless and efficient card scanning experience. By adhering to these guidelines, you can enhance user satisfaction and maintain robust application performance:
+
+- Always handle the event stream to provide real-time user feedback during the scanning process.
+- Implement proper error handling to manage scan failures gracefully and guide users effectively.
+- Consider implementing timeout handling for production environments to prevent indefinite scanning sessions. Check out our implementation for more details.
+- Manage memory efficiently by calling cancel() when the scanner is no longer needed, freeing up resources.
+- Handle the pause/resume cycle appropriately to align with app lifecycle events, ensuring a consistent user experience.
+
+### BlinkCardUXModel
+
+The BlinkCardUXModel is a comprehensive view model that manages the card scanning user experience in iOS applications. This component handles camera preview, card detection, user guidance, and scanning state transitions.
+
+BlinkCardUXModel serves as the business logic layer for the card scanning interface. It is designed as a MainActor to ensure thread-safe UI updates and implements the ObservableObject protocol for SwiftUI integration. The model manages the entire scanning workflow, from camera initialization to card capture and verification.
+
+#### Key Features
+
+##### Camera Management
+
+The model offers comprehensive camera control functionality through seamless integration with AVFoundation. It includes a fully implemented camera session, ensuring thread-safe access and synchronization with the BlinkCardAnalyzer for reliable and efficient performance.
+
+The camera system is designed to provide robust and user-friendly functionality, including:
+
+- Automatic session management for effortless setup and teardown.
+- Torch/flashlight control to adapt to various lighting conditions.
+- Frame capture and analysis synchronization for real-time card processing.
+- Orientation handling to ensure correct alignment regardless of device orientation.
+
+```swift
+public class ScanningViewModel<T, U, V: ReticleStateMachineProtocol, A: AlertTypeProtocol>: ObservableObject, ScanningViewModelProtocol {
+    let camera: Camera = Camera()
+}
+```
+
+##### User Feedback
+
+The model provides comprehensive user feedback mechanisms. The feedback features are designed to enhance user experience and guide users effectively throughout the card scanning process. These include:
+
+- Visual guidance through reticle state management, helping users align cards accurately.
+- Error messaging and recovery suggestions, providing clear instructions to resolve issues.
+- Success animations and transitions, offering a smooth and engaging user experience upon successful scans.
+- Accessibility announcements, ensuring inclusivity by providing auditory feedback for users with disabilities.
+- Progress indicators, keeping users informed about the scanning status in real time.
+
+```swift
+@Published var reticleState: ReticleState = .first
+```
+
+The model features a sophisticated animation system designed to provide dynamic and engaging user feedback during the card scanning process. Key animations include:
+
+- Card flip animations, guiding users to scan both sides of a card when required.
+- Success indicators, visually confirming successful scans.
+- Ripple effects, drawing attention to areas of interest during the scanning process.
+- State transitions, ensuring smooth and intuitive changes between different scanning states.
+
+#### Best Practices
+
+When implementing the BlinkCardUXModel, it’s crucial to follow best practices to ensure smooth and efficient operation. Key considerations include:
+
+- Implement proper error handling to manage all scanning states gracefully and provide a robust user experience.
+- Monitor memory usage during extended scanning sessions to avoid potential performance bottlenecks or crashes.
+- Clean up resources promptly when the scanning process is complete to maintain optimal app performance.
+- Handle orientation changes appropriately to ensure consistent user experience across different device orientations.
+
+### BlinkCardUXView
+
+BlinkCardUXView is the main scanning interface component that combines camera functionality with user interaction elements. The view is designed to provide real-time feedback during the card scanning process while maintaining a clean and intuitive user interface.
+
+The view is built using SwiftUI and follows the MVVM (Model-View-ViewModel) pattern, where:
+
+- The view (BlinkCardUXView) handles the UI layout and user interactions
+- The view model (BlinkCardUXModel) manages the business logic and state
+- The camera integration handles the card capture pipeline
+
+#### Key Features
+
+##### Camera Integration
+
+The view incorporates a camera feed through the CameraView component and manages the entire capture pipeline, including:
+
+- Automatic camera session management
+- Support for torch/flashlight functionality
+- Real-time frame processing
+- Orientation handling
+
+#### User Interface Elements
+
+The interface consists of several key components:
+
+1. Camera Feed
+
+    - Full-screen camera preview
+    - Real-time card boundary detection
+    - Automatic orientation adjustment
 
 
-### <a name="direct-api-string-processing"></a> Using Direct API for `NSString` recognition (parsing)
+2. Reticle
 
-Some recognizers support recognition from `NSString`. They can be used through Direct API to parse given `NSString` and return data just like when they are used on an input image. When recognition is performed on `NSString`, there is no need for the OCR. Input `NSString` is used in the same way as the OCR output is used when image is being recognized.
-Recognition from `String` can be performed in the same way as recognition from image.
-The only difference is that user should call `- (void)processString:(NSString *)string;` on [`MBCRecognizerRunner`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerRunner.html).
+    - Visual guidance for card positioning
+    - Dynamic state feedback
+    - Accessibility support
+    - Animation capabilities
 
-# <a name="recognizer"></a> `MBCRecognizer` and available recognizers
 
-## The `MBCRecognizer` concept
+3. Control Buttons
 
-The [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) is the basic unit of processing within the SDK. Its main purpose is to process the image and extract meaningful information from it. As you will see [later](#available-recognizers), the SDK has lots of different [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects that have various purposes.
+    - Cancel button for session termination
+    - Torch button for lighting control
+    - Help button for user guidance
 
-Each [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) has a [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) object, which contains the data that was extracted from the image. The [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) object is a member of corresponding [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object its lifetime is bound to the lifetime of its parent [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object. If you need your `MBCRecognizerResult` object to outlive its parent [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object, you must make a copy of it by calling its method `copy`.
 
-While [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object works, it changes its internal state and its result. The [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object's [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) always starts in `Empty` state. When corresponding [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object performs the recognition of given image, its [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) can either stay in `Empty` state (in case [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html)failed to perform recognition), move to `Uncertain` state (in case [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) performed the recognition, but not all mandatory information was extracted) or move to `Valid` state (in case [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) performed recognition and all mandatory information was successfully extracted from the image).
+4. Feedback Elements
 
-As soon as one [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object's [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) within [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) given to `MBCRecognizerRunner` or `MBCRecognizerRunnerViewController` changes to `Valid` state, the `onScanningFinished` callback will be invoked on same thread that performs the background processing and you will have the opportunity to inspect each of your [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects' [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) to see which one has moved to `Valid` state.
+    - Success indicators
+    - Visual animations
+    - Accessibility announcements
 
-As soon as `onScanningFinished` method ends, the `MBCRecognizerRunnerViewController` will continue processing new camera frames with same [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects, unless `paused`. Continuation of processing or `reset` recognition will modify or reset all [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects's [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerResult). When using built-in activities, as soon as `onScanningFinished` is invoked, built-in activity pauses the `MBCRecognizerRunnerViewController` and starts finishing the activity, while saving the [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) with active [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html).
+#### Accessibility
 
-## `MBCRecognizerCollection` concept
+The component provides comprehensive accessibility support:
 
-The [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) is is wrapper around [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects that has array of [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects that can be used to give [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects to `MBCRecognizerRunner` or `MBCRecognizerRunnerViewController` for processing.
+- VoiceOver compatibility
+- Dynamic text scaling
+- Accessibility labels and hints
+- Automatic announcements for state changes
 
-The [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) is always constructed with array `[[MBCRecognizerCollection alloc] initWithRecognizers:recognizers]` of [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects that need to be prepared for recognition (i.e. their properties must be tweaked already).
+### Best Practices
 
-The [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) manages a chain of [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects within the recognition process. When a new image arrives, it is processed by the first [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) in chain, then by the second and so on, iterating until a [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object's [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) changes its state to `Valid` or all of the [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects in chain were invoked (none getting a `Valid` result state).
+1. Always initialize the view with a properly configured view model
+2. Implement proper error handling and user feedback
+3. Monitor memory usage during extended scanning sessions
+4. Handle orientation changes appropriately
+5. Implement proper cleanup on view dismissal
 
-You cannot change the order of the [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects within the chain - no matter the order in which you give [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects to [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html), they are internally ordered in a way that provides best possible performance and accuracy. Also, in order for SDK to be able to order [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects in recognition chain in a best way possible, it is not allowed to have multiple instances of [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects of the same type within the chain. Attempting to do so will crash your application.
+## <a name="creating-custom-ux-component"></a> Creating custom UX component
 
-# <a name="available-recognizers"></a> List of available recognizers
+You have the flexibility to create your own custom UX if needed. However, we strongly recommend following the implementations provided in this package as a foundation. Since the package is source-available, you can modify or extend the code directly within your project to tailor it to your specific requirements.
 
-This section will give a list of all [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) objects that are available within BlinkCard SDK, their purpose and recommendations how they should be used to get best performance and user experience.
+We also highly recommend using our built-in Camera and CameraView components, as they are fully optimized for performance and seamlessly integrated with the BlinkCardAnalyzer. However, if necessary, you can implement and use your own camera solution. 
 
-## <a name="frame-grabber-recognizer"></a> Frame Grabber Recognizer
+> If implementing your own Camera component, be sure to wrap your CMSampleBufferRef to our own `MBSampleBufferWrapper`. `MBSampleBufferWrapper` safely encapsulates a Core Media sample buffer, ensuring proper reference counting and memory management while maintaining binary compatibility across different Swift versions.
 
-The [`MBCFrameGrabberRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCFrameGrabberRecognizer.html) is the simplest recognizer in SDK, as it does not perform any processing on the given image, instead it just returns that image back to its `onFrameAvailable`. Its result never changes state from empty.
+### ViewModel Creation
 
-This recognizer is best for easy capturing of camera frames with `MBCRecognizerRunnerViewController`. Note that [`MBCImage`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCImage.html) sent to `onFrameAvailable` are temporary and their internal buffers all valid only until the `onFrameAvailable` method is executing - as soon as method ends, all internal buffers of [`MBCImage`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCImage.html) object are disposed. If you need to store [`MBCImage`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCImage.html) object for later use, you must create a copy of it by calling `copy`.
+To integrate the card scanning workflow effectively, you will start by creating a ViewModel to manage the scanning logic and interface with the underlying components. The ViewModel acts as the bridge between the CameraFrameAnalyzer and your UI, handling data flow, state management, and event processing.
 
-## <a name="success-frame-grabber-recognizer"></a> Success Frame Grabber Recognizer
+In this section, we will guide you through the process of setting up and configuring the ViewModel, integrating it with the camera and analyzer components, and linking it to your SwiftUI view. This approach ensures a modular and maintainable architecture while leveraging the optimized components provided by the SDK.
 
-The [`MBCSuccessFrameGrabberRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCSuccessFrameGrabberRecognizer.html) is a special `MBCecognizer` that wraps some other [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) and impersonates it while processing the image. However, when the [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) being impersonated changes its [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) into `Valid` state, the [`MBCSuccessFrameGrabberRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCSuccessFrameGrabberRecognizer.html) captures the image and saves it into its own [`MBCSuccessFrameGrabberRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCSuccessFrameGrabberRecognizerResult.html) object.
+```swift
+@MainActor
+public final class ViewModel: ObservableObject {
+    // Use our Camera controller
+    let camera: Camera = Camera()
+    let analyzer: CameraFrameAnalyzer
+    // Instructions text for the View
+    @Published var instructionText: String = "Scan the first side"
+    // Published BlinkCardCaptureResult, use it in your ViewModel, or directly in your SwiftUI View
+    @Published public var captureResult: BlinkCardCaptureResult?
 
-Since [`MBCSuccessFrameGrabberRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCSuccessFrameGrabberRecognizer.html)  impersonates its slave [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object, it is not possible to give both concrete [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object and `MBCSuccessFrameGrabberRecognizer` that wraps it to same `MBCRecognizerCollection` - doing so will have the same result as if you have given two instances of same [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) type to the [`MBCRecognizerCollection`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizerCollection.html) - it will crash your application.
+    private var eventHandlingTask: Task<Void, Never>?
 
-This recognizer is best for use cases when you need to capture the exact image that was being processed by some other [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object at the time its [`MBCRecognizerResult`](http://blinkcard.github.io/blinkcard-ios/Classes.html#/c:objc(cs)MBCRecognizerResult) became `Valid`. When that happens, `MBCSuccessFrameGrabberRecognizer's` `MBCSuccessFrameGrabberRecognizerResult` will also become `Valid` and will contain described image.
+    public init(analyzer: CameraFrameAnalyzer) {
+        self.analyzer = analyzer
+        startEventHandling()
+    }
+```
 
-## <a name="blinkcard-recognizers"></a> BlinkCard recognizers
-Payment card recognizers are used to scan payment cards.
+The `startEventHandling` method initializes an event task, allowing you to receive and process UIEvents from the CameraFrameAnalyzer’s event stream. 
 
-### <a name="blink-card-recognizer"></a> MBCBlinkCardRecognizer
-The MBCBlinkCardRecognizer extracts the card number (PAN), expiry date, owner information (name or company title), IBAN, and CVV, from a large range of different card layouts.
+```swift
+private func startEventHandling() {
+    eventHandlingTask = Task {
+        for await events in await analyzer.events.stream {
+            if events.contains(.requestSecondSide) {
+                firstSideScanned(frontFlipImage: Image.frontCardImage, backFlipImage: Image.backCardImage, flipState: .flip, nextState: .second)
+            } else if events.contains(.fieldIdentificationFailed) {
+                self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+            } else if events.contains(.wrongSide) {
+                self.setReticleState(.error("mb_blinkcard_scanning_wrong_side"))
+            } else if events.contains(.imageReturnFailed) {
+                self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+            } else if events.contains(.tooClose) {
+                self.setReticleState(.error("mb_move_farther"))
+            } else if events.contains(.tooFar) {
+                self.setReticleState(.error("mb_move_closer"))
+            } else if events.contains(.tilt) {
+                self.setReticleState(.error("mb_blinkcard_keep_card_parallel"))
+            } else if events.contains(.tooCloseToEdge) {
+                self.setReticleState(.error("mb_move_farther"))
+            } else if events.contains(.notFullyVisible) {
+                self.setReticleState(.error("mb_blinkcard_card_not_fully_visible"))
+            } else if events.contains(.blur) {
+                self.setReticleState(.error("mb_blinkcard_blur_detected"))
+            } else {
+                self.setReticleState(reticleStateMachine.fallbackState)
+            }
+        }
+    }
+}
+```
 
-MBCBlinkCardRecognizer is a Combined recognizer, which means it's designed for scanning both sides of a card. However, if all required data is found on the first side, we do not wait for second side scanning. We can return the result early. A set of required fields is defined through the recognizer's settings.
+Implement `analyze` and `pauseScanning` methods:
 
-"Front side" and "back side" are terms more suited to ID scanning. We start the scanning process with the side containing the card number. This makes the UX easier for users with cards where all data is on the back side.
+```swift
+public func analyze() async {
+    
+    Task {
+        let result = await analyzer.result()
+        if let scanningResult = result as? ScanningResult<BlinkCardScanningResult, BlinkCardScanningAlertType> {
+            switch scanningResult {
+            case .completed(let scanningResult):
+                finishScan()
+                self.result = BlinkCardResultState(scanningResult: scanningResult)
+            case .interrupted(let alertType):
+                self.alertType = alertType
+            case .cancelled:
+                showLicenseErrorAlert = true
+            case .ended:
+                self.result = BlinkCardResultState(scanningResult: nil)
+            }
+        }
+    }
+    
+    for await frame in await camera.sampleBuffer {
+        await analyzer.analyze(image: CameraFrame(buffer: MBSampleBufferWrapper(cmSampleBuffer: frame.buffer), roi: roi, orientation: camera.orientation.toCameraFrameVideoOrientation()))
+    }
+}
+```
 
-### <a name="payment-card-recognizers"></a> MBCLegacyBlinkCardRecognizer (deprecated)
-The [`MBCLegacyBlinkCardRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardRecognizer.html)is used for scanning the [front and back side of Payment / Debit card](https://en.wikipedia.org/wiki/Payment_card).
+```swift
+func pauseScanning() {
+    Task {
+        await analyzer.cancel()
+    }
+}
+```
 
-### <a name="elite-payment-card-recognizers"></a> MBCLegacyBlinkCardEliteRecognizer (deprecated)
-The [`MBCLegacyBlinkCardEliteRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLegacyBlinkCardEliteRecognizer.html) scans back side of elite Payment / Debit card after scanning the front side and combines data from both sides.
-# <a name="localization"></a> Localization
+#### CameraFrameAnalyzer
 
-The SDK is localized on following languages: Arabic, Chinese simplified, Chinese traditional, Croatian, Czech, Dutch, Filipino, French, German, Hebrew, Hungarian, Indonesian, Italian, Malay, Portuguese, Romanian, Slovak, Slovenian, Spanish, Thai, Vietnamese.
+The CameraFrameAnalyzer protocol defines the core interface for components that analyze camera frames during card scanning operations. This protocol is designed to provide a standardized way of processing camera input while maintaining thread safety through Swift's concurrency system.
 
-If you would like us to support additional languages or report incorrect translation, please contact us at [help.microblink.com](http://help.microblink.com).
+The protocol defines essential methods and properties for analyzing camera frames in real-time, managing the analysis lifecycle, and providing feedback through an event stream.
 
-If you want to add additional languages yourself or change existing translations, you need to set `customLocalizationFileName` property on [`MBCMicroblinkApp`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCMicroblinkApp.html) object to your strings file name.
+```swift
+public protocol CameraFrameAnalyzer: Sendable {
+    func analyze(image: CameraFrame) async
+    func cancel() async
+    func pause() async
+    func resume() async
+    func restart() async throws
+    func end() async
+    func result() async -> ScanningResult
+    var events: EventStream { get }
+}
+```
 
-For example, let's say that we want to change text "Scan the front side of a document" to "Scan the front side" in BlinkID sample project. This would be the steps:
-* Find the translation key in en.strings file inside BlinkCard.framework
-* Add a new file MyTranslations.strings to the project by using "Strings File" template
-* With MyTranslations.string open, in File inspector tap "Localize..." button and select English
-* Add the translation key "blinkid_generic_message" and the value "Scan the front side" to MyTranslations.strings
-* Finally in AppDelegate.swift in method `application(_:, didFinishLaunchingWithOptions:)` add `MBCMicroblinkApp.instance()?.customLocalizationFileName = "MyTranslations"`
+##### Requirements
 
-# <a name="troubleshooting"></a> Troubleshooting
+```swift
+analyze(image: CameraFrame) async
+```
 
-## <a name="troubleshooting-integration-problems"></a> Integration problems
+Processes a single camera frame for analysis. This method operates asynchronously to prevent blocking the main thread during intensive image processing operations.
 
-In case of problems with integration of the SDK, first make sure that you have tried integrating it into Xcode by following [integration instructions](#quick-start).
+```swift
+cancel() async
+```
+Terminates the current analysis operation immediately. This method ensures proper cleanup of resources when analysis needs to be stopped before completion.
 
-If you have followed [Xcode integration instructions](#quick-start) and are still having integration problems, please contact us at [help.microblink.com](http://help.microblink.com).
+```swift
+pause() async
+```
+Temporarily suspends the analysis operation while maintaining the current state. This is useful for scenarios where analysis needs to be temporarily halted, such as when the app enters the background.
 
-## <a name="troubleshooting-sdk-problems"></a> SDK problems
+```swift
+resume() async
+```
+Continues a previously paused analysis operation. This method restores the analyzer to its active state and resumes processing frames.
+
+```swift
+restart() async throws
+```
+Starts a new analysis operation. This method resets the analyzer to its initial state and resumes processing frames.
+
+```swift
+end() async
+```
+Ends the analysis operation. This is used when analysis needs to be stopped, such as when the cancel button is pressed.
+
+```swift
+result() async -> ScanningResult
+```
+Retrieves the final result of the analysis operation. This method returns a ScanningResult object containing the analysis outcome.
+
+```swift
+events: EventStream
+```
+Provides access to a stream of UI events generated during the analysis process. This stream can be used to update the user interface based on analysis progress and findings.
+
+> We strongly recommend using our `BlinkCardAnalyzer` for seamless integration. However, you can create your own custom implementation as long as it conforms to the `CameraFrameAnalyzer` protocol.
+
+### View Creation
+
+Once the ViewModel is set up and configured, the next step is to create a SwiftUI view that interacts with it. The ViewModel serves as the central point for managing the card scanning workflow, including handling events, processing results, and updating the UI state. By linking the ViewModel to your view, you can create a dynamic and responsive interface that provides real-time feedback to users. In this section, we will demonstrate how to build a SwiftUI view using the ViewModel, ensuring seamless integration with the underlying card scanning components.
+
+Start by creating new SwiftUI View called CaptureView. 
+
+```swift
+struct CaptureView: View {
+    @ObservedObject private var viewModel: ViewModel
+
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
+}
+```
+
+We need to add CameraView to our body:
+
+```swift
+var body: some View {
+    GeometryReader { geometry in
+    ZStack {
+        CameraView(camera: viewModel.camera)
+            .ignoresSafeArea()
+            .statusBarHidden()
+            .task {
+                await viewModel.camera.start()
+                await viewModel.analyze()
+            }
+            .onDisappear {
+                viewModel.stopEventHandling()
+                Task {
+                    await viewModel.camera.stop()
+                }
+            }
+        }
+    }
+}
+```
+
+The camera feed is displayed using CameraView, which is tightly integrated with the ViewModel’s camera property. The .task modifier ensures that the camera starts and begins analysis as soon as the view appears, and proper cleanup is handled in onDisappear to stop the camera and event handling gracefully.
+
+We also need to add some instuction view to our ZStack that will connect our ViewModel's `instructionText`:
+
+```swift
+VStack {
+    Spacer()
+
+    // Text is in the middle of the screen     
+    Text(viewModel.instructionText)
+        .font(.system(size: 20))
+        .foregroundColor(Color.white)
+        .padding()
+        .background(Color.gray)
+        .clipShape(.capsule)
+    
+    Spacer()
+}
+```
+
+### Connecting ViewModel and View
+
+In this section, we will demonstrate how to establish the connection between the ViewModel and the View to facilitate a seamless card scanning workflow:
+
+```swift
+let analyzer = await BlinkCardAnalyzer(
+    sdk: localSdk,
+    eventStream: BlinkCardEventStream()
+)
+
+let viewModel = ViewModel(analyzer: analyzer)
+```
+
+In your SwiftUI View, add CaptureView:
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        CaptureView(viewModel: viewModel)
+    }
+}
+```
+
+And that's it! You have created a custom SwiftUI View and ViewModel!
+
+## <a name="localization"></a> Localization
+
+Our app supports localization following Apple’s recommended approach. We provide a `Localizable.xcstrings` file that you can use or modify as needed. Localization is determined by the system settings, meaning you must define 
+supported languages in your app’s `Info.plist` under the `Localizations` key, ensuring all required keys are included. Once configured, users can change the app’s language via Settings > [App Name] > Language. Note that in-app 
+language switching is not supported, as we adhere to Apple’s intended localization flow.
+
+## <a name="sdk-integration-troubleshooting"></a> SDK Integration Troubleshooting
 
 In case of problems with using the SDK, you should do as follows:
 
-### <a name="troubleshooting-licensing-problems"></a> Licencing problems
+### <a name="troubleshooting-licensing-problems"></a> Licensing problems
 
 If you are getting "invalid licence key" error or having other licence-related problems (e.g. some feature is not enabled that should be or there is a watermark on top of camera), first check the console. All licence-related problems are logged to error log so it is easy to determine what went wrong.
 
@@ -692,83 +1209,22 @@ If you are having problems with scanning certain items, undesired behaviour on s
 	* information about device that you are using
 	* please stress out that you are reporting problem related to iOS version of BlinkCard SDK
 
-## <a name="troubleshooting-faq"></a> Frequently asked questions and known problems
-Here is a list of frequently asked questions and solutions for them and also a list of known problems in the SDK and how to work around them.
+# <a name="blinkcard-sdk-size"></a> BlinkCard SDK size
 
-#### In demo everything worked, but after switching to production license I get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code as soon as I construct specific [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object
+BlinkCard is really lightweight SDK. Compressed size is just **2.0MB**. SDK size calculation is done by [creating an App Size Report with Xcode](https://developer.apple.com/documentation/xcode/reducing-your-app-s-size), one with and one without the SDK.
+Here is the SDK *App Size Report* for iPhone:
 
-Each license key contains information about which features are allowed to use and which are not. This `NSError` indicates that your production license does not allow using of specific `MBCRecognizer` object. You should contact [support](http://help.microblink.com) to check if provided licence is OK and that it really contains all features that you have purchased.
+|     Size     | App + On Demand Resources size | App size |
+| ------------ |:------------------------------:|:--------:|
+|  compressed  |             2.0 MB             |  2.0 MB  |
+| uncompressed |             4.3 MB             |  4.3 MB  |
 
-#### I get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code with trial license key
+The uncompressed size is equivalent to the size of the installed app on the device, and the compressed size is the download size of your app.
+You can find the *App Size Report* [here]().
 
-Whenever you construct any [`MBCRecognizer`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCRecognizer.html) object or, a check whether license allows using that object will be performed. If license is not set prior constructing that object, you will get `NSError` with `MBCMicroblinkSDKRecognizerErrorDomain` and `MBCRecognizerFailedToInitalize` code. We recommend setting license as early as possible in your app.
+# <a name="additional-info"></a> Additional info
 
-#### Undefined Symbols on Architecture armv7
+Complete API references can be found:
 
-Make sure you link your app with iconv and Accelerate frameworks as shown in [Quick start](#quick-start).
-If you are using Cocoapods, please be sure that you've installed `git-lfs` prior to installing pods. If you are still getting this error, go to project folder and execute command `git-lfs pull`.
-
-#### `Upload Symbols Failed` - The archive did not include a dSYM for the BlinkCard.framework
-
-When distributing your application, you might encounter a warning related to the missing dSYM files for the BlinkCard framework.
-The dSYM (Debug Symbol) files contain symbol information that helps debug crash reports by providing readable stack traces. However, for security reasons, we **do not include dSYMs** with our framework to prevent reverse engineering and protect proprietary code.
-This warning **does not affect your application's functionality** and can be safely ignored.
-
-### Crash on armv7 devices
-
-SDK crashes on armv7 devices if bitcode is enabled. We are working on it.
-
-#### In my `didFinish` callback I have the result inside my `MBCRecognizer`, but when scanning activity finishes, the result is gone
-
-This usually happens when using [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) and forgetting to pause the [`MBCRecognizerRunnerViewController`](http://blinkcard.github.io/blinkcard-ios/Protocols/MBCRecognizerRunnerViewController.html) in your `didFinish` callback. Then, as soon as `didFinish` happens, the result is mutated or reset by additional processing that `MBCRecognizer` performs in the time between end of your `didFinish` callback and actual finishing of the scanning activity. For more information about statefulness of the `MBCRecognizer` objects, check [this section](#recognizer-concept).
-
-#### Unsupported architectures when submitting app to App Store
-
-BlinkCard.framework is a dynamic framework which contains slices for all architectures - device and simulator. If you intend to extract .ipa file for ad hoc distribution, you'll need to preprocess the framework to remove simulator architectures.
-
-Ideal solution is to add a build phase after embed frameworks build phase, which strips unused slices from embedded frameworks.
-
-Build step is based on the one provided here: http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/
-
-```shell
-APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
-
-# This script loops through the frameworks embedded in the application and
-# removes unused architectures.
-find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
-do
-FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
-FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
-echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
-
-EXTRACTED_ARCHS=()
-
-for ARCH in $ARCHS
-do
-echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
-lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
-EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
-done
-
-echo "Merging extracted architectures: ${ARCHS}"
-lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
-rm "${EXTRACTED_ARCHS[@]}"
-
-echo "Replacing original executable with thinned version"
-rm "$FRAMEWORK_EXECUTABLE_PATH"
-mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
-
-done
-```
-
-### Disable logging
-
-Logging can be disabled by calling `disableMicroblinkLogging` method on [`MBCLogger`](http://blinkcard.github.io/blinkcard-ios/Classes/MBCLogger.html) instance.
-# <a name="size-report"></a> Size Report
-
-We are delivering complete size report of our BlinkCard SDK based on our BlinkCard-sample-Swift sample project. You can check that [here](https://github.com/BlinkCard/blinkcard-ios/tree/master/size-report).
-# <a name="info"></a> Additional info
-
-Complete API reference can be found [here](http://blinkcard.github.io/blinkcard-ios/index.html). 
-
-For any other questions, feel free to contact us at [help.microblink.com](http://help.microblink.com).
+* [BlinkCard](http://blinkcard.github.io/blinkcard-swift-package/documentation/blinkcard/)
+* [BlinkCardUX](http://blinkcard.github.io/blinkcard-ios/documentation/blinkcardux/)
