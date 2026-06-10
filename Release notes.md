@@ -1,5 +1,9 @@
 # Release notes
 
+## 3000.0.1
+
+### Bugfixes and improvements
+
 ## 3000.0.0
 
 ### New fraud detection: BIN intelligence

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BlinkCard-Swift.h</key>
 		<data>
-		85Lqac6wf50ivaSQQvxLQVogG/E=
+		MTKD8YnkCaLQvyuecE/GbsXQyWM=
 		</data>
 		<key>Headers/BlinkCard.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		75iA/cA6E/i7FtgZyKczUlXJQPg=
+		5IMaetTuecf5ORQiGLLr2B066uM=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kxVKw3v1rxkw0kP55c+6arsyXZE=
+		r9iHUX6yBGTSwr1+kEwgL6StOCc=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mukZtYaIg1OBv8wNVdUeeam5428=
+		J5PGtM4H9vUGgzhyKGAV0LyNu30=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kxVKw3v1rxkw0kP55c+6arsyXZE=
+		r9iHUX6yBGTSwr1+kEwgL6StOCc=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IPegLd+HCPAs8xkzXbmkS3+g4Tw=
+		S72vCSN7KazHgCii7YnlTSLXwkY=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kqZBzegIF1++ULKHaQUayd9Vtd8=
+		Mt57gyoeTQFNUmUKuU1mEhM8mkI=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VG3kUkeXBcErj+TkhaVQcL0Hx/g=
+		xFWzb0EFjBQo8N9d7uQwsFqX0GY=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kqZBzegIF1++ULKHaQUayd9Vtd8=
+		Mt57gyoeTQFNUmUKuU1mEhM8mkI=
 		</data>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UqBamoFYarqmih/c4RPmF/nMr8c=
+		YTfOhJ1t0id+/bFHsg65Cr94/Do=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>conan.xcconfig</key>
 		<data>
-		7tj23DPsP0JKGE3w5PNCiiND6kA=
+		ujszzjUU6dEVOkb64Lsh3Dk3Vbo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OdEsQ8vlH2rs0QPnWYQFF3M0/KqtCVd3VD2Y3LBC3qg=
+			ei3veVI5BlF1Ohovkp0E6uPqsrdyf/ZZg8GU17p/YME=
 			</data>
 		</dict>
 		<key>Headers/BlinkCard.h</key>
@@ -115,28 +115,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6Ok319qHwPfgwdAtbqZI8IYXkHyQZU38sEXvyTEhyQ=
+			eue3qKGAcUPTEe9EFiHUdjANpio//4hXZuAkmPkNsps=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZ03RO2JqcR/Tec0dFSa3ImODGaUg6feaLeGAsPxaBg=
+			/op2OWPgxTIGONTxxp6shbPZgBgEp2xNQncfgHTa4Ok=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6Ok319qHwPfgwdAtbqZI8IYXkHyQZU38sEXvyTEhyQ=
+			eue3qKGAcUPTEe9EFiHUdjANpio//4hXZuAkmPkNsps=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bfCKNrLctRsTkVjRViLB7iC6t9j/eSYgGq5MYaU+ho8=
+			cBSsX6Y0tFEE2HBzdOP0lezLlMkcKGapKo4I2jyBXtQ=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -150,28 +150,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsf4NsCYsB62Az6g1aNb2zKpjaOAPACmLHMhxLAzCR4=
+			KhRZRZZombCPlh04F+tbUvY7m/Xl+ti6fi2YgSquTCE=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uwksXNiH1tOUaUUuhQRqKBabap0657FoN2izQAthTxM=
+			zh58FDkGBvKX9Dm3jIPHBebpqGY/tKDOtIpIQihX/Oc=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xsf4NsCYsB62Az6g1aNb2zKpjaOAPACmLHMhxLAzCR4=
+			KhRZRZZombCPlh04F+tbUvY7m/Xl+ti6fi2YgSquTCE=
 			</data>
 		</dict>
 		<key>Modules/BlinkCard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BrmgdWkRWIGz69N5rIANSELCHm/a0tqee7CnMmdIPwM=
+			jffQPlQnJQlHwRm3p1RW7YNOoxvZAcFQ9887FvGvnk8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -206,7 +206,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TXWsW4dVGJRWW6DOrssbEJSLFfQ9ipyY4ymanVLGK3E=
+			9add2lBBr2UozjJ80RJTqsItY6twI+mgqc8s84RPgUs=
 			</data>
 		</dict>
 	</dict>
