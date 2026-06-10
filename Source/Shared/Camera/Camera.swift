@@ -8,11 +8,11 @@ import os.log
 import AVFoundation
 @preconcurrency import Combine
 
-#if canImport(BlinkIDVerify)
+#if BLINKIDVERIFYUX
 import BlinkIDVerify
-#elseif canImport(BlinkID)
+#elseif BLINKIDUX
 import BlinkID
-#elseif canImport(BlinkCard)
+#elseif BLINKCARDUX
 import BlinkCard
 #endif
 

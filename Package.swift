@@ -47,7 +47,10 @@ let package = Package(name: "BlinkCardUX",
                                         resources: [
                                             .process("PrivacyInfo.xcprivacy"),
                                             .process("BlinkCardUX/Localizable.xcstrings")],
-                                        swiftSettings: [.enableUpcomingFeature("ExistentialAny")]),
+                                        swiftSettings: [
+                                            .enableUpcomingFeature("ExistentialAny"),
+                                            .define("BLINKCARDUX")
+                                        ]),
                                  .binaryTarget(
                                     name: "BlinkCard",
                                     path: "Frameworks/BlinkCard.xcframework"

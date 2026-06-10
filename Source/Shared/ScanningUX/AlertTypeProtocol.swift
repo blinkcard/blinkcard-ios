@@ -3,11 +3,11 @@
 //  Modifications are allowed under the terms of the license for files located in the UX/UI lib folder.
 //
 
-#if canImport(BlinkIDVerify)
+#if BLINKIDVERIFYUX
 import BlinkIDVerify
-#elseif canImport(BlinkID)
+#elseif BLINKIDUX
 import BlinkID
-#elseif canImport(BlinkCard)
+#elseif BLINKCARDUX
 import BlinkCard
 #endif
 

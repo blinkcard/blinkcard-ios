@@ -9,11 +9,11 @@ import CoreImage
 import SwiftUI
 import Combine
 
-#if canImport(BlinkIDVerify)
+#if BLINKIDVERIFYUX
 import BlinkIDVerify
-#elseif canImport(BlinkID)
+#elseif BLINKIDUX
 import BlinkID
-#elseif canImport(BlinkCard)
+#elseif BLINKCARDUX
 import BlinkCard
 #endif
 
@@ -131,10 +131,8 @@ public class ScanningViewModel<T, U, V: ReticleStateMachineProtocol, A: AlertTyp
             }
             pauseScanning()
             Task {
-                let type: UxEventPinglet.AlertType = alertType.pingletAlertType
-                
                 if sessionNumber > 0 {
-                    let uxEventPinglet = UxEventPinglet(eventType: .alertdisplayed, alertType: type)
+                    let uxEventPinglet = UxEventPinglet(eventType: .alertdisplayed, alertType: alertType.pingletAlertType)
                     await PingManager.shared.addPinglet(pinglet: uxEventPinglet, sessionNumber: sessionNumber)
                 }
             }
